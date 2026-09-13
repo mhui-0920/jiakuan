@@ -5,30 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - xiaohe
+  server: 51.38.70.192
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9343f183-7a16-4bdd-9c65-b0c21feca40b
+  tls: true
+  reality-opts:
+    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
+    short-id: 98fa0b00d09419f7
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
   server: 78.129.208.44
   port: 421
   udp: true
   type: vless
-  uuid: a3c861cb-e1e7-4ad6-8be2-7c2314ec6f18
+  uuid: a9900333-444b-4a36-a2f0-0567946c47cd
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: zUdAvpr07q1Yd0Om-jc4-Vu4Un5tVird8FGoN-7W9Tg
     short-id: a1facbc8575701ae
   servername: chistomat.dry.care
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 02 - xiaohe
-  server: 5.152.223.97
-  port: 443
-  udp: true
-  type: vless
-  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
-    short-id: 1aa9f3c9021280c0
-  servername: strapi.io
   client-fingerprint: chrome
 - name: 🇬🇧 英国 (United Kingdom) 03 - xiaohe
   server: 87.117.234.19
@@ -42,8 +41,32 @@ proxies:
     public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
     short-id: fd55b698ee8c3629
   servername: strapi.io
-  client-fingerprint: chrome
+  client-fingerprint: ''
 - name: 🇬🇧 英国 (United Kingdom) 04 - xiaohe
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vless
+  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 05 - xiaohe
+  server: 5.152.223.97
+  port: 443
+  udp: true
+  type: vless
+  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
+    short-id: 1aa9f3c9021280c0
+  servername: strapi.io
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 06 - xiaohe
   server: 138.124.125.211
   port: 443
   udp: true
@@ -56,22 +79,7 @@ proxies:
     short-id: 72cceb78
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 05 - xiaohe
-  server: 129.121.95.159
-  port: 443
-  udp: true
-  type: vless
-  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
-  tls: true
-  servername: 129.121.95.159
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /connect
-    headers:
-      Host: 129.121.95.159
-- name: 🇬🇧 英国 (United Kingdom) 06 - xiaohe
+- name: 🇬🇧 英国 (United Kingdom) 07 - xiaohe
   server: 95.85.224.51
   port: 443
   udp: true
@@ -84,18 +92,30 @@ proxies:
     short-id: a696de84963656de
   servername: max.ru
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 07 - xiaohe
-  server: neth8.lunariai.ru
+- name: 🇬🇧 英国 (United Kingdom) 08 - xiaohe
+  server: 66.163.117.58
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇬🇧 英国 (United Kingdom) 09 - xiaohe
+  server: 129.121.95.159
   port: 443
   udp: true
   type: vless
-  uuid: c21631d5-36c9-4664-b575-97eca17456be
+  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
+  tls: true
+  servername: 129.121.95.159
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /connect
     headers:
-      Host: neth8.lunariai.ru
-- name: 🇬🇧 英国 (United Kingdom) 08 - xiaohe
+      Host: 129.121.95.159
+- name: 🇬🇧 英国 (United Kingdom) 10 - xiaohe
   server: 31.76.88.10
   port: 443
   udp: true
@@ -110,20 +130,31 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf5.rumedia-cdn.com
-- name: 🇬🇧 英国 (United Kingdom) 09 - xiaohe
-  server: 107.181.151.39
+- name: 🇬🇧 英国 (United Kingdom) 11 - xiaohe
+  server: neth8.lunariai.ru
   port: 443
   udp: true
   type: vless
-  uuid: b60cab55-e7a1-413d-a297-ddd7bad3fb62
+  uuid: c21631d5-36c9-4664-b575-97eca17456be
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: neth8.lunariai.ru
+- name: 🇬🇧 英国 (United Kingdom) 12 - xiaohe
+  server: 107.181.151.241
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2f6e2b17-4d5e-4a12-8979-f53fdd347580
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: bbcab8fa80a3
-  servername: www.microsoft.com
+    public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
+    short-id: 5c8a8e6c615b
+  servername: www.mozilla.org
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 10 - xiaohe
+- name: 🇬🇧 英国 (United Kingdom) 13 - xiaohe
   server: 87.239.249.137
   port: 443
   udp: true
@@ -136,18 +167,18 @@ proxies:
     short-id: 91af08b1ce1f
   servername: www.foxsports.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 11 - xiaohe
-  server: 107.181.151.241
+- name: 🇬🇧 英国 (United Kingdom) 14 - xiaohe
+  server: server.slavkiti.monster
   port: 443
   udp: true
   type: vless
-  uuid: 594d466e-8ac3-4fda-b1d1-eeb817853518
+  uuid: 6dfc9149-1ff9-41c3-8563-0ef284381731
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
-    short-id: 5a018643df03
-  servername: www.microsoft.com
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: 1374bddeb25d
+  servername: www.tradingview.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -165,6 +196,9 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 09 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 10 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 11 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 12 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 13 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 14 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -181,5 +215,8 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 09 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 10 - xiaohe
   - 🇬🇧 英国 (United Kingdom) 11 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 12 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 13 - xiaohe
+  - 🇬🇧 英国 (United Kingdom) 14 - xiaohe
 rules:
 - MATCH,PROXIES
