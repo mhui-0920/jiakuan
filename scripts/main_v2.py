@@ -53,19 +53,9 @@ except ImportError as e:
 # ══════════════════════════════════════════════════════════════════
 
 SOURCE_URLS = [
-    "https://etoneya.su/1",
-    "https://raw.githubusercontent.com/acymz/AutoVPN/main/data/V2.txt",
-    "https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/v.txt",
-    "https://raw.githubusercontent.com/kooker/FreeSubsCheck/main/base64.txt",
-    "https://raw.githubusercontent.com/xiaoji235/airport-free/main/v2ray.txt",
-    "https://raw.githubusercontent.com/wiki/gfpcom/free-proxy-list/lists/vmess.txt",
-    "https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/all_configs.txt",
-    "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/v2ray-base64.txt",
-    "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/all/configs.txt ",
-    "https://raw.githubusercontent.com/10ium/telegram-configs-collector/main/security/tls",
-    "https://github.com/sakha1370/OpenRay/raw/refs/heads/main/output/all_valid_proxies.txt",
-    "https://raw.githubusercontent.com/yafeisun/v2raynode/refs/heads/main/result/nodetotal.txt",
-    "https://raw.githubusercontent.com/sakha1370/OpenRay/refs/heads/main/output_iran/iran_top100_checked.txt",
+    "https://raw.githubusercontent.com/menghuier1/goida-vpn-configs/refs/heads/main/githubmirror/7.txt",
+    "https://raw.githubusercontent.com/menghuier1/goida-vpn-configs/refs/heads/main/githubmirror/8.txt",
+    "https://raw.githubusercontent.com/menghuier1/goida-vpn-configs/refs/heads/main/githubmirror/9.txt",
 ]
 
 OUTPUT_DIR = "output"
