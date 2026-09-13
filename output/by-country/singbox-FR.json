@@ -12,43 +12,18 @@
       "password": "itzvpn@321"
     },
     {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 02 - xiaohe",
-      "server": "81.95.4.189",
-      "server_port": 443,
-      "uuid": "b585dc5e-55bf-4a8b-913a-27c9ccac05c3",
-      "tls": {
-        "enabled": true,
-        "server_name": "bab-6.site",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vws/",
-        "headers": {
-          "Host": "bab-6.site"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇷 法国 (France) 01 - xiaohe",
-        "🇫🇷 法国 (France) 02 - xiaohe"
+        "🇫🇷 法国 (France) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇷 法国 (France) 01 - xiaohe",
-        "🇫🇷 法国 (France) 02 - xiaohe"
+        "🇫🇷 法国 (France) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

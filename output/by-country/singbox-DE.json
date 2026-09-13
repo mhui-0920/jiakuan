@@ -43,27 +43,6 @@
     {
       "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 03 - xiaohe",
-      "server": "144.31.125.60",
-      "server_port": 443,
-      "uuid": "9015f0bc-2053-4ca1-9b9b-a018b97b32d2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.intel.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SVgtyuD9khylgHuB0treGekxVSHPOS-wPZTNHUf6zj8",
-          "short_id": "85c86a9863"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 04 - xiaohe",
       "server": "163.8.195.241",
       "server_port": 2087,
       "uuid": "56ba5d34-ef22-4ba6-8090-4188b807df54",
@@ -79,8 +58,7 @@
         "auto",
         "🇩🇪 德国 (Germany) 01 - xiaohe",
         "🇩🇪 德国 (Germany) 02 - xiaohe",
-        "🇩🇪 德国 (Germany) 03 - xiaohe",
-        "🇩🇪 德国 (Germany) 04 - xiaohe"
+        "🇩🇪 德国 (Germany) 03 - xiaohe"
       ]
     },
     {
@@ -89,8 +67,7 @@
       "outbounds": [
         "🇩🇪 德国 (Germany) 01 - xiaohe",
         "🇩🇪 德国 (Germany) 02 - xiaohe",
-        "🇩🇪 德国 (Germany) 03 - xiaohe",
-        "🇩🇪 德国 (Germany) 04 - xiaohe"
+        "🇩🇪 德国 (Germany) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

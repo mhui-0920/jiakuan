@@ -1,0 +1,54 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
+      "server": "104.17.147.22",
+      "server_port": 443,
+      "uuid": "5ef04ae8-8d7c-0a66-13f4-6e3f00000005",
+      "tls": {
+        "enabled": true,
+        "server_name": "relay.lunetcloud.ir",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lunetnetwork",
+        "headers": {
+          "Host": "relay.lunetcloud.ir"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇦🇪 阿联酋 (UAE) 01 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇦🇪 阿联酋 (UAE) 01 - xiaohe"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
