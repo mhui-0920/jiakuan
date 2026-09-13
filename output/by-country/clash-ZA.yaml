@@ -5,26 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇿🇦 南非 (South Africa) 01 - sanchun
-  server: 139.84.247.164
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: tfAcRikawhNoZAhu
-- name: 🇿🇦 南非 (South Africa) 02 - sanchun
   server: 102.133.165.160
   port: 16233
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: Xsy8Ox4yOV3xLlpxtjzs3X
-- name: 🇿🇦 南非 (South Africa) 03 - sanchun
+- name: 🇿🇦 南非 (South Africa) 02 - sanchun
   server: 102.37.156.224
   port: 443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: aduB9HGxQHjA2SBMRjkHX6
+- name: 🇿🇦 南非 (South Africa) 03 - sanchun
+  server: 102.37.108.75
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: FYGlWYggB4Akk6HP
+- name: 🇿🇦 南非 (South Africa) 04 - sanchun
+  server: 139.84.247.164
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: tfAcRikawhNoZAhu
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,6 +40,7 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 01 - sanchun
   - 🇿🇦 南非 (South Africa) 02 - sanchun
   - 🇿🇦 南非 (South Africa) 03 - sanchun
+  - 🇿🇦 南非 (South Africa) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -41,5 +49,6 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 01 - sanchun
   - 🇿🇦 南非 (South Africa) 02 - sanchun
   - 🇿🇦 南非 (South Africa) 03 - sanchun
+  - 🇿🇦 南非 (South Africa) 04 - sanchun
 rules:
 - MATCH,PROXIES

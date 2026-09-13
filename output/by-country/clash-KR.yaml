@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - sanchun
-  server: 221.139.79.57
-  port: 13979
+  server: 49.254.204.134
+  port: 1774
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: qwerREWQ@@
+  password: 1234!@#$
 - name: 🇰🇷 韩国 (South Korea) 02 - sanchun
   server: 3.39.4.109
   port: 13672
@@ -23,8 +23,16 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 03 - sanchun
+  server: 3.36.93.74
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 3.36.93.74
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 04 - sanchun
   server: 3.39.4.109
   port: 18967
   udp: true
@@ -37,7 +45,7 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 04 - sanchun
+- name: 🇰🇷 韩国 (South Korea) 05 - sanchun
   server: 151.245.106.49
   port: 2053
   udp: true
@@ -49,23 +57,7 @@ proxies:
     short-id: 429499c03d4cc8a0
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 05 - sanchun
-  server: 150-230-252-217.liao.kdns.fr
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 9cfc9458e48c028ec03ff86ebc71c744
-  sni: 150-230-252-217.liao.kdns.fr
-  skip-cert-verify: false
 - name: 🇰🇷 韩国 (South Korea) 06 - sanchun
-  server: 132.226.226.189
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1671a252e2a97dc2bda4e515475931da
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 07 - sanchun
   server: 119.28.161.143
   port: 443
   udp: true
@@ -76,21 +68,35 @@ proxies:
     public-key: pR7MPTAA4cZsW9AO-twMzuogiWGMKPiheTg70fcWWWs
     short-id: 0a427bc3
   servername: apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 07 - sanchun
+  server: 150-230-252-217.liao.kdns.fr
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 9cfc9458e48c028ec03ff86ebc71c744
+  sni: 150-230-252-217.liao.kdns.fr
+  skip-cert-verify: false
 - name: 🇰🇷 韩国 (South Korea) 08 - sanchun
-  server: 141.164.45.187
-  port: 6697
+  server: 221.139.79.57
+  port: 13979
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
 - name: 🇰🇷 韩国 (South Korea) 09 - sanchun
-  server: 141.164.45.187
-  port: 2376
+  server: 47.80.62.191
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
+  type: vless
+  uuid: 43e60b75-9920-450a-94ee-8762758ca49c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Qe5e0FBZwuwYMRYikx8sH5iaowPQwdkn6kgIN8xrQHE
+    short-id: bd0040df20a53b36
+  servername: www.logitech.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

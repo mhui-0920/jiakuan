@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: 0a9d31cb-3306-4e89-af90-ea2bc8e26ce5
+  uuid: 0817a3bb-c8fb-4ddf-a05e-321565b39cd8
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -17,19 +17,6 @@ proxies:
   servername: tradingview.com
   client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 02 - sanchun
-  server: srv-21bac9.vless.monster
-  port: 2087
-  udp: true
-  type: vless
-  uuid: df9f5aca-eda0-428f-a752-e53866153d12
-  tls: true
-  servername: srv-21bac9.vless.monster
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: freegrpc
-- name: 🇦🇪 阿联酋 (UAE) 03 - sanchun
   server: 130.49.161.70
   port: 443
   udp: true
@@ -39,6 +26,19 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 03 - sanchun
+  server: 31.56.189.27
+  port: 2087
+  udp: true
+  type: vless
+  uuid: df9f5aca-eda0-428f-a752-e53866153d12
+  tls: true
+  servername: srv-21bac9.vless.monster
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: freegrpc
 - name: 🇦🇪 阿联酋 (UAE) 04 - sanchun
   server: 89.47.55.8
   port: 8443
@@ -54,46 +54,22 @@ proxies:
   grpc-opts:
     grpc-service-name: TunService
 - name: 🇦🇪 阿联酋 (UAE) 05 - sanchun
-  server: av-b-networkbalancer.cdnnow.xyz
-  port: 443
-  udp: true
-  type: hysteria2
-  password: SiLseGtXmWyIGNidDiEmWa4t2vvG4WWQ
-  sni: av-b-networkbalancer.cdnnow.xyz
-  skip-cert-verify: false
-- name: 🇦🇪 阿联酋 (UAE) 06 - sanchun
-  server: 85.204.107.177
+  server: 85.204.107.172
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: false
+- name: 🇦🇪 阿联酋 (UAE) 06 - sanchun
+  server: av-b-networkbalancer.cdnnow.xyz
+  port: 443
+  udp: true
+  type: hysteria2
+  password: vPKrpyaWUQ7NL1Hs5ooFEWvWuHgWoa8t
+  sni: av-b-networkbalancer.cdnnow.xyz
+  skip-cert-verify: false
 - name: 🇦🇪 阿联酋 (UAE) 07 - sanchun
-  server: 45.135.128.5
-  port: 443
-  udp: true
-  type: vless
-  uuid: 624208cf-54e0-4341-823b-1bee6595fce9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: nDUrcIPWyCo7gAOVPfjAneLz17NdCrUMCIvdJsTRsD4
-  servername: upload.tbotapi.ru
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 08 - sanchun
-  server: upload.tbotapi.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: 624208cf-54e0-4341-823b-1bee6595fce9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: nDUrcIPWyCo7gAOVPfjAneLz17NdCrUMCIvdJsTRsD4
-  servername: upload.tbotapi.ru
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 09 - sanchun
   server: uae.unixzone.us
   port: 22573
   udp: true
@@ -114,8 +90,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - sanchun
   - 🇦🇪 阿联酋 (UAE) 06 - sanchun
   - 🇦🇪 阿联酋 (UAE) 07 - sanchun
-  - 🇦🇪 阿联酋 (UAE) 08 - sanchun
-  - 🇦🇪 阿联酋 (UAE) 09 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -128,7 +102,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - sanchun
   - 🇦🇪 阿联酋 (UAE) 06 - sanchun
   - 🇦🇪 阿联酋 (UAE) 07 - sanchun
-  - 🇦🇪 阿联酋 (UAE) 08 - sanchun
-  - 🇦🇪 阿联酋 (UAE) 09 - sanchun
 rules:
 - MATCH,PROXIES
