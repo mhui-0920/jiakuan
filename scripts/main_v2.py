@@ -53,7 +53,7 @@ except ImportError as e:
 # ══════════════════════════════════════════════════════════════════
 
 SOURCE_URLS = [
-    "https://proxypool.link/clash/proxies",
+    "https://proxypool.link/vmess/sub",
 ]
 
 OUTPUT_DIR = "output"
