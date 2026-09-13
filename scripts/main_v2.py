@@ -53,9 +53,9 @@ except ImportError as e:
 # ══════════════════════════════════════════════════════════════════
 
 SOURCE_URLS = [
-    "https://raw.githubusercontent.com/menghuier1/goida-vpn-configs/refs/heads/main/githubmirror/7.txt",
-    "https://raw.githubusercontent.com/menghuier1/goida-vpn-configs/refs/heads/main/githubmirror/8.txt",
-    "https://raw.githubusercontent.com/menghuier1/goida-vpn-configs/refs/heads/main/githubmirror/9.txt",
+    "https://raw.githubusercontent.com/menghuier1/goida-vpn-configs/refs/heads/main/githubmirror/10.txt",
+    "https://raw.githubusercontent.com/menghuier1/goida-vpn-configs/refs/heads/main/githubmirror/11.txt",
+    "https://raw.githubusercontent.com/menghuier1/goida-vpn-configs/refs/heads/main/githubmirror/12.txt",
 ]
 
 OUTPUT_DIR = "output"
