@@ -53,7 +53,7 @@ except ImportError as e:
 # ══════════════════════════════════════════════════════════════════
 
 SOURCE_URLS = [
-    "https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/all.txt",
+    "https://proxypool.link/clash/proxies",
 ]
 
 OUTPUT_DIR = "output"
