@@ -4,43 +4,230 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇪 德国 (Germany) 01 - xiaohe
-  server: 199.232.78.101
+- name: 🇩🇪 德国 (Germany) 01 - sanchun
+  server: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
   port: 443
   udp: true
-  type: trojan
-  password: MiTiVPN
-  sni: ssl.fastly.com
+  type: vless
+  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
+  tls: true
+  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: '---@mehrosaboran'
-- name: 🇩🇪 德国 (Germany) 02 - xiaohe
-  server: 151.101.56.101
+    path: /
+- name: 🇩🇪 德国 (Germany) 02 - sanchun
+  server: 130.61.85.116
+  port: 59924
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 3/Ww5SSfxqu0aei8xP1jEaBpAc24C4WNY18GEwfTg0M=
+- name: 🇩🇪 德国 (Germany) 03 - sanchun
+  server: 116.202.19.249
   port: 443
   udp: true
-  type: trojan
-  password: MiTiVPN
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: '@mehrosaboran'
-- name: 🇩🇪 德国 (Germany) 03 - xiaohe
+  type: vless
+  uuid: cf990ae8-ee77-4436-aa3a-bbc2fb040c53
+  network: h2
+  h2-opts:
+    host: []
+    path: /
+- name: 🇩🇪 德国 (Germany) 04 - sanchun
+  server: 209.46.102.22
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+- name: 🇩🇪 德国 (Germany) 05 - sanchun
+  server: 91.99.58.134
+  port: 443
+  udp: true
+  type: vless
+  uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
+  network: h2
+  h2-opts:
+    host: []
+    path: /
+- name: 🇩🇪 德国 (Germany) 06 - sanchun
+  server: 46.224.111.17
+  port: 443
+  udp: true
+  type: vless
+  uuid: deee2828-ad68-4637-8e2e-64db7a36ad25
+- name: 🇩🇪 德国 (Germany) 07 - sanchun
+  server: 8.209.74.72
+  port: 20001
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+- name: 🇩🇪 德国 (Germany) 08 - sanchun
+  server: 93.94.52.23
+  port: 40443
+  udp: true
+  type: vless
+  uuid: bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
+    short-id: db46e2946fc466fd
+  servername: deepl.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 09 - sanchun
   server: 185.226.172.8
   port: 8008
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: XKFKl2rULjIp74
-- name: 🇩🇪 德国 (Germany) 04 - xiaohe
-  server: 141.95.29.163
-  port: 2083
+- name: 🇩🇪 德国 (Germany) 10 - sanchun
+  server: 91.99.62.132
+  port: 443
+  udp: true
+  type: vless
+  uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
+  network: h2
+  h2-opts:
+    host: []
+    path: /
+- name: 🇩🇪 德国 (Germany) 11 - sanchun
+  server: 170.101.109.37
+  port: 443
+  udp: true
+  type: vless
+  uuid: bf645ffe-a3cc-4480-8e4c-9bcd1af41052
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: rTnh7Y8RsSA5HSvFf-pWT49x8va6U6XHMRgNiMuwB0A
+    short-id: ab88d256
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 12 - sanchun
+  server: 178.105.126.242
+  port: 443
+  udp: true
+  type: anytls
+  password: e70ec0f2ab60e8c22b316156bf9ac43fec98b45be6681401
+  sni: cn.bing.com
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 13 - sanchun
+  server: 50.7.87.122
+  port: 443
+  udp: true
+  type: vless
+  uuid: 42d932cb-8768-41de-b57b-299252a493d2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ygxQyBcJzlLgpSl3MCRDDiFET4TT-3wxa4GdG1obkCY
+    short-id: ba4b2afa9e7193ea
+  servername: edge-fr.extazy.money
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 14 - sanchun
+  server: 130.61.50.75
+  port: 6443
+  udp: true
+  type: hysteria2
+  password: zhangyang
+  sni: 130.61.50.75
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 15 - sanchun
+  server: 31.56.189.224
+  port: 3443
+  udp: true
+  type: vless
+  uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -6SjfnZXAYm69euKQ3XNhq0nC7No7YE4qfdc2qx0Xwo
+    short-id: a1b2c3d4
+  servername: special.aeternavpn.space
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 16 - sanchun
+  server: 91.99.51.119
+  port: 443
+  udp: true
+  type: vless
+  uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
+  network: h2
+  h2-opts:
+    host: []
+    path: /
+- name: 🇩🇪 德国 (Germany) 17 - sanchun
+  server: 151.242.17.99
+  port: 8443
+  udp: true
+  type: vless
+  uuid: a04814d9-d006-4e7b-ae20-8ab304b3b429
+  tls: true
+  reality-opts:
+    public-key: 6Yskxg5U0WxPGtuCAAGH9uD57T4U8LeGrErTBNvIrwM
+    short-id: bc
+  servername: de.emvservice.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇩🇪 德国 (Germany) 18 - sanchun
+  server: 2.58.81.221
+  port: 80
   udp: true
   type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:JTou+JSmZOAyrMLdvNBcXFm0Y9luZ/8u17ie48jQfVc=
-- name: 🇩🇪 德国 (Germany) 05 - xiaohe
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+- name: 🇩🇪 德国 (Germany) 19 - sanchun
+  server: 144.31.168.95
+  port: 443
+  udp: true
+  type: vless
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
+    short-id: 00bca5982f82d083
+  servername: eu-central.cendora.ru
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 20 - sanchun
+  server: 93.152.217.41
+  port: 40443
+  udp: true
+  type: vless
+  uuid: 969bcce0-de8a-4b02-8cf8-d00d2d2ca7a5
+  tls: true
+  reality-opts:
+    public-key: VG-FwQBMFzPcemJ_JqtkbO-2WKLmQp2h0CmAj-DfLkA
+    short-id: 5b97
+  servername: deepl.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 21 - sanchun
+  server: 144.31.148.87
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 2691cbe7c20cced8b0aeb12c812d09077e5b3eec7669fb8f
+  sni: replay.wwwinternetvideo.click
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 22 - sanchun
+  server: 82.118.19.153
+  port: 443
+  udp: true
+  type: vless
+  uuid: adcaa148-7c66-4282-a81a-99ec8afa029d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE
+    short-id: 670ed9f350bd8ee0
+  servername: www.cloudflare.com
+  client-fingerprint: safari
+- name: 🇩🇪 德国 (Germany) 23 - sanchun
   server: 144.31.221.57
   port: 443
   udp: true
@@ -48,37 +235,36 @@ proxies:
   password: V1UQuwa-4PRIDW2paxrPe58RcxXHPGyFIGS-5QojaM8
   sni: player.wwwinternetvideo.click
   skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 06 - xiaohe
-  server: 144.31.148.87
+- name: 🇩🇪 德国 (Germany) 24 - sanchun
+  server: 178.105.61.61
+  port: 2083
+  udp: true
+  type: vless
+  uuid: cb077bf2-70b7-457b-af42-27cdc3e0e544
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: H0nCazQFHVhSObfqSUhGLhK7KRwKzTMggIBPjnMMqhk
+    short-id: af04ff8094115e93
+  servername: 178.105.61.61
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 25 - sanchun
+  server: gate-vde.multihost.127-0-0-1.online
   port: 443
   udp: true
   type: hysteria2
-  password: 2691cbe7c20cced8b0aeb12c812d09077e5b3eec7669fb8f
-  sni: replay.wwwinternetvideo.click
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 07 - xiaohe
-  server: 57.129.41.216
-  port: 80
-  udp: true
-  type: vless
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 08 - xiaohe
-  server: 199.232.78.160
-  port: 443
-  udp: true
-  type: trojan
-  password: MiTiVPN
-  sni: ssl.fastly.com
+  password: SiLseGtXmWyIGNidDiEmWa4t2vvG4WWQ
+  sni: gate-v1.not-a-projects.xyz
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: '@mehrosaboran'
-- name: 🇩🇪 德国 (Germany) 09 - xiaohe
+- name: 🇩🇪 德国 (Germany) 26 - sanchun
+  server: de-node.rumedia-cdn.com
+  port: 25443
+  udp: true
+  type: hysteria2
+  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
+  sni: cf6.rumedia-cdn.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 27 - sanchun
   server: 2.27.59.206
   port: 443
   udp: true
@@ -88,44 +274,134 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
-- name: 🇩🇪 德国 (Germany) 10 - xiaohe
-  server: 163.8.195.241
-  port: 2087
+- name: 🇩🇪 德国 (Germany) 28 - sanchun
+  server: 5.35.81.60
+  port: 4443
   udp: true
   type: vless
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-  network: ws
-  ws-opts:
-    path: /29c8fed7ca22
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  tls: true
+  reality-opts:
+    public-key: nhvyI4KrKDUSgw9Fa63SDeNATaTsAu9bRZ4qaraydRM
+    short-id: e5f6a1b2
+  servername: maps.apple.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: snob-grpc-de
+- name: 🇩🇪 德国 (Germany) 29 - sanchun
+  server: 77.90.185.105
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6205b7a3-a4b4-425f-bd45-f10c2efb35e6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e4bIuCaIoXwrEekxRqmcxLQ6MdS08KZL8-jvWFDbPgo
+    short-id: 1c
+  servername: playgroundlol.cc
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 30 - sanchun
+  server: 130.61.82.58
+  port: 59924
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: hjqTkJV5VFVNHAIg/ivqFp+lDtPbAwt1CF4ZqrbwLAg=
+- name: 🇩🇪 德国 (Germany) 31 - sanchun
+  server: 141.95.29.163
+  port: 2083
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:JTou+JSmZOAyrMLdvNBcXFm0Y9luZ/8u17ie48jQfVc=
+- name: 🇩🇪 德国 (Germany) 32 - sanchun
+  server: no.cnd.germany.1.myfilecdn.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0d628b17-8ac4-49b9-a422-6b99077bfdf6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: rj8GjMgtHuf5iZ5sWKmV62ihJbQWB6M4E-BJZBk1Z1A
+    short-id: 8a2b3c4d5e6f7012
+  servername: tradingview.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇩🇪 德国 (Germany) 01 - xiaohe
-  - 🇩🇪 德国 (Germany) 02 - xiaohe
-  - 🇩🇪 德国 (Germany) 03 - xiaohe
-  - 🇩🇪 德国 (Germany) 04 - xiaohe
-  - 🇩🇪 德国 (Germany) 05 - xiaohe
-  - 🇩🇪 德国 (Germany) 06 - xiaohe
-  - 🇩🇪 德国 (Germany) 07 - xiaohe
-  - 🇩🇪 德国 (Germany) 08 - xiaohe
-  - 🇩🇪 德国 (Germany) 09 - xiaohe
-  - 🇩🇪 德国 (Germany) 10 - xiaohe
+  - 🇩🇪 德国 (Germany) 01 - sanchun
+  - 🇩🇪 德国 (Germany) 02 - sanchun
+  - 🇩🇪 德国 (Germany) 03 - sanchun
+  - 🇩🇪 德国 (Germany) 04 - sanchun
+  - 🇩🇪 德国 (Germany) 05 - sanchun
+  - 🇩🇪 德国 (Germany) 06 - sanchun
+  - 🇩🇪 德国 (Germany) 07 - sanchun
+  - 🇩🇪 德国 (Germany) 08 - sanchun
+  - 🇩🇪 德国 (Germany) 09 - sanchun
+  - 🇩🇪 德国 (Germany) 10 - sanchun
+  - 🇩🇪 德国 (Germany) 11 - sanchun
+  - 🇩🇪 德国 (Germany) 12 - sanchun
+  - 🇩🇪 德国 (Germany) 13 - sanchun
+  - 🇩🇪 德国 (Germany) 14 - sanchun
+  - 🇩🇪 德国 (Germany) 15 - sanchun
+  - 🇩🇪 德国 (Germany) 16 - sanchun
+  - 🇩🇪 德国 (Germany) 17 - sanchun
+  - 🇩🇪 德国 (Germany) 18 - sanchun
+  - 🇩🇪 德国 (Germany) 19 - sanchun
+  - 🇩🇪 德国 (Germany) 20 - sanchun
+  - 🇩🇪 德国 (Germany) 21 - sanchun
+  - 🇩🇪 德国 (Germany) 22 - sanchun
+  - 🇩🇪 德国 (Germany) 23 - sanchun
+  - 🇩🇪 德国 (Germany) 24 - sanchun
+  - 🇩🇪 德国 (Germany) 25 - sanchun
+  - 🇩🇪 德国 (Germany) 26 - sanchun
+  - 🇩🇪 德国 (Germany) 27 - sanchun
+  - 🇩🇪 德国 (Germany) 28 - sanchun
+  - 🇩🇪 德国 (Germany) 29 - sanchun
+  - 🇩🇪 德国 (Germany) 30 - sanchun
+  - 🇩🇪 德国 (Germany) 31 - sanchun
+  - 🇩🇪 德国 (Germany) 32 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 (Germany) 01 - xiaohe
-  - 🇩🇪 德国 (Germany) 02 - xiaohe
-  - 🇩🇪 德国 (Germany) 03 - xiaohe
-  - 🇩🇪 德国 (Germany) 04 - xiaohe
-  - 🇩🇪 德国 (Germany) 05 - xiaohe
-  - 🇩🇪 德国 (Germany) 06 - xiaohe
-  - 🇩🇪 德国 (Germany) 07 - xiaohe
-  - 🇩🇪 德国 (Germany) 08 - xiaohe
-  - 🇩🇪 德国 (Germany) 09 - xiaohe
-  - 🇩🇪 德国 (Germany) 10 - xiaohe
+  - 🇩🇪 德国 (Germany) 01 - sanchun
+  - 🇩🇪 德国 (Germany) 02 - sanchun
+  - 🇩🇪 德国 (Germany) 03 - sanchun
+  - 🇩🇪 德国 (Germany) 04 - sanchun
+  - 🇩🇪 德国 (Germany) 05 - sanchun
+  - 🇩🇪 德国 (Germany) 06 - sanchun
+  - 🇩🇪 德国 (Germany) 07 - sanchun
+  - 🇩🇪 德国 (Germany) 08 - sanchun
+  - 🇩🇪 德国 (Germany) 09 - sanchun
+  - 🇩🇪 德国 (Germany) 10 - sanchun
+  - 🇩🇪 德国 (Germany) 11 - sanchun
+  - 🇩🇪 德国 (Germany) 12 - sanchun
+  - 🇩🇪 德国 (Germany) 13 - sanchun
+  - 🇩🇪 德国 (Germany) 14 - sanchun
+  - 🇩🇪 德国 (Germany) 15 - sanchun
+  - 🇩🇪 德国 (Germany) 16 - sanchun
+  - 🇩🇪 德国 (Germany) 17 - sanchun
+  - 🇩🇪 德国 (Germany) 18 - sanchun
+  - 🇩🇪 德国 (Germany) 19 - sanchun
+  - 🇩🇪 德国 (Germany) 20 - sanchun
+  - 🇩🇪 德国 (Germany) 21 - sanchun
+  - 🇩🇪 德国 (Germany) 22 - sanchun
+  - 🇩🇪 德国 (Germany) 23 - sanchun
+  - 🇩🇪 德国 (Germany) 24 - sanchun
+  - 🇩🇪 德国 (Germany) 25 - sanchun
+  - 🇩🇪 德国 (Germany) 26 - sanchun
+  - 🇩🇪 德国 (Germany) 27 - sanchun
+  - 🇩🇪 德国 (Germany) 28 - sanchun
+  - 🇩🇪 德国 (Germany) 29 - sanchun
+  - 🇩🇪 德国 (Germany) 30 - sanchun
+  - 🇩🇪 德国 (Germany) 31 - sanchun
+  - 🇩🇪 德国 (Germany) 32 - sanchun
 rules:
 - MATCH,PROXIES

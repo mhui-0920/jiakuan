@@ -1,0 +1,75 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇹🇷 土耳其 (Turkey) 01 - sanchun
+  server: 156.67.63.231
+  port: 443
+  udp: true
+  type: vless
+  uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI
+    short-id: 5606d4a25c99e7af
+  servername: sync-bridge.org
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 02 - sanchun
+  server: 107.161.174.96
+  port: 443
+  udp: true
+  type: vless
+  uuid: 97ecaad4-452c-45ec-b591-d68d3308aad4
+  flow: xtls-rprx-vision
+  tls: true
+  servername: partaa2.api3-max.ru
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 03 - sanchun
+  server: 83.217.9.252
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 6be01e14-b937-4ed5-9d2c-074a0da22ffc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fXsQV_dib6rKGAl6EncN6Pm-fTb6TqOa3uTCQWe86Dg
+  servername: ads.x5.ru
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 04 - sanchun
+  server: shop.neexbyte.ir
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 464bc502-f963-45b6-81e3-e33d18427506
+  tls: true
+  servername: shop.neexbyte.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇹🇷 土耳其 (Turkey) 01 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 02 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 03 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 04 - sanchun
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇹🇷 土耳其 (Turkey) 01 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 02 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 03 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 04 - sanchun
+rules:
+- MATCH,PROXIES

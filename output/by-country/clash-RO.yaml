@@ -4,16 +4,77 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  server: 205.237.109.162
+- name: 🇷🇴 罗马尼亚 (Romania) 01 - sanchun
+  server: 205.237.109.165
   port: 8443
   udp: true
   type: hysteria2
   password: Oz_Kx9342gefwJ89x3_M9z32kzf9KJq003_s
   sni: hopp-netherland-new.dynuddns.net
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  server: 162.249.125.133
+  skip-cert-verify: false
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - sanchun
+  server: 85.204.107.170
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: hopp-romania-new.roxa.org
+  skip-cert-verify: false
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - sanchun
+  server: 46.28.67.55
+  port: 443
+  udp: true
+  type: vless
+  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
+    short-id: d06d78e974491b6e
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - sanchun
+  server: 162.249.126.7
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: hopp-germany-new.ddnsguru.com
+  skip-cert-verify: false
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - sanchun
+  server: roma1.moritech.net
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: roma1.moritech.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - sanchun
+  server: hy2.aspidnet.xyz
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇷🇴 罗马尼亚 (Romania) 07 - sanchun
+  server: 194.5.248.70
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: roma3.moritech.net
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇷🇴 罗马尼亚 (Romania) 08 - sanchun
+  server: hy2-new.aspidnet.xyz
   port: 443
   udp: true
   type: hysteria2
@@ -27,14 +88,26 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 01 - sanchun
+  - 🇷🇴 罗马尼亚 (Romania) 02 - sanchun
+  - 🇷🇴 罗马尼亚 (Romania) 03 - sanchun
+  - 🇷🇴 罗马尼亚 (Romania) 04 - sanchun
+  - 🇷🇴 罗马尼亚 (Romania) 05 - sanchun
+  - 🇷🇴 罗马尼亚 (Romania) 06 - sanchun
+  - 🇷🇴 罗马尼亚 (Romania) 07 - sanchun
+  - 🇷🇴 罗马尼亚 (Romania) 08 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 01 - sanchun
+  - 🇷🇴 罗马尼亚 (Romania) 02 - sanchun
+  - 🇷🇴 罗马尼亚 (Romania) 03 - sanchun
+  - 🇷🇴 罗马尼亚 (Romania) 04 - sanchun
+  - 🇷🇴 罗马尼亚 (Romania) 05 - sanchun
+  - 🇷🇴 罗马尼亚 (Romania) 06 - sanchun
+  - 🇷🇴 罗马尼亚 (Romania) 07 - sanchun
+  - 🇷🇴 罗马尼亚 (Romania) 08 - sanchun
 rules:
 - MATCH,PROXIES
