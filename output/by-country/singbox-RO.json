@@ -12,7 +12,7 @@
       "tls": {
         "enabled": true,
         "server_name": "hopp-netherland-new.dynuddns.net",
-        "insecure": false
+        "insecure": true
       }
     },
     {
