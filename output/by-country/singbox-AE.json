@@ -6,43 +6,49 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - sanchun",
-      "server": "31.58.181.88",
-      "server_port": 8443,
-      "uuid": "0817a3bb-c8fb-4ddf-a05e-321565b39cd8",
+      "server": "104.143.223.217",
+      "server_port": 2085,
+      "uuid": "c9373ff0-c263-4949-885f-366671f3c6a1",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - sanchun",
+      "server": "104.143.223.64",
+      "server_port": 2085,
+      "uuid": "c9373ff0-c263-4949-885f-366671f3c6a1",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - sanchun",
+      "server": "78.40.195.140",
+      "server_port": 443,
+      "uuid": "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "tradingview.com",
+        "server_name": "www.booking.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc",
-          "short_id": ""
+          "public_key": "Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo",
+          "short_id": "98096455d963bdbb"
         }
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - sanchun",
-      "server": "130.49.161.70",
-      "server_port": 443,
-      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2.aspidnet.xyz",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - sanchun",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - sanchun",
       "server": "31.56.189.27",
       "server_port": 2087,
       "uuid": "df9f5aca-eda0-428f-a752-e53866153d12",
@@ -62,32 +68,56 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - sanchun",
-      "server": "89.47.55.8",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - sanchun",
+      "server": "104.143.223.65",
+      "server_port": 2085,
+      "uuid": "a1d1b142-17c5-4472-99de-df220df4d4fb",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - sanchun",
+      "server": "31.58.181.88",
       "server_port": 8443,
-      "uuid": "4350213a-b4e7-262a-0bd7-bd16957cf71a",
+      "uuid": "f0394424-db02-4e65-9685-d1c0f54ef5c2",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "download.nvidia.com",
+        "server_name": "tradingview.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "WtLZK1KyhSpI3K-R4M3sLAHWPOgGPMgkL6RneL0OfCY",
+          "public_key": "AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc",
           "short_id": ""
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 - sanchun",
-      "server": "85.204.107.172",
+      "tag": "🇦🇪 阿联酋 (UAE) 07 - sanchun",
+      "server": "130.49.161.70",
+      "server_port": 443,
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.aspidnet.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 (UAE) 08 - sanchun",
+      "server": "85.204.107.171",
       "server_port": 8080,
       "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
       "tls": {
@@ -97,20 +127,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 06 - sanchun",
-      "server": "av-b-networkbalancer.cdnnow.xyz",
-      "server_port": 443,
-      "password": "vPKrpyaWUQ7NL1Hs5ooFEWvWuHgWoa8t",
-      "tls": {
-        "enabled": true,
-        "server_name": "av-b-networkbalancer.cdnnow.xyz",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 07 - sanchun",
+      "tag": "🇦🇪 阿联酋 (UAE) 09 - sanchun",
       "server": "uae.unixzone.us",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
@@ -129,7 +147,9 @@
         "🇦🇪 阿联酋 (UAE) 04 - sanchun",
         "🇦🇪 阿联酋 (UAE) 05 - sanchun",
         "🇦🇪 阿联酋 (UAE) 06 - sanchun",
-        "🇦🇪 阿联酋 (UAE) 07 - sanchun"
+        "🇦🇪 阿联酋 (UAE) 07 - sanchun",
+        "🇦🇪 阿联酋 (UAE) 08 - sanchun",
+        "🇦🇪 阿联酋 (UAE) 09 - sanchun"
       ]
     },
     {
@@ -142,7 +162,9 @@
         "🇦🇪 阿联酋 (UAE) 04 - sanchun",
         "🇦🇪 阿联酋 (UAE) 05 - sanchun",
         "🇦🇪 阿联酋 (UAE) 06 - sanchun",
-        "🇦🇪 阿联酋 (UAE) 07 - sanchun"
+        "🇦🇪 阿联酋 (UAE) 07 - sanchun",
+        "🇦🇪 阿联酋 (UAE) 08 - sanchun",
+        "🇦🇪 阿联酋 (UAE) 09 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

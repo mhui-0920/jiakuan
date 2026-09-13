@@ -14,16 +14,6 @@ proxies:
   ws-opts:
     path: /
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - sanchun
-  server: 94.183.239.1
-  port: 443
-  udp: true
-  type: hysteria2
-  password: cec9a167-6381-4752-9828-a92ab6e6ebdd
-  sni: cache-stream.videocactus.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 91f69ceb59b24b367c71d10183609b30
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -33,7 +23,7 @@ proxies:
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - sanchun
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun
   server: ee1.sferavpn.pro
   port: 443
   udp: true
@@ -43,13 +33,23 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - sanchun
+  server: 94.183.239.1
+  port: 443
+  udp: true
+  type: hysteria2
+  password: cec9a167-6381-4752-9828-a92ab6e6ebdd
+  sni: cache-stream.videocactus.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 91f69ceb59b24b367c71d10183609b30
 - name: 🇪🇪 爱沙尼亚 (Estonia) 05 - sanchun
-  server: cabinet.wwwinternetvideo.click
+  server: news.gazette.help
   port: 443
   udp: true
   type: hysteria2
   password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  sni: cabinet.wwwinternetvideo.click
+  sni: news.gazette.help
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES

@@ -5,6 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - sanchun
+  server: 185.87.24.2
+  port: 2085
+  udp: true
+  type: vless
+  uuid: a1d1b142-17c5-4472-99de-df220df4d4fb
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇹🇷 土耳其 (Turkey) 02 - sanchun
+  server: 185.87.24.167
+  port: 2085
+  udp: true
+  type: vless
+  uuid: c9373ff0-c263-4949-885f-366671f3c6a1
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇹🇷 土耳其 (Turkey) 03 - sanchun
   server: 156.67.63.231
   port: 443
   udp: true
@@ -17,18 +35,7 @@ proxies:
     short-id: 5606d4a25c99e7af
   servername: sync-bridge.org
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 02 - sanchun
-  server: 107.161.174.96
-  port: 443
-  udp: true
-  type: vless
-  uuid: 97ecaad4-452c-45ec-b591-d68d3308aad4
-  flow: xtls-rprx-vision
-  tls: true
-  servername: partaa2.api3-max.ru
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 03 - sanchun
+- name: 🇹🇷 土耳其 (Turkey) 04 - sanchun
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -40,7 +47,7 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 04 - sanchun
+- name: 🇹🇷 土耳其 (Turkey) 05 - sanchun
   server: me17.msjia8844.site
   port: 7443
   udp: true
@@ -50,32 +57,19 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
-- name: 🇹🇷 土耳其 (Turkey) 05 - sanchun
-  server: 170.168.97.8
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 4350213a-b4e7-262a-0bd7-bd16957cf71a
-  tls: true
-  reality-opts:
-    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
-  servername: download.nvidia.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
 - name: 🇹🇷 土耳其 (Turkey) 06 - sanchun
-  server: tr.iramssmoth.ir
-  port: 8443
+  server: 13.143.137.164
+  port: 9443
   udp: true
   type: vless
-  uuid: f1505323-ecb6-4152-9a5b-d37b3ae1cacf
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 72SJFDXHCtB2fWWRrjMj23J8iJ8T_2jvj-iNThmLREs
-    short-id: 8dc4f3de3846efa9
-  servername: play-apps-features.googleusercontent.com
-  client-fingerprint: chrome
+    public-key: dZ0rhO_PL67-Ciwc6CHQgtde3a5EUUuReA7M-lRNCDQ
+    short-id: e336c9a786fae301
+  servername: plaincanvas.videoclothing.xyz
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
