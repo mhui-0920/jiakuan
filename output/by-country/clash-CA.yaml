@@ -5,25 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01 - xiaohe
-  server: 51.222.200.165
-  port: 5000
+  server: 51.222.12.127
+  port: 445
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+  password: zDNVedRFPQexG9v
 - name: 🇨🇦 加拿大 (Canada) 02 - xiaohe
-  server: 130.107.73.148
-  port: 41373
+  server: 51.79.49.116
+  port: 8882
   udp: true
-  type: vless
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  servername: google.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: 🇨🇦 加拿大 (Canada) 03 - xiaohe
+  server: 51.79.85.185
+  port: 8118
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
 proxy-groups:
 - name: PROXIES
   type: select
@@ -31,6 +32,7 @@ proxy-groups:
   - AUTO
   - 🇨🇦 加拿大 (Canada) 01 - xiaohe
   - 🇨🇦 加拿大 (Canada) 02 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -38,5 +40,6 @@ proxy-groups:
   proxies:
   - 🇨🇦 加拿大 (Canada) 01 - xiaohe
   - 🇨🇦 加拿大 (Canada) 02 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 03 - xiaohe
 rules:
 - MATCH,PROXIES

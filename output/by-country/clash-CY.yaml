@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
-  server: 162.128.157.164
-  port: 443
+- name: 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
+  server: 5.253.42.164
+  port: 40443
   udp: true
   type: vless
-  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
+  uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
-    short-id: 14156e3ac23212cc
-  servername: www.bing.com
+    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
+    short-id: 68a8
+  servername: deepl.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
+  - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
 rules:
 - MATCH,PROXIES

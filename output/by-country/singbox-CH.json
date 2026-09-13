@@ -4,19 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 01 - xiaohe",
-      "server": "140.238.31.111",
-      "server_port": 20000,
-      "password": "C0DD7bgChaltqnh/T2az6ijM",
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 01 - xiaohe",
+      "server": "151.242.2.81",
+      "server_port": 443,
+      "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
       "tls": {
         "enabled": true,
-        "server_name": "rmgyvpn.rest",
+        "server_name": "cf9.rumedia-cdn.com",
         "insecure": false
       },
-      "obfs": {
-        "type": "salamander",
-        "password": "C0DD7bgChaltqnh/T2az6ijM"
+      "transport": {
+        "type": "ws",
+        "path": "/cdn/v3/live",
+        "headers": {
+          "Host": "cf9.rumedia-cdn.com"
+        }
       }
     },
     {
@@ -24,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 - xiaohe"
+        "🇨🇭 瑞士 (Switzerland) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 - xiaohe"
+        "🇨🇭 瑞士 (Switzerland) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
