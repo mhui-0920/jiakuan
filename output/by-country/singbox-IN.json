@@ -4,16 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇮🇳 印度 (India) 01 - sanchun",
-      "server": "35.244.28.130",
-      "server_port": 443,
-      "password": "M7v%w11Se*",
-      "tls": {
-        "enabled": true,
-        "server_name": "tttyder.wsone.icu",
-        "insecure": false
-      }
+      "server": "139.84.166.47",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "GEdoeeqLZtkJRgSa"
     },
     {
       "type": "vless",
@@ -36,25 +32,12 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 03 - sanchun",
-      "server": "34.131.228.210",
-      "server_port": 443,
-      "password": "M7v%w11Se*",
-      "tls": {
-        "enabled": true,
-        "server_name": "hyfuuf6.wsone.icu",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇳 印度 (India) 01 - sanchun",
-        "🇮🇳 印度 (India) 02 - sanchun",
-        "🇮🇳 印度 (India) 03 - sanchun"
+        "🇮🇳 印度 (India) 02 - sanchun"
       ]
     },
     {
@@ -62,8 +45,7 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇳 印度 (India) 01 - sanchun",
-        "🇮🇳 印度 (India) 02 - sanchun",
-        "🇮🇳 印度 (India) 03 - sanchun"
+        "🇮🇳 印度 (India) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

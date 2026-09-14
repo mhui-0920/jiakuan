@@ -5,12 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - sanchun
-  server: 130.49.189.158
-  port: 43558
+  server: 89.105.206.124
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
+  type: vless
+  uuid: 4360f941-b541-0028-8507-2de3763e0cfd
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
+    short-id: 00a61d55a07de885
+  servername: nl.convert-flow.net
+  client-fingerprint: qq
 - name: 🇷🇺 俄罗斯 (Russia) 02 - sanchun
   server: 91.240.86.70
   port: 22443
@@ -20,6 +26,13 @@ proxies:
   sni: hy.quattro-tech.ru
   skip-cert-verify: false
 - name: 🇷🇺 俄罗斯 (Russia) 03 - sanchun
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
+- name: 🇷🇺 俄罗斯 (Russia) 04 - sanchun
   server: msk.frkn.org
   port: 443
   udp: true
@@ -27,7 +40,7 @@ proxies:
   password: f317b5d6-d399-4d3d-a051-89d674ae953c
   sni: msk.frkn.org
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 04 - sanchun
+- name: 🇷🇺 俄罗斯 (Russia) 05 - sanchun
   server: 186.246.12.242
   port: 2053
   udp: true
@@ -40,20 +53,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇷🇺 俄罗斯 (Russia) 05 - sanchun
-  server: 91.224.87.22
-  port: 9882
-  udp: true
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-  servername: dl.google.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
 proxy-groups:
 - name: PROXIES
   type: select
