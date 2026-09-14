@@ -5,36 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - sanchun
-  server: 185.87.24.2
-  port: 2085
+  server: add.life-pro.ir
+  port: 8082
   udp: true
   type: vless
-  uuid: a1d1b142-17c5-4472-99de-df220df4d4fb
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  uuid: 79f98593-6a21-4783-a425-3d5609a79df1
 - name: 🇹🇷 土耳其 (Turkey) 02 - sanchun
-  server: 185.87.24.167
-  port: 2085
+  server: me17.msjia8844.site
+  port: 7443
   udp: true
-  type: vless
-  uuid: c9373ff0-c263-4949-885f-366671f3c6a1
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  type: hysteria2
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
 - name: 🇹🇷 土耳其 (Turkey) 03 - sanchun
-  server: 156.67.63.231
-  port: 443
+  server: 213.156.152.75
+  port: 8443
   udp: true
   type: vless
-  uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
-  flow: xtls-rprx-vision
+  uuid: f1505323-ecb6-4152-9a5b-d37b3ae1cacf
   tls: true
   reality-opts:
-    public-key: PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI
-    short-id: 5606d4a25c99e7af
-  servername: sync-bridge.org
-  client-fingerprint: chrome
+    public-key: 72SJFDXHCtB2fWWRrjMj23J8iJ8T_2jvj-iNThmLREs
+    short-id: 8dc4f3de3846efa9
+  servername: play-apps-features.googleusercontent.com
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 04 - sanchun
   server: 151.241.226.201
   port: 2053
@@ -48,16 +45,44 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 05 - sanchun
-  server: me17.msjia8844.site
-  port: 7443
+  server: 156.67.63.231
+  port: 443
   udp: true
-  type: hysteria2
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
+  type: vless
+  uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI
+    short-id: 5606d4a25c99e7af
+  servername: sync-bridge.org
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 06 - sanchun
+  server: 158.94.216.50
+  port: 32306
+  udp: true
+  type: vless
+  uuid: f1505323-ecb6-4152-9a5b-d37b3ae1cacf
+  tls: true
+  reality-opts:
+    public-key: 5iqitmx5fd71pubTxlrX0sd-ei7palcgVL7vtKToJGA
+    short-id: 61614f026070554f
+  servername: play-apps-features.googleusercontent.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 07 - sanchun
+  server: 146.103.113.170
+  port: 56218
+  udp: true
+  type: vless
+  uuid: 15553b23-a621-4dfd-995e-2fe28d124526
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: aFbCyrLOre-V3ORpBjqenGfDt62Ng_i1sSq-DmZHVgc
+    short-id: 89e0494514ec
+  servername: www.oracle.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 08 - sanchun
   server: 13.143.137.164
   port: 9443
   udp: true
@@ -81,6 +106,8 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 04 - sanchun
   - 🇹🇷 土耳其 (Turkey) 05 - sanchun
   - 🇹🇷 土耳其 (Turkey) 06 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 07 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 08 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -92,5 +119,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 04 - sanchun
   - 🇹🇷 土耳其 (Turkey) 05 - sanchun
   - 🇹🇷 土耳其 (Turkey) 06 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 07 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 08 - sanchun
 rules:
 - MATCH,PROXIES

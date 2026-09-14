@@ -6,8 +6,8 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - sanchun",
-      "server": "193.42.39.10",
-      "server_port": 33743,
+      "server": "91.193.17.156",
+      "server_port": 9458,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
       "tls": {
         "enabled": true,
@@ -30,15 +30,15 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - sanchun",
-      "server": "91.193.17.156",
-      "server_port": 9458,
+      "server": "79.141.174.147",
+      "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
       "tls": {
         "enabled": true,
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -63,7 +63,7 @@
         "server_name": "www.blocket.se",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -73,8 +73,56 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 04 - sanchun",
+      "server": "89.47.55.9",
+      "server_port": 8443,
+      "uuid": "dca76b88-b038-e82b-45e1-1d76b476d7ca",
+      "tls": {
+        "enabled": true,
+        "server_name": "download.intel.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "tl7xSwczBM--oN16cxdLnAD8GMf8tA0f-FXE9ilCCjA",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - sanchun",
+      "server": "31.77.111.11",
+      "server_port": 43439,
+      "uuid": "428e923f-e608-412b-9e51-3b09ffab551f",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.higames.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4",
+          "short_id": "39ad36226f3abec8"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "streaming"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - sanchun",
       "server": "se-node.rumedia-cdn.com",
       "server_port": 25443,
       "password": "29ffde49-e1d6-4dcd-a135-352920f9f0b8",
@@ -86,7 +134,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - sanchun",
+      "tag": "🇸🇪 瑞典 (Sweden) 07 - sanchun",
+      "server": "193.25.216.175",
+      "server_port": 24443,
+      "uuid": "15553b23-a621-4dfd-995e-2fe28d124526",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "se.chick-team.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "uUI9qoHBKhlrPy4BRJSQQygc4jstmLKLrhRI6jqhYxw",
+          "short_id": "8df4211d612176a5"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 08 - sanchun",
       "server": "177.3.215.171",
       "server_port": 443,
       "uuid": "c47b421f-65f1-4190-b7ba-bd2045086fe4",
@@ -107,22 +176,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - sanchun",
-      "server": "88.216.130.139",
-      "server_port": 8443,
-      "uuid": "fb67fd37-8d41-43a9-a093-c0b807fc5299",
+      "tag": "🇸🇪 瑞典 (Sweden) 09 - sanchun",
+      "server": "in4.linestring.ru",
+      "server_port": 443,
+      "uuid": "901cb0b0-0185-4983-b42a-67c431fa2f10",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "apple.com",
+        "server_name": "api-maps.yandex.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "iRym2aMWC0ZoLJL7MtJm9p0xqFMutfe6_5B5tZyobxU",
-          "short_id": ""
+          "public_key": "eWZTT3b4Xa0dYUdW52WtF1n8w3-AS4EHcaettRRa_0Q",
+          "short_id": "5f96c103e5734528"
         }
       }
     },
@@ -136,7 +205,10 @@
         "🇸🇪 瑞典 (Sweden) 03 - sanchun",
         "🇸🇪 瑞典 (Sweden) 04 - sanchun",
         "🇸🇪 瑞典 (Sweden) 05 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 06 - sanchun"
+        "🇸🇪 瑞典 (Sweden) 06 - sanchun",
+        "🇸🇪 瑞典 (Sweden) 07 - sanchun",
+        "🇸🇪 瑞典 (Sweden) 08 - sanchun",
+        "🇸🇪 瑞典 (Sweden) 09 - sanchun"
       ]
     },
     {
@@ -148,7 +220,10 @@
         "🇸🇪 瑞典 (Sweden) 03 - sanchun",
         "🇸🇪 瑞典 (Sweden) 04 - sanchun",
         "🇸🇪 瑞典 (Sweden) 05 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 06 - sanchun"
+        "🇸🇪 瑞典 (Sweden) 06 - sanchun",
+        "🇸🇪 瑞典 (Sweden) 07 - sanchun",
+        "🇸🇪 瑞典 (Sweden) 08 - sanchun",
+        "🇸🇪 瑞典 (Sweden) 09 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

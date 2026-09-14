@@ -5,6 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇴 挪威 (Norway) 01 - sanchun
+  server: 185.213.23.63
+  port: 990
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: 🇳🇴 挪威 (Norway) 02 - sanchun
+  server: 89.185.81.65
+  port: 40443
+  udp: true
+  type: vless
+  uuid: ed91e79c-f6bf-4fba-8cc0-6d45acaec22b
+  tls: true
+  reality-opts:
+    public-key: dvx6zPztKbgHpYaW6J4OZQC74Uy0JS6HUVdDfbjG5V4
+    short-id: '7606'
+  servername: deepl.com
+  client-fingerprint: firefox
+- name: 🇳🇴 挪威 (Norway) 03 - sanchun
   server: 46.29.238.88
   port: 40443
   udp: true
@@ -16,44 +35,46 @@ proxies:
     short-id: f7b2
   servername: deepl.com
   client-fingerprint: qq
-- name: 🇳🇴 挪威 (Norway) 02 - sanchun
-  server: 151.242.169.119
-  port: 443
-  udp: true
-  type: vless
-  uuid: 10de5732-5d62-43bd-80a2-ec678100824a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
-    short-id: fd55b698ee8c3629
-  servername: yidio.com
-  client-fingerprint: qq
-- name: 🇳🇴 挪威 (Norway) 03 - sanchun
+- name: 🇳🇴 挪威 (Norway) 04 - sanchun
   server: 151.242.168.125
   port: 390
   udp: true
   type: vless
-  uuid: b02ff150-ee30-46e0-9ea1-adbfd7762a06
+  uuid: 7b363f9c-3df9-4b60-a789-9cd36be0bdfe
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: 5RCgAVjaT7hwdVIKAEULswXGqR127ZOZV6X17nEhYk8
     short-id: b545fe8c5e22f92d
   servername: bowandbead.com
-  client-fingerprint: ios
-- name: 🇳🇴 挪威 (Norway) 04 - sanchun
-  server: aldebaran.yokkastars.com
-  port: 40443
+  client-fingerprint: qq
+- name: 🇳🇴 挪威 (Norway) 05 - sanchun
+  server: 151.242.169.119
+  port: 443
   udp: true
   type: vless
-  uuid: ed91e79c-f6bf-4fba-8cc0-6d45acaec22b
+  uuid: 12350807-4c2a-49fa-aff0-664be66cccb7
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: dvx6zPztKbgHpYaW6J4OZQC74Uy0JS6HUVdDfbjG5V4
-    short-id: '7606'
-  servername: deepl.com
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: fd55b698ee8c3629
+  servername: yidio.com
+  client-fingerprint: firefox
+- name: 🇳🇴 挪威 (Norway) 06 - sanchun
+  server: 178.250.157.177
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 617dc5cf-915f-43b2-a0d4-4057584d9d33
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: id.vk.com
   client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless-grpc-reality
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,6 +84,8 @@ proxy-groups:
   - 🇳🇴 挪威 (Norway) 02 - sanchun
   - 🇳🇴 挪威 (Norway) 03 - sanchun
   - 🇳🇴 挪威 (Norway) 04 - sanchun
+  - 🇳🇴 挪威 (Norway) 05 - sanchun
+  - 🇳🇴 挪威 (Norway) 06 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,5 +95,7 @@ proxy-groups:
   - 🇳🇴 挪威 (Norway) 02 - sanchun
   - 🇳🇴 挪威 (Norway) 03 - sanchun
   - 🇳🇴 挪威 (Norway) 04 - sanchun
+  - 🇳🇴 挪威 (Norway) 05 - sanchun
+  - 🇳🇴 挪威 (Norway) 06 - sanchun
 rules:
 - MATCH,PROXIES
