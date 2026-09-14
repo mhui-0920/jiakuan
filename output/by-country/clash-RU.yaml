@@ -5,20 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - sanchun
+  server: 147.78.182.3
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 8bf3e040-8ac9-5d0e-304f-9b735e145de8
+  tls: true
+  reality-opts:
+    public-key: Nnpwm8dqFl9dlMJmg0M9G11vmgCKzNagFTn4tH4sWy4
+  servername: dl.kaspersky.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: 🇷🇺 俄罗斯 (Russia) 02 - sanchun
   server: 185.39.204.3
   port: 8098
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: PluSKSrbtxTvlVv7BOUwn4
-- name: 🇷🇺 俄罗斯 (Russia) 02 - sanchun
-  server: 91.196.32.163
-  port: 443
-  udp: true
-  type: hysteria2
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: 91.196.32.163
-  skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 03 - sanchun
   server: 89.105.206.123
   port: 443
@@ -33,13 +39,6 @@ proxies:
   servername: nl.convert-flow.net
   client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 04 - sanchun
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
-- name: 🇷🇺 俄罗斯 (Russia) 05 - sanchun
   server: 91.240.86.70
   port: 22443
   udp: true
@@ -47,6 +46,13 @@ proxies:
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   sni: hy.quattro-tech.ru
   skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 05 - sanchun
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
 - name: 🇷🇺 俄罗斯 (Russia) 06 - sanchun
   server: els1.mangshe.xyz
   port: 2056
@@ -56,40 +62,27 @@ proxies:
   sni: www.microsoft.com
   skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 07 - sanchun
-  server: 170.168.99.8
-  port: 8443
-  udp: true
-  type: vless
-  uuid: dca76b88-b038-e82b-45e1-1d76b476d7ca
-  tls: true
-  reality-opts:
-    public-key: -GbQJg3bnEGEVFjVaRRu01cgF1f0K_maI4d5MWtMb28
-  servername: www.epson.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇷🇺 俄罗斯 (Russia) 08 - sanchun
   server: msk.frkn.org
   port: 443
   udp: true
   type: hysteria2
   password: f317b5d6-d399-4d3d-a051-89d674ae953c
   sni: msk.frkn.org
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 09 - sanchun
-  server: 45.12.75.242
-  port: 26424
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 08 - sanchun
+  server: 193.233.74.61
+  port: 443
   udp: true
   type: vless
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  uuid: 777ce726-882f-42b2-8ae4-267e5311b13c
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  servername: ya.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 10 - sanchun
+    public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
+    short-id: 8ffa160e608bf539
+  servername: de2.pink-perfect.ru
+  client-fingerprint: qq
+- name: 🇷🇺 俄罗斯 (Russia) 09 - sanchun
   server: 188.68.218.205
   port: 443
   udp: true
@@ -100,10 +93,23 @@ proxies:
     public-key: 8dPBbufX7ST4NrD8Etatp_FR_mbd38vXa2ZXCVLxjQ4
     short-id: 0fc62d3cd3089adb
   servername: static-basket-01.wbbasket.ru
-  client-fingerprint: edge
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: grpc
+- name: 🇷🇺 俄罗斯 (Russia) 10 - sanchun
+  server: 158.160.17.175
+  port: 8443
+  udp: true
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: BVwyZUEoTujbWy-7QczfJyYAsHw2y_H8SMMfbK5AEho
+    short-id: 81dd866769f057
+  servername: ya.ru
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

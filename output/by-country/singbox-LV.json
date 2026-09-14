@@ -15,33 +15,33 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - sanchun",
       "server": "185.135.86.175",
-      "server_port": 9033,
-      "method": "aes-256-cfb",
-      "password": "UTJA57ypk2XKQpnm"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - sanchun",
-      "server": "185.135.86.175",
       "server_port": 9086,
       "method": "aes-256-cfb",
       "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - sanchun",
+      "server": "185.135.86.175",
+      "server_port": 9068,
+      "method": "aes-256-cfb",
+      "password": "mwgRg9hRq3b4Qnwb"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - sanchun",
       "server": "185.135.86.175",
-      "server_port": 9082,
+      "server_port": 9036,
       "method": "aes-256-cfb",
-      "password": "45xgMgm386pjWjTx"
+      "password": "hbtvgUz5uNYyB3Rf"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - sanchun",
       "server": "185.135.86.175",
-      "server_port": 9036,
+      "server_port": 9033,
       "method": "aes-256-cfb",
-      "password": "hbtvgUz5uNYyB3Rf"
+      "password": "UTJA57ypk2XKQpnm"
     },
     {
       "type": "shadowsocks",
@@ -52,20 +52,33 @@
       "password": "Yg4MbdXFQ9HFFVY6"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - sanchun",
-      "server": "185.135.86.175",
-      "server_port": 9017,
-      "method": "aes-256-cfb",
-      "password": "HAVAdE3nXhqA5nHp"
+      "server": "89.105.206.123",
+      "server_port": 443,
+      "uuid": "3a22ca95-bd99-01ac-a799-f8f73930ea05",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl.convert-flow.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w",
+          "short_id": "00a61d55a07de885"
+        }
+      }
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 08 - sanchun",
       "server": "185.135.86.175",
-      "server_port": 9094,
+      "server_port": 9017,
       "method": "aes-256-cfb",
-      "password": "rpgbNnU9rDDU4aWZ"
+      "password": "HAVAdE3nXhqA5nHp"
     },
     {
       "type": "vless",
@@ -79,7 +92,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -91,27 +104,6 @@
     {
       "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 10 - sanchun",
-      "server": "89.105.206.123",
-      "server_port": 443,
-      "uuid": "3a22ca95-bd99-01ac-a799-f8f73930ea05",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nl.convert-flow.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w",
-          "short_id": "00a61d55a07de885"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 11 - sanchun",
       "server": "195.123.213.28",
       "server_port": 443,
       "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
@@ -132,27 +124,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 12 - sanchun",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 11 - sanchun",
       "server": "185.135.86.175",
-      "server_port": 9068,
+      "server_port": 9082,
       "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 13 - sanchun",
-      "server": "46.8.237.12",
-      "server_port": 2096,
-      "uuid": "1a67126c-b9c4-4e78-b96e-eabd4002ab0c",
-      "tls": {
-        "enabled": true,
-        "server_name": "uycneynsieuocxniseunciusecmsepiock.novexgroup.ir",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
+      "password": "45xgMgm386pjWjTx"
     },
     {
       "type": "selector",
@@ -169,9 +145,7 @@
         "🇱🇻 拉脱维亚 (Latvia) 08 - sanchun",
         "🇱🇻 拉脱维亚 (Latvia) 09 - sanchun",
         "🇱🇻 拉脱维亚 (Latvia) 10 - sanchun",
-        "🇱🇻 拉脱维亚 (Latvia) 11 - sanchun",
-        "🇱🇻 拉脱维亚 (Latvia) 12 - sanchun",
-        "🇱🇻 拉脱维亚 (Latvia) 13 - sanchun"
+        "🇱🇻 拉脱维亚 (Latvia) 11 - sanchun"
       ]
     },
     {
@@ -188,9 +162,7 @@
         "🇱🇻 拉脱维亚 (Latvia) 08 - sanchun",
         "🇱🇻 拉脱维亚 (Latvia) 09 - sanchun",
         "🇱🇻 拉脱维亚 (Latvia) 10 - sanchun",
-        "🇱🇻 拉脱维亚 (Latvia) 11 - sanchun",
-        "🇱🇻 拉脱维亚 (Latvia) 12 - sanchun",
-        "🇱🇻 拉脱维亚 (Latvia) 13 - sanchun"
+        "🇱🇻 拉脱维亚 (Latvia) 11 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

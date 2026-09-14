@@ -5,6 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - sanchun
+  server: 104.143.223.218
+  port: 2085
+  udp: true
+  type: vless
+  uuid: 2f3f58c9-7a49-4783-9722-7fcae7e3a203
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇦🇪 阿联酋 (UAE) 02 - sanchun
+  server: 104.143.223.65
+  port: 2085
+  udp: true
+  type: vless
+  uuid: 2f3f58c9-7a49-4783-9722-7fcae7e3a203
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇦🇪 阿联酋 (UAE) 03 - sanchun
+  server: 104.143.223.63
+  port: 2085
+  udp: true
+  type: vless
+  uuid: 94248dca-e56b-424a-9232-401178a4f8f9
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇦🇪 阿联酋 (UAE) 04 - sanchun
   server: 31.56.189.27
   port: 2087
   udp: true
@@ -17,12 +44,22 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: freegrpc
-- name: 🇦🇪 阿联酋 (UAE) 02 - sanchun
+- name: 🇦🇪 阿联酋 (UAE) 05 - sanchun
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 06 - sanchun
   server: 89.47.55.8
   port: 8443
   udp: true
   type: vless
-  uuid: 4350213a-b4e7-262a-0bd7-bd16957cf71a
+  uuid: dca76b88-b038-e82b-45e1-1d76b476d7ca
   tls: true
   reality-opts:
     public-key: iVDh09Vm2DqZMNQoUdf-LCZ6TqVGb9mLXnClAK2LRj4
@@ -31,7 +68,24 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇦🇪 阿联酋 (UAE) 03 - sanchun
+- name: 🇦🇪 阿联酋 (UAE) 07 - sanchun
+  server: 85.204.107.172
+  port: 8080
+  udp: true
+  type: hysteria2
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: hopp-romania-new.roxa.org
+  skip-cert-verify: false
+- name: 🇦🇪 阿联酋 (UAE) 08 - sanchun
+  server: uae.unixzone.us
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇦🇪 阿联酋 (UAE) 09 - sanchun
   server: 78.40.195.140
   port: 443
   udp: true
@@ -43,34 +97,7 @@ proxies:
     public-key: Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo
     short-id: 98096455d963bdbb
   servername: www.booking.com
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 04 - sanchun
-  server: 130.49.161.70
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 05 - sanchun
-  server: 85.204.107.178
-  port: 8080
-  udp: true
-  type: hysteria2
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 06 - sanchun
-  server: uae.unixzone.us
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,6 +109,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - sanchun
   - 🇦🇪 阿联酋 (UAE) 05 - sanchun
   - 🇦🇪 阿联酋 (UAE) 06 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 07 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 08 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 09 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -93,5 +123,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - sanchun
   - 🇦🇪 阿联酋 (UAE) 05 - sanchun
   - 🇦🇪 阿联酋 (UAE) 06 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 07 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 08 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 09 - sanchun
 rules:
 - MATCH,PROXIES

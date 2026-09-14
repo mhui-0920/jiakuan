@@ -16,7 +16,7 @@ proxies:
     public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
     short-id: 00a61d55a07de885
   servername: nl.convert-flow.net
-  client-fingerprint: qq
+  client-fingerprint: firefox
 - name: 🇨🇭 瑞士 (Switzerland) 02 - sanchun
   server: 45.90.59.15
   port: 443
@@ -35,23 +35,10 @@ proxies:
   port: 8443
   udp: true
   type: hysteria2
-  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
+  password: 52e3dd44-ed23-4030-b0cc-5b5a953f2d4d
   sni: speedtestmark.com
   skip-cert-verify: false
 - name: 🇨🇭 瑞士 (Switzerland) 04 - sanchun
-  server: netlivpn5505.ffffdsaaa.workers.dev
-  port: 443
-  udp: true
-  type: vless
-  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
-  tls: true
-  servername: netlivpn5505.ffffdsaaa.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇨🇭 瑞士 (Switzerland) 05 - sanchun
   server: 104.165.205.40
   port: 8443
   udp: true
@@ -68,7 +55,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - sanchun
   - 🇨🇭 瑞士 (Switzerland) 03 - sanchun
   - 🇨🇭 瑞士 (Switzerland) 04 - sanchun
-  - 🇨🇭 瑞士 (Switzerland) 05 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,6 +64,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - sanchun
   - 🇨🇭 瑞士 (Switzerland) 03 - sanchun
   - 🇨🇭 瑞士 (Switzerland) 04 - sanchun
-  - 🇨🇭 瑞士 (Switzerland) 05 - sanchun
 rules:
 - MATCH,PROXIES

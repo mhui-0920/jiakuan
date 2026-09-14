@@ -8,7 +8,7 @@
       "tag": "🇸🇪 瑞典 (Sweden) 01 (移动家宽) - sanchun",
       "server": "170.168.99.8",
       "server_port": 8443,
-      "uuid": "4350213a-b4e7-262a-0bd7-bd16957cf71a",
+      "uuid": "dca76b88-b038-e82b-45e1-1d76b476d7ca",
       "tls": {
         "enabled": true,
         "server_name": "cdn.steamstatic.com",
@@ -28,18 +28,40 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun",
+      "server": "118.167.209.5",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 (移动家宽) - sanchun"
+        "🇸🇪 瑞典 (Sweden) 01 (移动家宽) - sanchun",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 (移动家宽) - sanchun"
+        "🇸🇪 瑞典 (Sweden) 01 (移动家宽) - sanchun",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
