@@ -5,15 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - sanchun
-  server: 94.183.170.135
-  port: 443
-  udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - sanchun
   server: 94.183.170.147
   port: 8443
   udp: true
@@ -28,17 +19,16 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 9d30d49278
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - sanchun
   server: 94.183.170.135
-  port: 8443
+  port: 443
   udp: true
   type: vless
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  tls: true
-  servername: estproxy4.lockdwn.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - sanchun
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun
   server: 94.183.239.1
   port: 443
   udp: true
@@ -48,20 +38,7 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 91f69ceb59b24b367c71d10183609b30
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - sanchun
-  server: 132.243.65.15
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3ff23a7c-31d2-413b-91a6-3d72cc7acc7e
-  tls: true
-  servername: d4-ee2.cloud-cdn.xyz
-  skip-cert-verify: false
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: content.v1.Feed
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - sanchun
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - sanchun
   server: ee1.sferavpn.pro
   port: 443
   udp: true
@@ -71,6 +48,16 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - sanchun
+  server: 94.183.170.135
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  tls: true
+  servername: estproxy4.lockdwn.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,7 +68,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - sanchun
-  - 🇪🇪 爱沙尼亚 (Estonia) 06 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -92,6 +78,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - sanchun
-  - 🇪🇪 爱沙尼亚 (Estonia) 06 - sanchun
 rules:
 - MATCH,PROXIES

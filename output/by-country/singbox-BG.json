@@ -6,7 +6,23 @@
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - sanchun",
-      "server": "neth9.lunariai.ru",
+      "server": "192.145.31.5",
+      "server_port": 8443,
+      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
+      "tls": {
+        "enabled": true,
+        "server_name": "neth9.lunariai.ru",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - sanchun",
+      "server": "192.145.31.5",
       "server_port": 443,
       "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
       "transport": {
@@ -14,8 +30,16 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - sanchun",
+      "server": "213.183.63.60",
+      "server_port": 9061,
+      "method": "aes-256-cfb",
+      "password": "4R3hUfZ2FHhDmNcP"
+    },
+    {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - sanchun",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - sanchun",
       "server": "193.148.59.178",
       "server_port": 443,
       "uuid": "20d7c485-5d24-49b5-a5cc-bb7a7daf9908",
@@ -36,7 +60,23 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - sanchun",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - sanchun",
+      "server": "213.183.63.60",
+      "server_port": 9066,
+      "method": "aes-256-cfb",
+      "password": "2KUaE2a8NWTvuCZ3"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - sanchun",
+      "server": "213.183.63.60",
+      "server_port": 9098,
+      "method": "aes-256-cfb",
+      "password": "aLpQtfEZe445QyHk"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - sanchun",
       "server": "213.183.63.60",
       "server_port": 9028,
       "method": "aes-256-cfb",
@@ -44,39 +84,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - sanchun",
-      "server": "192.145.31.5",
-      "server_port": 8443,
-      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
-      "tls": {
-        "enabled": true,
-        "server_name": "neth9.lunariai.ru",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - sanchun",
-      "server": "213.183.63.60",
-      "server_port": 9049,
-      "method": "aes-256-cfb",
-      "password": "PRBf4BS2HvJqtWxY"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - sanchun",
-      "server": "213.183.63.60",
-      "server_port": 9030,
-      "method": "aes-256-cfb",
-      "password": "GeregetR8cvQHzYr"
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - sanchun",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - sanchun",
       "server": "144.31.50.236",
       "server_port": 443,
       "uuid": "1c332eae-7e02-4acd-996d-4eb3e652401c",
@@ -106,7 +114,8 @@
         "🇧🇬 保加利亚 (Bulgaria) 04 - sanchun",
         "🇧🇬 保加利亚 (Bulgaria) 05 - sanchun",
         "🇧🇬 保加利亚 (Bulgaria) 06 - sanchun",
-        "🇧🇬 保加利亚 (Bulgaria) 07 - sanchun"
+        "🇧🇬 保加利亚 (Bulgaria) 07 - sanchun",
+        "🇧🇬 保加利亚 (Bulgaria) 08 - sanchun"
       ]
     },
     {
@@ -119,7 +128,8 @@
         "🇧🇬 保加利亚 (Bulgaria) 04 - sanchun",
         "🇧🇬 保加利亚 (Bulgaria) 05 - sanchun",
         "🇧🇬 保加利亚 (Bulgaria) 06 - sanchun",
-        "🇧🇬 保加利亚 (Bulgaria) 07 - sanchun"
+        "🇧🇬 保加利亚 (Bulgaria) 07 - sanchun",
+        "🇧🇬 保加利亚 (Bulgaria) 08 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

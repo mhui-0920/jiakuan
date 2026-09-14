@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - sanchun
-  server: 64.49.38.3
-  port: 8443
-  udp: true
-  type: vless
-  uuid: dca76b88-b038-e82b-45e1-1d76b476d7ca
-  tls: true
-  reality-opts:
-    public-key: 92KJ-ibs1qTy8nODGrHTW8T0b_trG7McLYv8My9o2EE
-  servername: download.autodesk.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇸🇨 塞舌尔 (Seychelles) 02 - sanchun
   server: 156.226.168.221
   port: 35193
   udp: true
@@ -37,13 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01 - sanchun
-  - 🇸🇨 塞舌尔 (Seychelles) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - sanchun
-  - 🇸🇨 塞舌尔 (Seychelles) 02 - sanchun
 rules:
 - MATCH,PROXIES

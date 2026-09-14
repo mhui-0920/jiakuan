@@ -6,28 +6,6 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - sanchun",
-      "server": "194.87.59.17",
-      "server_port": 2085,
-      "uuid": "128314f6-f09a-426f-b758-b8e559c38ddb",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02 - sanchun",
-      "server": "194.87.59.12",
-      "server_port": 2085,
-      "uuid": "128314f6-f09a-426f-b758-b8e559c38ddb",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 03 - sanchun",
       "server": "188.130.208.210",
       "server_port": 443,
       "uuid": "08b6dd4b-08df-4aa2-9580-92a3360cf07c",
@@ -51,18 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - sanchun",
-        "🇨🇿 捷克 (Czech) 02 - sanchun",
-        "🇨🇿 捷克 (Czech) 03 - sanchun"
+        "🇨🇿 捷克 (Czech) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - sanchun",
-        "🇨🇿 捷克 (Czech) 02 - sanchun",
-        "🇨🇿 捷克 (Czech) 03 - sanchun"
+        "🇨🇿 捷克 (Czech) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
