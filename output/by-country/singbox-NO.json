@@ -4,18 +4,47 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇳🇴 挪威 (Norway) 01 - sanchun",
+      "server": "185.213.23.63",
+      "server_port": 990,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇴 挪威 (Norway) 02 - sanchun",
+      "server": "151.242.169.120",
+      "server_port": 443,
+      "uuid": "7fa25dd9-19a4-4d3c-b91a-edc76d55c369",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yidio.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "kfOp2ld8bGJfSDyngzRgKk4P3-_JuacNvAu4SrPORBI",
+          "short_id": "dc6b3c4765a5f5d5"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇴 挪威 (Norway) 03 - sanchun",
       "server": "151.242.168.125",
       "server_port": 390,
-      "uuid": "b02ff150-ee30-46e0-9ea1-adbfd7762a06",
+      "uuid": "7b363f9c-3df9-4b60-a789-9cd36be0bdfe",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "bowandbead.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -25,8 +54,20 @@
       }
     },
     {
+      "type": "anytls",
+      "tag": "🇳🇴 挪威 (Norway) 04 - sanchun",
+      "server": "195.54.170.7",
+      "server_port": 1443,
+      "password": "b652305a-0c63-4527-8cb3-0ea582076124",
+      "tls": {
+        "enabled": true,
+        "server_name": "no.freeguard.org",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇳🇴 挪威 (Norway) 02 - sanchun",
+      "tag": "🇳🇴 挪威 (Norway) 05 - sanchun",
       "server": "46.29.238.88",
       "server_port": 40443,
       "uuid": "db320947-adfb-400d-b60b-383b8324bffe",
@@ -35,7 +76,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -45,12 +86,36 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇳🇴 挪威 (Norway) 06 - sanchun",
+      "server": "aldebaran.yokkastars.com",
+      "server_port": 40443,
+      "uuid": "ed91e79c-f6bf-4fba-8cc0-6d45acaec22b",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "dvx6zPztKbgHpYaW6J4OZQC74Uy0JS6HUVdDfbjG5V4",
+          "short_id": "7606"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇳🇴 挪威 (Norway) 01 - sanchun",
-        "🇳🇴 挪威 (Norway) 02 - sanchun"
+        "🇳🇴 挪威 (Norway) 02 - sanchun",
+        "🇳🇴 挪威 (Norway) 03 - sanchun",
+        "🇳🇴 挪威 (Norway) 04 - sanchun",
+        "🇳🇴 挪威 (Norway) 05 - sanchun",
+        "🇳🇴 挪威 (Norway) 06 - sanchun"
       ]
     },
     {
@@ -58,7 +123,11 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇴 挪威 (Norway) 01 - sanchun",
-        "🇳🇴 挪威 (Norway) 02 - sanchun"
+        "🇳🇴 挪威 (Norway) 02 - sanchun",
+        "🇳🇴 挪威 (Norway) 03 - sanchun",
+        "🇳🇴 挪威 (Norway) 04 - sanchun",
+        "🇳🇴 挪威 (Norway) 05 - sanchun",
+        "🇳🇴 挪威 (Norway) 06 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

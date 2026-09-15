@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - sanchun
-  server: 89.105.206.124
+  server: 131.123.25.4
   port: 443
   udp: true
   type: vless
@@ -15,9 +15,50 @@ proxies:
   reality-opts:
     public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
     short-id: 00a61d55a07de885
-  servername: nl.convert-flow.net
-  client-fingerprint: qq
+  servername: fr.convert-flow.net
+  client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 02 - sanchun
+  server: 45.151.182.218
+  port: 20443
+  udp: true
+  type: vless
+  uuid: dd8ecb64-ab2d-46a4-ab1e-3b033f7accf1
+  tls: true
+  reality-opts:
+    public-key: XSYZ-2sVUcxX9plaTOF81gwY07XlBLWfMIOhwQG84zs
+    short-id: 72ce2232aaabd8ee
+  servername: m.vk.ru
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇷🇺 俄罗斯 (Russia) 03 - sanchun
+  server: 131.123.25.4
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4360f941-b541-0318-8507-2de3763e0cfd
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
+    short-id: 00a61d55a07de885
+  servername: fr.convert-flow.net
+  client-fingerprint: qq
+- name: 🇷🇺 俄罗斯 (Russia) 04 - sanchun
+  server: 138.124.254.136
+  port: 2053
+  udp: true
+  type: vless
+  uuid: f24c25fe-937d-414b-8180-d54c96220e71
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: f3Ooz7Yxw4QqQNxddxYG0zOewK8zullgKVTBZxR1a0Y
+    short-id: cc981b746a300649
+  servername: www.samsung.com
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 05 - sanchun
   server: 91.240.86.70
   port: 22443
   udp: true
@@ -25,34 +66,38 @@ proxies:
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   sni: hy.quattro-tech.ru
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 03 - sanchun
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
-- name: 🇷🇺 俄罗斯 (Russia) 04 - sanchun
+- name: 🇷🇺 俄罗斯 (Russia) 06 - sanchun
   server: msk.frkn.org
   port: 443
   udp: true
   type: hysteria2
   password: f317b5d6-d399-4d3d-a051-89d674ae953c
   sni: msk.frkn.org
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 05 - sanchun
-  server: 186.246.12.242
-  port: 2053
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 07 - sanchun
+  server: 45.151.182.218
+  port: 13443
   udp: true
   type: vless
-  uuid: 9a47a8ff-8cdd-4a35-b765-fbad6d40e0a0
+  uuid: dd8ecb64-ab2d-46a4-ab1e-3b033f7accf1
   tls: true
-  servername: bz9.wba-pn.ru
-  skip-cert-verify: false
+  reality-opts:
+    public-key: blwPVUA8yK21XP6g_Z400DbRNmur8o18srBKpEFHYHg
+    short-id: 5a96d8dc0dc12ab5
+  servername: api-maps.yandex.ru
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 08 - sanchun
+  server: 45.12.75.242
+  port: 26424
+  udp: true
+  type: vless
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,6 +108,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 04 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 05 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 06 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 07 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 08 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,5 +121,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 04 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 05 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 06 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 07 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 08 - sanchun
 rules:
 - MATCH,PROXIES

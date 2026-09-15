@@ -5,6 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - sanchun
+  server: 185.87.24.172
+  port: 2085
+  udp: true
+  type: vless
+  uuid: a7e36d37-94e6-41b3-92f8-05e88ae0c9da
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇹🇷 土耳其 (Turkey) 02 - sanchun
+  server: 188.132.174.236
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
+- name: 🇹🇷 土耳其 (Turkey) 03 - sanchun
   server: 107.161.174.26
   port: 443
   udp: true
@@ -16,7 +32,7 @@ proxies:
     public-key: N8tPKh6gTyc6L5GOmBn_3wIy707a-5QYB0FrF2HigUc
   servername: books.blackbigdog.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 02 - sanchun
+- name: 🇹🇷 土耳其 (Turkey) 04 - sanchun
   server: 156.67.63.231
   port: 443
   udp: true
@@ -29,7 +45,7 @@ proxies:
     short-id: 5606d4a25c99e7af
   servername: sync-bridge.org
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 - sanchun
+- name: 🇹🇷 土耳其 (Turkey) 05 - sanchun
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -41,17 +57,7 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 04 - sanchun
-  server: me17.msjia8844.site
-  port: 7443
-  udp: true
-  type: hysteria2
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
-- name: 🇹🇷 土耳其 (Turkey) 05 - sanchun
+- name: 🇹🇷 土耳其 (Turkey) 06 - sanchun
   server: 13.143.137.164
   port: 9443
   udp: true
@@ -64,12 +70,6 @@ proxies:
     short-id: e336c9a786fae301
   servername: plaincanvas.videoclothing.xyz
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 06 - sanchun
-  server: 188.132.237.20
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 3b9e513e-30d9-4ca8-8340-8f33fc6710de
 proxy-groups:
 - name: PROXIES
   type: select

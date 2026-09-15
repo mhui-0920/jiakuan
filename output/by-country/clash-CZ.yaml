@@ -5,6 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - sanchun
+  server: 194.87.59.14
+  port: 2085
+  udp: true
+  type: vless
+  uuid: a7e36d37-94e6-41b3-92f8-05e88ae0c9da
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 02 - sanchun
   server: 194.87.59.6
   port: 2085
   udp: true
@@ -13,17 +22,50 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 03 - sanchun
+  server: 45.151.182.218
+  port: 19443
+  udp: true
+  type: vless
+  uuid: dd8ecb64-ab2d-46a4-ab1e-3b033f7accf1
+  tls: true
+  reality-opts:
+    public-key: XSYZ-2sVUcxX9plaTOF81gwY07XlBLWfMIOhwQG84zs
+    short-id: 85bcd3fe2d8ae208
+  servername: m.vk.ru
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇨🇿 捷克 (Czech) 04 - sanchun
+  server: 45.151.182.218
+  port: 12443
+  udp: true
+  type: vless
+  uuid: dd8ecb64-ab2d-46a4-ab1e-3b033f7accf1
+  tls: true
+  reality-opts:
+    public-key: blwPVUA8yK21XP6g_Z400DbRNmur8o18srBKpEFHYHg
+    short-id: 42a658e10115e583
+  servername: api-maps.yandex.ru
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - sanchun
+  - 🇨🇿 捷克 (Czech) 02 - sanchun
+  - 🇨🇿 捷克 (Czech) 03 - sanchun
+  - 🇨🇿 捷克 (Czech) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - sanchun
+  - 🇨🇿 捷克 (Czech) 02 - sanchun
+  - 🇨🇿 捷克 (Czech) 03 - sanchun
+  - 🇨🇿 捷克 (Czech) 04 - sanchun
 rules:
 - MATCH,PROXIES
