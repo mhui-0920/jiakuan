@@ -15,7 +15,7 @@
         "server_name": "rs.convert-flow.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
