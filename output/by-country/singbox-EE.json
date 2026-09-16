@@ -6,16 +6,6 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - sanchun",
-      "server": "94.183.170.135",
-      "server_port": 443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - sanchun",
       "server": "94.183.170.147",
       "server_port": 8443,
       "uuid": "5edbcb44-8d04-4fa7-a587-bc5d60c24ca1",
@@ -39,23 +29,62 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun",
-      "server": "94.183.170.135",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - sanchun",
+      "server": "95.85.224.154",
       "server_port": 8443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "uuid": "52ecaf96-9c28-4cad-a132-13898f2bbb29",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "estproxy4.lockdwn.com",
-        "insecure": false,
+        "server_name": "fota-cloud-dn.ospserver.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "BX8CqIiZTbjfp--_TsYmp5pPQzzIZZ6rW9ly5HxDM3E",
+          "short_id": "8c554321"
         }
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun",
+      "server": "185.174.135.250",
+      "server_port": 443,
+      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - sanchun",
+      "server": "94.183.170.135",
+      "server_port": 443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - sanchun",
       "server": "ee1.sferavpn.pro",
       "server_port": 443,
       "password": "cd74c0a406664a5bc0bac098220a2468",
@@ -70,8 +99,48 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - sanchun",
+      "server": "94.183.170.135",
+      "server_port": 8443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "tls": {
+        "enabled": true,
+        "server_name": "estproxy4.lockdwn.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 07 - sanchun",
+      "server": "85.158.108.125",
+      "server_port": 9462,
+      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - sanchun",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 08 - sanchun",
       "server": "94.183.239.1",
       "server_port": 443,
       "password": "cec9a167-6381-4752-9828-a92ab6e6ebdd",
@@ -87,46 +156,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - sanchun",
-      "server": "ee.shamanapp.online",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 09 - sanchun",
+      "server": "45.11.27.86",
       "server_port": 443,
-      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
+      "uuid": "a2738d8d-ed26-4b13-a4a2-b89c7238cd10",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 07 - sanchun",
-      "server": "185.255.179.11",
-      "server_port": 9443,
-      "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
-      "tls": {
-        "enabled": true,
-        "server_name": "hub-ee-01.hanvpn.cc",
-        "insecure": false,
+        "server_name": "5post-gate.x5.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IBzFSziv_xISB-Q6X90PocTBde6jb4X6swEvdZQhqzk",
+          "short_id": "d0aae44f"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "ee01-grpc-8e47a"
       }
     },
     {
@@ -140,7 +186,9 @@
         "🇪🇪 爱沙尼亚 (Estonia) 04 - sanchun",
         "🇪🇪 爱沙尼亚 (Estonia) 05 - sanchun",
         "🇪🇪 爱沙尼亚 (Estonia) 06 - sanchun",
-        "🇪🇪 爱沙尼亚 (Estonia) 07 - sanchun"
+        "🇪🇪 爱沙尼亚 (Estonia) 07 - sanchun",
+        "🇪🇪 爱沙尼亚 (Estonia) 08 - sanchun",
+        "🇪🇪 爱沙尼亚 (Estonia) 09 - sanchun"
       ]
     },
     {
@@ -153,7 +201,9 @@
         "🇪🇪 爱沙尼亚 (Estonia) 04 - sanchun",
         "🇪🇪 爱沙尼亚 (Estonia) 05 - sanchun",
         "🇪🇪 爱沙尼亚 (Estonia) 06 - sanchun",
-        "🇪🇪 爱沙尼亚 (Estonia) 07 - sanchun"
+        "🇪🇪 爱沙尼亚 (Estonia) 07 - sanchun",
+        "🇪🇪 爱沙尼亚 (Estonia) 08 - sanchun",
+        "🇪🇪 爱沙尼亚 (Estonia) 09 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
