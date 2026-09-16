@@ -5,15 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - sanchun
-  server: 192.145.31.5
-  port: 8443
+  server: 213.183.63.60
+  port: 9061
   udp: true
-  type: vless
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  tls: true
-  servername: neth9.lunariai.ru
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: 4R3hUfZ2FHhDmNcP
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - sanchun
   server: neth9.lunariai.ru
   port: 443
@@ -38,26 +35,22 @@ proxies:
   client-fingerprint: chrome
 - name: 🇧🇬 保加利亚 (Bulgaria) 04 - sanchun
   server: 213.183.63.60
-  port: 9049
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: PRBf4BS2HvJqtWxY
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - sanchun
-  server: 213.183.63.60
-  port: 9061
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 4R3hUfZ2FHhDmNcP
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - sanchun
-  server: 213.183.63.60
   port: 9098
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: aLpQtfEZe445QyHk
-- name: 🇧🇬 保加利亚 (Bulgaria) 07 - sanchun
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - sanchun
+  server: 192.145.31.5
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  tls: true
+  servername: neth9.lunariai.ru
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 - sanchun
   server: 144.31.50.236
   port: 443
   udp: true
@@ -81,7 +74,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 04 - sanchun
   - 🇧🇬 保加利亚 (Bulgaria) 05 - sanchun
   - 🇧🇬 保加利亚 (Bulgaria) 06 - sanchun
-  - 🇧🇬 保加利亚 (Bulgaria) 07 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -93,6 +85,5 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 04 - sanchun
   - 🇧🇬 保加利亚 (Bulgaria) 05 - sanchun
   - 🇧🇬 保加利亚 (Bulgaria) 06 - sanchun
-  - 🇧🇬 保加利亚 (Bulgaria) 07 - sanchun
 rules:
 - MATCH,PROXIES

@@ -4,24 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 01 - sanchun",
-      "server": "57.131.48.45",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "itzvpn@321"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 02 - sanchun",
-      "server": "185.164.175.81",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 03 - sanchun",
+      "tag": "🇮🇹 意大利 (Italy) 01 - sanchun",
       "server": "31.77.154.14",
       "server_port": 8443,
       "uuid": "75079a7f-75b5-418b-8a65-f7b2f438cd4a",
@@ -45,7 +29,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 04 - sanchun",
+      "tag": "🇮🇹 意大利 (Italy) 02 - sanchun",
       "server": "172.238.232.239",
       "server_port": 32833,
       "uuid": "167ed405-7de9-4bff-b1ea-6e3d49c76b0b",
@@ -63,6 +47,22 @@
           "short_id": "a0a305ccc8e94aa8"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 03 - sanchun",
+      "server": "91.201.65.122",
+      "server_port": 9065,
+      "method": "aes-256-cfb",
+      "password": "PeHSHm5SqEjBuEXE"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 04 - sanchun",
+      "server": "91.201.65.122",
+      "server_port": 9039,
+      "method": "aes-256-cfb",
+      "password": "qYEN5HX4JKeVCdEC"
     },
     {
       "type": "vless",
@@ -89,9 +89,9 @@
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 06 - sanchun",
       "server": "91.201.65.122",
-      "server_port": 9050,
+      "server_port": 9053,
       "method": "aes-256-cfb",
-      "password": "FG5ddLsMPbV5CutE"
+      "password": "SBM7R883jBmnqe6C"
     },
     {
       "type": "vless",
@@ -118,9 +118,17 @@
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 08 - sanchun",
       "server": "91.201.65.122",
-      "server_port": 9002,
+      "server_port": 9097,
       "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
+      "password": "Sn5B7jTqr76aCJT8"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 09 - sanchun",
+      "server": "91.201.65.122",
+      "server_port": 9050,
+      "method": "aes-256-cfb",
+      "password": "FG5ddLsMPbV5CutE"
     },
     {
       "type": "selector",
@@ -134,7 +142,8 @@
         "🇮🇹 意大利 (Italy) 05 - sanchun",
         "🇮🇹 意大利 (Italy) 06 - sanchun",
         "🇮🇹 意大利 (Italy) 07 - sanchun",
-        "🇮🇹 意大利 (Italy) 08 - sanchun"
+        "🇮🇹 意大利 (Italy) 08 - sanchun",
+        "🇮🇹 意大利 (Italy) 09 - sanchun"
       ]
     },
     {
@@ -148,7 +157,8 @@
         "🇮🇹 意大利 (Italy) 05 - sanchun",
         "🇮🇹 意大利 (Italy) 06 - sanchun",
         "🇮🇹 意大利 (Italy) 07 - sanchun",
-        "🇮🇹 意大利 (Italy) 08 - sanchun"
+        "🇮🇹 意大利 (Italy) 08 - sanchun",
+        "🇮🇹 意大利 (Italy) 09 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - sanchun
-  server: 57.131.48.45
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: itzvpn@321
-- name: 🇮🇹 意大利 (Italy) 02 - sanchun
-  server: 185.164.175.81
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 03 - sanchun
   server: 31.77.154.14
   port: 8443
   udp: true
@@ -32,7 +18,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: 🇮🇹 意大利 (Italy) 04 - sanchun
+- name: 🇮🇹 意大利 (Italy) 02 - sanchun
   server: 172.238.232.239
   port: 32833
   udp: true
@@ -45,6 +31,20 @@ proxies:
     short-id: a0a305ccc8e94aa8
   servername: www.intel.com
   client-fingerprint: chrome
+- name: 🇮🇹 意大利 (Italy) 03 - sanchun
+  server: 91.201.65.122
+  port: 9065
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: PeHSHm5SqEjBuEXE
+- name: 🇮🇹 意大利 (Italy) 04 - sanchun
+  server: 91.201.65.122
+  port: 9039
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qYEN5HX4JKeVCdEC
 - name: 🇮🇹 意大利 (Italy) 05 - sanchun
   server: 82.118.16.189
   port: 443
@@ -60,11 +60,11 @@ proxies:
   client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 06 - sanchun
   server: 91.201.65.122
-  port: 9050
+  port: 9053
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: FG5ddLsMPbV5CutE
+  password: SBM7R883jBmnqe6C
 - name: 🇮🇹 意大利 (Italy) 07 - sanchun
   server: 82.118.16.187
   port: 443
@@ -80,11 +80,18 @@ proxies:
   client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 08 - sanchun
   server: 91.201.65.122
-  port: 9002
+  port: 9097
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: b8KkNDjEd5QqFyRm
+  password: Sn5B7jTqr76aCJT8
+- name: 🇮🇹 意大利 (Italy) 09 - sanchun
+  server: 91.201.65.122
+  port: 9050
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: FG5ddLsMPbV5CutE
 proxy-groups:
 - name: PROXIES
   type: select
@@ -98,6 +105,7 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 06 - sanchun
   - 🇮🇹 意大利 (Italy) 07 - sanchun
   - 🇮🇹 意大利 (Italy) 08 - sanchun
+  - 🇮🇹 意大利 (Italy) 09 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -111,5 +119,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 06 - sanchun
   - 🇮🇹 意大利 (Italy) 07 - sanchun
   - 🇮🇹 意大利 (Italy) 08 - sanchun
+  - 🇮🇹 意大利 (Italy) 09 - sanchun
 rules:
 - MATCH,PROXIES

@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - sanchun
-  server: 205.237.109.166
+  server: 205.237.109.164
   port: 8443
   udp: true
   type: hysteria2
@@ -13,7 +13,7 @@ proxies:
   sni: hopp-netherland-new.dynuddns.net
   skip-cert-verify: false
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - sanchun
-  server: 85.204.107.172
+  server: 85.204.107.185
   port: 8443
   udp: true
   type: hysteria2
@@ -36,15 +36,15 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: QFWzCw2uX9B9i6qAYeFBIE
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - sanchun
-  server: hy2.aspidnet.xyz
+  server: 162.249.125.133
   port: 443
   udp: true
   type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  sni: hy2-new.aspidnet.xyz
   skip-cert-verify: false
   obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+  obfs-password: c1b4086fea89914496c7e10967a419216566
 - name: 🇷🇴 罗马尼亚 (Romania) 06 - sanchun
   server: 46.28.67.55
   port: 443
@@ -59,16 +59,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇷🇴 罗马尼亚 (Romania) 07 - sanchun
-  server: 162.249.125.133
-  port: 443
-  udp: true
-  type: hysteria2
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  sni: hy2-new.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 08 - sanchun
   server: 193.163.203.253
   port: 443
   udp: true
@@ -93,7 +83,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 05 - sanchun
   - 🇷🇴 罗马尼亚 (Romania) 06 - sanchun
   - 🇷🇴 罗马尼亚 (Romania) 07 - sanchun
-  - 🇷🇴 罗马尼亚 (Romania) 08 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -106,6 +95,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 05 - sanchun
   - 🇷🇴 罗马尼亚 (Romania) 06 - sanchun
   - 🇷🇴 罗马尼亚 (Romania) 07 - sanchun
-  - 🇷🇴 罗马尼亚 (Romania) 08 - sanchun
 rules:
 - MATCH,PROXIES

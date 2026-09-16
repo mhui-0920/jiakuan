@@ -5,6 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - sanchun
+  server: 194.87.59.11
+  port: 2085
+  udp: true
+  type: vless
+  uuid: 79b3dab9-3e6b-415f-9d1c-1b1c6855e354
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 02 - sanchun
   server: 194.87.59.6
   port: 2085
   udp: true
@@ -19,11 +28,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - sanchun
+  - 🇨🇿 捷克 (Czech) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - sanchun
+  - 🇨🇿 捷克 (Czech) 02 - sanchun
 rules:
 - MATCH,PROXIES

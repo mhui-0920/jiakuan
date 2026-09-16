@@ -12,14 +12,6 @@ proxies:
   cipher: aes-256-gcm
   password: 81a20429165df87e
 - name: 🇷🇺 俄罗斯 (Russia) 02 - sanchun
-  server: 91.240.86.70
-  port: 22443
-  udp: true
-  type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 03 - sanchun
   server: 170.168.99.9
   port: 8443
   udp: true
@@ -33,22 +25,23 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇷🇺 俄罗斯 (Russia) 04 - sanchun
-  server: 130.49.189.158
-  port: 43558
+- name: 🇷🇺 俄罗斯 (Russia) 03 - sanchun
+  server: 91.240.86.70
+  port: 22443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: /QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA=
-- name: 🇷🇺 俄罗斯 (Russia) 05 - sanchun
+  type: hysteria2
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: 91.240.86.70
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - sanchun
   server: msk.frkn.org
   port: 443
   udp: true
   type: hysteria2
   password: f317b5d6-d399-4d3d-a051-89d674ae953c
   sni: msk.frkn.org
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - sanchun
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 05 - sanchun
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -60,19 +53,6 @@ proxies:
     short-id: 23103e1e
   servername: ya.ru
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 07 - sanchun
-  server: pr-media.pepro.site
-  port: 14443
-  udp: true
-  type: vless
-  uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
-  tls: true
-  servername: pr-media.pepro.site
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
 proxy-groups:
 - name: PROXIES
   type: select
@@ -83,8 +63,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 04 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 05 - sanchun
-  - 🇷🇺 俄罗斯 (Russia) 06 - sanchun
-  - 🇷🇺 俄罗斯 (Russia) 07 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -95,7 +73,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 04 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 05 - sanchun
-  - 🇷🇺 俄罗斯 (Russia) 06 - sanchun
-  - 🇷🇺 俄罗斯 (Russia) 07 - sanchun
 rules:
 - MATCH,PROXIES

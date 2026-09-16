@@ -5,6 +5,67 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - sanchun
+  server: 91.193.17.156
+  port: 9458
+  udp: true
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: 🇸🇪 瑞典 (Sweden) 02 - sanchun
+  server: 193.42.39.10
+  port: 33743
+  udp: true
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: 🇸🇪 瑞典 (Sweden) 03 - sanchun
+  server: 143.246.193.215
+  port: 443
+  udp: true
+  type: vless
+  uuid: 77da6e30-ad4e-11f1-94d5-525400d1d4f7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
+  servername: www.blocket.se
+  client-fingerprint: randomized
+- name: 🇸🇪 瑞典 (Sweden) 04 - sanchun
+  server: se-node.rumedia-cdn.com
+  port: 25443
+  udp: true
+  type: hysteria2
+  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
+  sni: cf2.rumedia-cdn.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 05 - sanchun
+  server: 177.3.215.171
+  port: 443
+  udp: true
+  type: vless
+  uuid: c47b421f-65f1-4190-b7ba-bd2045086fe4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: diw5L3O4EkRQGWDSfdpQooPUc3zBTItooeOQ_fIDFWI
+    short-id: 7f2e9c4b1a8d6e53
+  servername: yahoo.com
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 06 - sanchun
   server: 88.216.130.139
   port: 8443
   udp: true
@@ -16,7 +77,7 @@ proxies:
     public-key: iRym2aMWC0ZoLJL7MtJm9p0xqFMutfe6_5B5tZyobxU
   servername: apple.com
   client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 02 - sanchun
+- name: 🇸🇪 瑞典 (Sweden) 07 - sanchun
   server: 31.77.111.11
   port: 43439
   udp: true
@@ -31,80 +92,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: streaming
-- name: 🇸🇪 瑞典 (Sweden) 03 - sanchun
-  server: 143.246.193.215
-  port: 443
-  udp: true
-  type: vless
-  uuid: 77da6e30-ad4e-11f1-94d5-525400d1d4f7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
-  servername: www.blocket.se
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 04 - sanchun
-  server: 91.193.17.156
-  port: 9458
-  udp: true
-  type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  tls: true
-  reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  servername: www.google.com
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇸🇪 瑞典 (Sweden) 05 - sanchun
-  server: 193.42.39.10
-  port: 33743
-  udp: true
-  type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  tls: true
-  reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  servername: www.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇸🇪 瑞典 (Sweden) 06 - sanchun
-  server: 177.3.215.171
-  port: 443
-  udp: true
-  type: vless
-  uuid: c47b421f-65f1-4190-b7ba-bd2045086fe4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: diw5L3O4EkRQGWDSfdpQooPUc3zBTItooeOQ_fIDFWI
-    short-id: 7f2e9c4b1a8d6e53
-  servername: yahoo.com
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 07 - sanchun
-  server: se-node.rumedia-cdn.com
-  port: 25443
-  udp: true
-  type: hysteria2
-  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
-  sni: cf2.rumedia-cdn.com
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 08 - sanchun
-  server: in4.linestring.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: 901cb0b0-0185-4983-b42a-67c431fa2f10
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: eWZTT3b4Xa0dYUdW52WtF1n8w3-AS4EHcaettRRa_0Q
-    short-id: 5f96c103e5734528
-  servername: api-maps.yandex.ru
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -117,7 +104,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 05 - sanchun
   - 🇸🇪 瑞典 (Sweden) 06 - sanchun
   - 🇸🇪 瑞典 (Sweden) 07 - sanchun
-  - 🇸🇪 瑞典 (Sweden) 08 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -130,6 +116,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 05 - sanchun
   - 🇸🇪 瑞典 (Sweden) 06 - sanchun
   - 🇸🇪 瑞典 (Sweden) 07 - sanchun
-  - 🇸🇪 瑞典 (Sweden) 08 - sanchun
 rules:
 - MATCH,PROXIES

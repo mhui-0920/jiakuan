@@ -5,44 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - sanchun
-  server: peekconfigg.vipserver1-39d.workers.dev
-  port: 2096
+  server: 185.126.67.44
+  port: 1932
   udp: true
   type: vless
-  uuid: 7c6a566b-4c4a-b8f2-1719-a3096b424141
-  tls: true
-  servername: peekconfigg.vipserver1-39d.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇸🇨 塞舌尔 (Seychelles) 02 - sanchun
-  server: 156.226.168.221
-  port: 35193
-  udp: true
-  type: vless
-  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
+  uuid: bae8d9ba-9f5d-4802-bb5e-bc0956a472d6
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
-    short-id: e8daed2d
-  servername: www.apple.com
-  client-fingerprint: firefox
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: www.vk.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01 - sanchun
-  - 🇸🇨 塞舌尔 (Seychelles) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - sanchun
-  - 🇸🇨 塞舌尔 (Seychelles) 02 - sanchun
 rules:
 - MATCH,PROXIES
