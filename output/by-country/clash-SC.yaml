@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: www.vk.com
-  client-fingerprint: qq
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

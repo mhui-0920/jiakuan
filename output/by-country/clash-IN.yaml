@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - sanchun
-  server: odd-violet-5440.asdgrweeee13.workers.dev
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
-  tls: true
-  servername: odd-violet-5440.asdgrweeee13.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇮🇳 印度 (India) 02 - sanchun
   server: 148.113.5.44
   port: 443
   udp: true
@@ -30,6 +17,14 @@ proxies:
     short-id: 221873918e0bb74d
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 02 - sanchun
+  server: 35.244.28.130
+  port: 443
+  udp: true
+  type: trojan
+  password: M7v%w11Se*
+  sni: tttyder.wsone.icu
+  skip-cert-verify: false
 - name: 🇮🇳 印度 (India) 03 - sanchun
   server: 194.61.31.126
   port: 2053
