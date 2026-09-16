@@ -5,14 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - sanchun
-  server: 15.188.246.220
+  server: 13.39.233.161
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇫🇷 法国 (France) 02 - sanchun
-  server: 15.237.218.241
+  server: 15.237.137.134
   port: 443
   udp: true
   type: ss
@@ -26,21 +26,6 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇫🇷 法国 (France) 04 - sanchun
-  server: 185.24.151.176
-  port: 50051
-  udp: true
-  type: vless
-  uuid: 4141d4ab-dba8-4da5-a4e6-dc89c34ded3e
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: cd1dd1e4a801f54b
-  servername: jobinvest.ru
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇫🇷 法国 (France) 05 - sanchun
   server: 62.210.91.2
   port: 23576
   udp: true
@@ -52,6 +37,18 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 05 - sanchun
+  server: 51.77.217.70
+  port: 2053
+  udp: true
+  type: vless
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  tls: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+    short-id: bfe58beb41f1d09f
+  servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 06 - sanchun
   server: 62.210.91.10
@@ -80,6 +77,18 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇫🇷 法国 (France) 08 - sanchun
+  server: fr-gra-ovh-03.stre4m.net
+  port: 443
+  udp: true
+  type: vless
+  uuid: 98d0fa1b-d778-477e-b897-4e2569c53178
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: mother-earth.fyi
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 09 - sanchun
   server: 162.19.10.99
   port: 443
   udp: true
@@ -90,18 +99,42 @@ proxies:
   servername: nasnet-162191099-direct.mbghalibaf.com
   skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 09 - sanchun
-  server: www.calmlunch.com
+- name: 🇫🇷 法国 (France) 10 - sanchun
+  server: 15.188.246.220
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 10 - sanchun
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇫🇷 法国 (France) 11 - sanchun
+  server: 15.237.218.241
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇫🇷 法国 (France) 12 - sanchun
+  server: 195.58.140.146
+  port: 443
+  udp: true
+  type: vless
+  uuid: d7790b85-9659-4558-a405-e0ab57d32984
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: lRuJPDrUb0b32-47hl4BgDoQutqmkuW31N4qVxbDgmI
+    short-id: dc927a04e8572c61
+  servername: d1-fr.cloud-cdn.xyz
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 13 - sanchun
+  server: 173.212.201.85
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: 173.212.201.85
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 14 - sanchun
   server: 54.37.136.194
   port: 2053
   udp: true
@@ -113,40 +146,21 @@ proxies:
     short-id: 50ba05992b05c1c3
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 11 - sanchun
-  server: 173.212.201.85
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: 173.212.201.85
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 12 - sanchun
-  server: 130.49.77.5
-  port: 8443
+- name: 🇫🇷 法国 (France) 15 - sanchun
+  server: 31.77.61.62
+  port: 50051
   udp: true
   type: vless
-  uuid: 1e4668ca-6526-84ac-2a53-28bbc209da13
+  uuid: 4141d4ab-dba8-4da5-a4e6-dc89c34ded3e
   tls: true
   reality-opts:
-    public-key: Sq7mtLmaanwsTVNBR9gU7ECU87ftrb_wFGRLLNRBlmQ
-  servername: www.philips.com
-  client-fingerprint: chrome
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: cd1dd1e4a801f54b
+  servername: jobinvest.ru
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
-    grpc-service-name: TunService
-- name: 🇫🇷 法国 (France) 13 - sanchun
-  server: 51.77.217.70
-  port: 2053
-  udp: true
-  type: vless
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  tls: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-    short-id: bfe58beb41f1d09f
-  servername: www.apple.com
-  client-fingerprint: chrome
+    grpc-service-name: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -165,6 +179,8 @@ proxy-groups:
   - 🇫🇷 法国 (France) 11 - sanchun
   - 🇫🇷 法国 (France) 12 - sanchun
   - 🇫🇷 法国 (France) 13 - sanchun
+  - 🇫🇷 法国 (France) 14 - sanchun
+  - 🇫🇷 法国 (France) 15 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -183,5 +199,7 @@ proxy-groups:
   - 🇫🇷 法国 (France) 11 - sanchun
   - 🇫🇷 法国 (France) 12 - sanchun
   - 🇫🇷 法国 (France) 13 - sanchun
+  - 🇫🇷 法国 (France) 14 - sanchun
+  - 🇫🇷 法国 (France) 15 - sanchun
 rules:
 - MATCH,PROXIES

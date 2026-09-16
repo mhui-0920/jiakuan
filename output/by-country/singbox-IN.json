@@ -6,6 +6,26 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 01 - sanchun",
+      "server": "194.61.31.126",
+      "server_port": 2053,
+      "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
+          "short_id": "9980e0609b0d3891"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 02 - sanchun",
       "server": "148.113.5.44",
       "server_port": 443,
       "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
@@ -25,45 +45,12 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 02 - sanchun",
-      "server": "35.244.28.130",
-      "server_port": 443,
-      "password": "M7v%w11Se*",
-      "tls": {
-        "enabled": true,
-        "server_name": "tttyder.wsone.icu",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 - sanchun",
-      "server": "194.61.31.126",
-      "server_port": 2053,
-      "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
-          "short_id": "9980e0609b0d3891"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇳 印度 (India) 01 - sanchun",
-        "🇮🇳 印度 (India) 02 - sanchun",
-        "🇮🇳 印度 (India) 03 - sanchun"
+        "🇮🇳 印度 (India) 02 - sanchun"
       ]
     },
     {
@@ -71,8 +58,7 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇳 印度 (India) 01 - sanchun",
-        "🇮🇳 印度 (India) 02 - sanchun",
-        "🇮🇳 印度 (India) 03 - sanchun"
+        "🇮🇳 印度 (India) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,12 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - sanchun
-  server: 65.109.215.118
-  port: 1080
+  server: 95.216.27.15
+  port: 2053
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: rSeYcig_XBy8q3k33NpK3A
+  type: vless
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  tls: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 02 - sanchun
   server: 185.79.138.71
   port: 448
@@ -37,31 +42,6 @@ proxies:
   servername: fi2.yservice.help
   client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 04 - sanchun
-  server: 2.26.91.57
-  port: 443
-  udp: true
-  type: vless
-  uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 40Tmrw44FhOyoqCQiOfR2kCgxEPXrBLLv6oYFvjbGUI
-    short-id: 3c6ec7b2d73a28b6
-  servername: fl.windconnect.pro
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 05 - sanchun
-  server: 95.216.27.15
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  tls: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 06 - sanchun
   server: 31.77.199.147
   port: 4443
   udp: true
@@ -74,7 +54,20 @@ proxies:
     short-id: 7da2eae792187ab9
   servername: images.unsplash.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 07 - sanchun
+- name: 🇫🇮 芬兰 (Finland) 05 - sanchun
+  server: 2.26.91.57
+  port: 443
+  udp: true
+  type: vless
+  uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 40Tmrw44FhOyoqCQiOfR2kCgxEPXrBLLv6oYFvjbGUI
+    short-id: 3c6ec7b2d73a28b6
+  servername: fl.windconnect.pro
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 06 - sanchun
   server: 37.143.129.244
   port: 443
   udp: true
@@ -98,7 +91,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - sanchun
   - 🇫🇮 芬兰 (Finland) 05 - sanchun
   - 🇫🇮 芬兰 (Finland) 06 - sanchun
-  - 🇫🇮 芬兰 (Finland) 07 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -110,6 +102,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - sanchun
   - 🇫🇮 芬兰 (Finland) 05 - sanchun
   - 🇫🇮 芬兰 (Finland) 06 - sanchun
-  - 🇫🇮 芬兰 (Finland) 07 - sanchun
 rules:
 - MATCH,PROXIES
