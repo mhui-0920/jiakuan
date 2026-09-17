@@ -5,18 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - sanchun
-  server: 2.26.147.116
+  server: 37.143.129.244
   port: 443
   udp: true
   type: vless
-  uuid: f5a3bf49-07ca-0021-a96b-9606781e3600
+  uuid: 0e6de971-69e8-4536-b06d-8b6eae57021b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
-    short-id: 6e3f0a5b
-  servername: www.amd.com
-  client-fingerprint: firefox
+    public-key: 5HArul2NDXfFUxijHj1xiPCfH-77zuuRxylT1vWIvUY
+    short-id: 48fd192dc4e46bc0
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 02 - sanchun
   server: 185.79.138.71
   port: 448
@@ -42,33 +42,7 @@ proxies:
   servername: www.google.com
   client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 04 - sanchun
-  server: 5.61.91.206
-  port: 443
-  udp: true
-  type: vless
-  uuid: bd99da97-265e-0021-82cc-4ec009fe9ce2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
-    short-id: 0a4b7c3d
-  servername: www.amd.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 05 - sanchun
-  server: 31.77.199.182
-  port: 443
-  udp: true
-  type: vless
-  uuid: c09cfd91-b234-4998-9bed-a0211b7f5c3c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: -qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04
-    short-id: abcd1234
-  servername: fi2.yservice.help
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 06 - sanchun
-  server: 151.101.56.6
+  server: k2.cloud--vpn.site
   port: 443
   udp: true
   type: vless
@@ -82,46 +56,7 @@ proxies:
     path: /
     headers:
       Host: c12.com
-- name: 🇫🇮 芬兰 (Finland) 07 - sanchun
-  server: 31.77.199.147
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
-    short-id: 7da2eae792187ab9
-  servername: images.unsplash.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 08 - sanchun
-  server: 185.218.194.69
-  port: 443
-  udp: true
-  type: vless
-  uuid: f5a3bf49-07ca-0021-a96b-9606781e3600
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
-    short-id: 6e3f0a5b
-  servername: www.amd.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 09 - sanchun
-  server: 37.143.129.244
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0e6de971-69e8-4536-b06d-8b6eae57021b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 5HArul2NDXfFUxijHj1xiPCfH-77zuuRxylT1vWIvUY
-    short-id: 48fd192dc4e46bc0
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 10 - sanchun
+- name: 🇫🇮 芬兰 (Finland) 05 - sanchun
   server: fxe3.sorixset.ir
   port: 443
   udp: true
@@ -136,21 +71,19 @@ proxies:
     path: /
     headers:
       Host: kayko.global.ssl.fastly.net
-- name: 🇫🇮 芬兰 (Finland) 11 - sanchun
-  server: tt.sonyabibboop.com
-  port: 2055
+- name: 🇫🇮 芬兰 (Finland) 06 - sanchun
+  server: 177.3.215.171
+  port: 443
   udp: true
   type: vless
-  uuid: cfffb81e-5034-49ce-8729-18b60c7f1e89
+  uuid: c47b421f-65f1-4190-b7ba-bd2045086fe4
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: WRPeyQ_iktgiTrL_TekP-U_I7AAAdFokfKZHK2Ankzw
-    short-id: d5cb64c07671c019
-  servername: tt.sonyabibboop.com
+    public-key: diw5L3O4EkRQGWDSfdpQooPUc3zBTItooeOQ_fIDFWI
+    short-id: 7f2e9c4b1a8d6e53
+  servername: yahoo.com
   client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: sonya-grpc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -162,11 +95,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - sanchun
   - 🇫🇮 芬兰 (Finland) 05 - sanchun
   - 🇫🇮 芬兰 (Finland) 06 - sanchun
-  - 🇫🇮 芬兰 (Finland) 07 - sanchun
-  - 🇫🇮 芬兰 (Finland) 08 - sanchun
-  - 🇫🇮 芬兰 (Finland) 09 - sanchun
-  - 🇫🇮 芬兰 (Finland) 10 - sanchun
-  - 🇫🇮 芬兰 (Finland) 11 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -178,10 +106,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - sanchun
   - 🇫🇮 芬兰 (Finland) 05 - sanchun
   - 🇫🇮 芬兰 (Finland) 06 - sanchun
-  - 🇫🇮 芬兰 (Finland) 07 - sanchun
-  - 🇫🇮 芬兰 (Finland) 08 - sanchun
-  - 🇫🇮 芬兰 (Finland) 09 - sanchun
-  - 🇫🇮 芬兰 (Finland) 10 - sanchun
-  - 🇫🇮 芬兰 (Finland) 11 - sanchun
 rules:
 - MATCH,PROXIES

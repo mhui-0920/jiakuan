@@ -4,30 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 01 (家宽) - sanchun",
-      "server": "162.159.153.4",
-      "server_port": 443,
-      "uuid": "f2a73750-3087-48ff-a763-1348c15dce68",
-      "tls": {
-        "enabled": true,
-        "server_name": "rayan-007.maxima.dpdns.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "rayan-007.maxima.dpdns.org"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun",
       "server": "r3mrcg001286ek2.cybervena.com",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
@@ -35,29 +13,41 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - sanchun",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun",
       "server": "r3mrcg00129437x.cybervena.com",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
       "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
     },
     {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - sanchun",
-      "server": "hinet1.2yly.com",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - sanchun",
+      "server": "hk01.kfc-520.com",
+      "server_port": 60001,
+      "password": "49f7ff21-a176-30cc-ab60-a5988fd85ce0",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
+        "server_name": "hk01.kfc-520.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - sanchun",
+      "server": "82259754d625.oylfmxz.cn",
+      "server_port": 443,
+      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "82259754d625.oylfmxz.cn",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "82259754d625.oylfmxz.cn"
         }
       }
     },
@@ -66,9 +56,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 英国 (United Kingdom) 01 (家宽) - sanchun",
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - sanchun",
         "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - sanchun"
       ]
     },
@@ -76,9 +66,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 英国 (United Kingdom) 01 (家宽) - sanchun",
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - sanchun",
         "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
