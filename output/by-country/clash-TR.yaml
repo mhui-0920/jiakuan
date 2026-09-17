@@ -5,8 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - sanchun
-  server: 172.67.192.84
-  port: 2095
+  server: 104.20.6.153
+  port: 8880
   udp: true
   type: vless
   uuid: a22bff60-a40a-4250-bde2-4c660e363b47
@@ -16,18 +16,16 @@ proxies:
     headers:
       Host: index.harmonica02.workers.dev
 - name: 🇹🇷 土耳其 (Turkey) 02 - sanchun
-  server: 31.214.152.140
-  port: 443
+  server: 188.114.97.6
+  port: 8080
   udp: true
   type: vless
-  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8
-    short-id: 08
-  servername: dw.b-cdn.net
-  client-fingerprint: firefox
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: index.harmonica02.workers.dev
 - name: 🇹🇷 土耳其 (Turkey) 03 - sanchun
   server: 156.67.63.231
   port: 443
@@ -77,7 +75,7 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
