@@ -5,14 +5,14 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun",
-      "server": "hk01.kfc-520.com",
-      "server_port": 60001,
-      "password": "49f7ff21-a176-30cc-ab60-a5988fd85ce0",
+      "tag": "🇦🇺 澳大利亚 (Australia) 01 - sanchun",
+      "server": "vpn-au-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "hk01.kfc-520.com",
-        "insecure": false
+        "server_name": "whatsapp.com",
+        "insecure": true
       }
     },
     {
@@ -20,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun"
+        "🇦🇺 澳大利亚 (Australia) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun"
+        "🇦🇺 澳大利亚 (Australia) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

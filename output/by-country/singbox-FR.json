@@ -6,32 +6,34 @@
     {
       "type": "shadowsocks",
       "tag": "🇫🇷 法国 (France) 01 - sanchun",
-      "server": "15.237.218.241",
+      "server": "13.38.76.125",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
     },
     {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 02 - sanchun",
-      "server": "52.47.212.72",
-      "server_port": 22223,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 03 - sanchun",
+      "tag": "🇫🇷 法国 (France) 02 - sanchun",
       "server": "13.39.233.161",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
+      "tag": "🇫🇷 法国 (France) 03 - sanchun",
+      "server": "15.237.218.241",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇫🇷 法国 (France) 04 - sanchun",
-      "server": "52.47.212.72",
-      "server_port": 22222,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
+      "server": "15.237.137.134",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
       "type": "shadowsocks",
@@ -44,7 +46,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇫🇷 法国 (France) 06 - sanchun",
-      "server": "15.237.137.134",
+      "server": "15.237.252.23",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -52,59 +54,6 @@
     {
       "type": "vless",
       "tag": "🇫🇷 法国 (France) 07 - sanchun",
-      "server": "195.58.140.146",
-      "server_port": 443,
-      "uuid": "d7790b85-9659-4558-a405-e0ab57d32984",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "d1-fr.cloud-cdn.xyz",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "lRuJPDrUb0b32-47hl4BgDoQutqmkuW31N4qVxbDgmI",
-          "short_id": "dc927a04e8572c61"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 08 - sanchun",
-      "server": "51.77.217.70",
-      "server_port": 2053,
-      "uuid": "bf16ee0c-8b3c-41e4-ab3a-8b48033c404e",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w",
-          "short_id": "bfe58beb41f1d09f"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 09 - sanchun",
-      "server": "173.212.201.85",
-      "server_port": 443,
-      "password": "gf1:gfhysteria2024",
-      "tls": {
-        "enabled": true,
-        "server_name": "173.212.201.85",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 10 - sanchun",
       "server": "62.210.91.10",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -125,7 +74,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 11 - sanchun",
+      "tag": "🇫🇷 法国 (France) 08 - sanchun",
       "server": "62.210.91.2",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -146,8 +95,49 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 12 - sanchun",
-      "server": "nasnet-162191099-direct.mbghalibaf.com",
+      "tag": "🇫🇷 法国 (France) 09 - sanchun",
+      "server": "51.77.217.70",
+      "server_port": 2053,
+      "uuid": "bf16ee0c-8b3c-41e4-ab3a-8b48033c404e",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w",
+          "short_id": "bfe58beb41f1d09f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 10 - sanchun",
+      "server": "195.58.140.146",
+      "server_port": 443,
+      "uuid": "d7790b85-9659-4558-a405-e0ab57d32984",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "d1-fr.cloud-cdn.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lRuJPDrUb0b32-47hl4BgDoQutqmkuW31N4qVxbDgmI",
+          "short_id": "dc927a04e8572c61"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 11 - sanchun",
+      "server": "162.19.10.99",
       "server_port": 443,
       "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
       "flow": "xtls-rprx-vision",
@@ -157,49 +147,13 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 13 - sanchun",
-      "server": "13.38.76.125",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 14 - sanchun",
-      "server": "15.237.252.23",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 15 - sanchun",
-      "server": "54.37.136.194",
-      "server_port": 2053,
-      "uuid": "e8a432c8-5d84-49a5-b822-67ed761a58f9",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
           "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A",
-          "short_id": "50ba05992b05c1c3"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 16 - sanchun",
+      "tag": "🇫🇷 法国 (France) 12 - sanchun",
       "server": "145.223.68.58",
       "server_port": 443,
       "uuid": "edb50d20-2d3e-4c1e-8a75-a17168a89aa5",
@@ -220,23 +174,53 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 17 - sanchun",
-      "server": "carina.yokkastars.com",
-      "server_port": 40443,
-      "uuid": "588456a5-f724-46a7-a08b-5d336d9f8f56",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇫🇷 法国 (France) 13 - sanchun",
+      "server": "54.37.136.194",
+      "server_port": 2053,
+      "uuid": "e8a432c8-5d84-49a5-b822-67ed761a58f9",
       "tls": {
         "enabled": true,
-        "server_name": "deepl.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "3cW_F0us0je_lhnl5xpwSxHyRfTQaKFELxWLr8jRzic",
-          "short_id": "e496c7fe1cefc9ff"
+          "public_key": "Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A",
+          "short_id": "50ba05992b05c1c3"
         }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇷 法国 (France) 14 - sanchun",
+      "server": "173.212.201.85",
+      "server_port": 443,
+      "password": "gf1:gfhysteria2024",
+      "tls": {
+        "enabled": true,
+        "server_name": "173.212.201.85",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇷 法国 (France) 15 - sanchun",
+      "server": "3x.lbruh.xyz",
+      "server_port": 29300,
+      "password": "iy0lxplkci7qzk73",
+      "tls": {
+        "enabled": true,
+        "server_name": "3x.lbruh.xyz",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "jogbnkm2l0c5v0cw"
       }
     },
     {
@@ -258,9 +242,7 @@
         "🇫🇷 法国 (France) 12 - sanchun",
         "🇫🇷 法国 (France) 13 - sanchun",
         "🇫🇷 法国 (France) 14 - sanchun",
-        "🇫🇷 法国 (France) 15 - sanchun",
-        "🇫🇷 法国 (France) 16 - sanchun",
-        "🇫🇷 法国 (France) 17 - sanchun"
+        "🇫🇷 法国 (France) 15 - sanchun"
       ]
     },
     {
@@ -281,9 +263,7 @@
         "🇫🇷 法国 (France) 12 - sanchun",
         "🇫🇷 法国 (France) 13 - sanchun",
         "🇫🇷 法国 (France) 14 - sanchun",
-        "🇫🇷 法国 (France) 15 - sanchun",
-        "🇫🇷 法国 (France) 16 - sanchun",
-        "🇫🇷 法国 (France) 17 - sanchun"
+        "🇫🇷 法国 (France) 15 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -6,15 +6,6 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - sanchun
   server: 192.145.31.5
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - sanchun
-  server: 192.145.31.5
   port: 8443
   udp: true
   type: vless
@@ -22,7 +13,16 @@ proxies:
   tls: true
   servername: neth9.lunariai.ru
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - sanchun
+  server: 192.145.31.5
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - sanchun
   server: 213.183.63.60
   port: 9049
@@ -39,12 +39,19 @@ proxies:
   password: 4R3hUfZ2FHhDmNcP
 - name: 🇧🇬 保加利亚 (Bulgaria) 05 - sanchun
   server: 213.183.63.60
-  port: 9064
+  port: 9030
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: cp8pRSUAyLhTfVWH
+  password: GeregetR8cvQHzYr
 - name: 🇧🇬 保加利亚 (Bulgaria) 06 - sanchun
+  server: 213.183.63.60
+  port: 9085
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9ej82EKe2gq7gLAM
+- name: 🇧🇬 保加利亚 (Bulgaria) 07 - sanchun
   server: 193.148.59.178
   port: 443
   udp: true
@@ -57,8 +64,15 @@ proxies:
     short-id: e3daad69
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 07 - sanchun
-  server: prep.wwwinternetvideo.click
+- name: 🇧🇬 保加利亚 (Bulgaria) 08 - sanchun
+  server: 213.183.63.60
+  port: 9064
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: cp8pRSUAyLhTfVWH
+- name: 🇧🇬 保加利亚 (Bulgaria) 09 - sanchun
+  server: 144.31.50.236
   port: 443
   udp: true
   type: vless
@@ -69,7 +83,7 @@ proxies:
     public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
     short-id: bbe46bd8f6b96839
   servername: yandex.ru
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,6 +96,8 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 05 - sanchun
   - 🇧🇬 保加利亚 (Bulgaria) 06 - sanchun
   - 🇧🇬 保加利亚 (Bulgaria) 07 - sanchun
+  - 🇧🇬 保加利亚 (Bulgaria) 08 - sanchun
+  - 🇧🇬 保加利亚 (Bulgaria) 09 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -94,5 +110,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 05 - sanchun
   - 🇧🇬 保加利亚 (Bulgaria) 06 - sanchun
   - 🇧🇬 保加利亚 (Bulgaria) 07 - sanchun
+  - 🇧🇬 保加利亚 (Bulgaria) 08 - sanchun
+  - 🇧🇬 保加利亚 (Bulgaria) 09 - sanchun
 rules:
 - MATCH,PROXIES
