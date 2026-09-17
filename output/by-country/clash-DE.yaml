@@ -5,20 +5,70 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - sanchun
-  server: 213.202.208.199
-  port: 7001
+  server: 162.159.153.4
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+  type: vless
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  tls: true
+  servername: rayan-007.maxima.dpdns.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.maxima.dpdns.org
 - name: 🇩🇪 德国 (Germany) 02 - sanchun
-  server: 2.58.81.221
+  server: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  port: 443
+  udp: true
+  type: vless
+  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
+  tls: true
+  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+- name: 🇩🇪 德国 (Germany) 03 - sanchun
+  server: muddy-math-c1fc.tmpnriqueau89.workers.dev
+  port: 443
+  udp: true
+  type: vless
+  uuid: 532a9115-aee7-4d39-9638-1e5146de075b
+  tls: true
+  servername: muddy-math-c1fc.tmpnriqueau89.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 (Germany) 04 - sanchun
+  server: 18.194.210.177
   port: 443
   udp: true
   type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇩🇪 德国 (Germany) 05 - sanchun
+  server: 185.226.172.8
+  port: 8008
+  udp: true
+  type: ss
   cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-- name: 🇩🇪 德国 (Germany) 03 - sanchun
+  password: XKFKl2rULjIp74
+- name: 🇩🇪 德国 (Germany) 06 - sanchun
+  server: 63.180.204.141
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇩🇪 德国 (Germany) 07 - sanchun
   server: 91.99.58.134
   port: 443
   udp: true
@@ -28,28 +78,7 @@ proxies:
   h2-opts:
     host: []
     path: /
-- name: 🇩🇪 德国 (Germany) 04 - sanchun
-  server: 185.226.172.8
-  port: 8008
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-- name: 🇩🇪 德国 (Germany) 05 - sanchun
-  server: 63.180.204.141
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇩🇪 德国 (Germany) 06 - sanchun
-  server: 8.209.74.72
-  port: 20001
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
-- name: 🇩🇪 德国 (Germany) 07 - sanchun
+- name: 🇩🇪 德国 (Germany) 08 - sanchun
   server: 91.99.51.119
   port: 443
   udp: true
@@ -59,19 +88,13 @@ proxies:
   h2-opts:
     host: []
     path: /
-- name: 🇩🇪 德国 (Germany) 08 - sanchun
-  server: 2.58.81.221
-  port: 80
+- name: 🇩🇪 德国 (Germany) 09 - sanchun
+  server: 213.202.208.199
+  port: 7001
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-- name: 🇩🇪 德国 (Germany) 09 - sanchun
-  server: 192.248.182.183
-  port: 39244
-  udp: true
-  type: vless
-  uuid: 5fc7563b-552d-417f-9409-08ef92284599
+  password: RexnBgU7EV5ADxG
 - name: 🇩🇪 德国 (Germany) 10 - sanchun
   server: 91.99.62.132
   port: 443
@@ -83,53 +106,160 @@ proxies:
     host: []
     path: /
 - name: 🇩🇪 德国 (Germany) 11 - sanchun
-  server: 144.31.168.95
-  port: 443
-  udp: true
-  type: vless
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
-    short-id: 00bca5982f82d083
-  servername: eu-central.cendora.ru
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 12 - sanchun
-  server: 170.101.109.37
-  port: 443
-  udp: true
-  type: vless
-  uuid: bf645ffe-a3cc-4480-8e4c-9bcd1af41052
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: rTnh7Y8RsSA5HSvFf-pWT49x8va6U6XHMRgNiMuwB0A
-    short-id: ab88d256
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 13 - sanchun
-  server: 178.105.126.242
-  port: 443
-  udp: true
-  type: anytls
-  password: e70ec0f2ab60e8c22b316156bf9ac43fec98b45be6681401
-  sni: cn.bing.com
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 14 - sanchun
-  server: 209.46.102.22
-  port: 8388
+  server: 8.209.74.72
+  port: 20001
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
+  password: PWpjPo3tqhPN4yRZ
+- name: 🇩🇪 德国 (Germany) 12 - sanchun
+  server: 91.107.146.97
+  port: 2086
+  udp: true
+  type: vmess
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 (Germany) 13 - sanchun
+  server: 2.58.81.221
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+- name: 🇩🇪 德国 (Germany) 14 - sanchun
+  server: 77.110.101.97
+  port: 56834
+  udp: true
+  type: vless
+  uuid: daf65e17-1ed5-42be-a34d-20a156ddedbc
 - name: 🇩🇪 德国 (Germany) 15 - sanchun
+  server: 2.58.81.221
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+- name: 🇩🇪 德国 (Germany) 16 - sanchun
   server: 95.179.169.44
   port: 53224
   udp: true
   type: vless
   uuid: 5f00ca4e-3f26-473e-ad1c-414112abb0a3
-- name: 🇩🇪 德国 (Germany) 16 - sanchun
+- name: 🇩🇪 德国 (Germany) 17 - sanchun
+  server: 193.233.209.79
+  port: 3
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 9ri2bpxWs4FHXRjlhTFlQQ
+- name: 🇩🇪 德国 (Germany) 18 - sanchun
+  server: 31.184.244.162
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 60a361f9-3c45-4954-9e4c-92a85bda243d
+  tls: true
+  reality-opts:
+    public-key: mzrVbIsEggpJfXR8M7yxki2vgv3sXWQdy1bGhXqatUY
+    short-id: 4881f8244d1b9021
+  servername: www.google.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇩🇪 德国 (Germany) 19 - sanchun
+  server: 5.230.68.105
+  port: 52006
+  udp: true
+  type: vless
+  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: o_ZQuEx_ealt_YkqgtYRqFhee0pzFkg9ObUhODLTAB8
+    short-id: 08
+  servername: api5.vk-maps.net
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 20 - sanchun
+  server: 91.233.8.16
+  port: 443
+  udp: true
+  type: vless
+  uuid: d427a02f-e0ea-4fce-9cfb-66c1866ca3ce
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: e1f8a3b6
+  servername: tnt-cloud.ru
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 21 - sanchun
+  server: 91.233.8.126
+  port: 443
+  udp: true
+  type: vless
+  uuid: f08a52a4-a8ff-4c00-af72-ff4c68f0fefa
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: 0a4b7c3d
+  servername: tnt-cloud.ru
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 22 - sanchun
+  server: 5.231.17.131
+  port: 52006
+  udp: true
+  type: vless
+  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: o_ZQuEx_ealt_YkqgtYRqFhee0pzFkg9ObUhODLTAB8
+    short-id: 08
+  servername: api5.vk-maps.net
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 23 - sanchun
+  server: 91.233.8.136
+  port: 443
+  udp: true
+  type: vless
+  uuid: 94a5294d-1125-03e7-8934-380c5de5552f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: 2e6f9a5b
+  servername: tnt-cloud.ru
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 24 - sanchun
+  server: 31.76.111.192
+  port: 443
+  udp: true
+  type: vless
+  uuid: 24b84bd3-baa3-4192-9625-23c9690ae6f6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: bPrWBtA93mdiJHxFvwR0JqCaJ-Kv1AGs6LP6elikcXQ
+    short-id: ff3fc136afdec400
+  servername: ge1.gleb.space
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 25 - sanchun
+  server: 162.248.166.35
+  port: 443
+  udp: true
+  type: vless
+  uuid: d92b6509-8b63-4505-b3a2-1dc5b1c014ac
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: NYG48Fv1MF3SqOpHwoa4GqJH5IJrocSrwWzrffY-tCk
+    short-id: c6dc8abb0235dc05
+  servername: www.caradisiac.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 26 - sanchun
   server: 31.184.244.219
   port: 2053
   udp: true
@@ -144,19 +274,56 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc
-- name: 🇩🇪 德国 (Germany) 17 - sanchun
-  server: 93.152.217.41
-  port: 40443
+- name: 🇩🇪 德国 (Germany) 27 - sanchun
+  server: 212.16.92.121
+  port: 443
   udp: true
   type: vless
-  uuid: 969bcce0-de8a-4b02-8cf8-d00d2d2ca7a5
+  uuid: 32721515-985b-4773-9e70-5d2e1b88a060
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: VG-FwQBMFzPcemJ_JqtkbO-2WKLmQp2h0CmAj-DfLkA
-    short-id: 5b97
-  servername: deepl.com
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: jobinvest.ru
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 28 - sanchun
+  server: 212.16.92.112
+  port: 443
+  udp: true
+  type: vless
+  uuid: 32721515-985b-4773-9e70-5d2e1b88a060
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: jobinvest.ru
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 29 - sanchun
+  server: 212.16.92.111
+  port: 443
+  udp: true
+  type: vless
+  uuid: 32721515-985b-4773-9e70-5d2e1b88a060
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: jobinvest.ru
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 30 - sanchun
+  server: 178.105.61.61
+  port: 2083
+  udp: true
+  type: vless
+  uuid: cb077bf2-70b7-457b-af42-27cdc3e0e544
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: H0nCazQFHVhSObfqSUhGLhK7KRwKzTMggIBPjnMMqhk
+    short-id: af04ff8094115e93
+  servername: 178.105.61.61
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 18 - sanchun
+- name: 🇩🇪 德国 (Germany) 31 - sanchun
   server: 82.118.19.153
   port: 443
   udp: true
@@ -169,21 +336,34 @@ proxies:
     short-id: 670ed9f350bd8ee0
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 19 - sanchun
-  server: 82.39.171.12
+- name: 🇩🇪 德国 (Germany) 32 - sanchun
+  server: 144.31.168.95
   port: 443
   udp: true
   type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 20 - sanchun
-  server: 212.16.92.111
+    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
+    short-id: 00bca5982f82d083
+  servername: eu-central.cendora.ru
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 33 - sanchun
+  server: 170.101.109.37
+  port: 443
+  udp: true
+  type: vless
+  uuid: bf645ffe-a3cc-4480-8e4c-9bcd1af41052
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: rTnh7Y8RsSA5HSvFf-pWT49x8va6U6XHMRgNiMuwB0A
+    short-id: ab88d256
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 34 - sanchun
+  server: 212.16.92.122
   port: 443
   udp: true
   type: vless
@@ -194,45 +374,160 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: jobinvest.ru
   client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 21 - sanchun
-  server: 212.16.92.112
+- name: 🇩🇪 德国 (Germany) 35 - sanchun
+  server: 209.46.102.22
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+- name: 🇩🇪 德国 (Germany) 36 - sanchun
+  server: 178.105.126.242
+  port: 443
+  udp: true
+  type: anytls
+  password: e70ec0f2ab60e8c22b316156bf9ac43fec98b45be6681401
+  sni: cn.bing.com
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 37 - sanchun
+  server: 194.48.250.233
+  port: 443
+  udp: true
+  type: hysteria2
+  password: a2c74ce7-5daa-4bee-a1eb-52863873b3c3
+  sni: mol.ultimagamest.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 38 - sanchun
+  server: 144.31.125.60
   port: 443
   udp: true
   type: vless
-  uuid: 32721515-985b-4773-9e70-5d2e1b88a060
+  uuid: 9015f0bc-2053-4ca1-9b9b-a018b97b32d2
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: jobinvest.ru
+    public-key: SVgtyuD9khylgHuB0treGekxVSHPOS-wPZTNHUf6zj8
+    short-id: 85c86a9863
+  servername: www.intel.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 39 - sanchun
+  server: 159.195.192.169
+  port: 2054
+  udp: true
+  type: vless
+  uuid: 75079a7f-75b5-418b-8a65-f7b2f438cd4a
+  tls: true
+  reality-opts:
+    public-key: mlJSEX5zJodpeofSicXnd0tlrgonVCGJ3M-qqWF4FSU
+  servername: www.ibm.com
   client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 22 - sanchun
-  server: arcturus.yokkastars.com
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: 🇩🇪 德国 (Germany) 40 - sanchun
+  server: 194.48.250.234
+  port: 443
+  udp: true
+  type: hysteria2
+  password: a2c74ce7-5daa-4bee-a1eb-52863873b3c3
+  sni: mol.ultimagamest.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 41 - sanchun
+  server: 89.106.88.22
+  port: 20443
+  udp: true
+  type: vless
+  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -AdhgMZeNHR2zAmGWa5peg7Ni0-e4IVMoSzydC9n7C4
+    short-id: 08
+  servername: dest1.cdn-update.rutube.info
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 42 - sanchun
+  server: 93.152.217.41
   port: 40443
   udp: true
   type: vless
-  uuid: bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54
-  flow: xtls-rprx-vision
+  uuid: 969bcce0-de8a-4b02-8cf8-d00d2d2ca7a5
   tls: true
   reality-opts:
-    public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
-    short-id: db46e2946fc466fd
+    public-key: VG-FwQBMFzPcemJ_JqtkbO-2WKLmQp2h0CmAj-DfLkA
+    short-id: 5b97
   servername: deepl.com
-  client-fingerprint: qq
-- name: 🇩🇪 德国 (Germany) 23 - sanchun
-  server: 162.248.166.35
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 43 - sanchun
+  server: 130.61.50.75
+  port: 6443
+  udp: true
+  type: hysteria2
+  password: zhangyang
+  sni: 130.61.50.75
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 44 - sanchun
+  server: de-node.rumedia-cdn.com
+  port: 25443
+  udp: true
+  type: hysteria2
+  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
+  sni: cf6.rumedia-cdn.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 45 - sanchun
+  server: zcfznk-y7or1r-dry91q.spider-0a507c1e.workers.dev
   port: 443
   udp: true
   type: vless
-  uuid: d92b6509-8b63-4505-b3a2-1dc5b1c014ac
+  uuid: f98cc943-3c25-a499-948d-1c0500000001
+  tls: true
+  servername: zcfznk-y7or1r-dry91q.spider-0a507c1e.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 (Germany) 46 - sanchun
+  server: 52.28.158.0
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇩🇪 德国 (Germany) 47 - sanchun
+  server: 194.169.54.16
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇩🇪 德国 (Germany) 48 - sanchun
+  server: 192.248.182.183
+  port: 39244
+  udp: true
+  type: vless
+  uuid: 5fc7563b-552d-417f-9409-08ef92284599
+- name: 🇩🇪 德国 (Germany) 49 - sanchun
+  server: no.cnd.germany.1.myfilecdn.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0d628b17-8ac4-49b9-a422-6b99077bfdf6
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: NYG48Fv1MF3SqOpHwoa4GqJH5IJrocSrwWzrffY-tCk
-    short-id: c6dc8abb0235dc05
-  servername: www.caradisiac.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 24 - sanchun
+    public-key: rj8GjMgtHuf5iZ5sWKmV62ihJbQWB6M4E-BJZBk1Z1A
+    short-id: 8a2b3c4d5e6f7012
+  servername: tradingview.com
+  client-fingerprint: qq
+- name: 🇩🇪 德国 (Germany) 50 - sanchun
   server: 77.110.104.238
   port: 2053
   udp: true
@@ -247,15 +542,30 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: pl199grpc
-- name: 🇩🇪 德国 (Germany) 25 - sanchun
-  server: 130.61.50.75
-  port: 6443
+- name: 🇩🇪 德国 (Germany) 51 - sanchun
+  server: 82.39.171.12
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 52 - sanchun
+  server: 2.27.59.206
+  port: 443
   udp: true
   type: hysteria2
-  password: zhangyang
-  sni: 130.61.50.75
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 26 - sanchun
+  password: cd74c0a406664a5bc0bac098220a2468
+  sni: de1.sferavpn.pro
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
+- name: 🇩🇪 德国 (Germany) 53 - sanchun
   server: 5.35.81.60
   port: 4443
   udp: true
@@ -270,37 +580,62 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: snob-grpc-de
-- name: 🇩🇪 德国 (Germany) 27 - sanchun
-  server: de-node.rumedia-cdn.com
-  port: 25443
+- name: 🇩🇪 德国 (Germany) 54 - sanchun
+  server: arcturus.yokkastars.com
+  port: 40443
   udp: true
-  type: hysteria2
-  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
-  sni: cf6.rumedia-cdn.com
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 28 - sanchun
-  server: 104.25.30.10
+  type: vless
+  uuid: bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
+    short-id: db46e2946fc466fd
+  servername: deepl.com
+  client-fingerprint: qq
+- name: 🇩🇪 德国 (Germany) 55 - sanchun
+  server: e2.cover20.ir
+  port: 30874
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: O+qLsoqVWBdY2D3lxtd5ksBwkp3QclQ6d+IARlPtFow=
+- name: 🇩🇪 德国 (Germany) 56 - sanchun
+  server: 31.76.111.152
   port: 443
   udp: true
   type: vless
-  uuid: 807cd1e0-f4ce-4785-b7a3-cde0c1614b8d
+  uuid: 24b84bd3-baa3-4192-9625-23c9690ae6f6
+  flow: xtls-rprx-vision
   tls: true
-  servername: de14.69lover.my
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /api/v2/6c316c769ad6853c/stream
-    headers:
-      Host: de14.69lover.my
-- name: 🇩🇪 德国 (Germany) 29 - sanchun
-  server: 18.194.210.177
+  reality-opts:
+    public-key: yMoulSTnxnbOfAjWPfB244a29ms9HUkjgA1zLZ65Nzw
+  servername: ads.x5.ru
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 57 - sanchun
+  server: 116.202.19.249
   port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇩🇪 德国 (Germany) 30 - sanchun
+  type: vless
+  uuid: cf990ae8-ee77-4436-aa3a-bbc2fb040c53
+  network: h2
+  h2-opts:
+    host: []
+    path: /
+- name: 🇩🇪 德国 (Germany) 58 - sanchun
+  server: 150.241.79.210
+  port: 443
+  udp: true
+  type: vless
+  uuid: cfffb81e-5034-49ce-8729-18b60c7f1e89
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 3J5mYA5NziIVJi77fRsx9dZPYWzLkvaIz-cCdZQvhn8
+    short-id: 1a2b
+  servername: rutube.ru
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 59 - sanchun
   server: de1.xiaoliyu.cyou
   port: 4433
   udp: true
@@ -308,19 +643,6 @@ proxies:
   password: 19f72087-4591-4d72-930b-2697078ec2be
   sni: de1.xiaoliyu.cyou
   skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 31 - sanchun
-  server: 77.110.101.97
-  port: 56834
-  udp: true
-  type: vless
-  uuid: daf65e17-1ed5-42be-a34d-20a156ddedbc
-- name: 🇩🇪 德国 (Germany) 32 - sanchun
-  server: 130.61.34.119
-  port: 59924
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ltoGFoIu+Cty5VTzeTU2Hqfq0vHdWfV+kljbF+oenaw=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -358,6 +680,33 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 30 - sanchun
   - 🇩🇪 德国 (Germany) 31 - sanchun
   - 🇩🇪 德国 (Germany) 32 - sanchun
+  - 🇩🇪 德国 (Germany) 33 - sanchun
+  - 🇩🇪 德国 (Germany) 34 - sanchun
+  - 🇩🇪 德国 (Germany) 35 - sanchun
+  - 🇩🇪 德国 (Germany) 36 - sanchun
+  - 🇩🇪 德国 (Germany) 37 - sanchun
+  - 🇩🇪 德国 (Germany) 38 - sanchun
+  - 🇩🇪 德国 (Germany) 39 - sanchun
+  - 🇩🇪 德国 (Germany) 40 - sanchun
+  - 🇩🇪 德国 (Germany) 41 - sanchun
+  - 🇩🇪 德国 (Germany) 42 - sanchun
+  - 🇩🇪 德国 (Germany) 43 - sanchun
+  - 🇩🇪 德国 (Germany) 44 - sanchun
+  - 🇩🇪 德国 (Germany) 45 - sanchun
+  - 🇩🇪 德国 (Germany) 46 - sanchun
+  - 🇩🇪 德国 (Germany) 47 - sanchun
+  - 🇩🇪 德国 (Germany) 48 - sanchun
+  - 🇩🇪 德国 (Germany) 49 - sanchun
+  - 🇩🇪 德国 (Germany) 50 - sanchun
+  - 🇩🇪 德国 (Germany) 51 - sanchun
+  - 🇩🇪 德国 (Germany) 52 - sanchun
+  - 🇩🇪 德国 (Germany) 53 - sanchun
+  - 🇩🇪 德国 (Germany) 54 - sanchun
+  - 🇩🇪 德国 (Germany) 55 - sanchun
+  - 🇩🇪 德国 (Germany) 56 - sanchun
+  - 🇩🇪 德国 (Germany) 57 - sanchun
+  - 🇩🇪 德国 (Germany) 58 - sanchun
+  - 🇩🇪 德国 (Germany) 59 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -395,5 +744,32 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 30 - sanchun
   - 🇩🇪 德国 (Germany) 31 - sanchun
   - 🇩🇪 德国 (Germany) 32 - sanchun
+  - 🇩🇪 德国 (Germany) 33 - sanchun
+  - 🇩🇪 德国 (Germany) 34 - sanchun
+  - 🇩🇪 德国 (Germany) 35 - sanchun
+  - 🇩🇪 德国 (Germany) 36 - sanchun
+  - 🇩🇪 德国 (Germany) 37 - sanchun
+  - 🇩🇪 德国 (Germany) 38 - sanchun
+  - 🇩🇪 德国 (Germany) 39 - sanchun
+  - 🇩🇪 德国 (Germany) 40 - sanchun
+  - 🇩🇪 德国 (Germany) 41 - sanchun
+  - 🇩🇪 德国 (Germany) 42 - sanchun
+  - 🇩🇪 德国 (Germany) 43 - sanchun
+  - 🇩🇪 德国 (Germany) 44 - sanchun
+  - 🇩🇪 德国 (Germany) 45 - sanchun
+  - 🇩🇪 德国 (Germany) 46 - sanchun
+  - 🇩🇪 德国 (Germany) 47 - sanchun
+  - 🇩🇪 德国 (Germany) 48 - sanchun
+  - 🇩🇪 德国 (Germany) 49 - sanchun
+  - 🇩🇪 德国 (Germany) 50 - sanchun
+  - 🇩🇪 德国 (Germany) 51 - sanchun
+  - 🇩🇪 德国 (Germany) 52 - sanchun
+  - 🇩🇪 德国 (Germany) 53 - sanchun
+  - 🇩🇪 德国 (Germany) 54 - sanchun
+  - 🇩🇪 德国 (Germany) 55 - sanchun
+  - 🇩🇪 德国 (Germany) 56 - sanchun
+  - 🇩🇪 德国 (Germany) 57 - sanchun
+  - 🇩🇪 德国 (Germany) 58 - sanchun
+  - 🇩🇪 德国 (Germany) 59 - sanchun
 rules:
 - MATCH,PROXIES

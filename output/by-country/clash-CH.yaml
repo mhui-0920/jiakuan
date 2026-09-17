@@ -34,20 +34,13 @@ proxies:
   sni: speedtestmark.com
   skip-cert-verify: false
 - name: 🇨🇭 瑞士 (Switzerland) 04 - sanchun
-  server: 185.151.240.3
-  port: 9882
+  server: 140.238.213.114
+  port: 50160
   udp: true
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aabb
-  servername: dl.google.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
+  type: hysteria2
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: www.bing.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

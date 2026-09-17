@@ -19,21 +19,36 @@ proxies:
   cipher: aes-256-gcm
   password: 8ad9d72a5571df86
 - name: 🇷🇺 俄罗斯 (Russia) 03 - sanchun
+  server: 91.240.86.70
+  port: 22443
+  udp: true
+  type: hysteria2
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: 91.240.86.70
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - sanchun
   server: 195.133.5.102
   port: 9011
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 895b4b796a357570
-- name: 🇷🇺 俄罗斯 (Russia) 04 - sanchun
-  server: 91.240.86.70
-  port: 22443
+- name: 🇷🇺 俄罗斯 (Russia) 05 - sanchun
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: /QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA=
+- name: 🇷🇺 俄罗斯 (Russia) 06 - sanchun
+  server: msk.frkn.org
+  port: 443
   udp: true
   type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+  sni: msk.frkn.org
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 05 - sanchun
+- name: 🇷🇺 俄罗斯 (Russia) 07 - sanchun
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -45,14 +60,29 @@ proxies:
     short-id: 23103e1e
   servername: ya.ru
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 06 - sanchun
-  server: msk.frkn.org
-  port: 443
+- name: 🇷🇺 俄罗斯 (Russia) 08 - sanchun
+  server: els1.mangshe.xyz
+  port: 2056
   udp: true
   type: hysteria2
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
-  sni: msk.frkn.org
-  skip-cert-verify: false
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: els1.mangshe.xyz
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 09 - sanchun
+  server: tt.sonyabibboop.com
+  port: 2055
+  udp: true
+  type: vless
+  uuid: cfffb81e-5034-49ce-8729-18b60c7f1e89
+  tls: true
+  reality-opts:
+    public-key: WRPeyQ_iktgiTrL_TekP-U_I7AAAdFokfKZHK2Ankzw
+    short-id: d5cb64c07671c019
+  servername: tt.sonyabibboop.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: sonya-grpc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,6 +94,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 05 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 06 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 07 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 08 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 09 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -75,5 +108,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 05 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 06 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 07 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 08 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 09 - sanchun
 rules:
 - MATCH,PROXIES
