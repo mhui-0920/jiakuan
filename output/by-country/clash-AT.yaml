@@ -17,31 +17,17 @@ proxies:
     short-id: 43dcff53849b81e6
   servername: at.quattro-tech.ru
   client-fingerprint: chrome
-- name: 🇦🇹 奥地利 (Austria) 02 - sanchun
-  server: g1.haxat.bestvbest.ir
-  port: 20610
-  udp: true
-  type: vless
-  uuid: d65a82af-a403-405e-8b7b-27a68b830511
-  tls: true
-  reality-opts:
-    public-key: lcXIrYi2o8yXrYHR321qQ--5lqVT8a6TKbaGpYTq4CI
-    short-id: 1d1a8f9fefeff5e6
-  servername: doctor-yab.ir
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇹 奥地利 (Austria) 01 - sanchun
-  - 🇦🇹 奥地利 (Austria) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇦🇹 奥地利 (Austria) 01 - sanchun
-  - 🇦🇹 奥地利 (Austria) 02 - sanchun
 rules:
 - MATCH,PROXIES

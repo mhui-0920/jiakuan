@@ -6,6 +6,27 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - sanchun",
+      "server": "78.135.73.47",
+      "server_port": 443,
+      "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.datadoghq.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
+          "short_id": "f46cd3ea3d1eb72d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - sanchun",
       "server": "helixgaming.ir",
       "server_port": 80,
       "uuid": "c0e453eb-33ac-4206-8423-3e1286c2ba7a",
@@ -13,27 +34,6 @@
         "type": "ws",
         "headers": {
           "Host": "play.google.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - sanchun",
-      "server": "156.67.63.231",
-      "server_port": 443,
-      "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "sync-bridge.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI",
-          "short_id": "5606d4a25c99e7af"
         }
       }
     },
@@ -74,27 +74,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - sanchun",
-      "server": "tr.curry-load.rutube.info",
-      "server_port": 443,
-      "uuid": "ad297a2b-ae17-4d2d-8fce-e2eafb89b145",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "dw.b-cdn.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8",
-          "short_id": "08"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -102,8 +81,7 @@
         "🇹🇷 土耳其 (Turkey) 01 - sanchun",
         "🇹🇷 土耳其 (Turkey) 02 - sanchun",
         "🇹🇷 土耳其 (Turkey) 03 - sanchun",
-        "🇹🇷 土耳其 (Turkey) 04 - sanchun",
-        "🇹🇷 土耳其 (Turkey) 05 - sanchun"
+        "🇹🇷 土耳其 (Turkey) 04 - sanchun"
       ]
     },
     {
@@ -113,8 +91,7 @@
         "🇹🇷 土耳其 (Turkey) 01 - sanchun",
         "🇹🇷 土耳其 (Turkey) 02 - sanchun",
         "🇹🇷 土耳其 (Turkey) 03 - sanchun",
-        "🇹🇷 土耳其 (Turkey) 04 - sanchun",
-        "🇹🇷 土耳其 (Turkey) 05 - sanchun"
+        "🇹🇷 土耳其 (Turkey) 04 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
