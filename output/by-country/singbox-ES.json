@@ -6,14 +6,22 @@
     {
       "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 01 - sanchun",
+      "server": "108.181.121.226",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "WSyL4XTwNsdv"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 02 - sanchun",
       "server": "5.188.181.201",
-      "server_port": 9029,
+      "server_port": 9019,
       "method": "aes-256-cfb",
-      "password": "dU3DSNS8wYPXzEKw"
+      "password": "GA9KzeEgvfxNrgmM"
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 02 - sanchun",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - sanchun",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -32,14 +40,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - sanchun",
-      "server": "108.181.121.226",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "WSyL4XTwNsdv"
-    },
-    {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 04 - sanchun",
       "server": "46.28.71.247",
@@ -51,7 +51,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,

@@ -1,0 +1,82 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "trojan",
+      "tag": "🇨🇿 捷克 (Czech) 01 - sanchun",
+      "server": "151.101.56.7",
+      "server_port": 443,
+      "password": "mitivpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "mitivpn---ss--s---mitivpn-22e.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02 - sanchun",
+      "server": "153.76.185.89",
+      "server_port": 3090,
+      "uuid": "4172c2af-6f65-46d0-a3fc-9e5d539c9c76",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 03 - sanchun",
+      "server": "194.87.59.15",
+      "server_port": 2085,
+      "uuid": "5eba47a9-e88e-4e6a-b3a3-6f82910e0b51",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇨🇿 捷克 (Czech) 01 - sanchun",
+        "🇨🇿 捷克 (Czech) 02 - sanchun",
+        "🇨🇿 捷克 (Czech) 03 - sanchun"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇨🇿 捷克 (Czech) 01 - sanchun",
+        "🇨🇿 捷克 (Czech) 02 - sanchun",
+        "🇨🇿 捷克 (Czech) 03 - sanchun"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

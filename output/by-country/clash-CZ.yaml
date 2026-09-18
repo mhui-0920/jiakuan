@@ -1,0 +1,53 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇿 捷克 (Czech) 01 - sanchun
+  server: 151.101.56.7
+  port: 443
+  udp: true
+  type: trojan
+  password: mitivpn
+  sni: ssl.fastly.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇨🇿 捷克 (Czech) 02 - sanchun
+  server: 153.76.185.89
+  port: 3090
+  udp: true
+  type: vless
+  uuid: 4172c2af-6f65-46d0-a3fc-9e5d539c9c76
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 03 - sanchun
+  server: 194.87.59.15
+  port: 2085
+  udp: true
+  type: vless
+  uuid: 5eba47a9-e88e-4e6a-b3a3-6f82910e0b51
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇿 捷克 (Czech) 01 - sanchun
+  - 🇨🇿 捷克 (Czech) 02 - sanchun
+  - 🇨🇿 捷克 (Czech) 03 - sanchun
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇿 捷克 (Czech) 01 - sanchun
+  - 🇨🇿 捷克 (Czech) 02 - sanchun
+  - 🇨🇿 捷克 (Czech) 03 - sanchun
+rules:
+- MATCH,PROXIES

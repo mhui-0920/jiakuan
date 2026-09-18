@@ -6,14 +6,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun",
-      "server": "36.224.185.173",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun",
       "server": "r3mrcg001286ek2.cybervena.com",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
@@ -24,16 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
