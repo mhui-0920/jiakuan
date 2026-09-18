@@ -23,8 +23,15 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 03 - sanchun
+  server: 218.237.185.230
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 韩国 (South Korea) 04 - sanchun
   server: 3.36.93.74
   port: 443
   udp: true
@@ -32,7 +39,7 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: 3.36.93.74
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 04 - sanchun
+- name: 🇰🇷 韩国 (South Korea) 05 - sanchun
   server: 3.39.4.109
   port: 18967
   udp: true
@@ -44,8 +51,42 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 05 - sanchun
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 06 - sanchun
+  server: 47.80.61.21
+  port: 443
+  udp: true
+  type: vless
+  uuid: f5851a6e-72da-4e4e-99b2-c79629149503
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: wrSzVpmEdnTU7oS5UbKuNnvP57Z7cJkOZRBwRqHM_Hk
+    short-id: 6132a3b8dd2d8c6b
+  servername: www.logitech.com
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 07 - sanchun
+  server: 47.80.62.191
+  port: 443
+  udp: true
+  type: vless
+  uuid: 43e60b75-9920-450a-94ee-8762758ca49c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Qe5e0FBZwuwYMRYikx8sH5iaowPQwdkn6kgIN8xrQHE
+    short-id: bd0040df20a53b36
+  servername: www.logitech.com
+  client-fingerprint: qq
+- name: 🇰🇷 韩国 (South Korea) 08 - sanchun
+  server: 152.67.200.82
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: 152.67.200.82
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 09 - sanchun
   server: 151.245.106.49
   port: 2053
   udp: true
@@ -57,7 +98,7 @@ proxies:
     short-id: 429499c03d4cc8a0
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 06 - sanchun
+- name: 🇰🇷 韩国 (South Korea) 10 - sanchun
   server: 150-230-252-217.liao.kdns.fr
   port: 50160
   udp: true
@@ -65,7 +106,7 @@ proxies:
   password: 9cfc9458e48c028ec03ff86ebc71c744
   sni: 150-230-252-217.liao.kdns.fr
   skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 07 - sanchun
+- name: 🇰🇷 韩国 (South Korea) 11 - sanchun
   server: 211.178.105.134
   port: 6123
   udp: true
@@ -84,6 +125,10 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 05 - sanchun
   - 🇰🇷 韩国 (South Korea) 06 - sanchun
   - 🇰🇷 韩国 (South Korea) 07 - sanchun
+  - 🇰🇷 韩国 (South Korea) 08 - sanchun
+  - 🇰🇷 韩国 (South Korea) 09 - sanchun
+  - 🇰🇷 韩国 (South Korea) 10 - sanchun
+  - 🇰🇷 韩国 (South Korea) 11 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -96,5 +141,9 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 05 - sanchun
   - 🇰🇷 韩国 (South Korea) 06 - sanchun
   - 🇰🇷 韩国 (South Korea) 07 - sanchun
+  - 🇰🇷 韩国 (South Korea) 08 - sanchun
+  - 🇰🇷 韩国 (South Korea) 09 - sanchun
+  - 🇰🇷 韩国 (South Korea) 10 - sanchun
+  - 🇰🇷 韩国 (South Korea) 11 - sanchun
 rules:
 - MATCH,PROXIES

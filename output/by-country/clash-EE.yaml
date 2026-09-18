@@ -25,17 +25,16 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun
-  server: ee1.sferavpn.pro
+  server: 94.183.170.135
   port: 443
   udp: true
-  type: hysteria2
-  password: cd74c0a406664a5bc0bac098220a2468
-  sni: ee1.sferavpn.pro
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - sanchun
   server: 94.183.170.147
   port: 8443
@@ -52,37 +51,7 @@ proxies:
   grpc-opts:
     grpc-service-name: 9d30d49278
 - name: 🇪🇪 爱沙尼亚 (Estonia) 05 - sanchun
-  server: 95.85.224.154
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 52ecaf96-9c28-4cad-a132-13898f2bbb29
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: BX8CqIiZTbjfp--_TsYmp5pPQzzIZZ6rW9ly5HxDM3E
-    short-id: 8c554321
-  servername: fota-cloud-dn.ospserver.net
-  client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - sanchun
-  server: cabinet.wwwinternetvideo.click
-  port: 443
-  udp: true
-  type: hysteria2
-  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  sni: cabinet.wwwinternetvideo.click
-  skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - sanchun
-  server: 94.183.170.135
-  port: 443
-  udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - sanchun
-  server: ee.sharkygames.fun
+  server: 89.125.13.149
   port: 443
   udp: true
   type: vless
@@ -93,9 +62,9 @@ proxies:
     public-key: GtRDWsSY_OKZq0Nu0_KlBeWLM7m46EQCWFl9NVZr8jM
     short-id: 5145ab05854122b4
   servername: ee.sharkygames.fun
-  client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 09 - sanchun
-  server: ee.shamanapp.online
+  client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - sanchun
+  server: 185.174.135.250
   port: 443
   udp: true
   type: vless
@@ -108,7 +77,25 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇪🇪 爱沙尼亚 (Estonia) 10 - sanchun
+- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - sanchun
+  server: cabinet.wwwinternetvideo.click
+  port: 443
+  udp: true
+  type: hysteria2
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  sni: cabinet.wwwinternetvideo.click
+  skip-cert-verify: false
+- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - sanchun
+  server: ee1.sferavpn.pro
+  port: 443
+  udp: true
+  type: hysteria2
+  password: cd74c0a406664a5bc0bac098220a2468
+  sni: ee1.sferavpn.pro
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
+- name: 🇪🇪 爱沙尼亚 (Estonia) 09 - sanchun
   server: 85.158.108.125
   port: 9462
   udp: true
@@ -136,7 +123,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 07 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 08 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 09 - sanchun
-  - 🇪🇪 爱沙尼亚 (Estonia) 10 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -151,6 +137,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 07 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 08 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 09 - sanchun
-  - 🇪🇪 爱沙尼亚 (Estonia) 10 - sanchun
 rules:
 - MATCH,PROXIES
