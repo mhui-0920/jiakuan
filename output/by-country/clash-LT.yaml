@@ -6,25 +6,25 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - sanchun
   server: 195.238.126.20
+  port: 9078
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: JCJpbRbQZNw9XFZG
+- name: 🇱🇹 立陶宛 (Lithuania) 02 - sanchun
+  server: 195.238.126.20
   port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇹 立陶宛 (Lithuania) 02 - sanchun
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - sanchun
   server: 195.238.126.20
   port: 9011
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: M3t2ZEQcMGRWBjRa
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - sanchun
-  server: 195.238.126.20
-  port: 9068
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
 - name: 🇱🇹 立陶宛 (Lithuania) 04 - sanchun
   server: 195.238.126.20
   port: 9012
@@ -33,25 +33,57 @@ proxies:
   cipher: aes-256-cfb
   password: xaupMUvhptwxdDUg
 - name: 🇱🇹 立陶宛 (Lithuania) 05 - sanchun
-  server: 84.32.215.117
+  server: mail.figmafound.org
   port: 443
   udp: true
   type: vless
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
-    short-id: 4fa44664f6a566d3
-  servername: lt.aether-runet.top
-  client-fingerprint: firefox
+    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
+    short-id: 711ad7f475c35e5e
+  servername: mail.figmafound.org
+  client-fingerprint: random
 - name: 🇱🇹 立陶宛 (Lithuania) 06 - sanchun
-  server: 195.238.126.20
-  port: 9078
+  server: api.figmafound.org
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: JCJpbRbQZNw9XFZG
+  type: vless
+  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
+    short-id: 711ad7f475c35e5e
+  servername: api.figmafound.org
+  client-fingerprint: random
+- name: 🇱🇹 立陶宛 (Lithuania) 07 - sanchun
+  server: cloud.figmafound.org
+  port: 443
+  udp: true
+  type: vless
+  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
+    short-id: 711ad7f475c35e5e
+  servername: cloud.figmafound.org
+  client-fingerprint: random
+- name: 🇱🇹 立陶宛 (Lithuania) 08 - sanchun
+  server: auth.figmafound.org
+  port: 443
+  udp: true
+  type: vless
+  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
+    short-id: 711ad7f475c35e5e
+  servername: auth.figmafound.org
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,6 +95,8 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 04 - sanchun
   - 🇱🇹 立陶宛 (Lithuania) 05 - sanchun
   - 🇱🇹 立陶宛 (Lithuania) 06 - sanchun
+  - 🇱🇹 立陶宛 (Lithuania) 07 - sanchun
+  - 🇱🇹 立陶宛 (Lithuania) 08 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,5 +108,7 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 04 - sanchun
   - 🇱🇹 立陶宛 (Lithuania) 05 - sanchun
   - 🇱🇹 立陶宛 (Lithuania) 06 - sanchun
+  - 🇱🇹 立陶宛 (Lithuania) 07 - sanchun
+  - 🇱🇹 立陶宛 (Lithuania) 08 - sanchun
 rules:
 - MATCH,PROXIES

@@ -5,16 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - sanchun
-  server: 66.235.200.30
-  port: 8880
+  server: 62.233.39.9
+  port: 8443
   udp: true
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime47.workers.dev
+  uuid: b2141c97-76af-ff6f-839b-70a53e23aad9
+  tls: true
+  reality-opts:
+    public-key: oHaUPZiESTQQ89DMd4uIcPWgsyeFFy58iZYX_8mbvWk
+  servername: dl.dell.com
+  client-fingerprint: ios
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - sanchun
   server: 178.236.16.98
   port: 35728
