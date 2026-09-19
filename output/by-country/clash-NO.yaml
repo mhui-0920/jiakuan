@@ -30,6 +30,14 @@ proxies:
   servername: bowandbead.com
   client-fingerprint: qq
 - name: 🇳🇴 挪威 (Norway) 03 - sanchun
+  server: 195.54.170.7
+  port: 1443
+  udp: true
+  type: anytls
+  password: b652305a-0c63-4527-8cb3-0ea582076124
+  sni: no.freeguard.org
+  skip-cert-verify: true
+- name: 🇳🇴 挪威 (Norway) 04 - sanchun
   server: 46.29.238.88
   port: 40443
   udp: true
@@ -49,6 +57,7 @@ proxy-groups:
   - 🇳🇴 挪威 (Norway) 01 - sanchun
   - 🇳🇴 挪威 (Norway) 02 - sanchun
   - 🇳🇴 挪威 (Norway) 03 - sanchun
+  - 🇳🇴 挪威 (Norway) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -57,5 +66,6 @@ proxy-groups:
   - 🇳🇴 挪威 (Norway) 01 - sanchun
   - 🇳🇴 挪威 (Norway) 02 - sanchun
   - 🇳🇴 挪威 (Norway) 03 - sanchun
+  - 🇳🇴 挪威 (Norway) 04 - sanchun
 rules:
 - MATCH,PROXIES

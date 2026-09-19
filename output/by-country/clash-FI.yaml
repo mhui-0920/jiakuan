@@ -5,12 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - sanchun
-  server: 82.47.186.18
-  port: 19290
+  server: 62.238.103.54
+  port: 2083
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: o2rw2hICwu1blrr_gZAl2Q
+  type: vless
+  uuid: d78de562-872e-43dd-be48-e9d7b06c87a3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: tADYkZWWksM_mCqqwlRHCciSCXnP3JMYrPi5eoRHh2s
+    short-id: d059fb98048c5318
+  servername: www.yahoo.com
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 02 - sanchun
   server: 185.79.138.71
   port: 448
@@ -34,61 +40,8 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
     short-id: d368b94e275ab080
   servername: www.google.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 04 - sanchun
-  server: 34.88.172.173
-  port: 443
-  udp: true
-  type: vless
-  uuid: 06e58eed-afc8-4cbf-a0bf-1b7b42e1a87f
-  tls: true
-  reality-opts:
-    public-key: wJwb5WExAnmGiq9mmjtMvoA8E-k10u5VvPegm9RomWU
-    short-id: d4b34bc6b3d2b5ab
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 05 - sanchun
-  server: k2.cloud--vpn.site
-  port: 443
-  udp: true
-  type: vless
-  uuid: 029fc301-ac31-4aae-9fd8-5d0bff6ec5c0
-  tls: true
-  servername: ssl.fastly.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 芬兰 (Finland) 06 - sanchun
-  server: 31.77.199.182
-  port: 443
-  udp: true
-  type: vless
-  uuid: c09cfd91-b234-4998-9bed-a0211b7f5c3c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: -qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04
-    short-id: abcd1234
-  servername: fi2.yservice.help
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 07 - sanchun
-  server: 31.77.199.147
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
-    short-id: 7da2eae792187ab9
-  servername: images.unsplash.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 08 - sanchun
   server: est1313.ggisopi.su
   port: 443
   udp: true
@@ -100,46 +53,7 @@ proxies:
     public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
   servername: est1313.ggisopi.su
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 09 - sanchun
-  server: jujujuj.mervi.icu
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9bbd487f-8f84-4ad7-b897-681c3f7d95dc
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: j7_ysAZxK5vBkMqvu0r8_UUuR3Qp7Yml3fXFDGR5x3w
-    short-id: 573703f224b75e8c
-  servername: jujujuj.mervi.icu
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 10 - sanchun
-  server: vera.kyras.pw
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6db6b948-655f-4f68-a9e7-865050e05b31
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xa2oqWBhi_uW7Zns1Irp8OlAEGQFU_vKTUqUqbnG2Wg
-    short-id: cdf67af2
-  servername: vera.kyras.pw
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 11 - sanchun
-  server: finkafsb.finiki.lol
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: YBKHp6R7xp2Ss2kxbvDNMFPpRrf3oh1wQ2dVMukPHmA
-    short-id: d110331f200987ae
-  servername: finkafsb.finiki.lol
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 12 - sanchun
+- name: 🇫🇮 芬兰 (Finland) 05 - sanchun
   server: 37.143.129.244
   port: 443
   udp: true
@@ -152,21 +66,86 @@ proxies:
     short-id: 48fd192dc4e46bc0
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 13 - sanchun
-  server: 151.101.56.6
+- name: 🇫🇮 芬兰 (Finland) 06 - sanchun
+  server: 176.32.39.116
+  port: 1443
+  udp: true
+  type: anytls
+  password: b652305a-0c63-4527-8cb3-0ea582076124
+  sni: msk4.freeguard.org
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 07 - sanchun
+  server: 31.77.199.182
   port: 443
   udp: true
   type: vless
-  uuid: 029fc301-ac31-4aae-9fd8-5d0bff6ec5c0
+  uuid: c09cfd91-b234-4998-9bed-a0211b7f5c3c
+  flow: xtls-rprx-vision
   tls: true
-  servername: ssl.fastly.com
-  skip-cert-verify: false
+  reality-opts:
+    public-key: -qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04
+    short-id: abcd1234
+  servername: fi2.yservice.help
   client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
+- name: 🇫🇮 芬兰 (Finland) 08 - sanchun
+  server: 31.76.80.238
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9bbd487f-8f84-4ad7-b897-681c3f7d95dc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: j7_ysAZxK5vBkMqvu0r8_UUuR3Qp7Yml3fXFDGR5x3w
+    short-id: 573703f224b75e8c
+  servername: jujujuj.mervi.icu
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 09 - sanchun
+  server: 31.77.199.147
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 10 - sanchun
+  server: 82.47.186.18
+  port: 19290
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: o2rw2hICwu1blrr_gZAl2Q
+- name: 🇫🇮 芬兰 (Finland) 11 - sanchun
+  server: 196.196.206.38
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: YBKHp6R7xp2Ss2kxbvDNMFPpRrf3oh1wQ2dVMukPHmA
+    short-id: d110331f200987ae
+  servername: finkafsb.finiki.lol
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 12 - sanchun
+  server: 144.31.150.111
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6db6b948-655f-4f68-a9e7-865050e05b31
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xa2oqWBhi_uW7Zns1Irp8OlAEGQFU_vKTUqUqbnG2Wg
+    short-id: cdf67af2
+  servername: vera.kyras.pw
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -184,7 +163,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 10 - sanchun
   - 🇫🇮 芬兰 (Finland) 11 - sanchun
   - 🇫🇮 芬兰 (Finland) 12 - sanchun
-  - 🇫🇮 芬兰 (Finland) 13 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -202,6 +180,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 10 - sanchun
   - 🇫🇮 芬兰 (Finland) 11 - sanchun
   - 🇫🇮 芬兰 (Finland) 12 - sanchun
-  - 🇫🇮 芬兰 (Finland) 13 - sanchun
 rules:
 - MATCH,PROXIES

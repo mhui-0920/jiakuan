@@ -17,17 +17,32 @@ proxies:
     short-id: 694ee64512cfcbef
   servername: moldova.cdn-europe.org
   client-fingerprint: random
+- name: 🇲🇩 摩尔多瓦 (Moldova) 02 - sanchun
+  server: uk-lhr-2.blook.network
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7e4a4b85-4b5c-4247-af37-d53eb1bc5706
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: p0MkIIxkklgPs4vJJP5Qp9RxdqgMnjmgoIt5t8g6uSU
+    short-id: 0d04d56e
+  servername: uk-lhr-2.blook.network
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇲🇩 摩尔多瓦 (Moldova) 01 - sanchun
+  - 🇲🇩 摩尔多瓦 (Moldova) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇲🇩 摩尔多瓦 (Moldova) 01 - sanchun
+  - 🇲🇩 摩尔多瓦 (Moldova) 02 - sanchun
 rules:
 - MATCH,PROXIES

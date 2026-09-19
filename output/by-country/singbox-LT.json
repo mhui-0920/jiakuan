@@ -6,86 +6,55 @@
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - sanchun",
-      "server": "195.238.126.20",
-      "server_port": 9012,
+      "server": "195.238.126.84",
+      "server_port": 9039,
       "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
+      "password": "qYEN5HX4JKeVCdEC"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 02 - sanchun",
-      "server": "auth.figmafound.org",
-      "server_port": 443,
-      "uuid": "71b91642-93ed-4923-8cab-877e19bfc2d6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "auth.figmafound.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24",
-          "short_id": "711ad7f475c35e5e"
-        }
-      }
+      "server": "195.238.126.20",
+      "server_port": 9011,
+      "method": "aes-256-cfb",
+      "password": "M3t2ZEQcMGRWBjRa"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 03 - sanchun",
       "server": "195.238.126.20",
-      "server_port": 9045,
+      "server_port": 9001,
       "method": "aes-256-cfb",
-      "password": "Lp27rqyJq72bZsqX"
+      "password": "UkXRsXvR6buDMG2Y"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 04 - sanchun",
-      "server": "mail.figmafound.org",
-      "server_port": 443,
-      "uuid": "71b91642-93ed-4923-8cab-877e19bfc2d6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "mail.figmafound.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24",
-          "short_id": "711ad7f475c35e5e"
-        }
-      }
+      "server": "195.238.126.20",
+      "server_port": 9068,
+      "method": "aes-256-cfb",
+      "password": "mwgRg9hRq3b4Qnwb"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 05 - sanchun",
-      "server": "api.figmafound.org",
-      "server_port": 443,
-      "uuid": "71b91642-93ed-4923-8cab-877e19bfc2d6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.figmafound.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24",
-          "short_id": "711ad7f475c35e5e"
-        }
-      }
+      "server": "195.238.126.20",
+      "server_port": 9002,
+      "method": "aes-256-cfb",
+      "password": "b8KkNDjEd5QqFyRm"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 06 - sanchun",
+      "server": "195.238.126.20",
+      "server_port": 9008,
+      "method": "aes-256-cfb",
+      "password": "y9VURyNzJWNRYEGQ"
     },
     {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 06 - sanchun",
-      "server": "cloud.figmafound.org",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 07 - sanchun",
+      "server": "103.139.51.51",
       "server_port": 443,
       "uuid": "71b91642-93ed-4923-8cab-877e19bfc2d6",
       "flow": "xtls-rprx-vision",
@@ -94,7 +63,7 @@
         "server_name": "cloud.figmafound.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -105,7 +74,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 07 - sanchun",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 08 - sanchun",
+      "server": "103.139.51.21",
+      "server_port": 443,
+      "uuid": "71b91642-93ed-4923-8cab-877e19bfc2d6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "auth.figmafound.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24",
+          "short_id": "711ad7f475c35e5e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 09 - sanchun",
       "server": "lt-vno-3.blook.network",
       "server_port": 443,
       "uuid": "e230740a-aa30-461a-8bf3-9c8cab6332f7",
@@ -125,6 +115,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 10 - sanchun",
+      "server": "lt.aether-runet.top",
+      "server_port": 443,
+      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "lt.aether-runet.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk",
+          "short_id": "4fa44664f6a566d3"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -135,7 +146,10 @@
         "🇱🇹 立陶宛 (Lithuania) 04 - sanchun",
         "🇱🇹 立陶宛 (Lithuania) 05 - sanchun",
         "🇱🇹 立陶宛 (Lithuania) 06 - sanchun",
-        "🇱🇹 立陶宛 (Lithuania) 07 - sanchun"
+        "🇱🇹 立陶宛 (Lithuania) 07 - sanchun",
+        "🇱🇹 立陶宛 (Lithuania) 08 - sanchun",
+        "🇱🇹 立陶宛 (Lithuania) 09 - sanchun",
+        "🇱🇹 立陶宛 (Lithuania) 10 - sanchun"
       ]
     },
     {
@@ -148,7 +162,10 @@
         "🇱🇹 立陶宛 (Lithuania) 04 - sanchun",
         "🇱🇹 立陶宛 (Lithuania) 05 - sanchun",
         "🇱🇹 立陶宛 (Lithuania) 06 - sanchun",
-        "🇱🇹 立陶宛 (Lithuania) 07 - sanchun"
+        "🇱🇹 立陶宛 (Lithuania) 07 - sanchun",
+        "🇱🇹 立陶宛 (Lithuania) 08 - sanchun",
+        "🇱🇹 立陶宛 (Lithuania) 09 - sanchun",
+        "🇱🇹 立陶宛 (Lithuania) 10 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
