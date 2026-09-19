@@ -6,8 +6,8 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - sanchun",
-      "server": "132.243.203.218",
-      "server_port": 8443,
+      "server": "89.110.66.154",
+      "server_port": 443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
@@ -15,11 +15,12 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
         "type": "ws",
+        "path": "/streams/home?ed=2560",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
@@ -28,6 +29,39 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 02 - sanchun",
+      "server": "51.161.204.244",
+      "server_port": 443,
+      "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk",
+          "short_id": "0ad08b47f498efd2"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - sanchun",
+      "server": "vpn-au-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "whatsapp.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - sanchun",
       "server": "34.87.244.111",
       "server_port": 443,
       "uuid": "325bc1be-0cb7-4cf7-bd35-a79ded91bbbd",
@@ -51,7 +85,9 @@
       "outbounds": [
         "auto",
         "🇦🇺 澳大利亚 (Australia) 01 - sanchun",
-        "🇦🇺 澳大利亚 (Australia) 02 - sanchun"
+        "🇦🇺 澳大利亚 (Australia) 02 - sanchun",
+        "🇦🇺 澳大利亚 (Australia) 03 - sanchun",
+        "🇦🇺 澳大利亚 (Australia) 04 - sanchun"
       ]
     },
     {
@@ -59,7 +95,9 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇺 澳大利亚 (Australia) 01 - sanchun",
-        "🇦🇺 澳大利亚 (Australia) 02 - sanchun"
+        "🇦🇺 澳大利亚 (Australia) 02 - sanchun",
+        "🇦🇺 澳大利亚 (Australia) 03 - sanchun",
+        "🇦🇺 澳大利亚 (Australia) 04 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

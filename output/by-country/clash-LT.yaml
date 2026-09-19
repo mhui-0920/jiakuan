@@ -6,72 +6,12 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - sanchun
   server: 195.238.126.20
-  port: 9078
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: JCJpbRbQZNw9XFZG
-- name: 🇱🇹 立陶宛 (Lithuania) 02 - sanchun
-  server: 195.238.126.20
-  port: 9086
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - sanchun
-  server: 195.238.126.20
-  port: 9011
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
-- name: 🇱🇹 立陶宛 (Lithuania) 04 - sanchun
-  server: 195.238.126.20
   port: 9012
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: xaupMUvhptwxdDUg
-- name: 🇱🇹 立陶宛 (Lithuania) 05 - sanchun
-  server: mail.figmafound.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
-    short-id: 711ad7f475c35e5e
-  servername: mail.figmafound.org
-  client-fingerprint: random
-- name: 🇱🇹 立陶宛 (Lithuania) 06 - sanchun
-  server: api.figmafound.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
-    short-id: 711ad7f475c35e5e
-  servername: api.figmafound.org
-  client-fingerprint: random
-- name: 🇱🇹 立陶宛 (Lithuania) 07 - sanchun
-  server: cloud.figmafound.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
-    short-id: 711ad7f475c35e5e
-  servername: cloud.figmafound.org
-  client-fingerprint: random
-- name: 🇱🇹 立陶宛 (Lithuania) 08 - sanchun
+- name: 🇱🇹 立陶宛 (Lithuania) 02 - sanchun
   server: auth.figmafound.org
   port: 443
   udp: true
@@ -84,6 +24,65 @@ proxies:
     short-id: 711ad7f475c35e5e
   servername: auth.figmafound.org
   client-fingerprint: random
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - sanchun
+  server: 195.238.126.20
+  port: 9045
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: Lp27rqyJq72bZsqX
+- name: 🇱🇹 立陶宛 (Lithuania) 04 - sanchun
+  server: mail.figmafound.org
+  port: 443
+  udp: true
+  type: vless
+  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
+    short-id: 711ad7f475c35e5e
+  servername: mail.figmafound.org
+  client-fingerprint: random
+- name: 🇱🇹 立陶宛 (Lithuania) 05 - sanchun
+  server: api.figmafound.org
+  port: 443
+  udp: true
+  type: vless
+  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
+    short-id: 711ad7f475c35e5e
+  servername: api.figmafound.org
+  client-fingerprint: random
+- name: 🇱🇹 立陶宛 (Lithuania) 06 - sanchun
+  server: cloud.figmafound.org
+  port: 443
+  udp: true
+  type: vless
+  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
+    short-id: 711ad7f475c35e5e
+  servername: cloud.figmafound.org
+  client-fingerprint: random
+- name: 🇱🇹 立陶宛 (Lithuania) 07 - sanchun
+  server: lt-vno-3.blook.network
+  port: 443
+  udp: true
+  type: vless
+  uuid: e230740a-aa30-461a-8bf3-9c8cab6332f7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: XZEwCogwNYSmUTxAvanoSdYCslQJAJcKBewa6-_pWS4
+    short-id: 89c919a1
+  servername: lt-vno-3.blook.network
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -96,7 +95,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 05 - sanchun
   - 🇱🇹 立陶宛 (Lithuania) 06 - sanchun
   - 🇱🇹 立陶宛 (Lithuania) 07 - sanchun
-  - 🇱🇹 立陶宛 (Lithuania) 08 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -109,6 +107,5 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 05 - sanchun
   - 🇱🇹 立陶宛 (Lithuania) 06 - sanchun
   - 🇱🇹 立陶宛 (Lithuania) 07 - sanchun
-  - 🇱🇹 立陶宛 (Lithuania) 08 - sanchun
 rules:
 - MATCH,PROXIES

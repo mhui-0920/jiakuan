@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇽 墨西哥 (Mexico) 01 - sanchun
-  server: 34.51.29.171
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9ad81959-02c6-4679-a419-2af6a16ca07a
-  tls: true
-  reality-opts:
-    public-key: 8vHditYTXXNZ37iNTraU4w129svOplF0QUhZwX2n3FA
-    short-id: dcabbf24adf88abc
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇲🇽 墨西哥 (Mexico) 02 - sanchun
   server: 34.51.23.2
   port: 443
   udp: true
@@ -26,6 +14,18 @@ proxies:
   reality-opts:
     public-key: vFcM44RcbcO5jcrSWHLd_0exXAnnJLhpCNnMrWCwlzI
     short-id: 65f01b4b99e52015
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇲🇽 墨西哥 (Mexico) 02 - sanchun
+  server: 34.51.29.171
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9ad81959-02c6-4679-a419-2af6a16ca07a
+  tls: true
+  reality-opts:
+    public-key: 8vHditYTXXNZ37iNTraU4w129svOplF0QUhZwX2n3FA
+    short-id: dcabbf24adf88abc
   servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
