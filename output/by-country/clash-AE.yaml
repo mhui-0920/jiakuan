@@ -5,28 +5,45 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - sanchun
+  server: 104.143.223.69
+  port: 2085
+  udp: true
+  type: vless
+  uuid: f68a9fd4-16c7-46d1-b17c-0a4b224cc00d
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇦🇪 阿联酋 (UAE) 02 - sanchun
+  server: 104.143.223.71
+  port: 2085
+  udp: true
+  type: vless
+  uuid: 3f654175-4f83-47ec-8ce2-f2bf0d160b27
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇦🇪 阿联酋 (UAE) 03 - sanchun
+  server: 104.143.223.82
+  port: 2085
+  udp: true
+  type: vless
+  uuid: 15295b3e-e233-4f3b-95d1-8860d40c75fe
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇦🇪 阿联酋 (UAE) 04 - sanchun
   server: 31.58.181.88
   port: 8443
   udp: true
   type: vless
-  uuid: fbf81d6c-b115-485f-99a6-f42f46fe36fd
+  uuid: 97912cdc-d523-4121-a0d6-52285f8a6898
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
   servername: tradingview.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 02 - sanchun
-  server: 130.49.161.70
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03 - sanchun
+- name: 🇦🇪 阿联酋 (UAE) 05 - sanchun
   server: 31.56.189.27
   port: 2087
   udp: true
@@ -39,7 +56,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: freegrpc
-- name: 🇦🇪 阿联酋 (UAE) 04 - sanchun
+- name: 🇦🇪 阿联酋 (UAE) 06 - sanchun
   server: 78.40.195.140
   port: 443
   udp: true
@@ -52,15 +69,25 @@ proxies:
     short-id: 98096455d963bdbb
   servername: www.booking.com
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 05 - sanchun
-  server: 85.204.107.173
+- name: 🇦🇪 阿联酋 (UAE) 07 - sanchun
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 08 - sanchun
+  server: 85.204.107.181
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: false
-- name: 🇦🇪 阿联酋 (UAE) 06 - sanchun
+- name: 🇦🇪 阿联酋 (UAE) 09 - sanchun
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -71,6 +98,20 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 10 - sanchun
+  server: 89.169.171.202
+  port: 8444
+  udp: true
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,6 +123,10 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - sanchun
   - 🇦🇪 阿联酋 (UAE) 05 - sanchun
   - 🇦🇪 阿联酋 (UAE) 06 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 07 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 08 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 09 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 10 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -93,5 +138,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - sanchun
   - 🇦🇪 阿联酋 (UAE) 05 - sanchun
   - 🇦🇪 阿联酋 (UAE) 06 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 07 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 08 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 09 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 10 - sanchun
 rules:
 - MATCH,PROXIES

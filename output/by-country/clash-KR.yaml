@@ -5,19 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - sanchun
-  server: 141.164.45.187
-  port: 5498
+  server: 218.237.185.230
+  port: 4652
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
 - name: 🇰🇷 韩国 (South Korea) 02 - sanchun
-  server: 141.164.45.187
-  port: 8119
+  server: 3.36.93.74
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 3.36.93.74
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 03 - sanchun
   server: 3.39.4.109
   port: 13672
@@ -58,13 +59,6 @@ proxies:
   servername: www.samsung.com
   client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 06 - sanchun
-  server: 211.178.105.134
-  port: 6123
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇰🇷 韩国 (South Korea) 07 - sanchun
   server: 151.245.106.49
   port: 2053
   udp: true
@@ -76,15 +70,20 @@ proxies:
     short-id: 429499c03d4cc8a0
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 08 - sanchun
-  server: 152.67.200.82
-  port: 50160
+- name: 🇰🇷 韩国 (South Korea) 07 - sanchun
+  server: 47.80.62.191
+  port: 443
   udp: true
-  type: hysteria2
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: 152.67.200.82
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 09 - sanchun
+  type: vless
+  uuid: 43e60b75-9920-450a-94ee-8762758ca49c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Qe5e0FBZwuwYMRYikx8sH5iaowPQwdkn6kgIN8xrQHE
+    short-id: bd0040df20a53b36
+  servername: www.logitech.com
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 08 - sanchun
   server: 150-230-252-217.liao.kdns.fr
   port: 50160
   udp: true
@@ -92,20 +91,6 @@ proxies:
   password: 9cfc9458e48c028ec03ff86ebc71c744
   sni: 150-230-252-217.liao.kdns.fr
   skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 10 - sanchun
-  server: 141.164.45.187
-  port: 8091
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-- name: 🇰🇷 韩国 (South Korea) 11 - sanchun
-  server: 141.164.45.187
-  port: 6679
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
 proxy-groups:
 - name: PROXIES
   type: select
@@ -119,9 +104,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 06 - sanchun
   - 🇰🇷 韩国 (South Korea) 07 - sanchun
   - 🇰🇷 韩国 (South Korea) 08 - sanchun
-  - 🇰🇷 韩国 (South Korea) 09 - sanchun
-  - 🇰🇷 韩国 (South Korea) 10 - sanchun
-  - 🇰🇷 韩国 (South Korea) 11 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -135,8 +117,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 06 - sanchun
   - 🇰🇷 韩国 (South Korea) 07 - sanchun
   - 🇰🇷 韩国 (South Korea) 08 - sanchun
-  - 🇰🇷 韩国 (South Korea) 09 - sanchun
-  - 🇰🇷 韩国 (South Korea) 10 - sanchun
-  - 🇰🇷 韩国 (South Korea) 11 - sanchun
 rules:
 - MATCH,PROXIES

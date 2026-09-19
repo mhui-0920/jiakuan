@@ -5,34 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - sanchun
-  server: 151.101.56.7
-  port: 443
-  udp: true
-  type: trojan
-  password: mitivpn
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇨🇿 捷克 (Czech) 02 - sanchun
-  server: 153.76.185.89
-  port: 3090
-  udp: true
-  type: vless
-  uuid: 4172c2af-6f65-46d0-a3fc-9e5d539c9c76
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇨🇿 捷克 (Czech) 03 - sanchun
-  server: 194.87.59.15
+  server: 194.87.59.13
   port: 2085
   udp: true
   type: vless
-  uuid: 5eba47a9-e88e-4e6a-b3a3-6f82910e0b51
+  uuid: 6687af93-eb39-47a3-9a73-0f79234ef507
   network: grpc
   grpc-opts:
     grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 02 - sanchun
+  server: 62.60.159.173
+  port: 433
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -40,7 +35,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - sanchun
   - 🇨🇿 捷克 (Czech) 02 - sanchun
-  - 🇨🇿 捷克 (Czech) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,6 +42,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - sanchun
   - 🇨🇿 捷克 (Czech) 02 - sanchun
-  - 🇨🇿 捷克 (Czech) 03 - sanchun
 rules:
 - MATCH,PROXIES

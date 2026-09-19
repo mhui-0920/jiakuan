@@ -6,9 +6,30 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - sanchun",
-      "server": "185.87.24.8",
-      "server_port": 2085,
-      "uuid": "2509052f-1107-451e-b5c7-9dfec7b85569",
+      "server": "104.20.6.153",
+      "server_port": 8880,
+      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "index.harmonica02.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - sanchun",
+      "server": "153.52.92.81",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "IXa3ylzS_jBOAsQy071tIQ"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - sanchun",
+      "server": "93.190.9.2",
+      "server_port": 3090,
+      "uuid": "eeccb1d3-2d30-439e-b4c7-895f84c41f03",
       "transport": {
         "type": "grpc",
         "service_name": "vless"
@@ -16,20 +37,18 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - sanchun",
-      "server": "helixgaming.ir",
-      "server_port": 80,
-      "uuid": "c0e453eb-33ac-4206-8423-3e1286c2ba7a",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - sanchun",
+      "server": "93.190.8.19",
+      "server_port": 3090,
+      "uuid": "6687af93-eb39-47a3-9a73-0f79234ef507",
       "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "play.google.com"
-        }
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - sanchun",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - sanchun",
       "server": "78.135.73.47",
       "server_port": 443,
       "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
@@ -50,28 +69,20 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - sanchun",
-      "server": "tr.curry-load.rutube.info",
-      "server_port": 443,
-      "uuid": "ad297a2b-ae17-4d2d-8fce-e2eafb89b145",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "dw.b-cdn.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8",
-          "short_id": "08"
+      "tag": "🇹🇷 土耳其 (Turkey) 06 - sanchun",
+      "server": "helixgaming.ir",
+      "server_port": 80,
+      "uuid": "c0e453eb-33ac-4206-8423-3e1286c2ba7a",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "play.google.com"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - sanchun",
+      "tag": "🇹🇷 土耳其 (Turkey) 07 - sanchun",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -80,7 +91,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -90,27 +101,24 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 - sanchun",
-      "server": "153.52.92.81",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "IXa3ylzS_jBOAsQy071tIQ"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇷 土耳其 (Turkey) 07 - sanchun",
-      "server": "me17.msjia8844.site",
-      "server_port": 7443,
-      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 08 - sanchun",
+      "server": "13.143.137.164",
+      "server_port": 9443,
+      "uuid": "953358cb-82ba-4296-960d-6d2ec3468f4c",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "me17.msjia8844.site",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
+        "server_name": "plaincanvas.videoclothing.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "dZ0rhO_PL67-Ciwc6CHQgtde3a5EUUuReA7M-lRNCDQ",
+          "short_id": "e336c9a786fae301"
+        }
       }
     },
     {
@@ -124,7 +132,8 @@
         "🇹🇷 土耳其 (Turkey) 04 - sanchun",
         "🇹🇷 土耳其 (Turkey) 05 - sanchun",
         "🇹🇷 土耳其 (Turkey) 06 - sanchun",
-        "🇹🇷 土耳其 (Turkey) 07 - sanchun"
+        "🇹🇷 土耳其 (Turkey) 07 - sanchun",
+        "🇹🇷 土耳其 (Turkey) 08 - sanchun"
       ]
     },
     {
@@ -137,7 +146,8 @@
         "🇹🇷 土耳其 (Turkey) 04 - sanchun",
         "🇹🇷 土耳其 (Turkey) 05 - sanchun",
         "🇹🇷 土耳其 (Turkey) 06 - sanchun",
-        "🇹🇷 土耳其 (Turkey) 07 - sanchun"
+        "🇹🇷 土耳其 (Turkey) 07 - sanchun",
+        "🇹🇷 土耳其 (Turkey) 08 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

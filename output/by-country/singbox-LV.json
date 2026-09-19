@@ -7,33 +7,33 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - sanchun",
       "server": "185.135.86.175",
-      "server_port": 9007,
-      "method": "aes-256-cfb",
-      "password": "kSPmvwdFzGMMW5pY"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - sanchun",
-      "server": "185.135.86.175",
       "server_port": 9086,
       "method": "aes-256-cfb",
       "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - sanchun",
+      "server": "185.135.86.175",
+      "server_port": 9036,
+      "method": "aes-256-cfb",
+      "password": "hbtvgUz5uNYyB3Rf"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - sanchun",
       "server": "185.135.86.175",
-      "server_port": 9033,
+      "server_port": 9082,
       "method": "aes-256-cfb",
-      "password": "UTJA57ypk2XKQpnm"
+      "password": "45xgMgm386pjWjTx"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - sanchun",
       "server": "185.135.86.175",
-      "server_port": 9036,
+      "server_port": 9033,
       "method": "aes-256-cfb",
-      "password": "hbtvgUz5uNYyB3Rf"
+      "password": "UTJA57ypk2XKQpnm"
     },
     {
       "type": "shadowsocks",
@@ -55,29 +55,21 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - sanchun",
       "server": "185.135.86.175",
-      "server_port": 9068,
-      "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 08 - sanchun",
-      "server": "185.135.86.175",
       "server_port": 9034,
       "method": "aes-256-cfb",
       "password": "Yg4MbdXFQ9HFFVY6"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 09 - sanchun",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 08 - sanchun",
       "server": "185.135.86.175",
-      "server_port": 9082,
+      "server_port": 9068,
       "method": "aes-256-cfb",
-      "password": "45xgMgm386pjWjTx"
+      "password": "mwgRg9hRq3b4Qnwb"
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 10 - sanchun",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 09 - sanchun",
       "server": "138.124.180.137",
       "server_port": 443,
       "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
@@ -97,6 +89,38 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 10 - sanchun",
+      "server": "185.135.86.175",
+      "server_port": 9007,
+      "method": "aes-256-cfb",
+      "password": "kSPmvwdFzGMMW5pY"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 11 - sanchun",
+      "server": "46.243.142.227",
+      "server_port": 10443,
+      "uuid": "a85ddf9f-329b-4c31-a80a-cd0f2e5b2a30",
+      "tls": {
+        "enabled": true,
+        "server_name": "shprcdn.quest",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "KoNQ52irUOW-fybKx-gUKCuHpMnHhgQ_skjd8TmqJ2k",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.storage.v2.Storage"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -110,7 +134,8 @@
         "🇱🇻 拉脱维亚 (Latvia) 07 - sanchun",
         "🇱🇻 拉脱维亚 (Latvia) 08 - sanchun",
         "🇱🇻 拉脱维亚 (Latvia) 09 - sanchun",
-        "🇱🇻 拉脱维亚 (Latvia) 10 - sanchun"
+        "🇱🇻 拉脱维亚 (Latvia) 10 - sanchun",
+        "🇱🇻 拉脱维亚 (Latvia) 11 - sanchun"
       ]
     },
     {
@@ -126,7 +151,8 @@
         "🇱🇻 拉脱维亚 (Latvia) 07 - sanchun",
         "🇱🇻 拉脱维亚 (Latvia) 08 - sanchun",
         "🇱🇻 拉脱维亚 (Latvia) 09 - sanchun",
-        "🇱🇻 拉脱维亚 (Latvia) 10 - sanchun"
+        "🇱🇻 拉脱维亚 (Latvia) 10 - sanchun",
+        "🇱🇻 拉脱维亚 (Latvia) 11 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,26 +5,42 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - sanchun
-  server: 185.87.24.8
-  port: 2085
+  server: 104.20.6.153
+  port: 8880
   udp: true
   type: vless
-  uuid: 2509052f-1107-451e-b5c7-9dfec7b85569
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇹🇷 土耳其 (Turkey) 02 - sanchun
-  server: helixgaming.ir
-  port: 80
-  udp: true
-  type: vless
-  uuid: c0e453eb-33ac-4206-8423-3e1286c2ba7a
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: play.google.com
+      Host: index.harmonica02.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 02 - sanchun
+  server: 153.52.92.81
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: IXa3ylzS_jBOAsQy071tIQ
 - name: 🇹🇷 土耳其 (Turkey) 03 - sanchun
+  server: 93.190.9.2
+  port: 3090
+  udp: true
+  type: vless
+  uuid: eeccb1d3-2d30-439e-b4c7-895f84c41f03
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇹🇷 土耳其 (Turkey) 04 - sanchun
+  server: 93.190.8.19
+  port: 3090
+  udp: true
+  type: vless
+  uuid: 6687af93-eb39-47a3-9a73-0f79234ef507
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇹🇷 土耳其 (Turkey) 05 - sanchun
   server: 78.135.73.47
   port: 443
   udp: true
@@ -37,20 +53,18 @@ proxies:
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 04 - sanchun
-  server: tr.curry-load.rutube.info
-  port: 443
+- name: 🇹🇷 土耳其 (Turkey) 06 - sanchun
+  server: helixgaming.ir
+  port: 80
   udp: true
   type: vless
-  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8
-    short-id: 08
-  servername: dw.b-cdn.net
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 05 - sanchun
+  uuid: c0e453eb-33ac-4206-8423-3e1286c2ba7a
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: play.google.com
+- name: 🇹🇷 土耳其 (Turkey) 07 - sanchun
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -61,24 +75,20 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 06 - sanchun
-  server: 153.52.92.81
-  port: 1080
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 08 - sanchun
+  server: 13.143.137.164
+  port: 9443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: IXa3ylzS_jBOAsQy071tIQ
-- name: 🇹🇷 土耳其 (Turkey) 07 - sanchun
-  server: me17.msjia8844.site
-  port: 7443
-  udp: true
-  type: hysteria2
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
+  type: vless
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: dZ0rhO_PL67-Ciwc6CHQgtde3a5EUUuReA7M-lRNCDQ
+    short-id: e336c9a786fae301
+  servername: plaincanvas.videoclothing.xyz
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -91,6 +101,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 05 - sanchun
   - 🇹🇷 土耳其 (Turkey) 06 - sanchun
   - 🇹🇷 土耳其 (Turkey) 07 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 08 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -103,5 +114,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 05 - sanchun
   - 🇹🇷 土耳其 (Turkey) 06 - sanchun
   - 🇹🇷 土耳其 (Turkey) 07 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 08 - sanchun
 rules:
 - MATCH,PROXIES
