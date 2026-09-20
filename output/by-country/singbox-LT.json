@@ -6,6 +6,30 @@
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - sanchun",
+      "server": "195.238.126.20",
+      "server_port": 9078,
+      "method": "aes-256-cfb",
+      "password": "JCJpbRbQZNw9XFZG"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - sanchun",
+      "server": "195.238.126.20",
+      "server_port": 9008,
+      "method": "aes-256-cfb",
+      "password": "y9VURyNzJWNRYEGQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - sanchun",
+      "server": "195.238.126.20",
+      "server_port": 9011,
+      "method": "aes-256-cfb",
+      "password": "M3t2ZEQcMGRWBjRa"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - sanchun",
       "server": "195.238.126.84",
       "server_port": 9039,
       "method": "aes-256-cfb",
@@ -13,38 +37,46 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - sanchun",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - sanchun",
       "server": "195.238.126.20",
-      "server_port": 9002,
+      "server_port": 9068,
       "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
+      "password": "mwgRg9hRq3b4Qnwb"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - sanchun",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 06 - sanchun",
       "server": "195.238.126.20",
-      "server_port": 9086,
+      "server_port": 9012,
       "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
+      "password": "xaupMUvhptwxdDUg"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - sanchun",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 07 - sanchun",
       "server": "195.238.126.20",
       "server_port": 9045,
       "method": "aes-256-cfb",
       "password": "Lp27rqyJq72bZsqX"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 08 - sanchun",
+      "server": "195.238.126.20",
+      "server_port": 9086,
+      "method": "aes-256-cfb",
+      "password": "37Z4TFCYhfxcpc9Q"
+    },
+    {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - sanchun",
-      "server": "103.139.51.21",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 09 - sanchun",
+      "server": "103.139.51.51",
       "server_port": 443,
       "uuid": "71b91642-93ed-4923-8cab-877e19bfc2d6",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "auth.figmafound.org",
+        "server_name": "cloud.figmafound.org",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -57,62 +89,30 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 06 - sanchun",
-      "server": "195.238.126.20",
-      "server_port": 9068,
-      "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
-    },
-    {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 07 - sanchun",
-      "server": "a-content.multirouterapp.com",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 10 - sanchun",
+      "server": "103.139.51.21",
       "server_port": 443,
-      "uuid": "8c40bb2c-157a-4830-a2c3-0b35ef50c660",
-      "tls": {
-        "enabled": true,
-        "server_name": "webmetrics.cloudnativecontrol.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "short_id": "8b6f2e4d7c1a5b9f"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "moktana.net.v1.StreamService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 08 - sanchun",
-      "server": "84.32.244.180",
-      "server_port": 443,
-      "uuid": "d2e00857-9581-4030-96e2-9d1ed0b95049",
+      "uuid": "71b91642-93ed-4923-8cab-877e19bfc2d6",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.maxima.lt",
+        "server_name": "auth.figmafound.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "27MLZbr4_ldNKw45jVF61b_SoQ8p78VUCqJONOM5F2g",
-          "short_id": "da2fd9c69e29fa4a"
+          "public_key": "H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24",
+          "short_id": "711ad7f475c35e5e"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 09 - sanchun",
-      "server": "lt.aether-runet.top",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 11 - sanchun",
+      "server": "84.32.215.94",
       "server_port": 443,
       "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
       "flow": "xtls-rprx-vision",
@@ -121,7 +121,7 @@
         "server_name": "lt.aether-runet.top",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -129,6 +129,14 @@
           "short_id": "4fa44664f6a566d3"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 12 - sanchun",
+      "server": "195.238.126.20",
+      "server_port": 9002,
+      "method": "aes-256-cfb",
+      "password": "b8KkNDjEd5QqFyRm"
     },
     {
       "type": "selector",
@@ -143,7 +151,10 @@
         "🇱🇹 立陶宛 (Lithuania) 06 - sanchun",
         "🇱🇹 立陶宛 (Lithuania) 07 - sanchun",
         "🇱🇹 立陶宛 (Lithuania) 08 - sanchun",
-        "🇱🇹 立陶宛 (Lithuania) 09 - sanchun"
+        "🇱🇹 立陶宛 (Lithuania) 09 - sanchun",
+        "🇱🇹 立陶宛 (Lithuania) 10 - sanchun",
+        "🇱🇹 立陶宛 (Lithuania) 11 - sanchun",
+        "🇱🇹 立陶宛 (Lithuania) 12 - sanchun"
       ]
     },
     {
@@ -158,7 +169,10 @@
         "🇱🇹 立陶宛 (Lithuania) 06 - sanchun",
         "🇱🇹 立陶宛 (Lithuania) 07 - sanchun",
         "🇱🇹 立陶宛 (Lithuania) 08 - sanchun",
-        "🇱🇹 立陶宛 (Lithuania) 09 - sanchun"
+        "🇱🇹 立陶宛 (Lithuania) 09 - sanchun",
+        "🇱🇹 立陶宛 (Lithuania) 10 - sanchun",
+        "🇱🇹 立陶宛 (Lithuania) 11 - sanchun",
+        "🇱🇹 立陶宛 (Lithuania) 12 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - sanchun
-  server: 213.183.63.60
-  port: 9030
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: GeregetR8cvQHzYr
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - sanchun
   server: 192.145.31.5
   port: 443
   udp: true
@@ -20,8 +13,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - sanchun
-  server: 192.145.31.5
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - sanchun
+  server: neth9.lunariai.ru
   port: 8443
   udp: true
   type: vless
@@ -30,14 +23,14 @@ proxies:
   servername: neth9.lunariai.ru
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - sanchun
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - sanchun
   server: 213.183.63.60
-  port: 9085
+  port: 9030
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 9ej82EKe2gq7gLAM
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - sanchun
+  password: GeregetR8cvQHzYr
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - sanchun
   server: 193.148.59.178
   port: 443
   udp: true
@@ -50,20 +43,7 @@ proxies:
     short-id: e3daad69
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - sanchun
-  server: 131.123.39.29
-  port: 443
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: pX9uknHGLC9I26TT5kq4bIAljtX2AGWLK23EMgn6xFo
-    short-id: 84be686ea1d16478
-  servername: sheetpeek.com
-  client-fingerprint: firefox
-- name: 🇧🇬 保加利亚 (Bulgaria) 07 - sanchun
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - sanchun
   server: 144.31.50.236
   port: 443
   udp: true
@@ -86,8 +66,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 03 - sanchun
   - 🇧🇬 保加利亚 (Bulgaria) 04 - sanchun
   - 🇧🇬 保加利亚 (Bulgaria) 05 - sanchun
-  - 🇧🇬 保加利亚 (Bulgaria) 06 - sanchun
-  - 🇧🇬 保加利亚 (Bulgaria) 07 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -98,7 +76,5 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 03 - sanchun
   - 🇧🇬 保加利亚 (Bulgaria) 04 - sanchun
   - 🇧🇬 保加利亚 (Bulgaria) 05 - sanchun
-  - 🇧🇬 保加利亚 (Bulgaria) 06 - sanchun
-  - 🇧🇬 保加利亚 (Bulgaria) 07 - sanchun
 rules:
 - MATCH,PROXIES
