@@ -5,24 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - sanchun
-  server: 93.190.8.25
-  port: 3090
+  server: 151.241.226.201
+  port: 2053
   udp: true
   type: vless
-  uuid: f579aee6-d850-4dd8-87de-4ae4b5df9d94
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  tls: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 02 - sanchun
-  server: 93.190.9.15
-  port: 3090
-  udp: true
-  type: vless
-  uuid: 613fc411-78e1-4d68-a663-6abeb46a97e7
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇹🇷 土耳其 (Turkey) 03 - sanchun
   server: 78.135.73.47
   port: 443
   udp: true
@@ -35,49 +29,6 @@ proxies:
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 04 - sanchun
-  server: 151.241.226.201
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 05 - sanchun
-  server: 185.39.204.135
-  port: 443
-  udp: true
-  type: vless
-  uuid: 84a794a5-2420-4ca7-8e08-8d21571f36f3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: d3yQvdpwFHpLkl0ZbTnMH4uihCTKn4CAHy0W6so0VTI
-    short-id: 7c8e3d4a9b1f26d3
-  servername: tr.plus-hit.ru
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 06 - sanchun
-  server: 93.190.9.21
-  port: 3090
-  udp: true
-  type: vless
-  uuid: f579aee6-d850-4dd8-87de-4ae4b5df9d94
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇹🇷 土耳其 (Turkey) 07 - sanchun
-  server: 93.190.9.25
-  port: 3090
-  udp: true
-  type: vless
-  uuid: 7a6ca0f6-473d-4b25-b2cb-f569b963cf15
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
 proxy-groups:
 - name: PROXIES
   type: select
@@ -85,11 +36,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - sanchun
   - 🇹🇷 土耳其 (Turkey) 02 - sanchun
-  - 🇹🇷 土耳其 (Turkey) 03 - sanchun
-  - 🇹🇷 土耳其 (Turkey) 04 - sanchun
-  - 🇹🇷 土耳其 (Turkey) 05 - sanchun
-  - 🇹🇷 土耳其 (Turkey) 06 - sanchun
-  - 🇹🇷 土耳其 (Turkey) 07 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -97,10 +43,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - sanchun
   - 🇹🇷 土耳其 (Turkey) 02 - sanchun
-  - 🇹🇷 土耳其 (Turkey) 03 - sanchun
-  - 🇹🇷 土耳其 (Turkey) 04 - sanchun
-  - 🇹🇷 土耳其 (Turkey) 05 - sanchun
-  - 🇹🇷 土耳其 (Turkey) 06 - sanchun
-  - 🇹🇷 土耳其 (Turkey) 07 - sanchun
 rules:
 - MATCH,PROXIES

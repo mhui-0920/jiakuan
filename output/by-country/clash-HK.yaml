@@ -18,6 +18,16 @@ proxies:
   servername: www.bing.com
   client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - sanchun
+  server: 47.238.126.123
+  port: 443
+  udp: true
+  type: hysteria2
+  password: c77540fdeabd19986d27960142b66f52
+  sni: 47.238.126.123
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 5c8f1a3e7b2d9046c1f8a5e3b7d04f2a
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - sanchun
   server: 47.76.172.190
   port: 443
   udp: true
@@ -30,26 +40,14 @@ proxies:
     short-id: 92ddbafbf38306f5
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - sanchun
-  server: 47.83.173.110
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - sanchun
+  server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
-  password: d16b23ee79f124c735db3cb4369394eb
-  sni: 47.83.173.110
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.89
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 5c8f1a3e7b2d9046c1f8a5e3b7d04f2a
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - sanchun
-  server: nas.aizhzo.com
-  port: 5010
-  udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - sanchun
   server: 202.146.222.174
   port: 443
@@ -59,24 +57,6 @@ proxies:
   sni: 202.146.222.174
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - sanchun
-  server: 195.58.144.56
-  port: 11907
-  udp: true
-  type: vless
-  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
-  tls: true
-  servername: 195.58.144.56
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - sanchun
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.29
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - sanchun
   server: 47.239.6.251
   port: 13779
   udp: true
@@ -89,19 +69,20 @@ proxies:
     short-id: af1bdd293097b664
   servername: tesla.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - sanchun
-  server: 47.238.210.5
-  port: 13779
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - sanchun
+  server: 47.83.173.110
+  port: 443
   udp: true
   type: vless
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  uuid: bca6f15f-89db-40e2-a955-19d084229234
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  servername: tesla.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - sanchun
+    public-key: BqFbrSSosM7RAVvUGTRmCrZlHY6aGwq9HEJs0fMdK0s
+    short-id: 8144589880395fa1
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - sanchun
   server: mz.hkychina.com
   port: 8443
   udp: true
@@ -109,6 +90,16 @@ proxies:
   password: HysTeria2026!Proxy
   sni: mz.hkychina.com
   skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - sanchun
+  server: 152.32.254.68
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: 152.32.254.68
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 proxy-groups:
 - name: PROXIES
   type: select
@@ -123,7 +114,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 07 - sanchun
   - 🇭🇰 中国香港 (Hong Kong) 08 - sanchun
   - 🇭🇰 中国香港 (Hong Kong) 09 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 10 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -138,6 +128,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 07 - sanchun
   - 🇭🇰 中国香港 (Hong Kong) 08 - sanchun
   - 🇭🇰 中国香港 (Hong Kong) 09 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 10 - sanchun
 rules:
 - MATCH,PROXIES

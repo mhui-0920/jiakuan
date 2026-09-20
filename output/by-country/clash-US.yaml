@@ -5,82 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 - sanchun
-  server: 195.211.98.43
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1b4b11d5-4c2d-4533-9a55-636757cdee94
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA
-    short-id: 9c56fddf237e8eaf
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 02 - sanchun
-  server: 67.220.73.204
-  port: 18662
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 03 - sanchun
-  server: 156.146.38.170
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 美国 (United States) 04 - sanchun
-  server: 37.19.198.243
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 美国 (United States) 05 - sanchun
-  server: 138.199.42.68
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸 美国 (United States) 06 - sanchun
-  server: 156.146.38.167
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 美国 (United States) 07 - sanchun
-  server: 156.146.38.168
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 美国 (United States) 08 - sanchun
-  server: 156.146.38.169
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 美国 (United States) 09 - sanchun
   server: 198.98.53.130
   port: 443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: eDfN7SODQceIOmIAbtJJtK
-- name: 🇺🇸 美国 (United States) 10 - sanchun
-  server: 169.40.42.168
+- name: 🇺🇸 美国 (United States) 02 - sanchun
+  server: 147.182.212.232
+  port: 56565
+  udp: true
+  type: vless
+  uuid: 7b188eea-b08f-42c2-bac7-d3b0e74218b8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Td03Ae-cuYLq4xg7MSps58c_yRUcbbwtZLXm0ywabjY
+  servername: www.paypal.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 03 - sanchun
+  server: 169.40.42.224
   port: 443
   udp: true
   type: vless
@@ -92,69 +36,8 @@ proxies:
     short-id: c39cc7310a
   servername: yahoo.com
   client-fingerprint: ios
-- name: 🇺🇸 美国 (United States) 11 - sanchun
-  server: 104.18.40.152
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 8102891d-7b37-4dc5-8261-9474b59b5c63
-  tls: true
-  servername: vip.868068.xyz
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vip.868068.xyz
-- name: 🇺🇸 美国 (United States) 12 - sanchun
-  server: 3.135.191.150
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 (United States) 13 - sanchun
-  server: 3.145.43.38
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 (United States) 14 - sanchun
-  server: 3.15.206.99
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 (United States) 15 - sanchun
-  server: 154.194.12.40
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime35.workers.dev
-- name: 🇺🇸 美国 (United States) 16 - sanchun
-  server: 3.145.36.155
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 (United States) 17 - sanchun
-  server: 15.204.246.132
-  port: 7307
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-- name: 🇺🇸 美国 (United States) 18 - sanchun
-  server: 169.40.42.52
+- name: 🇺🇸 美国 (United States) 04 - sanchun
+  server: 169.40.42.15
   port: 443
   udp: true
   type: vless
@@ -165,134 +48,8 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 19 - sanchun
-  server: 198.251.78.29
-  port: 2053
-  udp: true
-  type: vless
-  uuid: c423cc1b-f88e-421c-9a16-c480d84da20f
-  tls: true
-  reality-opts:
-    public-key: Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw
-    short-id: b5d625695ec82c7e
-  servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 20 - sanchun
-  server: 104.18.0.1
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
-  tls: true
-  servername: all.speedtest03.ccwu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: all.speedtest03.ccwu.cc
-- name: 🇺🇸 美国 (United States) 21 - sanchun
-  server: 199.181.197.40
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime19.workers.dev
-- name: 🇺🇸 美国 (United States) 22 - sanchun
-  server: 3.141.200.225
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 (United States) 23 - sanchun
-  server: 166.62.109.30
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime18.workers.dev
-- name: 🇺🇸 美国 (United States) 24 - sanchun
-  server: 47.253.226.114
-  port: 443
-  udp: true
-  type: vless
-  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 25 - sanchun
-  server: 185.193.28.50
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime07.workers.dev
-- name: 🇺🇸 美国 (United States) 26 - sanchun
-  server: 23.150.248.20
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: qB2Cv9VIlujj
-- name: 🇺🇸 美国 (United States) 27 - sanchun
-  server: 45.135.235.30
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime07.workers.dev
-- name: 🇺🇸 美国 (United States) 28 - sanchun
-  server: 3.148.195.154
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 (United States) 29 - sanchun
-  server: 23.227.39.30
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime17.workers.dev
-- name: 🇺🇸 美国 (United States) 30 - sanchun
-  server: 154.83.2.30
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime28.workers.dev
-- name: 🇺🇸 美国 (United States) 31 - sanchun
+- name: 🇺🇸 美国 (United States) 05 - sanchun
   server: 79.141.172.154
   port: 10453
   udp: true
@@ -306,14 +63,105 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇺🇸 美国 (United States) 32 - sanchun
-  server: 108.181.57.93
-  port: 8388
+- name: 🇺🇸 美国 (United States) 06 - sanchun
+  server: 3.142.197.111
+  port: 443
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: RSo52SbxW40r
-- name: 🇺🇸 美国 (United States) 33 - sanchun
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 (United States) 07 - sanchun
+  server: 3.17.177.61
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 (United States) 08 - sanchun
+  server: 37.19.198.244
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 09 - sanchun
+  server: 37.19.198.160
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 10 - sanchun
+  server: 3.15.148.109
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 (United States) 11 - sanchun
+  server: 37.19.198.243
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 12 - sanchun
+  server: 104.16.10.2
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8102891d-7b37-4dc5-8261-9474b59b5c63
+  tls: true
+  servername: vip.868068.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vip.868068.xyz
+- name: 🇺🇸 美国 (United States) 13 - sanchun
+  server: 15.204.233.41
+  port: 8882
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: 🇺🇸 美国 (United States) 14 - sanchun
+  server: 3.15.206.99
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 (United States) 15 - sanchun
+  server: 89.125.43.121
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9bbd487f-8f84-4ad7-b897-681c3f7d95dc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: wl-pbwMLXrvJkR4yo1JNBU7oiewyuQ-t7jxiS6Kz4D8
+    short-id: 2997575f36da5a09
+  servername: hyhhuh.mervi.icu
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 16 - sanchun
+  server: 16.59.124.31
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 (United States) 17 - sanchun
+  server: 3.145.36.155
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 (United States) 18 - sanchun
   server: 137.184.218.169
   port: 36925
   udp: true
@@ -325,92 +173,45 @@ proxies:
     public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 34 - sanchun
-  server: 38.180.135.156
-  port: 8388
+- name: 🇺🇸 美国 (United States) 19 - sanchun
+  server: 151.101.56.56
+  port: 443
+  udp: true
+  type: trojan
+  password: MiTIVPN
+  sni: ssl.fastly.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇺🇸 美国 (United States) 20 - sanchun
+  server: 3.141.200.225
+  port: 443
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: YHtesZ0qvgtg
-- name: 🇺🇸 美国 (United States) 35 - sanchun
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 (United States) 21 - sanchun
+  server: 169.40.42.235
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+- name: 🇺🇸 美国 (United States) 22 - sanchun
   server: 3.142.164.50
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇺🇸 美国 (United States) 36 - sanchun
-  server: 169.40.42.232
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: ios
-- name: 🇺🇸 美国 (United States) 37 - sanchun
-  server: 169.40.42.35
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 38 - sanchun
-  server: 169.40.42.75
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: ios
-- name: 🇺🇸 美国 (United States) 39 - sanchun
-  server: 3.17.177.61
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 (United States) 40 - sanchun
-  server: 37.19.198.236
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 美国 (United States) 41 - sanchun
-  server: 37.19.198.160
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 美国 (United States) 42 - sanchun
-  server: 192.0.54.30
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime35.workers.dev
-- name: 🇺🇸 美国 (United States) 43 - sanchun
+- name: 🇺🇸 美国 (United States) 23 - sanchun
   server: 159.223.157.129
   port: 8443
   udp: true
@@ -418,80 +219,7 @@ proxies:
   password: suAmQS9LlInNq4Wumh-FUF4GGlpgmG_g
   sni: 159.223.157.129
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 44 - sanchun
-  server: 157.254.174.14
-  port: 443
-  udp: true
-  type: vless
-  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: S6t9-gOX2mxWKNGvGSJ8NxDdlJy78d4gN2-wv2d0hFw
-    short-id: 8319913f2e5f5711
-  servername: us.cache-4d8a.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 45 - sanchun
-  server: 18.188.105.92
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 (United States) 46 - sanchun
-  server: 169.40.42.104
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 47 - sanchun
-  server: 173.244.56.6
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 美国 (United States) 48 - sanchun
-  server: 216.105.168.18
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: bQZl7HDxSabr1FurTYQHFU
-- name: 🇺🇸 美国 (United States) 49 - sanchun
-  server: 169.40.42.15
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 50 - sanchun
-  server: 169.40.42.184
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 51 - sanchun
+- name: 🇺🇸 美国 (United States) 24 - sanchun
   server: 169.40.42.179
   port: 443
   udp: true
@@ -504,39 +232,48 @@ proxies:
     short-id: c39cc7310a
   servername: yahoo.com
   client-fingerprint: ios
-- name: 🇺🇸 美国 (United States) 52 - sanchun
-  server: 169.40.42.212
-  port: 443
+- name: 🇺🇸 美国 (United States) 25 - sanchun
+  server: 38.180.135.156
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YHtesZ0qvgtg
+- name: 🇺🇸 美国 (United States) 26 - sanchun
+  server: 67.220.73.204
+  port: 18662
   udp: true
   type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 53 - sanchun
-  server: 15.204.247.206
-  port: 4444
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
-- name: 🇺🇸 美国 (United States) 54 - sanchun
-  server: 104.18.2.186
-  port: 2095
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 27 - sanchun
+  server: 67.220.73.204
+  port: 16016
   udp: true
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: openai.asshole.us.ci
-- name: 🇺🇸 美国 (United States) 55 - sanchun
-  server: 169.40.42.225
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 28 - sanchun
+  server: 108.181.57.93
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: RSo52SbxW40r
+- name: 🇺🇸 美国 (United States) 29 - sanchun
+  server: 169.40.42.173
   port: 443
   udp: true
   type: vless
@@ -548,25 +285,45 @@ proxies:
     short-id: c39cc7310a
   servername: yahoo.com
   client-fingerprint: ios
-- name: 🇺🇸 美国 (United States) 56 - sanchun
-  server: 167.82.76.7
+- name: 🇺🇸 美国 (United States) 30 - sanchun
+  server: 169.40.42.223
   port: 443
   udp: true
-  type: trojan
-  password: MiTIVPN
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇺🇸 美国 (United States) 57 - sanchun
-  server: 173.244.56.9
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 31 - sanchun
+  server: 34.85.179.6
   port: 443
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 美国 (United States) 58 - sanchun
+  type: vless
+  uuid: 8ea1a178-2719-47b7-99d0-33d8dc361ba3
+  tls: true
+  reality-opts:
+    public-key: cTwhlN0bIkprnzvGCMPmsdxk8XkqUz3LcCrS0FKnbVI
+    short-id: c08efcd72d7e8389
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 32 - sanchun
+  server: 169.40.42.168
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+- name: 🇺🇸 美国 (United States) 33 - sanchun
   server: 167.17.69.171
   port: 443
   udp: true
@@ -578,70 +335,9 @@ proxies:
     public-key: ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk
     short-id: 0990d22f
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 59 - sanchun
-  server: 3.142.197.111
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 (United States) 60 - sanchun
-  server: 104.16.10.2
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8102891d-7b37-4dc5-8261-9474b59b5c63
-  tls: true
-  servername: vip.868068.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: vip.868068.xyz
-- name: 🇺🇸 美国 (United States) 61 - sanchun
-  server: 15.204.97.198
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 62 - sanchun
-  server: 15.204.97.197
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 63 - sanchun
-  server: 15.204.97.195
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 64 - sanchun
-  server: 169.40.42.231
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 34 - sanchun
+  server: 169.40.42.16
   port: 443
   udp: true
   type: vless
@@ -653,20 +349,135 @@ proxies:
     short-id: c39cc7310a
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 65 - sanchun
-  server: 172.235.38.85
-  port: 42942
+- name: 🇺🇸 美国 (United States) 35 - sanchun
+  server: 18.227.228.201
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 (United States) 36 - sanchun
+  server: 138.199.42.68
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇺🇸 美国 (United States) 37 - sanchun
+  server: 156.146.38.170
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 38 - sanchun
+  server: 156.146.38.168
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 39 - sanchun
+  server: 169.40.42.202
+  port: 443
   udp: true
   type: vless
-  uuid: bca46025-bf43-40c0-895b-054a6fbcfd32
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: JmkfJoDWpAqt6gj4cbc4_cwItsdryMlV7joAGfNTKQU
-    short-id: a56d7d8da977f860
-  servername: www.tesla.com
-  client-fingerprint: random
-- name: 🇺🇸 美国 (United States) 66 - sanchun
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+- name: 🇺🇸 美国 (United States) 40 - sanchun
+  server: 18.188.105.92
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 (United States) 41 - sanchun
+  server: us.cache-4d8a.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: S6t9-gOX2mxWKNGvGSJ8NxDdlJy78d4gN2-wv2d0hFw
+    short-id: 8319913f2e5f5711
+  servername: us.cache-4d8a.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 42 - sanchun
+  server: 3.145.43.38
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 (United States) 43 - sanchun
+  server: 195.211.98.43
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1b4b11d5-4c2d-4533-9a55-636757cdee94
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA
+    short-id: 9c56fddf237e8eaf
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 44 - sanchun
+  server: 3.148.195.154
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 (United States) 45 - sanchun
+  server: 173.244.56.9
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 46 - sanchun
+  server: 169.40.42.133
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 47 - sanchun
+  server: 169.40.42.104
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+- name: 🇺🇸 美国 (United States) 48 - sanchun
+  server: 156.146.38.169
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 49 - sanchun
   server: 169.40.42.90
   port: 443
   udp: true
@@ -679,8 +490,82 @@ proxies:
     short-id: c39cc7310a
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 67 - sanchun
-  server: 15.204.97.206
+- name: 🇺🇸 美国 (United States) 50 - sanchun
+  server: 169.40.42.182
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+- name: 🇺🇸 美国 (United States) 51 - sanchun
+  server: 3.135.191.150
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 (United States) 52 - sanchun
+  server: 194.113.194.231
+  port: 1443
+  udp: true
+  type: anytls
+  password: b652305a-0c63-4527-8cb3-0ea582076124
+  sni: ny.freeguard.org
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 53 - sanchun
+  server: 169.40.42.89
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 54 - sanchun
+  server: 173.244.56.6
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 55 - sanchun
+  server: 88.216.195.13
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3c48b5f5-7766-4896-874e-b3ba1860e83a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 4VzPARgETZ4lJIffknTNqmfkP567FqYV94A18Be8vxQ
+    short-id: 837f454e9c8a7e19
+  servername: w-mebel.pro
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 56 - sanchun
+  server: us05.shifor01.life
+  port: 443
+  udp: true
+  type: vless
+  uuid: 11f21602-47aa-42e2-9149-69120f2e6df6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 36sTeaLdaAjQQxxzh492XihoPi2YxmttQyncmLuxYHE
+    short-id: 169fc2df88419465
+  servername: us05.shifor01.life
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 57 - sanchun
+  server: 15.204.97.195
   port: 23576
   udp: true
   type: vless
@@ -692,22 +577,39 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 68 - sanchun
-  server: www.epicgames.com
+- name: 🇺🇸 美国 (United States) 58 - sanchun
+  server: 129.146.202.221
+  port: 50356
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: +fzJvpwW2VTKUH4q8DKLuZXnibvrI2eRuStiXN8txX4=
+- name: 🇺🇸 美国 (United States) 59 - sanchun
+  server: ld.235231.xyz
   port: 443
   udp: true
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  uuid: 65d3f9b3-d289-4a8e-9c87-90bba156de30
   tls: true
-  servername: cnmfangbinxingnmsl.asshole.us.ci
+  servername: ld.235231.xyz
   skip-cert-verify: false
-  client-fingerprint: ios
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: cnmfangbinxingnmsl.asshole.us.ci
-- name: 🇺🇸 美国 (United States) 69 - sanchun
+- name: 🇺🇸 美国 (United States) 60 - sanchun
+  server: 198.251.78.29
+  port: 2053
+  udp: true
+  type: vless
+  uuid: c423cc1b-f88e-421c-9a16-c480d84da20f
+  tls: true
+  reality-opts:
+    public-key: Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw
+    short-id: b5d625695ec82c7e
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 61 - sanchun
   server: 216.227.161.95
   port: 7443
   udp: true
@@ -722,87 +624,74 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc
-- name: 🇺🇸 美国 (United States) 70 - sanchun
-  server: 31.58.50.200
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 22d5930c-6f96-4b77-8f0a-88faca0c9397
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 71 - sanchun
-  server: 51.81.203.63
+- name: 🇺🇸 美国 (United States) 62 - sanchun
+  server: 162.35.96.20
   port: 443
   udp: true
   type: vless
-  uuid: cb2dbb6a-a1ea-4023-9ace-6466cee57241
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0
-    short-id: 4477382ff6d3d41c
-  servername: www.icloud.com
+    public-key: pX9uknHGLC9I26TT5kq4bIAljtX2AGWLK23EMgn6xFo
+    short-id: 84be686ea1d16478
+  servername: sheetpeek.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 63 - sanchun
+  server: 15.204.97.197
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 72 - sanchun
-  server: 142.249.37.90
+- name: 🇺🇸 美国 (United States) 64 - sanchun
+  server: 169.40.42.232
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+- name: 🇺🇸 美国 (United States) 65 - sanchun
+  server: 23.150.248.20
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: qB2Cv9VIlujj
+- name: 🇺🇸 美国 (United States) 66 - sanchun
+  server: 169.40.42.229
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+- name: 🇺🇸 美国 (United States) 67 - sanchun
+  server: hy2.561891.xyz
   port: 44356
   udp: true
   type: hysteria2
   password: dongtaiwang.com
   sni: hy2.561891.xyz
   skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 73 - sanchun
-  server: ld.235231.xyz
-  port: 443
-  udp: true
-  type: vless
-  uuid: 65d3f9b3-d289-4a8e-9c87-90bba156de30
-  tls: true
-  servername: ld.235231.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇺🇸 美国 (United States) 74 - sanchun
-  server: 172.235.43.210
-  port: 53957
-  udp: true
-  type: vless
-  uuid: 7ab29f89-6eef-4171-b232-fc4f580ad31b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: XUHlbk5VH5z4E2wxZBhlpLZ33qevyQgqU7dheRDgoGQ
-    short-id: 44e82fd7b97b14
-  servername: www.nvidia.com
-  client-fingerprint: edge
-- name: 🇺🇸 美国 (United States) 75 - sanchun
-  server: 67.220.73.204
-  port: 16016
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 76 - sanchun
-  server: 155.248.209.237
-  port: 33333
-  udp: true
-  type: hysteria2
-  password: bce6c821-200d-421f-bf3d-7159e5246ea0
-  sni: hy2.123266.xyz
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 77 - sanchun
+- name: 🇺🇸 美国 (United States) 68 - sanchun
   server: 15.204.97.209
   port: 23576
   udp: true
@@ -815,111 +704,7 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 78 - sanchun
-  server: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-  port: 443
-  udp: true
-  type: vless
-  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
-  tls: true
-  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇺🇸 美国 (United States) 79 - sanchun
-  server: 88.216.195.13
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3c48b5f5-7766-4896-874e-b3ba1860e83a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 4VzPARgETZ4lJIffknTNqmfkP567FqYV94A18Be8vxQ
-    short-id: 837f454e9c8a7e19
-  servername: w-mebel.pro
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 80 - sanchun
-  server: 195.123.235.177
-  port: 443
-  udp: true
-  type: vless
-  uuid: 729dd5f2-f5ff-4070-8c10-863eceded0b1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 5B83otQ5ZQwtBFhR7xzsGJRXflkFKRJpQguYbE5JWGI
-    short-id: c85d029f5e8eb393
-  servername: gateway.icloud.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 81 - sanchun
-  server: 15.204.97.219
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 82 - sanchun
-  server: 100.42.228.109
-  port: 443
-  udp: true
-  type: trojan
-  password: BxceQaOe
-  sni: t.me/ripaojiedian
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 83 - sanchun
-  server: 138.199.43.159
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸 美国 (United States) 84 - sanchun
-  server: 151.101.56.56
-  port: 443
-  udp: true
-  type: trojan
-  password: MiTIVPN
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇺🇸 美国 (United States) 85 - sanchun
-  server: 15.204.97.216
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 86 - sanchun
-  server: 162.35.104.143
-  port: 443
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: pX9uknHGLC9I26TT5kq4bIAljtX2AGWLK23EMgn6xFo
-    short-id: 84be686ea1d16478
-  servername: sheetpeek.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 87 - sanchun
+- name: 🇺🇸 美国 (United States) 69 - sanchun
   server: 149.248.79.235
   port: 17301
   udp: true
@@ -934,73 +719,32 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ''
-- name: 🇺🇸 美国 (United States) 88 - sanchun
-  server: 159.89.87.21
-  port: 28190
+- name: 🇺🇸 美国 (United States) 70 - sanchun
+  server: 15.204.97.216
+  port: 23576
   udp: true
   type: vless
-  uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
-  servername: aws.amazon.com
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 89 - sanchun
-  server: 192.3.20.155
+- name: 🇺🇸 美国 (United States) 71 - sanchun
+  server: 31.58.50.200
   port: 8443
   udp: true
   type: vless
-  uuid: 9a9a2876-404e-4cb0-8c9e-546f390a3bc0
+  uuid: 7629f461-49cd-4ada-91d8-ce219466395e
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 8OtJJ5lKbMik_x628CcrqZczsPtiyyoFdNn7j4aneEs
-    short-id: 82eda5cc
-  servername: www.debian.org
+    public-key: mr5AF0LFyDzYDRoYAwH6QNcHXL77-LoiwRx50ZzU8QU
+  servername: tradingview.com
   client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 90 - sanchun
-  server: 154.26.177.228
-  port: 443
-  udp: true
-  type: anytls
-  password: AOQ8R6Z8cODflQvPa6Q5pA==
-  sni: 154.26.177.228
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 91 - sanchun
-  server: 198.200.42.129
-  port: 52977
-  udp: true
-  type: vless
-  uuid: 2f6f1856-5466-4078-b1f0-d3f977211ada
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: X-DQShHbh23E3SeJjZzC-WStkChJU0lxgktpGalzjw4
-    short-id: 0fb9c965
-  servername: apple.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 92 - sanchun
-  server: 172.233.139.46
-  port: 53734
-  udp: true
-  type: vless
-  uuid: 56a1b253-cde4-490f-9c5e-09a523882bdd
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: JAG5rl6KEt7KAV0y8Z2x6orWHymCXRSX49SkEnEftWU
-    short-id: a56d7d8da977f860
-  servername: www.tesla.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 93 - sanchun
-  server: 16.59.124.31
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 (United States) 94 - sanchun
+- name: 🇺🇸 美国 (United States) 72 - sanchun
   server: 185.141.33.2
   port: 443
   udp: true
@@ -1015,32 +759,14 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc
-- name: 🇺🇸 美国 (United States) 95 - sanchun
-  server: 136.148.71.9
-  port: 443
+- name: 🇺🇸 美国 (United States) 73 - sanchun
+  server: 107.151.182.197
+  port: 8080
   udp: true
-  type: vless
-  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM
-    short-id: 9d84de9d9f7b85e9
-  servername: de3.edge-9d7c.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 96 - sanchun
-  server: 194.55.189.249
-  port: 40443
-  udp: true
-  type: vless
-  uuid: 8212a50b-25bf-4739-bba1-aaffb5ffc84c
-  tls: true
-  reality-opts:
-    public-key: KCbW84C8h2Ja01LS0Ro8EpLLfzMTjs11t1ldDWLd5zo
-    short-id: aae8
-  servername: deepl.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 97 - sanchun
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇺🇸 美国 (United States) 74 - sanchun
   server: 89.125.147.199
   port: 443
   udp: true
@@ -1052,61 +778,7 @@ proxies:
     short-id: f6c7c139b9c938db
   servername: maps.apple.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 98 - sanchun
-  server: us13.vipjiedian.sbs
-  port: 21333
-  udp: true
-  type: anytls
-  password: 2d7bda32-a8b5-4416-a1ea-4559ff98f86e
-  sni: apple.com
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 99 - sanchun
-  server: 107.151.182.197
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸 美国 (United States) 100 - sanchun
-  server: 162.35.96.20
-  port: 443
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: pX9uknHGLC9I26TT5kq4bIAljtX2AGWLK23EMgn6xFo
-    short-id: 84be686ea1d16478
-  servername: sheetpeek.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 101 - sanchun
-  server: 136.148.71.4
-  port: 443
-  udp: true
-  type: vless
-  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM
-    short-id: 9d84de9d9f7b85e9
-  servername: de2.edge-9d7c.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 102 - sanchun
-  server: 201.10.94.5
-  port: 443
-  udp: true
-  type: vless
-  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM
-    short-id: 9d84de9d9f7b85e9
-  servername: de1.edge-9d7c.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 103 - sanchun
+- name: 🇺🇸 美国 (United States) 75 - sanchun
   server: 45.141.131.16
   port: 443
   udp: true
@@ -1119,33 +791,60 @@ proxies:
     short-id: 9d84de9d9f7b85e9
   servername: de5.edge-9d7c.com
   client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 104 - sanchun
-  server: 144.31.214.186
+- name: 🇺🇸 美国 (United States) 76 - sanchun
+  server: 136.148.71.9
   port: 443
   udp: true
   type: vless
-  uuid: 9bbd487f-8f84-4ad7-b897-681c3f7d95dc
+  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: EEMZb6c0SADcplLXt8-rTAZYaH-s0o9pXG1daNegzww
-    short-id: 18b63521daeda630
-  servername: hyhkup.mervi.icu
+    public-key: qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM
+    short-id: 9d84de9d9f7b85e9
+  servername: de3.edge-9d7c.com
   client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 105 - sanchun
-  server: app-q0zc4t.user-4gfyh5.workers.dev
+- name: 🇺🇸 美国 (United States) 77 - sanchun
+  server: 136.148.71.4
   port: 443
   udp: true
   type: vless
-  uuid: 07f9bc85-613f-4a33-8da1-191973c43c0a
+  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
+  flow: xtls-rprx-vision
   tls: true
-  servername: app-q0zc4t.user-4gfyh5.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇺🇸 美国 (United States) 106 - sanchun
+  reality-opts:
+    public-key: qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM
+    short-id: 9d84de9d9f7b85e9
+  servername: de2.edge-9d7c.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 78 - sanchun
+  server: 3.21.98.132
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 (United States) 79 - sanchun
+  server: 169.40.42.225
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+- name: 🇺🇸 美国 (United States) 80 - sanchun
+  server: 138.199.43.159
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇺🇸 美国 (United States) 81 - sanchun
   server: cf3.danfeng.eu.org
   port: 8443
   udp: true
@@ -1160,7 +859,306 @@ proxies:
     path: /
     headers:
       Host: vip.868068.xyz
+- name: 🇺🇸 美国 (United States) 82 - sanchun
+  server: 156.229.161.107
+  port: 10001
+  udp: true
+  type: vless
+  uuid: 9c79aceb-4649-44ea-9698-b5e9ecf6d6da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 4jNz4Bw-FZlaX-WtfAdwK0hegY28W_k8AttGd-7hZn4
+    short-id: fb2c6678
+  servername: www.icloud.com
+  client-fingerprint: qq
+- name: 🇺🇸 美国 (United States) 83 - sanchun
+  server: 159.89.87.21
+  port: 28190
+  udp: true
+  type: vless
+  uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
+  servername: aws.amazon.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 84 - sanchun
+  server: 2.27.244.177
+  port: 443
+  udp: true
+  type: vless
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: polacondr.ggisopi.su
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 85 - sanchun
+  server: 34.19.91.203
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9d0395c0-016f-453e-b0be-fc66f1ee1d80
+  tls: true
+  reality-opts:
+    public-key: aGm3egxU7SVqVw-oxqXbJ0u4ctldnmTjwaDh4Mao2EE
+    short-id: bd4aa541e5306ba2
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 86 - sanchun
+  server: 201.10.94.5
+  port: 443
+  udp: true
+  type: vless
+  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM
+    short-id: 9d84de9d9f7b85e9
+  servername: de1.edge-9d7c.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 87 - sanchun
+  server: 15.204.246.107
+  port: 8888
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇺🇸 美国 (United States) 88 - sanchun
+  server: 172.235.43.210
+  port: 53957
+  udp: true
+  type: vless
+  uuid: 7ab29f89-6eef-4171-b232-fc4f580ad31b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: XUHlbk5VH5z4E2wxZBhlpLZ33qevyQgqU7dheRDgoGQ
+    short-id: 44e82fd7b97b14
+  servername: www.nvidia.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 89 - sanchun
+  server: 15.204.97.206
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 90 - sanchun
+  server: us13.vipjiedian.sbs
+  port: 21333
+  udp: true
+  type: anytls
+  password: 2d7bda32-a8b5-4416-a1ea-4559ff98f86e
+  sni: apple.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 91 - sanchun
+  server: 100.42.228.109
+  port: 443
+  udp: true
+  type: trojan
+  password: BxceQaOe
+  sni: t.me/ripaojiedian
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 92 - sanchun
+  server: 162.35.104.143
+  port: 443
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: pX9uknHGLC9I26TT5kq4bIAljtX2AGWLK23EMgn6xFo
+    short-id: 84be686ea1d16478
+  servername: sheetpeek.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 93 - sanchun
+  server: 15.204.97.219
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 94 - sanchun
+  server: 192.3.20.155
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 9a9a2876-404e-4cb0-8c9e-546f390a3bc0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8OtJJ5lKbMik_x628CcrqZczsPtiyyoFdNn7j4aneEs
+    short-id: 82eda5cc
+  servername: www.debian.org
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 95 - sanchun
+  server: 66.94.121.46
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: 66.94.121.46
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 96 - sanchun
+  server: 51.81.203.63
+  port: 443
+  udp: true
+  type: vless
+  uuid: cb2dbb6a-a1ea-4023-9ace-6466cee57241
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0
+    short-id: 4477382ff6d3d41c
+  servername: www.icloud.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 97 - sanchun
+  server: 45.149.172.80
+  port: 443
+  udp: true
+  type: vless
+  uuid: 91d28760-ecf1-450b-9170-d310111a0e6d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: FKTaFzF4zfAqXBdDQHwSVl_XyNcC3T17s_FqhHyZchg
+    short-id: fb9456392070128e
+  servername: www.amazon.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 98 - sanchun
+  server: 156.146.38.167
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 99 - sanchun
+  server: 155.248.209.237
+  port: 33333
+  udp: true
+  type: hysteria2
+  password: bce6c821-200d-421f-bf3d-7159e5246ea0
+  sni: 155.248.209.237
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 100 - sanchun
+  server: 91.193.17.234
+  port: 9460
+  udp: true
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: rAHMmpeUJ6uOoGgk31dTF4-1RTtLZFnOEs_li2AYQWc
+  servername: www.google.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: 🇺🇸 美国 (United States) 101 - sanchun
+  server: 15.204.97.198
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 102 - sanchun
+  server: 140.82.63.79
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ZoZtfPOyVvmKARUN
+- name: 🇺🇸 美国 (United States) 103 - sanchun
+  server: 47.251.108.158
+  port: 443
+  udp: true
+  type: vless
+  uuid: 975fc322-6e38-434b-a53c-d39fed49b9a9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs
+    short-id: 896f52ba2cfca903
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+- name: 🇺🇸 美国 (United States) 104 - sanchun
+  server: 195.123.240.65
+  port: 443
+  udp: true
+  type: vless
+  uuid: ce18d0eb-5c71-41f9-96e5-1632e22456e4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE
+    short-id: 19296c9f1bf9c7b1
+  servername: www.cloudflare.com
+  client-fingerprint: ios
+- name: 🇺🇸 美国 (United States) 105 - sanchun
+  server: 5.78.159.97
+  port: 443
+  udp: true
+  type: vless
+  uuid: b88a54a0-501c-4acf-930b-305354452f4e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: XB7peN-a_9j_WGBHvs3DIMDlsOzJAOehGnziOE9OvwE
+    short-id: 884dffd8e62a5c48
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 106 - sanchun
+  server: 150.241.101.80
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 47d9b534-8a0a-4bd2-90f1-1d6ade14427e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  servername: yandex.net
+  client-fingerprint: firefox
 - name: 🇺🇸 美国 (United States) 107 - sanchun
+  server: 176.108.246.58
+  port: 9881
+  udp: true
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  tls: true
+  reality-opts:
+    public-key: ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU
+  servername: dl.google.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: 🇺🇸 美国 (United States) 108 - sanchun
   server: www.shopify.com
   port: 443
   udp: true
@@ -1176,110 +1174,45 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-- name: 🇺🇸 美国 (United States) 108 - sanchun
-  server: 50.7.227.252
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: uk-dedic.failspace.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
 - name: 🇺🇸 美国 (United States) 109 - sanchun
-  server: nahan-core.fatitelegram.workers.dev
+  server: 2.27.249.79
   port: 443
   udp: true
-  type: vless
-  uuid: 73796e63-0000-4000-8000-000000000000
-  tls: true
-  servername: nahan-core.fatitelegram.workers.dev
+  type: hysteria2
+  password: cd74c0a406664a5bc0bac098220a2468
+  sni: nl1.sferavpn.pro
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nahan-core.fatitelegram.workers.dev
+  obfs: salamander
+  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
 - name: 🇺🇸 美国 (United States) 110 - sanchun
-  server: 169.40.42.133
+  server: 2.24.124.64
   port: 443
   udp: true
   type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  uuid: 719b9354-45e2-4718-8709-d965b64554db
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
+    public-key: zpXR6Y36C8qUCIVk2p_j8C9KGeBk5xisLw66j3WFOls
+    short-id: 9f1fc5a631ef3126
+  servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇺🇸 美国 (United States) 111 - sanchun
-  server: app-538961.user-y0o4gm.workers.dev
-  port: 443
-  udp: true
-  type: trojan
-  password: 0b5fa773-6f37-4134-87d4-0c349742b6f6
-  sni: app-538961.user-y0o4gm.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇺🇸 美国 (United States) 112 - sanchun
-  server: 45.131.71.183
-  port: 8443
+  server: 213.171.25.178
+  port: 9830
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /player?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇺🇸 美国 (United States) 113 - sanchun
-  server: 31.77.13.19
-  port: 2063
-  udp: true
-  type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  flow: xtls-rprx-vision
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
   tls: true
   reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 114 - sanchun
-  server: 2.27.244.177
-  port: 443
-  udp: true
-  type: vless
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: polacondr.ggisopi.su
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 115 - sanchun
-  server: soskeynets-meadow-af5b.woowoorrrkk.workers.dev
-  port: 443
-  udp: true
-  type: vless
-  uuid: a8890c1b-3622-3106-c4be-d8671be32d2b
-  tls: true
-  servername: soskeynets-meadow-af5b.woowoorrrkk.workers.dev
-  skip-cert-verify: false
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+    short-id: aabb
+  servername: dl.google.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: summer-meadow-af5b.woowoorrrkk.workers.dev
-- name: 🇺🇸 美国 (United States) 116 - sanchun
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: 🇺🇸 美国 (United States) 112 - sanchun
   server: 186.246.19.79
   port: 40443
   udp: true
@@ -1292,281 +1225,81 @@ proxies:
     short-id: 2bc0
   servername: deepl.com
   client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 117 - sanchun
-  server: 31.76.3.34
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0d628b17-8ac4-49b9-a422-6b99077bfdf6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: CetY_ReGID1LBH275yWlxxOctI82PtgxR-fjYSRTKzM
-    short-id: 8a2b3c4d5e6f7012
-  servername: tradingview.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 118 - sanchun
-  server: 144.31.200.207
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /code/directory/ads?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇺🇸 美国 (United States) 119 - sanchun
-  server: 5.78.159.97
-  port: 443
-  udp: true
-  type: vless
-  uuid: b88a54a0-501c-4acf-930b-305354452f4e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: XB7peN-a_9j_WGBHvs3DIMDlsOzJAOehGnziOE9OvwE
-    short-id: 884dffd8e62a5c48
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 120 - sanchun
-  server: 85.208.86.91
-  port: 9872
-  udp: true
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: sm3E3hjmT6_Gmg_O9rBz4nfXYrHpnl6-LvcCp6T6_xc
-  servername: dl.google.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: 🇺🇸 美国 (United States) 121 - sanchun
-  server: 150.241.101.80
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 47d9b534-8a0a-4bd2-90f1-1d6ade14427e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-  servername: yandex.net
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 122 - sanchun
-  server: 91.193.17.156
-  port: 9460
-  udp: true
-  type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  tls: true
-  reality-opts:
-    public-key: rAHMmpeUJ6uOoGgk31dTF4-1RTtLZFnOEs_li2AYQWc
-  servername: www.google.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇺🇸 美国 (United States) 123 - sanchun
-  server: 176.123.161.222
-  port: 9892
-  udp: true
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: 🇺🇸 美国 (United States) 124 - sanchun
-  server: 15.204.247.175
-  port: 8008
+- name: 🇺🇸 美国 (United States) 113 - sanchun
+  server: 15.204.247.206
+  port: 4444
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-- name: 🇺🇸 美国 (United States) 125 - sanchun
-  server: 2.27.210.32
+  password: pKEW8JPByTVTLtM
+- name: 🇺🇸 美国 (United States) 114 - sanchun
+  server: 195.123.235.177
   port: 443
   udp: true
   type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  uuid: 729dd5f2-f5ff-4070-8c10-863eceded0b1
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: bZpzmeWiEJyJQy0W2hHc34Nr6BuFXj1UDd80Cbwh1Fk
-    short-id: ff776ff77be48b88
-  servername: latisha.loozerp.wiki
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 126 - sanchun
-  server: 176.108.246.58
-  port: 9881
-  udp: true
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: 🇺🇸 美国 (United States) 127 - sanchun
-  server: 213.171.25.178
-  port: 9830
-  udp: true
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aabb
-  servername: dl.google.com
+    public-key: 5B83otQ5ZQwtBFhR7xzsGJRXflkFKRJpQguYbE5JWGI
+    short-id: c85d029f5e8eb393
+  servername: gateway.icloud.com
   client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: 🇺🇸 美国 (United States) 128 - sanchun
-  server: 2.27.249.79
+- name: 🇺🇸 美国 (United States) 115 - sanchun
+  server: 198.200.42.129
+  port: 52977
+  udp: true
+  type: vless
+  uuid: 2f6f1856-5466-4078-b1f0-d3f977211ada
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: X-DQShHbh23E3SeJjZzC-WStkChJU0lxgktpGalzjw4
+    short-id: 0fb9c965
+  servername: apple.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 116 - sanchun
+  server: 37.19.198.236
   port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 (United States) 117 - sanchun
+  server: es1.xiaoliyu.cyou
+  port: 4433
   udp: true
   type: hysteria2
-  password: cd74c0a406664a5bc0bac098220a2468
-  sni: nl1.sferavpn.pro
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
-- name: 🇺🇸 美国 (United States) 129 - sanchun
-  server: 47.88.107.209
-  port: 443
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: es1.xiaoliyu.cyou
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 118 - sanchun
+  server: 194.55.189.249
+  port: 40443
   udp: true
   type: vless
-  uuid: 17c1b548-97db-4b58-a410-cab03d1f09c4
-  flow: xtls-rprx-vision
+  uuid: 8212a50b-25bf-4739-bba1-aaffb5ffc84c
   tls: true
   reality-opts:
-    public-key: uxMpQ2V3K2VvD0FKyH0hGRxTIshiwssgK7eM-RpBLB8
-    short-id: 1b2c3d4e5f607182
-  servername: www.cloudflare.com
+    public-key: KCbW84C8h2Ja01LS0Ro8EpLLfzMTjs11t1ldDWLd5zo
+    short-id: aae8
+  servername: deepl.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 130 - sanchun
-  server: 34.19.91.203
-  port: 443
+- name: 🇺🇸 美国 (United States) 119 - sanchun
+  server: 15.204.246.132
+  port: 7307
   udp: true
-  type: vless
-  uuid: 9d0395c0-016f-453e-b0be-fc66f1ee1d80
-  tls: true
-  reality-opts:
-    public-key: aGm3egxU7SVqVw-oxqXbJ0u4ctldnmTjwaDh4Mao2EE
-    short-id: bd4aa541e5306ba2
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 131 - sanchun
-  server: 169.40.42.223
-  port: 443
+  type: ss
+  cipher: aes-256-gcm
+  password: FoOiGlkAA9yPEGP
+- name: 🇺🇸 美国 (United States) 120 - sanchun
+  server: 15.204.247.124
+  port: 2375
   udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 132 - sanchun
-  server: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 5a0028f9-c656-cec9-4b61-54678477a408
-  tls: true
-  servername: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
-- name: 🇺🇸 美国 (United States) 133 - sanchun
-  server: 195.123.240.65
-  port: 443
-  udp: true
-  type: vless
-  uuid: ce18d0eb-5c71-41f9-96e5-1632e22456e4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE
-    short-id: 19296c9f1bf9c7b1
-  servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇺🇸 美国 (United States) 134 - sanchun
-  server: 169.40.42.229
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: ios
-- name: 🇺🇸 美国 (United States) 135 - sanchun
-  server: 62.60.159.173
-  port: 433
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇺🇸 美国 (United States) 136 - sanchun
-  server: 169.40.42.182
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: ios
-- name: 🇺🇸 美国 (United States) 137 - sanchun
-  server: 45.39.108.109
-  port: 443
-  udp: true
-  type: vless
-  uuid: d806a58b-33aa-42e0-b170-395e49c16b37
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Y0noOXC8qHmbM0GmDpj-9BBwKSOtHs-uMbNfKU050GQ
-    short-id: b558b9305a0b
-  servername: www.microsoft.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 138 - sanchun
+  type: ss
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: 🇺🇸 美国 (United States) 121 - sanchun
   server: 77.91.68.70
   port: 55983
   udp: true
@@ -1578,27 +1311,21 @@ proxies:
     short-id: 0e
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 139 - sanchun
-  server: 129.146.78.224
-  port: 50356
+- name: 🇺🇸 美国 (United States) 122 - sanchun
+  server: 15.204.247.175
+  port: 8008
   udp: true
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 4MOR5nKc3kU0XBT84w2bQfJJaiod47VBpTqv1LMkds8=
-- name: 🇺🇸 美国 (United States) 140 - sanchun
-  server: 47.251.108.158
-  port: 443
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇺🇸 美国 (United States) 123 - sanchun
+  server: 15.204.247.244
+  port: 4444
   udp: true
-  type: vless
-  uuid: 975fc322-6e38-434b-a53c-d39fed49b9a9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs
-    short-id: 896f52ba2cfca903
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 141 - sanchun
+  type: ss
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+- name: 🇺🇸 美国 (United States) 124 - sanchun
   server: 72.56.40.97
   port: 40443
   udp: true
@@ -1611,6 +1338,41 @@ proxies:
     short-id: ee33
   servername: deepl.com
   client-fingerprint: qq
+- name: 🇺🇸 美国 (United States) 125 - sanchun
+  server: billing.netraidly.ru
+  port: 40443
+  udp: true
+  type: vless
+  uuid: 17d29827-7cf1-4115-b40d-548e10ec355d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: bjOGTQ4xsiFbyCPM_WzoK53L130rW5vZJtuYDJx_pkM
+    short-id: aa3c
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 126 - sanchun
+  server: coco3.mosyx.net
+  port: 1013
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: fB95883lTj5iIJGu0qB9iRq2ulza8IhX
+- name: 🇺🇸 美国 (United States) 127 - sanchun
+  server: 176.109.104.195
+  port: 9873
+  udp: true
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  tls: true
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+    short-id: aabb
+  servername: dl.google.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
 proxy-groups:
 - name: PROXIES
   type: select
@@ -1743,20 +1505,6 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 125 - sanchun
   - 🇺🇸 美国 (United States) 126 - sanchun
   - 🇺🇸 美国 (United States) 127 - sanchun
-  - 🇺🇸 美国 (United States) 128 - sanchun
-  - 🇺🇸 美国 (United States) 129 - sanchun
-  - 🇺🇸 美国 (United States) 130 - sanchun
-  - 🇺🇸 美国 (United States) 131 - sanchun
-  - 🇺🇸 美国 (United States) 132 - sanchun
-  - 🇺🇸 美国 (United States) 133 - sanchun
-  - 🇺🇸 美国 (United States) 134 - sanchun
-  - 🇺🇸 美国 (United States) 135 - sanchun
-  - 🇺🇸 美国 (United States) 136 - sanchun
-  - 🇺🇸 美国 (United States) 137 - sanchun
-  - 🇺🇸 美国 (United States) 138 - sanchun
-  - 🇺🇸 美国 (United States) 139 - sanchun
-  - 🇺🇸 美国 (United States) 140 - sanchun
-  - 🇺🇸 美国 (United States) 141 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -1889,19 +1637,5 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 125 - sanchun
   - 🇺🇸 美国 (United States) 126 - sanchun
   - 🇺🇸 美国 (United States) 127 - sanchun
-  - 🇺🇸 美国 (United States) 128 - sanchun
-  - 🇺🇸 美国 (United States) 129 - sanchun
-  - 🇺🇸 美国 (United States) 130 - sanchun
-  - 🇺🇸 美国 (United States) 131 - sanchun
-  - 🇺🇸 美国 (United States) 132 - sanchun
-  - 🇺🇸 美国 (United States) 133 - sanchun
-  - 🇺🇸 美国 (United States) 134 - sanchun
-  - 🇺🇸 美国 (United States) 135 - sanchun
-  - 🇺🇸 美国 (United States) 136 - sanchun
-  - 🇺🇸 美国 (United States) 137 - sanchun
-  - 🇺🇸 美国 (United States) 138 - sanchun
-  - 🇺🇸 美国 (United States) 139 - sanchun
-  - 🇺🇸 美国 (United States) 140 - sanchun
-  - 🇺🇸 美国 (United States) 141 - sanchun
 rules:
 - MATCH,PROXIES

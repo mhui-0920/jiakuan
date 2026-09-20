@@ -5,21 +5,23 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 01 - sanchun",
-      "server": "34.15.162.1",
-      "server_port": 443,
-      "uuid": "2b1d0c2a-9c80-4b72-892e-93d0500b9210",
+      "tag": "🇧🇪 比利时 (Belgium) 01 - sanchun",
+      "server": "132.243.203.207",
+      "server_port": 8443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw",
-          "short_id": "ca672c53fbbac555"
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
@@ -28,14 +30,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 泰国 (Thailand) 01 - sanchun"
+        "🇧🇪 比利时 (Belgium) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 泰国 (Thailand) 01 - sanchun"
+        "🇧🇪 比利时 (Belgium) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
