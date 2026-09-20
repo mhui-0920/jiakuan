@@ -4,51 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇸🇬 新加坡 (Singapore) 01 - sanchun",
-      "server": "167.82.76.7",
-      "server_port": 443,
-      "password": "MiTIVPN",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "mitivpn---ss--s---mitivpn-33e.global.ssl.fastly.net"
-        }
-      }
+      "server": "138.2.93.177",
+      "server_port": 56927,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "dOk5QAp/D1YVR7DSjgvTKHtcVQKZ1/e9iBohBTWQMIg="
     },
     {
       "type": "shadowsocks",
       "tag": "🇸🇬 新加坡 (Singapore) 02 - sanchun",
-      "server": "168.107.68.192",
-      "server_port": 56927,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "3wYtGhROca1p818RFgftCeodooVes1HaskrJVHZoF3c="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 03 - sanchun",
-      "server": "152.69.221.1",
-      "server_port": 56927,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "BtRfc5wkVnMKTOR55w5GmEnPpoDs+cm++PGpJvjMHkk="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 04 - sanchun",
-      "server": "167.150.100.93",
-      "server_port": 29824,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "2PIuTAxZjzJxni4kxy/GQ36VWTbRrYzl1fjm0ufTR94="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 05 - sanchun",
       "server": "129.150.59.192",
       "server_port": 56927,
       "method": "2022-blake3-chacha20-poly1305",
@@ -56,15 +21,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 06 - sanchun",
-      "server": "194.233.74.160",
-      "server_port": 2342,
-      "method": "chacha20-ietf-poly1305",
-      "password": "XV4bvaJIWoxl3IYEC1e6W7"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 07 - sanchun",
+      "tag": "🇸🇬 新加坡 (Singapore) 03 - sanchun",
       "server": "167.150.100.115",
       "server_port": 27755,
       "method": "2022-blake3-aes-256-gcm",
@@ -72,11 +29,61 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 (Singapore) 04 - sanchun",
+      "server": "194.233.74.160",
+      "server_port": 2342,
+      "method": "chacha20-ietf-poly1305",
+      "password": "XV4bvaJIWoxl3IYEC1e6W7"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 (Singapore) 05 - sanchun",
+      "server": "167.150.100.93",
+      "server_port": 29824,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "2PIuTAxZjzJxni4kxy/GQ36VWTbRrYzl1fjm0ufTR94="
+    },
+    {
+      "type": "tuic",
+      "tag": "🇸🇬 新加坡 (Singapore) 06 - sanchun",
+      "server": "sg2-8sb.6121999.dpdns.org",
+      "server_port": 33738,
+      "uuid": "2d1ad594-80a4-4bfb-87a6-038e39701f51",
+      "password": "2d1ad594-80a4-4bfb-87a6-038e39701f51",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "bbr",
+      "tls": {
+        "enabled": true,
+        "server_name": "sg2-8sb.6121999.dpdns.org",
+        "insecure": false,
+        "alpn": [
+          "h3"
+        ]
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 (Singapore) 07 - sanchun",
+      "server": "103.36.91.32",
+      "server_port": 8388,
+      "method": "chacha20-ietf",
+      "password": "asd123456"
+    },
+    {
+      "type": "hysteria2",
       "tag": "🇸🇬 新加坡 (Singapore) 08 - sanchun",
-      "server": "168.107.70.95",
-      "server_port": 56927,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "YzQ1KSvX/HjYT8QrNVSGsUIBoimpLuVEtaDy+uhoCJw="
+      "server": "8.219.144.195",
+      "server_port": 443,
+      "password": "dd701b4f908452f85af1c3a5f86c6d32",
+      "tls": {
+        "enabled": true,
+        "server_name": "8.219.144.195",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "5c8f1a3e7b2d9046c1f8a5e3b7d04f2a"
+      }
     },
     {
       "type": "vless",
@@ -110,7 +117,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -120,8 +127,29 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 11 - sanchun",
+      "server": "3.0.111.82",
+      "server_port": 12972,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇬 新加坡 (Singapore) 12 - sanchun",
       "server": "138.2.73.238",
       "server_port": 50160,
       "password": "f87376e17da040ed04c9665ce8972930",
@@ -132,109 +160,9 @@
       }
     },
     {
-      "type": "tuic",
-      "tag": "🇸🇬 新加坡 (Singapore) 12 - sanchun",
-      "server": "sg2-8sb.6121999.dpdns.org",
-      "server_port": 33738,
-      "uuid": "2d1ad594-80a4-4bfb-87a6-038e39701f51",
-      "password": "2d1ad594-80a4-4bfb-87a6-038e39701f51",
-      "congestion_control": "bbr",
-      "udp_relay_mode": "quic",
-      "tls": {
-        "enabled": true,
-        "server_name": "sg2-8sb.6121999.dpdns.org",
-        "insecure": false,
-        "alpn": [
-          "h3"
-        ]
-      }
-    },
-    {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 13 - sanchun",
-      "server": "8.219.144.195",
-      "server_port": 443,
-      "password": "dd701b4f908452f85af1c3a5f86c6d32",
-      "tls": {
-        "enabled": true,
-        "server_name": "8.219.144.195",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "5c8f1a3e7b2d9046c1f8a5e3b7d04f2a"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 14 - sanchun",
-      "server": "43.175.131.30",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 15 - sanchun",
-      "server": "140.245.38.33",
-      "server_port": 2096,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 16 - sanchun",
-      "server": "8.222.70.238",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 17 - sanchun",
-      "server": "sg2-8sb.6121999.dpdns.org",
+      "server": "146.235.16.130",
       "server_port": 19825,
       "uuid": "2d1ad594-80a4-4bfb-87a6-038e39701f51",
       "flow": "xtls-rprx-vision",
@@ -243,7 +171,7 @@
         "server_name": "sg2-8sb.6121999.dpdns.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -254,65 +182,49 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 18 - sanchun",
-      "server": "160.30.54.63",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tag": "🇸🇬 新加坡 (Singapore) 14 - sanchun",
+      "server": "3.0.111.82",
+      "server_port": 10574,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/channel?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 19 - sanchun",
-      "server": "141.193.213.20",
-      "server_port": 8443,
-      "uuid": "29c3dd6b-b164-40ca-a0d5-f06aca52a8b2",
+      "tag": "🇸🇬 新加坡 (Singapore) 15 - sanchun",
+      "server": "3.0.111.82",
+      "server_port": 17623,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "u.srilankangrill.online",
-        "insecure": false,
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "u.srilankangrill.online"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 20 - sanchun",
-      "server": "support.zoom.us",
-      "server_port": 80,
-      "uuid": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "u.srilankangrill.online"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 21 - sanchun",
+      "tag": "🇸🇬 新加坡 (Singapore) 16 - sanchun",
       "server": "152.67.101.72",
       "server_port": 23010,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
@@ -333,20 +245,91 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 17 - sanchun",
+      "server": "140.245.38.33",
+      "server_port": 2096,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 18 - sanchun",
+      "server": "support.zoom.us",
+      "server_port": 80,
+      "uuid": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "u.srilankangrill.online"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 19 - sanchun",
+      "server": "8.222.70.238",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 (Singapore) 20 - sanchun",
+      "server": "168.107.70.95",
+      "server_port": 56927,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "YzQ1KSvX/HjYT8QrNVSGsUIBoimpLuVEtaDy+uhoCJw="
+    },
+    {
       "type": "trojan",
-      "tag": "🇸🇬 新加坡 (Singapore) 22 - sanchun",
-      "server": "cloud.lakshan.us",
+      "tag": "🇸🇬 新加坡 (Singapore) 21 - sanchun",
+      "server": "64.120.95.203",
       "server_port": 119,
       "password": "skynet",
       "tls": {
         "enabled": true,
         "server_name": "cloud.lakshan.us",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 (Singapore) 22 - sanchun",
+      "server": "139.180.220.175",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "qpSevKaUXYQKvSjp"
     },
     {
       "type": "selector",

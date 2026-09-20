@@ -15,27 +15,18 @@ proxies:
     public-key: 3ekBKAuIIAOjtkKJ0T-qpC7uJsqsY2fVLRB6C70A5hw
     short-id: d7676b6a468a03b3
   servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇨🇱 智利 (Chile) 02 - sanchun
-  server: 64.176.2.21
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: xBStBEVqvGwHPocc
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇱 智利 (Chile) 01 - sanchun
-  - 🇨🇱 智利 (Chile) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇱 智利 (Chile) 01 - sanchun
-  - 🇨🇱 智利 (Chile) 02 - sanchun
 rules:
 - MATCH,PROXIES

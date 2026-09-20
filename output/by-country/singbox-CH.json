@@ -58,33 +58,17 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇨🇭 瑞士 (Switzerland) 04 - sanchun",
-      "server": "104.165.205.142",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 05 - sanchun",
-      "server": "104.165.205.81",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": false
-      }
+      "server": "94.249.187.46",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "IXa3ylzS_jBOAsQy071tIQ"
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 06 - sanchun",
-      "server": "ch.cache-4d8a.com",
+      "tag": "🇨🇭 瑞士 (Switzerland) 05 - sanchun",
+      "server": "179.43.162.252",
       "server_port": 443,
       "uuid": "ddf09ad0-02dc-485b-9048-1038de5bebf0",
       "flow": "xtls-rprx-vision",
@@ -93,57 +77,13 @@
         "server_name": "ch.cache-4d8a.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
           "public_key": "lYVz8iVZI2XjTCw_XS9wi08P1DLXO0c7jQo-_xyw2xY",
           "short_id": "9d84de9d9f7b85e9"
         }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 07 - sanchun",
-      "server": "104.165.205.23",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 08 - sanchun",
-      "server": "104.165.205.191",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 (Switzerland) 09 - sanchun",
-      "server": "132.243.175.144",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 10 - sanchun",
-      "server": "140.238.213.114",
-      "server_port": 50160,
-      "password": "84a506ca5aca505696a454d828420b3f",
-      "tls": {
-        "enabled": true,
-        "server_name": "140.238.213.114",
-        "insecure": true
       }
     },
     {
@@ -155,12 +95,7 @@
         "🇨🇭 瑞士 (Switzerland) 02 - sanchun",
         "🇨🇭 瑞士 (Switzerland) 03 - sanchun",
         "🇨🇭 瑞士 (Switzerland) 04 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 05 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 06 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 07 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 08 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 09 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 10 - sanchun"
+        "🇨🇭 瑞士 (Switzerland) 05 - sanchun"
       ]
     },
     {
@@ -171,12 +106,7 @@
         "🇨🇭 瑞士 (Switzerland) 02 - sanchun",
         "🇨🇭 瑞士 (Switzerland) 03 - sanchun",
         "🇨🇭 瑞士 (Switzerland) 04 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 05 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 06 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 07 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 08 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 09 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 10 - sanchun"
+        "🇨🇭 瑞士 (Switzerland) 05 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

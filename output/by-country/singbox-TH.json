@@ -5,22 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - sanchun",
-      "server": "87.121.47.179",
+      "tag": "🇹🇭 泰国 (Thailand) 01 - sanchun",
+      "server": "34.15.162.1",
       "server_port": 443,
-      "uuid": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
-      "flow": "xtls-rprx-vision",
+      "uuid": "2b1d0c2a-9c80-4b72-892e-93d0500b9210",
       "tls": {
         "enabled": true,
-        "server_name": "aotocon.ggisopi.su",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
-          "short_id": ""
+          "public_key": "LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw",
+          "short_id": "ca672c53fbbac555"
         }
       }
     },
@@ -29,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇲 亚美尼亚 (Armenia) 01 - sanchun"
+        "🇹🇭 泰国 (Thailand) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇲 亚美尼亚 (Armenia) 01 - sanchun"
+        "🇹🇭 泰国 (Thailand) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

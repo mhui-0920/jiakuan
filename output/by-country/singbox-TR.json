@@ -6,20 +6,21 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - sanchun",
-      "server": "151.241.226.201",
-      "server_port": 2053,
-      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
+      "server": "31.214.152.140",
+      "server_port": 443,
+      "uuid": "ad297a2b-ae17-4d2d-8fce-e2eafb89b145",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "dw.b-cdn.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
-          "short_id": "9e419c0759b54d6f"
+          "public_key": "bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8",
+          "short_id": "08"
         }
       }
     },
@@ -45,12 +46,50 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - sanchun",
+      "server": "me17.msjia8844.site",
+      "server_port": 7443,
+      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
+      "tls": {
+        "enabled": true,
+        "server_name": "me17.msjia8844.site",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - sanchun",
+      "server": "151.241.226.201",
+      "server_port": 2053,
+      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
+          "short_id": "9e419c0759b54d6f"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - sanchun",
-        "🇹🇷 土耳其 (Turkey) 02 - sanchun"
+        "🇹🇷 土耳其 (Turkey) 02 - sanchun",
+        "🇹🇷 土耳其 (Turkey) 03 - sanchun",
+        "🇹🇷 土耳其 (Turkey) 04 - sanchun"
       ]
     },
     {
@@ -58,7 +97,9 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - sanchun",
-        "🇹🇷 土耳其 (Turkey) 02 - sanchun"
+        "🇹🇷 土耳其 (Turkey) 02 - sanchun",
+        "🇹🇷 土耳其 (Turkey) 03 - sanchun",
+        "🇹🇷 土耳其 (Turkey) 04 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

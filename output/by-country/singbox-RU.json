@@ -4,37 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - sanchun",
-      "server": "130.49.189.158",
-      "server_port": 45433,
-      "uuid": "4ea67585-c211-4358-9173-cbdff7a6aede",
-      "flow": "xtls-rprx-vision",
+      "server": "91.240.86.70",
+      "server_port": 22443,
+      "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "dfJb8gJq6IRsE1KMsfZp5tNLiwBNQMbSl5NF1z5dq3c",
-          "short_id": "5e101cd5"
-        }
+        "server_name": "hy.quattro-tech.ru",
+        "insecure": false
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - sanchun",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "5dLyPJpSV+QyXFRj+S0dt6xFKHxtcXEkRO/TzJGzryU="
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - sanchun",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - sanchun",
       "server": "msk.frkn.org",
       "server_port": 443,
       "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
@@ -45,20 +28,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - sanchun",
-      "server": "91.240.86.70",
-      "server_port": 22443,
-      "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
-      "tls": {
-        "enabled": true,
-        "server_name": "itsallproxy.quattro-tech.ru",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - sanchun",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - sanchun",
       "server": "45.12.75.242",
       "server_port": 26424,
       "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
@@ -67,12 +38,45 @@
         "server_name": "ya.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
           "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
           "short_id": "23103e1e"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - sanchun",
+      "server": "46.8.210.129",
+      "server_port": 22443,
+      "password": "2a3b101d-d8f9-40e7-9373-b0ef487c0035",
+      "tls": {
+        "enabled": true,
+        "server_name": "disk.api-yandex.net",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - sanchun",
+      "server": "85.198.70.200",
+      "server_port": 14406,
+      "uuid": "237f91bf-102e-4077-8cc3-baebccb42936",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "vk.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ldAmsl3dqTCUBmlmA8CS9ZnpznP6cFWj9AxNddWnbxY",
+          "short_id": "1a2b3c4d5e6f7a8b"
         }
       }
     },
