@@ -13,53 +13,26 @@ proxies:
   password: qYEN5HX4JKeVCdEC
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - sanchun
   server: 195.238.126.20
-  port: 9011
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - sanchun
-  server: 195.238.126.20
-  port: 9001
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: UkXRsXvR6buDMG2Y
-- name: 🇱🇹 立陶宛 (Lithuania) 04 - sanchun
-  server: 195.238.126.20
-  port: 9068
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇹 立陶宛 (Lithuania) 05 - sanchun
-  server: 195.238.126.20
   port: 9002
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: b8KkNDjEd5QqFyRm
-- name: 🇱🇹 立陶宛 (Lithuania) 06 - sanchun
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - sanchun
   server: 195.238.126.20
-  port: 9008
+  port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: y9VURyNzJWNRYEGQ
-- name: 🇱🇹 立陶宛 (Lithuania) 07 - sanchun
-  server: 103.139.51.51
-  port: 443
+  password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇹 立陶宛 (Lithuania) 04 - sanchun
+  server: 195.238.126.20
+  port: 9045
   udp: true
-  type: vless
-  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
-    short-id: 711ad7f475c35e5e
-  servername: cloud.figmafound.org
-  client-fingerprint: firefox
-- name: 🇱🇹 立陶宛 (Lithuania) 08 - sanchun
+  type: ss
+  cipher: aes-256-cfb
+  password: Lp27rqyJq72bZsqX
+- name: 🇱🇹 立陶宛 (Lithuania) 05 - sanchun
   server: 103.139.51.21
   port: 443
   udp: true
@@ -72,20 +45,42 @@ proxies:
     short-id: 711ad7f475c35e5e
   servername: auth.figmafound.org
   client-fingerprint: firefox
-- name: 🇱🇹 立陶宛 (Lithuania) 09 - sanchun
-  server: lt-vno-3.blook.network
+- name: 🇱🇹 立陶宛 (Lithuania) 06 - sanchun
+  server: 195.238.126.20
+  port: 9068
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mwgRg9hRq3b4Qnwb
+- name: 🇱🇹 立陶宛 (Lithuania) 07 - sanchun
+  server: a-content.multirouterapp.com
   port: 443
   udp: true
   type: vless
-  uuid: e230740a-aa30-461a-8bf3-9c8cab6332f7
+  uuid: 8c40bb2c-157a-4830-a2c3-0b35ef50c660
+  tls: true
+  reality-opts:
+    public-key: C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4
+    short-id: 8b6f2e4d7c1a5b9f
+  servername: webmetrics.cloudnativecontrol.com
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: moktana.net.v1.StreamService
+- name: 🇱🇹 立陶宛 (Lithuania) 08 - sanchun
+  server: 84.32.244.180
+  port: 443
+  udp: true
+  type: vless
+  uuid: d2e00857-9581-4030-96e2-9d1ed0b95049
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: XZEwCogwNYSmUTxAvanoSdYCslQJAJcKBewa6-_pWS4
-    short-id: 89c919a1
-  servername: lt-vno-3.blook.network
-  client-fingerprint: chrome
-- name: 🇱🇹 立陶宛 (Lithuania) 10 - sanchun
+    public-key: 27MLZbr4_ldNKw45jVF61b_SoQ8p78VUCqJONOM5F2g
+    short-id: da2fd9c69e29fa4a
+  servername: www.maxima.lt
+  client-fingerprint: random
+- name: 🇱🇹 立陶宛 (Lithuania) 09 - sanchun
   server: lt.aether-runet.top
   port: 443
   udp: true
@@ -112,7 +107,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 07 - sanchun
   - 🇱🇹 立陶宛 (Lithuania) 08 - sanchun
   - 🇱🇹 立陶宛 (Lithuania) 09 - sanchun
-  - 🇱🇹 立陶宛 (Lithuania) 10 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -127,6 +121,5 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 07 - sanchun
   - 🇱🇹 立陶宛 (Lithuania) 08 - sanchun
   - 🇱🇹 立陶宛 (Lithuania) 09 - sanchun
-  - 🇱🇹 立陶宛 (Lithuania) 10 - sanchun
 rules:
 - MATCH,PROXIES

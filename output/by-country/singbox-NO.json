@@ -26,6 +26,26 @@
     {
       "type": "vless",
       "tag": "🇳🇴 挪威 (Norway) 02 - sanchun",
+      "server": "46.29.238.88",
+      "server_port": 40443,
+      "uuid": "db320947-adfb-400d-b60b-383b8324bffe",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc",
+          "short_id": "f7b2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇴 挪威 (Norway) 03 - sanchun",
       "server": "151.242.168.125",
       "server_port": 390,
       "uuid": "7b363f9c-3df9-4b60-a789-9cd36be0bdfe",
@@ -45,35 +65,15 @@
       }
     },
     {
-      "type": "anytls",
-      "tag": "🇳🇴 挪威 (Norway) 03 - sanchun",
-      "server": "195.54.170.7",
-      "server_port": 1443,
-      "password": "b652305a-0c63-4527-8cb3-0ea582076124",
-      "tls": {
-        "enabled": true,
-        "server_name": "no.freeguard.org",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇳🇴 挪威 (Norway) 04 - sanchun",
-      "server": "46.29.238.88",
-      "server_port": 40443,
-      "uuid": "db320947-adfb-400d-b60b-383b8324bffe",
+      "server": "46.8.210.129",
+      "server_port": 22443,
+      "password": "2a3b101d-d8f9-40e7-9373-b0ef487c0035",
       "tls": {
         "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc",
-          "short_id": "f7b2"
-        }
+        "server_name": "disk.api-yandex.net",
+        "insecure": false
       }
     },
     {
