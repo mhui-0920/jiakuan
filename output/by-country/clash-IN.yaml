@@ -5,12 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - sanchun
-  server: 139.84.166.47
-  port: 8388
+  server: 34.93.188.70
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: GEdoeeqLZtkJRgSa
+  type: vless
+  uuid: 5004e3d7-a9bd-4a7c-a6d5-58aa5e1be9ed
+  tls: true
+  reality-opts:
+    public-key: 97C6O3repofpoaJzvu1d4o7amhJGA8hF_yJls7SNIgU
+    short-id: b9299afa0dcac824
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 02 - sanchun
   server: 34.47.245.203
   port: 443
@@ -32,26 +37,6 @@ proxies:
   sni: tttyder.wsone.icu
   skip-cert-verify: true
 - name: 🇮🇳 印度 (India) 04 - sanchun
-  server: 34.93.188.70
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5004e3d7-a9bd-4a7c-a6d5-58aa5e1be9ed
-  tls: true
-  reality-opts:
-    public-key: 97C6O3repofpoaJzvu1d4o7amhJGA8hF_yJls7SNIgU
-    short-id: b9299afa0dcac824
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 05 - sanchun
-  server: 34.131.228.210
-  port: 443
-  udp: true
-  type: trojan
-  password: M7v%w11Se*
-  sni: hyfuuf6.wsone.icu
-  skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 06 - sanchun
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -62,6 +47,19 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 05 - sanchun
+  server: 148.113.5.44
+  port: 443
+  udp: true
+  type: vless
+  uuid: 72ea5a91-ffcc-43d2-9297-5993c3abf186
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI
+    short-id: 221873918e0bb74d
+  servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -73,7 +71,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - sanchun
   - 🇮🇳 印度 (India) 04 - sanchun
   - 🇮🇳 印度 (India) 05 - sanchun
-  - 🇮🇳 印度 (India) 06 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,6 +81,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - sanchun
   - 🇮🇳 印度 (India) 04 - sanchun
   - 🇮🇳 印度 (India) 05 - sanchun
-  - 🇮🇳 印度 (India) 06 - sanchun
 rules:
 - MATCH,PROXIES
