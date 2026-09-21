@@ -5,15 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - sanchun
-  server: 153.76.185.188
-  port: 3090
-  udp: true
-  type: vless
-  uuid: 9912a5ca-3ee1-45ac-b182-46fec2610ee0
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇨🇿 捷克 (Czech) 02 - sanchun
   server: 153.76.185.189
   port: 3090
   udp: true
@@ -22,8 +13,17 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 02 - sanchun
+  server: 153.76.185.82
+  port: 3090
+  udp: true
+  type: vless
+  uuid: 585fdc07-0305-427c-abfb-7c94dc83466e
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 - name: 🇨🇿 捷克 (Czech) 03 - sanchun
-  server: 153.76.185.186
+  server: 153.76.185.188
   port: 3090
   udp: true
   type: vless
@@ -32,6 +32,15 @@ proxies:
   grpc-opts:
     grpc-service-name: vless
 - name: 🇨🇿 捷克 (Czech) 04 - sanchun
+  server: 153.76.185.186
+  port: 3090
+  udp: true
+  type: vless
+  uuid: 9912a5ca-3ee1-45ac-b182-46fec2610ee0
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 05 - sanchun
   server: 95.85.230.35
   port: 443
   udp: true
@@ -43,6 +52,21 @@ proxies:
     public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
   servername: de.oblaco.bet
   client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 06 - sanchun
+  server: 103.31.77.108
+  port: 2053
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,6 +76,8 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 02 - sanchun
   - 🇨🇿 捷克 (Czech) 03 - sanchun
   - 🇨🇿 捷克 (Czech) 04 - sanchun
+  - 🇨🇿 捷克 (Czech) 05 - sanchun
+  - 🇨🇿 捷克 (Czech) 06 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,5 +87,7 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 02 - sanchun
   - 🇨🇿 捷克 (Czech) 03 - sanchun
   - 🇨🇿 捷克 (Czech) 04 - sanchun
+  - 🇨🇿 捷克 (Czech) 05 - sanchun
+  - 🇨🇿 捷克 (Czech) 06 - sanchun
 rules:
 - MATCH,PROXIES

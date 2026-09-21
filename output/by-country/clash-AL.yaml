@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇱 AL 01 - sanchun
-  server: 194.93.61.100
+  server: new3.api.go-vpn.club
   port: 443
   udp: true
   type: vless
