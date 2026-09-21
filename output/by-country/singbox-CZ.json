@@ -6,9 +6,9 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - sanchun",
-      "server": "153.76.185.189",
+      "server": "153.76.185.85",
       "server_port": 3090,
-      "uuid": "5ebdc9ee-8b41-4487-93af-231cb0b47d60",
+      "uuid": "6ee61b52-b3c3-4553-aea8-7afbdf15f607",
       "transport": {
         "type": "grpc",
         "service_name": "vless"
@@ -17,39 +17,6 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 02 - sanchun",
-      "server": "153.76.185.82",
-      "server_port": 3090,
-      "uuid": "585fdc07-0305-427c-abfb-7c94dc83466e",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 03 - sanchun",
-      "server": "153.76.185.188",
-      "server_port": 3090,
-      "uuid": "9912a5ca-3ee1-45ac-b182-46fec2610ee0",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 04 - sanchun",
-      "server": "153.76.185.186",
-      "server_port": 3090,
-      "uuid": "9912a5ca-3ee1-45ac-b182-46fec2610ee0",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 05 - sanchun",
       "server": "95.85.230.35",
       "server_port": 443,
       "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
@@ -69,40 +36,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 06 - sanchun",
-      "server": "103.31.77.108",
-      "server_port": 2053,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - sanchun",
-        "🇨🇿 捷克 (Czech) 02 - sanchun",
-        "🇨🇿 捷克 (Czech) 03 - sanchun",
-        "🇨🇿 捷克 (Czech) 04 - sanchun",
-        "🇨🇿 捷克 (Czech) 05 - sanchun",
-        "🇨🇿 捷克 (Czech) 06 - sanchun"
+        "🇨🇿 捷克 (Czech) 02 - sanchun"
       ]
     },
     {
@@ -110,11 +49,7 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - sanchun",
-        "🇨🇿 捷克 (Czech) 02 - sanchun",
-        "🇨🇿 捷克 (Czech) 03 - sanchun",
-        "🇨🇿 捷克 (Czech) 04 - sanchun",
-        "🇨🇿 捷克 (Czech) 05 - sanchun",
-        "🇨🇿 捷克 (Czech) 06 - sanchun"
+        "🇨🇿 捷克 (Czech) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
