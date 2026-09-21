@@ -32,6 +32,18 @@ proxies:
   servername: yahoo.com
   client-fingerprint: chrome
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - sanchun
+  server: 77.73.232.61
+  port: 19747
+  udp: true
+  type: vless
+  uuid: 2a9ed01e-5455-44b4-a66a-76ee8165f0ac
+  tls: true
+  reality-opts:
+    public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
+    short-id: '2001'
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - sanchun
   server: 109.248.170.119
   port: 13447
   udp: true
@@ -43,7 +55,7 @@ proxies:
     short-id: '83'
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - sanchun
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - sanchun
   server: 178.236.16.98
   port: 35728
   udp: true
@@ -55,6 +67,19 @@ proxies:
     short-id: 69a2
   servername: yahoo.com
   client-fingerprint: firefox
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - sanchun
+  server: 5.180.42.57
+  port: 443
+  udp: true
+  type: vless
+  uuid: 416b35f4-7cba-4023-a915-b22af73cd0c2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: nNeAdcF__Tg3jBFRRPgpmKPNJGfqMGy4rG3Z3eO-T24
+    short-id: 24fc325b440818ce
+  servername: edge-kz1.lovely.my
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,6 +89,8 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - sanchun
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - sanchun
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - sanchun
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - sanchun
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,5 +100,7 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - sanchun
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - sanchun
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - sanchun
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - sanchun
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - sanchun
 rules:
 - MATCH,PROXIES

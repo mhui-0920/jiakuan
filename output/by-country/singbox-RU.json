@@ -4,80 +4,89 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - sanchun",
-      "server": "91.240.86.70",
-      "server_port": 22443,
-      "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy.quattro-tech.ru",
-        "insecure": false
-      }
+      "server": "94.249.187.46",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "IXa3ylzS_jBOAsQy071tIQ"
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - sanchun",
-      "server": "msk.frkn.org",
-      "server_port": 443,
-      "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
+      "server": "91.196.32.216",
+      "server_port": 9543,
+      "uuid": "ff6d2dda-7b90-404e-9951-34b3124bfdfa",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "msk.frkn.org",
-        "insecure": true
+        "server_name": "storage.yandexcloud.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc",
+          "short_id": "123abcdf"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 03 - sanchun",
-      "server": "45.12.75.242",
-      "server_port": 26424,
-      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
+      "server": "141.98.85.88",
+      "server_port": 443,
+      "uuid": "d2e00857-9581-4030-96e2-9d1ed0b95049",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ya.ru",
+        "server_name": "www.jyu.fi",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
-          "short_id": "23103e1e"
+          "public_key": "hSCJ3zKX3Pb_-0EYSwUK7XHy2QqzVGWqoiVS9HKLjy8",
+          "short_id": "675a2ad9f7969dd7"
         }
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇷🇺 俄罗斯 (Russia) 04 - sanchun",
-      "server": "46.8.210.129",
+      "server": "91.240.86.70",
       "server_port": 22443,
-      "password": "2a3b101d-d8f9-40e7-9373-b0ef487c0035",
+      "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
       "tls": {
         "enabled": true,
-        "server_name": "disk.api-yandex.net",
+        "server_name": "itsallproxy.quattro-tech.ru",
         "insecure": false
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇷🇺 俄罗斯 (Russia) 05 - sanchun",
-      "server": "85.198.70.200",
-      "server_port": 14406,
-      "uuid": "237f91bf-102e-4077-8cc3-baebccb42936",
-      "flow": "xtls-rprx-vision",
+      "server": "have.whit3.net",
+      "server_port": 443,
+      "password": "1e1c72f4-325b-4db0-b2d4-dc9c7cddc46a",
       "tls": {
         "enabled": true,
-        "server_name": "vk.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ldAmsl3dqTCUBmlmA8CS9ZnpznP6cFWj9AxNddWnbxY",
-          "short_id": "1a2b3c4d5e6f7a8b"
-        }
+        "server_name": "have.whit3.net",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - sanchun",
+      "server": "msk.frkn.org",
+      "server_port": 443,
+      "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
+      "tls": {
+        "enabled": true,
+        "server_name": "msk.frkn.org",
+        "insecure": false
       }
     },
     {
@@ -89,7 +98,8 @@
         "🇷🇺 俄罗斯 (Russia) 02 - sanchun",
         "🇷🇺 俄罗斯 (Russia) 03 - sanchun",
         "🇷🇺 俄罗斯 (Russia) 04 - sanchun",
-        "🇷🇺 俄罗斯 (Russia) 05 - sanchun"
+        "🇷🇺 俄罗斯 (Russia) 05 - sanchun",
+        "🇷🇺 俄罗斯 (Russia) 06 - sanchun"
       ]
     },
     {
@@ -100,7 +110,8 @@
         "🇷🇺 俄罗斯 (Russia) 02 - sanchun",
         "🇷🇺 俄罗斯 (Russia) 03 - sanchun",
         "🇷🇺 俄罗斯 (Russia) 04 - sanchun",
-        "🇷🇺 俄罗斯 (Russia) 05 - sanchun"
+        "🇷🇺 俄罗斯 (Russia) 05 - sanchun",
+        "🇷🇺 俄罗斯 (Russia) 06 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

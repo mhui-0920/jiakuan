@@ -4,21 +4,9 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 01 - sanchun",
-      "server": "se-node.rumedia-cdn.com",
-      "server_port": 25443,
-      "password": "29ffde49-e1d6-4dcd-a135-352920f9f0b8",
-      "tls": {
-        "enabled": true,
-        "server_name": "cf2.rumedia-cdn.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - sanchun",
-      "server": "svvedko.nxxzxaw.beer",
+      "tag": "🇸🇪 瑞典 (Sweden) 01 - sanchun",
+      "server": "5.157.10.147",
       "server_port": 443,
       "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
       "flow": "xtls-rprx-vision",
@@ -27,7 +15,7 @@
         "server_name": "svvedko.nxxzxaw.beer",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -38,7 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - sanchun",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - sanchun",
       "server": "193.42.39.10",
       "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
@@ -61,13 +49,122 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - sanchun",
+      "server": "91.193.17.156",
+      "server_port": 9458,
+      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - sanchun",
+      "server": "185.207.66.8",
+      "server_port": 443,
+      "uuid": "f778d2eb-1bec-4d19-b0bf-0a5e39feed4f",
+      "tls": {
+        "enabled": true,
+        "server_name": "upload.hexagonicfield.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
+          "short_id": "5d1e8b3f6c2a9d4e"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "moktana.net.v1.StreamService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - sanchun",
+      "server": "201.24.52.151",
+      "server_port": 443,
+      "uuid": "8c40bb2c-157a-4830-a2c3-0b35ef50c660",
+      "tls": {
+        "enabled": true,
+        "server_name": "hexagonicfield.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
+          "short_id": "3f8e2d1c9b4a7e6f"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "moktana.net.v1.StreamService"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - sanchun",
+      "server": "se-node.rumedia-cdn.com",
+      "server_port": 25443,
+      "password": "29ffde49-e1d6-4dcd-a135-352920f9f0b8",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf2.rumedia-cdn.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 07 - sanchun",
+      "server": "se.belka.network",
+      "server_port": 443,
+      "uuid": "c47b421f-65f1-4190-b7ba-bd2045086fe4",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "diw5L3O4EkRQGWDSfdpQooPUc3zBTItooeOQ_fIDFWI",
+          "short_id": "7f2e9c4b1a8d6e53"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - sanchun",
         "🇸🇪 瑞典 (Sweden) 02 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 03 - sanchun"
+        "🇸🇪 瑞典 (Sweden) 03 - sanchun",
+        "🇸🇪 瑞典 (Sweden) 04 - sanchun",
+        "🇸🇪 瑞典 (Sweden) 05 - sanchun",
+        "🇸🇪 瑞典 (Sweden) 06 - sanchun",
+        "🇸🇪 瑞典 (Sweden) 07 - sanchun"
       ]
     },
     {
@@ -76,7 +173,11 @@
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - sanchun",
         "🇸🇪 瑞典 (Sweden) 02 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 03 - sanchun"
+        "🇸🇪 瑞典 (Sweden) 03 - sanchun",
+        "🇸🇪 瑞典 (Sweden) 04 - sanchun",
+        "🇸🇪 瑞典 (Sweden) 05 - sanchun",
+        "🇸🇪 瑞典 (Sweden) 06 - sanchun",
+        "🇸🇪 瑞典 (Sweden) 07 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

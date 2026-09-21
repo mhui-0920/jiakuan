@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - sanchun
-  server: 162.249.126.2
+  server: 162.249.126.9
   port: 8443
   udp: true
   type: hysteria2
@@ -20,7 +20,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: QFWzCw2uX9B9i6qAYeFBIE
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - sanchun
-  server: 85.204.107.174
+  server: 85.204.107.170
   port: 8443
   udp: true
   type: hysteria2
@@ -28,6 +28,16 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: false
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - sanchun
+  server: hy2-new.aspidnet.xyz
+  port: 443
+  udp: true
+  type: hysteria2
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  sni: hy2-new.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: c1b4086fea89914496c7e10967a419216566
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - sanchun
   server: 146.70.124.85
   port: 443
   udp: true
@@ -40,8 +50,18 @@ proxies:
     short-id: fe24f8a0a560056e
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - sanchun
-  server: bl3fk52.sysopnova.art
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - sanchun
+  server: 162.249.125.133
+  port: 443
+  udp: true
+  type: hysteria2
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  sni: hy2-new.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: c1b4086fea89914496c7e10967a419216566
+- name: 🇷🇴 罗马尼亚 (Romania) 07 - sanchun
+  server: 193.163.203.253
   port: 443
   udp: true
   type: vless
@@ -53,7 +73,7 @@ proxies:
     short-id: 5ee019e02e6ed99a
   servername: yandex.ru
   client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 06 - sanchun
+- name: 🇷🇴 罗马尼亚 (Romania) 08 - sanchun
   server: 46.28.67.55
   port: 443
   udp: true
@@ -65,7 +85,7 @@ proxies:
     public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -77,6 +97,8 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 04 - sanchun
   - 🇷🇴 罗马尼亚 (Romania) 05 - sanchun
   - 🇷🇴 罗马尼亚 (Romania) 06 - sanchun
+  - 🇷🇴 罗马尼亚 (Romania) 07 - sanchun
+  - 🇷🇴 罗马尼亚 (Romania) 08 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -88,5 +110,7 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 04 - sanchun
   - 🇷🇴 罗马尼亚 (Romania) 05 - sanchun
   - 🇷🇴 罗马尼亚 (Romania) 06 - sanchun
+  - 🇷🇴 罗马尼亚 (Romania) 07 - sanchun
+  - 🇷🇴 罗马尼亚 (Romania) 08 - sanchun
 rules:
 - MATCH,PROXIES

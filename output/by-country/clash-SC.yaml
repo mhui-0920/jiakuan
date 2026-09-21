@@ -17,17 +17,32 @@ proxies:
     short-id: e8daed2d
   servername: www.apple.com
   client-fingerprint: firefox
+- name: 🇸🇨 塞舌尔 (Seychelles) 02 - sanchun
+  server: sczznmbbbzgwlwzdhsql.jiedddym.com
+  port: 57877
+  udp: true
+  type: vless
+  uuid: 17ab31f7-c021-4aec-83b2-ab48de8886bd
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 9wkREVS6QxqFyds7LzwRsS546sEPYykf9IFQDoCzmjA
+    short-id: 383e976fcf298029
+  servername: www.lamer.com.hk
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01 - sanchun
+  - 🇸🇨 塞舌尔 (Seychelles) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - sanchun
+  - 🇸🇨 塞舌尔 (Seychelles) 02 - sanchun
 rules:
 - MATCH,PROXIES

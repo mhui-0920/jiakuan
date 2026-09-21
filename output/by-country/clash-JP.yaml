@@ -5,21 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - sanchun
-  server: 149.22.87.204
+  server: 149.22.87.241
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 02 - sanchun
-  server: 149.22.87.240
+  server: 149.22.87.204
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 03 - sanchun
-  server: 149.22.87.241
+  server: 149.22.87.240
   port: 443
   udp: true
   type: ss
@@ -37,8 +37,21 @@ proxies:
     public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
     short-id: 091e1c5db8451757
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 05 - sanchun
+  server: 8.209.217.129
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4a1bd3a7-22e6-4ed0-add4-7ee824d8f54a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Ci03uVNJ34iSg-BSeOgrhTAeWcJExB5gQNuQVRY3a2Q
+    short-id: 01b4986b50245272
+  servername: www.logitech.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 06 - sanchun
   server: 103.75.118.228
   port: 11452
   udp: true
@@ -51,21 +64,33 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 06 - sanchun
-  server: 84.247.155.196
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
 - name: 🇯🇵 日本 (Japan) 07 - sanchun
+  server: 3.114.220.22
+  port: 19645
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 08 - sanchun
+  server: 152.69.195.67
+  port: 47878
+  udp: true
+  type: vless
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+- name: 🇯🇵 日本 (Japan) 09 - sanchun
   server: 84.247.155.196
   port: 443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 08 - sanchun
+- name: 🇯🇵 日本 (Japan) 10 - sanchun
   server: 203.137.165.164
   port: 57554
   udp: true
@@ -73,29 +98,68 @@ proxies:
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
   servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /p/docs/soft?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 11 - sanchun
+  server: 3.114.220.22
+  port: 10583
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 12 - sanchun
+  server: 140.238.33.0
+  port: 33940
+  udp: true
+  type: vless
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  tls: true
+  servername: notls.lukongtou.eu.org
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 09 - sanchun
-  server: 103.115.18.54
+      Host: notls.lukongtou.eu.org
+- name: 🇯🇵 日本 (Japan) 13 - sanchun
+  server: 103.85.24.232
   port: 443
   udp: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
   servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /episode/files?ed=2560
+    path: /home?ed=2560fp=chrome
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 10 - sanchun
+- name: 🇯🇵 日本 (Japan) 14 - sanchun
+  server: jprbbqwlqqnmwysrl.cfooov.xyz
+  port: 53342
+  udp: true
+  type: vless
+  uuid: 17ab31f7-c021-4aec-83b2-ab48de8886bd
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ziA8SjPNF_6c8QlILdfvt3PPZSoKpfOFe85Okzs4Wj0
+    short-id: b6e225ece28bee45
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 15 - sanchun
   server: 210.152.85.154
   port: 19364
   udp: true
@@ -110,7 +174,44 @@ proxies:
     path: /
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 11 - sanchun
+- name: 🇯🇵 日本 (Japan) 16 - sanchun
+  server: 167.179.110.68
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  tls: true
+  servername: notls.lukongtou.eu.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: notls.lukongtou.eu.org
+- name: 🇯🇵 日本 (Japan) 17 - sanchun
+  server: 172.237.12.208
+  port: 18836
+  udp: true
+  type: vless
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  tls: true
+  servername: notls.lukongtou.eu.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: notls.lukongtou.eu.org
+- name: 🇯🇵 日本 (Japan) 18 - sanchun
+  server: 84.247.155.196
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 19 - sanchun
   server: 3.114.220.22
   port: 18007
   udp: true
@@ -122,9 +223,9 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 12 - sanchun
-  server: 64.176.60.226
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 20 - sanchun
+  server: 103.115.18.54
   port: 443
   udp: true
   type: vless
@@ -132,46 +233,42 @@ proxies:
   tls: true
   servername: cdn8848.776676.xyz
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /episode/files?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 13 - sanchun
-  server: 3.114.220.22
-  port: 19645
+- name: 🇯🇵 日本 (Japan) 21 - sanchun
+  server: 137.220.221.179
+  port: 443
   udp: true
   type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+- name: 🇯🇵 日本 (Japan) 22 - sanchun
+  server: sczznmbbbzgwlwzdhsql.jiedddym.com
+  port: 65057
+  udp: true
+  type: vless
+  uuid: 17ab31f7-c021-4aec-83b2-ab48de8886bd
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 14 - sanchun
-  server: msjp1.mangshe.xyz
-  port: 20561
+    public-key: 5y1oP72Hsd1syjBQD3qETBEaIwH6JqOKAyeYGkEUrXc
+    short-id: 9b1bc2a5f2414a
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 23 - sanchun
+  server: jp3.998998.best
+  port: 443
   udp: true
-  type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: www.microsoft.com
+  type: trojan
+  password: 3c6d1933-b22a-484b-ac8a-63e24f5fba75
+  sni: nat11.outsidemyheart.space
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 15 - sanchun
-  server: 3.114.220.22
-  port: 10583
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /w4e5yh0p945y3
 proxy-groups:
 - name: PROXIES
   type: select
@@ -192,6 +289,14 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 13 - sanchun
   - 🇯🇵 日本 (Japan) 14 - sanchun
   - 🇯🇵 日本 (Japan) 15 - sanchun
+  - 🇯🇵 日本 (Japan) 16 - sanchun
+  - 🇯🇵 日本 (Japan) 17 - sanchun
+  - 🇯🇵 日本 (Japan) 18 - sanchun
+  - 🇯🇵 日本 (Japan) 19 - sanchun
+  - 🇯🇵 日本 (Japan) 20 - sanchun
+  - 🇯🇵 日本 (Japan) 21 - sanchun
+  - 🇯🇵 日本 (Japan) 22 - sanchun
+  - 🇯🇵 日本 (Japan) 23 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -212,5 +317,13 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 13 - sanchun
   - 🇯🇵 日本 (Japan) 14 - sanchun
   - 🇯🇵 日本 (Japan) 15 - sanchun
+  - 🇯🇵 日本 (Japan) 16 - sanchun
+  - 🇯🇵 日本 (Japan) 17 - sanchun
+  - 🇯🇵 日本 (Japan) 18 - sanchun
+  - 🇯🇵 日本 (Japan) 19 - sanchun
+  - 🇯🇵 日本 (Japan) 20 - sanchun
+  - 🇯🇵 日本 (Japan) 21 - sanchun
+  - 🇯🇵 日本 (Japan) 22 - sanchun
+  - 🇯🇵 日本 (Japan) 23 - sanchun
 rules:
 - MATCH,PROXIES

@@ -5,15 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - sanchun
-  server: se-node.rumedia-cdn.com
-  port: 25443
-  udp: true
-  type: hysteria2
-  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
-  sni: cf2.rumedia-cdn.com
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 02 - sanchun
-  server: svvedko.nxxzxaw.beer
+  server: 5.157.10.147
   port: 443
   udp: true
   type: vless
@@ -24,8 +16,8 @@ proxies:
     public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
     short-id: fb442438e2223836
   servername: svvedko.nxxzxaw.beer
-  client-fingerprint: ios
-- name: 🇸🇪 瑞典 (Sweden) 03 - sanchun
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 02 - sanchun
   server: 193.42.39.10
   port: 33743
   udp: true
@@ -39,6 +31,71 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
+- name: 🇸🇪 瑞典 (Sweden) 03 - sanchun
+  server: 91.193.17.156
+  port: 9458
+  udp: true
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: 🇸🇪 瑞典 (Sweden) 04 - sanchun
+  server: 185.207.66.8
+  port: 443
+  udp: true
+  type: vless
+  uuid: f778d2eb-1bec-4d19-b0bf-0a5e39feed4f
+  tls: true
+  reality-opts:
+    public-key: C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4
+    short-id: 5d1e8b3f6c2a9d4e
+  servername: upload.hexagonicfield.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: moktana.net.v1.StreamService
+- name: 🇸🇪 瑞典 (Sweden) 05 - sanchun
+  server: 201.24.52.151
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8c40bb2c-157a-4830-a2c3-0b35ef50c660
+  tls: true
+  reality-opts:
+    public-key: C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4
+    short-id: 3f8e2d1c9b4a7e6f
+  servername: hexagonicfield.com
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-service-name: moktana.net.v1.StreamService
+- name: 🇸🇪 瑞典 (Sweden) 06 - sanchun
+  server: se-node.rumedia-cdn.com
+  port: 25443
+  udp: true
+  type: hysteria2
+  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
+  sni: cf2.rumedia-cdn.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 07 - sanchun
+  server: se.belka.network
+  port: 443
+  udp: true
+  type: vless
+  uuid: c47b421f-65f1-4190-b7ba-bd2045086fe4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: diw5L3O4EkRQGWDSfdpQooPUc3zBTItooeOQ_fIDFWI
+    short-id: 7f2e9c4b1a8d6e53
+  servername: yahoo.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,6 +104,10 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - sanchun
   - 🇸🇪 瑞典 (Sweden) 02 - sanchun
   - 🇸🇪 瑞典 (Sweden) 03 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 04 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 05 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 06 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 07 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,5 +116,9 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - sanchun
   - 🇸🇪 瑞典 (Sweden) 02 - sanchun
   - 🇸🇪 瑞典 (Sweden) 03 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 04 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 05 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 06 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 07 - sanchun
 rules:
 - MATCH,PROXIES
