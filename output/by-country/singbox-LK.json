@@ -4,15 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 01 - sanchun",
-      "server": "91.240.86.70",
-      "server_port": 22443,
-      "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
-      "tls": {
-        "enabled": true,
-        "server_name": "itsallproxy.quattro-tech.ru",
-        "insecure": false
+      "type": "vless",
+      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - sanchun",
+      "server": "support.zoom.us",
+      "server_port": 80,
+      "uuid": "684f9a2e-4f96-497f-bfd9-ff1e34637952",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "free.sahanwickramasinghe.me"
+        }
       }
     },
     {
@@ -20,14 +21,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 俄罗斯 (Russia) 01 - sanchun"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 俄罗斯 (Russia) 01 - sanchun"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

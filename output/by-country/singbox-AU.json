@@ -45,8 +45,20 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇦🇺 澳大利亚 (Australia) 03 - sanchun",
+      "server": "vpn-au-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "whatsapp.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - sanchun",
       "server": "34.87.229.148",
       "server_port": 443,
       "uuid": "4f865f35-cf47-4e7f-a7e6-8882511a1b36",
@@ -62,18 +74,6 @@
           "public_key": "OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4",
           "short_id": "8a7d5e0248cdb1b1"
         }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - sanchun",
-      "server": "vpn-au-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "whatsapp.com",
-        "insecure": true
       }
     },
     {

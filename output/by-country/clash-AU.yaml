@@ -30,6 +30,14 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 03 - sanchun
+  server: vpn-au-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: whatsapp.com
+  skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 (Australia) 04 - sanchun
   server: 34.87.229.148
   port: 443
   udp: true
@@ -41,14 +49,6 @@ proxies:
     short-id: 8a7d5e0248cdb1b1
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 04 - sanchun
-  server: vpn-au-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: whatsapp.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
