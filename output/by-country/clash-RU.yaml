@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - sanchun
-  server: 91.196.32.216
-  port: 9543
-  udp: true
-  type: vless
-  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-  servername: storage.yandexcloud.net
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 02 - sanchun
   server: 91.240.86.70
   port: 22443
   udp: true
@@ -25,32 +12,14 @@ proxies:
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   sni: itsallproxy.quattro-tech.ru
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 03 - sanchun
-  server: 188.225.31.214
-  port: 2089
+- name: 🇷🇺 俄罗斯 (Russia) 02 - sanchun
+  server: msk.frkn.org
+  port: 443
   udp: true
-  type: vless
-  uuid: 38eb3e71-4349-4bd6-9baf-9740e1896495
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: CQBmePak1QN5SsSmK_KTOSLjsCTaiaM4Jtxt7jLheko
-    short-id: b0d8c9a285c70f6f
-  servername: unpkg.com
-  client-fingerprint: edge
-- name: 🇷🇺 俄罗斯 (Russia) 04 - sanchun
-  server: fin2.accessgate.link
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 38eb3e71-4349-4bd6-9baf-9740e1896495
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: CQBmePak1QN5SsSmK_KTOSLjsCTaiaM4Jtxt7jLheko
-    short-id: b0d8c9a285c70f6f
-  servername: unpkg.com
-  client-fingerprint: firefox
+  type: hysteria2
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+  sni: msk.frkn.org
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,8 +27,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 02 - sanchun
-  - 🇷🇺 俄罗斯 (Russia) 03 - sanchun
-  - 🇷🇺 俄罗斯 (Russia) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -67,7 +34,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 02 - sanchun
-  - 🇷🇺 俄罗斯 (Russia) 03 - sanchun
-  - 🇷🇺 俄罗斯 (Russia) 04 - sanchun
 rules:
 - MATCH,PROXIES

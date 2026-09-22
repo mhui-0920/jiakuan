@@ -5,17 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - sanchun
-  server: 104.20.6.153
-  port: 8880
+  server: 93.190.9.158
+  port: 3090
   udp: true
   type: vless
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: index.harmonica02.workers.dev
+  uuid: 1f49d485-8626-4841-9b46-3245936d6047
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 - name: 🇹🇷 土耳其 (Turkey) 02 - sanchun
+  server: me17.msjia8844.site
+  port: 7443
+  udp: true
+  type: hysteria2
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
+- name: 🇹🇷 土耳其 (Turkey) 03 - sanchun
   server: 78.135.73.47
   port: 443
   udp: true
@@ -28,7 +36,7 @@ proxies:
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 03 - sanchun
+- name: 🇹🇷 土耳其 (Turkey) 04 - sanchun
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -40,18 +48,6 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 - sanchun
-  server: tr2.rexten.cc
-  port: 443
-  udp: true
-  type: vless
-  uuid: add59713-f5c6-4442-83a3-6bc9281f5c90
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
-  servername: tr2.rexten.cc
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

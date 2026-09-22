@@ -5,14 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 01 (家宽) - sanchun",
-      "server": "208.103.161.249",
-      "server_port": 80,
-      "uuid": "a3c51f71-ffb5-4c80-a136-cee4b36d6e85",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "kamran01-afgmdq-1.kamran-01.workers.dev"
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun",
+      "server": "hinet1.2yly.com",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
         }
       }
     },
@@ -41,7 +48,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 英国 (United Kingdom) 01 (家宽) - sanchun",
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun"
       ]
     },
@@ -49,7 +56,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 英国 (United Kingdom) 01 (家宽) - sanchun",
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"

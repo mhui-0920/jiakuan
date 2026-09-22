@@ -4,17 +4,17 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇧 英国 (United Kingdom) 01 (家宽) - sanchun
-  server: 208.103.161.249
-  port: 80
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun
+  server: hinet1.2yly.com
+  port: 24215
   udp: true
   type: vless
-  uuid: a3c51f71-ffb5-4c80-a136-cee4b36d6e85
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kamran01-afgmdq-1.kamran-01.workers.dev
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun
   server: 654168416355441.oylfmxz.cn
   port: 443
@@ -36,14 +36,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇬🇧 英国 (United Kingdom) 01 (家宽) - sanchun
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 (United Kingdom) 01 (家宽) - sanchun
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun
 rules:
 - MATCH,PROXIES

@@ -6,7 +6,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - sanchun",
-      "server": "16.170.163.124",
+      "server": "16.170.214.108",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -14,10 +14,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - sanchun",
-      "server": "16.170.214.108",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
+      "server": "70.34.212.124",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "AxIYWtskJWIIaefW"
     },
     {
       "type": "shadowsocks",
@@ -28,16 +28,8 @@
       "password": "amazonskr05"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - sanchun",
-      "server": "70.34.212.124",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "AxIYWtskJWIIaefW"
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - sanchun",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - sanchun",
       "server": "31.207.7.104",
       "server_port": 443,
       "uuid": "12ee5833-c8f5-4534-94e7-6d5c338008df",
@@ -58,7 +50,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - sanchun",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - sanchun",
       "server": "se-node.rumedia-cdn.com",
       "server_port": 25443,
       "password": "29ffde49-e1d6-4dcd-a135-352920f9f0b8",
@@ -70,7 +62,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 - sanchun",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - sanchun",
       "server": "91.193.17.156",
       "server_port": 9458,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
@@ -94,29 +86,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 08 - sanchun",
-      "server": "188.225.31.214",
-      "server_port": 2084,
-      "uuid": "38eb3e71-4349-4bd6-9baf-9740e1896495",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "unpkg.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "CQBmePak1QN5SsSmK_KTOSLjsCTaiaM4Jtxt7jLheko",
-          "short_id": "b0d8c9a285c70f6f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 09 - sanchun",
-      "server": "79.141.174.147",
+      "tag": "🇸🇪 瑞典 (Sweden) 07 - sanchun",
+      "server": "193.42.39.10",
       "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
       "tls": {
@@ -138,27 +109,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 10 - sanchun",
-      "server": "swe.lavivas.org",
-      "server_port": 443,
-      "uuid": "44e1105d-b46e-402f-933b-eaa136fcbb24",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "swe.lavivas.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "WXkttNfrzidkxIUReO9V_g3EBJ2tjcGLXO8nPsvKI0Y",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -169,10 +119,7 @@
         "🇸🇪 瑞典 (Sweden) 04 - sanchun",
         "🇸🇪 瑞典 (Sweden) 05 - sanchun",
         "🇸🇪 瑞典 (Sweden) 06 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 07 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 08 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 09 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 10 - sanchun"
+        "🇸🇪 瑞典 (Sweden) 07 - sanchun"
       ]
     },
     {
@@ -185,10 +132,7 @@
         "🇸🇪 瑞典 (Sweden) 04 - sanchun",
         "🇸🇪 瑞典 (Sweden) 05 - sanchun",
         "🇸🇪 瑞典 (Sweden) 06 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 07 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 08 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 09 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 10 - sanchun"
+        "🇸🇪 瑞典 (Sweden) 07 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,29 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 01 - sanchun",
-      "server": "91.196.32.216",
-      "server_port": 9543,
-      "uuid": "ff6d2dda-7b90-404e-9951-34b3124bfdfa",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "storage.yandexcloud.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc",
-          "short_id": "123abcdf"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - sanchun",
+      "tag": "🇷🇺 俄罗斯 (Russia) 01 - sanchun",
       "server": "91.240.86.70",
       "server_port": 22443,
       "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
@@ -37,45 +16,15 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - sanchun",
-      "server": "188.225.31.214",
-      "server_port": 2089,
-      "uuid": "38eb3e71-4349-4bd6-9baf-9740e1896495",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - sanchun",
+      "server": "msk.frkn.org",
+      "server_port": 443,
+      "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
       "tls": {
         "enabled": true,
-        "server_name": "unpkg.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "CQBmePak1QN5SsSmK_KTOSLjsCTaiaM4Jtxt7jLheko",
-          "short_id": "b0d8c9a285c70f6f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - sanchun",
-      "server": "fin2.accessgate.link",
-      "server_port": 2096,
-      "uuid": "38eb3e71-4349-4bd6-9baf-9740e1896495",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "unpkg.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "CQBmePak1QN5SsSmK_KTOSLjsCTaiaM4Jtxt7jLheko",
-          "short_id": "b0d8c9a285c70f6f"
-        }
+        "server_name": "msk.frkn.org",
+        "insecure": false
       }
     },
     {
@@ -84,9 +33,7 @@
       "outbounds": [
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - sanchun",
-        "🇷🇺 俄罗斯 (Russia) 02 - sanchun",
-        "🇷🇺 俄罗斯 (Russia) 03 - sanchun",
-        "🇷🇺 俄罗斯 (Russia) 04 - sanchun"
+        "🇷🇺 俄罗斯 (Russia) 02 - sanchun"
       ]
     },
     {
@@ -94,9 +41,7 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - sanchun",
-        "🇷🇺 俄罗斯 (Russia) 02 - sanchun",
-        "🇷🇺 俄罗斯 (Russia) 03 - sanchun",
-        "🇷🇺 俄罗斯 (Russia) 04 - sanchun"
+        "🇷🇺 俄罗斯 (Russia) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
