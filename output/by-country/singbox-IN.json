@@ -6,42 +6,29 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 01 - sanchun",
-      "server": "34.93.188.70",
+      "server": "odd-violet-5440.asdgrweeee13.workers.dev",
       "server_port": 443,
-      "uuid": "5004e3d7-a9bd-4a7c-a6d5-58aa5e1be9ed",
+      "uuid": "1443b7a1-7ba9-4ec9-b904-2e867367b5d7",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "odd-violet-5440.asdgrweeee13.workers.dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "97C6O3repofpoaJzvu1d4o7amhJGA8hF_yJls7SNIgU",
-          "short_id": "b9299afa0dcac824"
         }
+      },
+      "transport": {
+        "type": "ws"
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇮🇳 印度 (India) 02 - sanchun",
-      "server": "34.47.245.203",
-      "server_port": 443,
-      "uuid": "3fed34dc-2fe6-4fe0-86e7-a80213f9b7cc",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "dB68n-Vyph0_KBtBIe45b5GCB4F1IqpBF_ohlN-KpkY",
-          "short_id": "50440423703c945f"
-        }
-      }
+      "server": "139.84.166.47",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "GEdoeeqLZtkJRgSa"
     },
     {
       "type": "trojan",
@@ -62,6 +49,46 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 04 - sanchun",
+      "server": "34.47.245.203",
+      "server_port": 443,
+      "uuid": "3fed34dc-2fe6-4fe0-86e7-a80213f9b7cc",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "dB68n-Vyph0_KBtBIe45b5GCB4F1IqpBF_ohlN-KpkY",
+          "short_id": "50440423703c945f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 05 - sanchun",
+      "server": "34.93.188.70",
+      "server_port": 443,
+      "uuid": "5004e3d7-a9bd-4a7c-a6d5-58aa5e1be9ed",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "97C6O3repofpoaJzvu1d4o7amhJGA8hF_yJls7SNIgU",
+          "short_id": "b9299afa0dcac824"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 06 - sanchun",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -81,7 +108,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 05 - sanchun",
+      "tag": "🇮🇳 印度 (India) 07 - sanchun",
       "server": "148.113.5.44",
       "server_port": 443,
       "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
@@ -109,7 +136,9 @@
         "🇮🇳 印度 (India) 02 - sanchun",
         "🇮🇳 印度 (India) 03 - sanchun",
         "🇮🇳 印度 (India) 04 - sanchun",
-        "🇮🇳 印度 (India) 05 - sanchun"
+        "🇮🇳 印度 (India) 05 - sanchun",
+        "🇮🇳 印度 (India) 06 - sanchun",
+        "🇮🇳 印度 (India) 07 - sanchun"
       ]
     },
     {
@@ -120,7 +149,9 @@
         "🇮🇳 印度 (India) 02 - sanchun",
         "🇮🇳 印度 (India) 03 - sanchun",
         "🇮🇳 印度 (India) 04 - sanchun",
-        "🇮🇳 印度 (India) 05 - sanchun"
+        "🇮🇳 印度 (India) 05 - sanchun",
+        "🇮🇳 印度 (India) 06 - sanchun",
+        "🇮🇳 印度 (India) 07 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇩 摩尔多瓦 (Moldova) 01 - sanchun
+  server: 80.96.109.15
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: moldova.failspace.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇲🇩 摩尔多瓦 (Moldova) 02 - sanchun
   server: moldova.cdn-europe.org
   port: 4443
   udp: true
@@ -23,11 +34,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇲🇩 摩尔多瓦 (Moldova) 01 - sanchun
+  - 🇲🇩 摩尔多瓦 (Moldova) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇲🇩 摩尔多瓦 (Moldova) 01 - sanchun
+  - 🇲🇩 摩尔多瓦 (Moldova) 02 - sanchun
 rules:
 - MATCH,PROXIES

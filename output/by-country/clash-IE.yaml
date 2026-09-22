@@ -5,14 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - sanchun
-  server: 185.108.129.126
-  port: 1443
+  server: 102.177.189.30
+  port: 8880
   udp: true
-  type: anytls
-  password: b652305a-0c63-4527-8cb3-0ea582076124
-  sni: dmw.freeguard.org
-  skip-cert-verify: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime29.workers.dev
 - name: 🇮🇪 爱尔兰 (Ireland) 02 - sanchun
+  server: 50.7.5.186
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: ireland-new.failspace.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇮🇪 爱尔兰 (Ireland) 03 - sanchun
   server: 3.9.135.156
   port: 51847
   udp: true
@@ -24,7 +38,7 @@ proxies:
     public-key: S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc
     short-id: 0eec442e7b34d2f2
   servername: www.tesla.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +46,7 @@ proxy-groups:
   - AUTO
   - 🇮🇪 爱尔兰 (Ireland) 01 - sanchun
   - 🇮🇪 爱尔兰 (Ireland) 02 - sanchun
+  - 🇮🇪 爱尔兰 (Ireland) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +54,6 @@ proxy-groups:
   proxies:
   - 🇮🇪 爱尔兰 (Ireland) 01 - sanchun
   - 🇮🇪 爱尔兰 (Ireland) 02 - sanchun
+  - 🇮🇪 爱尔兰 (Ireland) 03 - sanchun
 rules:
 - MATCH,PROXIES

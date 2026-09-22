@@ -5,6 +5,52 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - sanchun
+  server: 172.67.192.84
+  port: 2095
+  udp: true
+  type: vless
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: index.harmonica02.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 02 - sanchun
+  server: 188.114.98.16
+  port: 2082
+  udp: true
+  type: vless
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: index.harmonica02.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 03 - sanchun
+  server: tr2.rexten.cc
+  port: 443
+  udp: true
+  type: vless
+  uuid: add59713-f5c6-4442-83a3-6bc9281f5c90
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
+  servername: tr2.rexten.cc
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 04 - sanchun
+  server: 151.241.226.201
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  tls: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 05 - sanchun
   server: 78.135.73.47
   port: 443
   udp: true
@@ -17,40 +63,6 @@ proxies:
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 02 - sanchun
-  server: 31.214.152.140
-  port: 443
-  udp: true
-  type: vless
-  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8
-    short-id: 08
-  servername: dw.b-cdn.net
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 03 - sanchun
-  server: 151.241.226.201
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 04 - sanchun
-  server: 93.190.9.55
-  port: 3090
-  udp: true
-  type: vless
-  uuid: f5b78828-d232-4be8-b33e-8b681d42e124
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,6 +72,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - sanchun
   - 🇹🇷 土耳其 (Turkey) 03 - sanchun
   - 🇹🇷 土耳其 (Turkey) 04 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 05 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,5 +82,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - sanchun
   - 🇹🇷 土耳其 (Turkey) 03 - sanchun
   - 🇹🇷 土耳其 (Turkey) 04 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 05 - sanchun
 rules:
 - MATCH,PROXIES
