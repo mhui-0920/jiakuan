@@ -5,58 +5,52 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - sanchun
-  server: 199.232.78.101
-  port: 443
-  udp: true
-  type: trojan
-  password: MiTIVPN
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇷🇺 俄罗斯 (Russia) 02 - sanchun
-  server: 94.249.187.46
-  port: 1080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: IXa3ylzS_jBOAsQy071tIQ
-- name: 🇷🇺 俄罗斯 (Russia) 03 - sanchun
-  server: 72.56.1.5
-  port: 443
+  server: 91.196.32.216
+  port: 9543
   udp: true
   type: vless
-  uuid: 8057eabc-921d-4ef5-9acb-80ccc6b48379
+  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 0FeZt3p4idHrFpZRIjn69W_zUFiVBKmoGhkqSqbAvRw
-    short-id: 271684C10127374D
-  servername: www.siemens.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: Popka
-- name: 🇷🇺 俄罗斯 (Russia) 04 - sanchun
-  server: ru1.didiservice.com
-  port: 443
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+  servername: storage.yandexcloud.net
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 02 - sanchun
+  server: 91.240.86.70
+  port: 22443
   udp: true
   type: hysteria2
-  password: d76aca2e-1a63-4c00-89fb-07957cecc3e4
-  sni: ru1.didiservice.com
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: itsallproxy.quattro-tech.ru
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 05 - sanchun
-  server: 45.12.75.242
-  port: 26424
+- name: 🇷🇺 俄罗斯 (Russia) 03 - sanchun
+  server: 188.225.31.214
+  port: 2089
   udp: true
   type: vless
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  uuid: 38eb3e71-4349-4bd6-9baf-9740e1896495
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  servername: ya.ru
-  client-fingerprint: chrome
+    public-key: CQBmePak1QN5SsSmK_KTOSLjsCTaiaM4Jtxt7jLheko
+    short-id: b0d8c9a285c70f6f
+  servername: unpkg.com
+  client-fingerprint: edge
+- name: 🇷🇺 俄罗斯 (Russia) 04 - sanchun
+  server: fin2.accessgate.link
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 38eb3e71-4349-4bd6-9baf-9740e1896495
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: CQBmePak1QN5SsSmK_KTOSLjsCTaiaM4Jtxt7jLheko
+    short-id: b0d8c9a285c70f6f
+  servername: unpkg.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,7 +60,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 03 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 04 - sanchun
-  - 🇷🇺 俄罗斯 (Russia) 05 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,6 +69,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 03 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 04 - sanchun
-  - 🇷🇺 俄罗斯 (Russia) 05 - sanchun
 rules:
 - MATCH,PROXIES

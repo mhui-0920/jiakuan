@@ -7,9 +7,9 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - sanchun",
       "server": "195.238.126.20",
-      "server_port": 9012,
+      "server_port": 9086,
       "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
+      "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "shadowsocks",
@@ -20,32 +20,8 @@
       "password": "UkXRsXvR6buDMG2Y"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - sanchun",
-      "server": "195.238.126.20",
-      "server_port": 9002,
-      "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - sanchun",
-      "server": "195.238.126.20",
-      "server_port": 9078,
-      "method": "aes-256-cfb",
-      "password": "JCJpbRbQZNw9XFZG"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - sanchun",
-      "server": "195.238.126.20",
-      "server_port": 9086,
-      "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
-    },
-    {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 06 - sanchun",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - sanchun",
       "server": "84.32.215.94",
       "server_port": 443,
       "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
@@ -71,10 +47,7 @@
         "auto",
         "🇱🇹 立陶宛 (Lithuania) 01 - sanchun",
         "🇱🇹 立陶宛 (Lithuania) 02 - sanchun",
-        "🇱🇹 立陶宛 (Lithuania) 03 - sanchun",
-        "🇱🇹 立陶宛 (Lithuania) 04 - sanchun",
-        "🇱🇹 立陶宛 (Lithuania) 05 - sanchun",
-        "🇱🇹 立陶宛 (Lithuania) 06 - sanchun"
+        "🇱🇹 立陶宛 (Lithuania) 03 - sanchun"
       ]
     },
     {
@@ -83,10 +56,7 @@
       "outbounds": [
         "🇱🇹 立陶宛 (Lithuania) 01 - sanchun",
         "🇱🇹 立陶宛 (Lithuania) 02 - sanchun",
-        "🇱🇹 立陶宛 (Lithuania) 03 - sanchun",
-        "🇱🇹 立陶宛 (Lithuania) 04 - sanchun",
-        "🇱🇹 立陶宛 (Lithuania) 05 - sanchun",
-        "🇱🇹 立陶宛 (Lithuania) 06 - sanchun"
+        "🇱🇹 立陶宛 (Lithuania) 03 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

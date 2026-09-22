@@ -5,18 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - sanchun
+  server: 188.114.98.16
+  port: 2082
+  udp: true
+  type: vless
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: index.harmonica02.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 02 - sanchun
   server: 31.58.181.88
   port: 8443
   udp: true
   type: vless
-  uuid: 4a239f83-479c-4790-a9c7-fe7ddd483a4c
+  uuid: c4783cc5-aeec-4473-855b-1c98965949dd
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
   servername: tradingview.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 02 - sanchun
+- name: 🇦🇪 阿联酋 (UAE) 03 - sanchun
   server: 130.49.161.70
   port: 443
   udp: true
@@ -26,17 +37,6 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03 - sanchun
-  server: 45.130.125.201
-  port: 80
-  udp: true
-  type: vless
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nahan-core.netizo09.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 04 - sanchun
   server: 151.242.161.139
   port: 443
@@ -64,7 +64,7 @@ proxies:
   servername: dzen.ru
   client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 06 - sanchun
-  server: 85.204.107.176
+  server: 85.204.107.178
   port: 8080
   udp: true
   type: hysteria2
@@ -72,6 +72,19 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: false
 - name: 🇦🇪 阿联酋 (UAE) 07 - sanchun
+  server: bgr.accessgate.link
+  port: 2443
+  udp: true
+  type: vless
+  uuid: 38eb3e71-4349-4bd6-9baf-9740e1896495
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: c_42sYo1oPuFy6MmGKVkFxnNmDOZ0WoIiFGg8UJ12Aw
+    short-id: b0d8c9a285c70f6f
+  servername: unpkg.com
+  client-fingerprint: edge
+- name: 🇦🇪 阿联酋 (UAE) 08 - sanchun
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -94,6 +107,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - sanchun
   - 🇦🇪 阿联酋 (UAE) 06 - sanchun
   - 🇦🇪 阿联酋 (UAE) 07 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 08 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -106,5 +120,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - sanchun
   - 🇦🇪 阿联酋 (UAE) 06 - sanchun
   - 🇦🇪 阿联酋 (UAE) 07 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 08 - sanchun
 rules:
 - MATCH,PROXIES

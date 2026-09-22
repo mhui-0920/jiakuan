@@ -6,13 +6,21 @@
     {
       "type": "vless",
       "tag": "🇧🇪 比利时 (Belgium) 01 - sanchun",
-      "server": "104.21.64.198",
-      "server_port": 2086,
-      "uuid": "73796e63-0000-4000-8000-000000000007",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev"
+      "server": "bel.accessgate.link",
+      "server_port": 8080,
+      "uuid": "38eb3e71-4349-4bd6-9baf-9740e1896495",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "unpkg.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CQBmePak1QN5SsSmK_KTOSLjsCTaiaM4Jtxt7jLheko",
+          "short_id": "b0d8c9a285c70f6f"
         }
       }
     },
