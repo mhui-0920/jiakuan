@@ -8,7 +8,7 @@
       "tag": "🇦🇪 阿联酋 (UAE) 01 - sanchun",
       "server": "31.58.181.88",
       "server_port": 8443,
-      "uuid": "010158f4-1a88-4dfa-8420-c770dc1584e1",
+      "uuid": "05819bb1-2975-473c-a51f-0fbccf8d2cfa",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -85,7 +85,7 @@
     {
       "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 05 - sanchun",
-      "server": "85.204.107.172",
+      "server": "85.204.107.183",
       "server_port": 8080,
       "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
       "tls": {
@@ -97,7 +97,7 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 06 - sanchun",
-      "server": "uae.unixzone.us",
+      "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {

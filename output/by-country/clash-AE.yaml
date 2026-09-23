@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: 010158f4-1a88-4dfa-8420-c770dc1584e1
+  uuid: 05819bb1-2975-473c-a51f-0fbccf8d2cfa
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -53,7 +53,7 @@ proxies:
   servername: dzen.ru
   client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 05 - sanchun
-  server: 85.204.107.172
+  server: 85.204.107.183
   port: 8080
   udp: true
   type: hysteria2
@@ -61,7 +61,7 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: false
 - name: 🇦🇪 阿联酋 (UAE) 06 - sanchun
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless

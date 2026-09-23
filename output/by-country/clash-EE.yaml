@@ -28,6 +28,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: estproxy4.lockdwn.com
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun
   server: 94.183.170.135
   port: 8443
@@ -39,6 +41,19 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - sanchun
+  server: est1.loozerp.wiki
+  port: 443
+  udp: true
+  type: vless
+  uuid: f495298f-2bdb-4fd8-9ac9-5dd33d1b482a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 98MNvJC4t0ZjK_xHlQjOx2WfLfAPluNDb71MzS9sPT8
+    short-id: 38018dde3e27335e
+  servername: est1.loozerp.wiki
+  client-fingerprint: ios
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - sanchun
   server: ee1.sferavpn.pro
   port: 443
   udp: true
@@ -57,6 +72,7 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - sanchun
+  - 🇪🇪 爱沙尼亚 (Estonia) 05 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,5 +82,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - sanchun
+  - 🇪🇪 爱沙尼亚 (Estonia) 05 - sanchun
 rules:
 - MATCH,PROXIES

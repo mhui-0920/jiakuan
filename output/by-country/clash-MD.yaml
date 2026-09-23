@@ -5,7 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇩 摩尔多瓦 (Moldova) 01 - sanchun
+  server: 94.103.2.151
+  port: 443
+  udp: true
+  type: vless
+  uuid: f495298f-2bdb-4fd8-9ac9-5dd33d1b482a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: j4M7_0Tl0UdSe4zYziALrPp_4F-QiSkyrUnOS6saQ1g
+    short-id: a7162d100ab90645
+  servername: ruffia2.thewalkingded.life
+  client-fingerprint: firefox
+- name: 🇲🇩 摩尔多瓦 (Moldova) 02 - sanchun
   server: moldova.cdn-europe.org
+  port: 4443
+  udp: true
+  type: vless
+  uuid: d7c94b82-657a-4bb7-9b24-2ae566669835
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: cYwrRCz_hKgT_JE8WywuLE3XOkAEqCTuBiUvXAaEjn8
+    short-id: 694ee64512cfcbef
+  servername: moldova.cdn-europe.org
+  client-fingerprint: random
+- name: 🇲🇩 摩尔多瓦 (Moldova) 03 - sanchun
+  server: 185.103.167.76
   port: 4443
   udp: true
   type: vless
@@ -23,11 +49,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇲🇩 摩尔多瓦 (Moldova) 01 - sanchun
+  - 🇲🇩 摩尔多瓦 (Moldova) 02 - sanchun
+  - 🇲🇩 摩尔多瓦 (Moldova) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇲🇩 摩尔多瓦 (Moldova) 01 - sanchun
+  - 🇲🇩 摩尔多瓦 (Moldova) 02 - sanchun
+  - 🇲🇩 摩尔多瓦 (Moldova) 03 - sanchun
 rules:
 - MATCH,PROXIES

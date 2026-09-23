@@ -4,17 +4,9 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 01 - sanchun",
-      "server": "bogging-eyeteeth-fly.freesocks.work",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QFWzCw2uX9B9i6qAYeFBIE"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - sanchun",
-      "server": "85.204.107.184",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 01 - sanchun",
+      "server": "85.204.107.173",
       "server_port": 8443,
       "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
       "tls": {
@@ -25,7 +17,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - sanchun",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - sanchun",
       "server": "46.28.67.55",
       "server_port": 443,
       "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
@@ -35,13 +27,29 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
           "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
           "short_id": "d06d78e974491b6e"
         }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - sanchun",
+      "server": "hy2.aspidnet.xyz",
+      "server_port": 443,
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.aspidnet.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
       }
     },
     {
@@ -87,6 +95,14 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - sanchun",
+      "server": "154.46.31.106",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QFWzCw2uX9B9i6qAYeFBIE"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -95,7 +111,8 @@
         "🇷🇴 罗马尼亚 (Romania) 02 - sanchun",
         "🇷🇴 罗马尼亚 (Romania) 03 - sanchun",
         "🇷🇴 罗马尼亚 (Romania) 04 - sanchun",
-        "🇷🇴 罗马尼亚 (Romania) 05 - sanchun"
+        "🇷🇴 罗马尼亚 (Romania) 05 - sanchun",
+        "🇷🇴 罗马尼亚 (Romania) 06 - sanchun"
       ]
     },
     {
@@ -106,7 +123,8 @@
         "🇷🇴 罗马尼亚 (Romania) 02 - sanchun",
         "🇷🇴 罗马尼亚 (Romania) 03 - sanchun",
         "🇷🇴 罗马尼亚 (Romania) 04 - sanchun",
-        "🇷🇴 罗马尼亚 (Romania) 05 - sanchun"
+        "🇷🇴 罗马尼亚 (Romania) 05 - sanchun",
+        "🇷🇴 罗马尼亚 (Romania) 06 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
