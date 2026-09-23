@@ -4,25 +4,18 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇧 英国 (United Kingdom) 01 (家宽) - sanchun
-  server: 104.238.71.30
-  port: 8880
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun
+  server: hkgb707.ifastcdncache.com
+  port: 60852
   udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  type: vmess
+  uuid: f8eca8df-a1a5-4918-a194-d34112a3673f
+  alterId: 2
+  cipher: auto
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: vms.lifetime51.workers.dev
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun
-  server: 36.224.141.124
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - sanchun
   server: 118.167.206.152
   port: 24215
   udp: true
@@ -38,16 +31,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇬🇧 英国 (United Kingdom) 01 (家宽) - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 (United Kingdom) 01 (家宽) - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - sanchun
 rules:
 - MATCH,PROXIES

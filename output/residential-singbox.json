@@ -4,29 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 01 (家宽) - sanchun",
-      "server": "104.238.71.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun",
+      "server": "hkgb707.ifastcdncache.com",
+      "server_port": 60852,
+      "uuid": "f8eca8df-a1a5-4918-a194-d34112a3673f",
+      "security": "auto",
+      "alter_id": 2,
       "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "vms.lifetime51.workers.dev"
-        }
+        "type": "ws"
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun",
-      "server": "36.224.141.124",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - sanchun",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun",
       "server": "118.167.206.152",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -49,18 +40,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 英国 (United Kingdom) 01 (家宽) - sanchun",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - sanchun"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 英国 (United Kingdom) 01 (家宽) - sanchun",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - sanchun"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

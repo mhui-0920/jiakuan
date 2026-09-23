@@ -5,19 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - sanchun
-  server: 140.174.184.5
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-- name: 🇪🇸 西班牙 (Spain) 02 - sanchun
   server: 108.181.121.226
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: WSyL4XTwNsdv
+- name: 🇪🇸 西班牙 (Spain) 02 - sanchun
+  server: 140.174.184.5
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
 - name: 🇪🇸 西班牙 (Spain) 03 - sanchun
   server: 212.227.235.66
   port: 2053
@@ -42,8 +42,20 @@ proxies:
     public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
     short-id: 0dfc23fe80778c00
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 05 - sanchun
+  server: 196.245.52.147
+  port: 25535
+  udp: true
+  type: vless
+  uuid: c379d8e4-c67d-42ec-a3ed-ca99d1ad0546
+  tls: true
+  reality-opts:
+    public-key: Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4
+    short-id: 7642ce57308852e7
+  servername: www.microsoft.com
+  client-fingerprint: firefox
+- name: 🇪🇸 西班牙 (Spain) 06 - sanchun
   server: 87.76.179.117
   port: 7443
   udp: true
@@ -55,18 +67,6 @@ proxies:
     public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
     short-id: d2061bb1
   servername: www.samsung.com
-  client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 06 - sanchun
-  server: 196.245.52.147
-  port: 25535
-  udp: true
-  type: vless
-  uuid: c379d8e4-c67d-42ec-a3ed-ca99d1ad0546
-  tls: true
-  reality-opts:
-    public-key: Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4
-    short-id: 7642ce57308852e7
-  servername: www.microsoft.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
