@@ -4,37 +4,30 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 01 - sanchun",
-      "server": "194.87.196.13",
-      "server_port": 10090,
-      "method": "aes-256-gcm",
-      "password": "4938e975724d0ed1"
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - sanchun",
-      "server": "94.228.171.159",
-      "server_port": 8443,
-      "uuid": "5b754a1a-11aa-4df9-a8ba-44af9a579fe1",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇷🇺 俄罗斯 (Russia) 01 - sanchun",
+      "server": "104.18.0.1",
+      "server_port": 443,
+      "uuid": "3ccba794-1c6d-48a8-acf2-f5caf0e69d86",
       "tls": {
         "enabled": true,
-        "server_name": "de.b2ai.top",
+        "server_name": "all.speedtest03.ccwu.cc",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "hcjZwWlIplwEKT-Ea-vTM2n4jwiTCeL9wTUZG0WgCj0",
-          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "all.speedtest03.ccwu.cc"
         }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - sanchun",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - sanchun",
       "server": "91.240.86.70",
       "server_port": 22443,
       "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
@@ -45,40 +38,47 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - sanchun",
-      "server": "185.22.155.203",
-      "server_port": 10090,
-      "method": "aes-256-gcm",
-      "password": "895b4b796a357570"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - sanchun",
-      "server": "94.249.187.46",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "IXa3ylzS_jBOAsQy071tIQ"
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - sanchun",
-      "server": "46.173.17.19",
-      "server_port": 443,
-      "uuid": "fc47db0c-c6f2-4665-bdb2-8f717822ce9d",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - sanchun",
+      "server": "45.12.75.242",
+      "server_port": 26424,
+      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
       "tls": {
         "enabled": true,
-        "server_name": "9f8hqeju.datahubfiles.com",
+        "server_name": "ya.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Hhp-DQNkUYOkbWR64BHWc7gGYfeqU8yYAwX6sTsqf3A",
-          "short_id": "4d5163ec7a1bf048"
+          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
+          "short_id": "23103e1e"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - sanchun",
+      "server": "176.123.161.222",
+      "server_port": 9892,
+      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+      "tls": {
+        "enabled": true,
+        "server_name": "dl.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU",
+          "short_id": "aabb"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-tunnel"
       }
     },
     {
@@ -89,9 +89,7 @@
         "🇷🇺 俄罗斯 (Russia) 01 - sanchun",
         "🇷🇺 俄罗斯 (Russia) 02 - sanchun",
         "🇷🇺 俄罗斯 (Russia) 03 - sanchun",
-        "🇷🇺 俄罗斯 (Russia) 04 - sanchun",
-        "🇷🇺 俄罗斯 (Russia) 05 - sanchun",
-        "🇷🇺 俄罗斯 (Russia) 06 - sanchun"
+        "🇷🇺 俄罗斯 (Russia) 04 - sanchun"
       ]
     },
     {
@@ -101,9 +99,7 @@
         "🇷🇺 俄罗斯 (Russia) 01 - sanchun",
         "🇷🇺 俄罗斯 (Russia) 02 - sanchun",
         "🇷🇺 俄罗斯 (Russia) 03 - sanchun",
-        "🇷🇺 俄罗斯 (Russia) 04 - sanchun",
-        "🇷🇺 俄罗斯 (Russia) 05 - sanchun",
-        "🇷🇺 俄罗斯 (Russia) 06 - sanchun"
+        "🇷🇺 俄罗斯 (Russia) 04 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇹 奥地利 (Austria) 01 - sanchun
+  server: 195.74.90.115
+  port: 9443
+  udp: true
+  type: vless
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  tls: true
+  servername: hub-vie-01.hanvpn.cc
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vie01-grpc-8e47a
+- name: 🇦🇹 奥地利 (Austria) 02 - sanchun
   server: 152.53.1.40
   port: 443
   udp: true
@@ -23,11 +36,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇦🇹 奥地利 (Austria) 01 - sanchun
+  - 🇦🇹 奥地利 (Austria) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇦🇹 奥地利 (Austria) 01 - sanchun
+  - 🇦🇹 奥地利 (Austria) 02 - sanchun
 rules:
 - MATCH,PROXIES

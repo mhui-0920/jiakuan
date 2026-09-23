@@ -5,6 +5,47 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - sanchun
+  server: 141.164.45.187
+  port: 7001
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇰🇷 韩国 (South Korea) 02 - sanchun
+  server: 34.22.64.72
+  port: 443
+  udp: true
+  type: vless
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  tls: true
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+    short-id: 8685f8b4d9f4f51e
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 03 - sanchun
+  server: 141.164.45.187
+  port: 9090
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇰🇷 韩国 (South Korea) 04 - sanchun
+  server: 158.247.222.240
+  port: 443
+  udp: true
+  type: trojan
+  password: 600421cf-11d7-429f-a65b-c30397f1bc03
+  sni: kr.freeguard.org
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 05 - sanchun
+  server: 141.164.45.187
+  port: 5498
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
+- name: 🇰🇷 韩国 (South Korea) 06 - sanchun
   server: 3.39.4.109
   port: 18967
   udp: true
@@ -17,7 +58,7 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 02 - sanchun
+- name: 🇰🇷 韩国 (South Korea) 07 - sanchun
   server: 34.64.149.137
   port: 443
   udp: true
@@ -29,20 +70,15 @@ proxies:
     short-id: 3fd0a8ddef3ae5c6
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 03 - sanchun
-  server: 47.80.62.191
-  port: 443
+- name: 🇰🇷 韩国 (South Korea) 08 - sanchun
+  server: 152.69.231.175
+  port: 50160
   udp: true
-  type: vless
-  uuid: 43e60b75-9920-450a-94ee-8762758ca49c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Qe5e0FBZwuwYMRYikx8sH5iaowPQwdkn6kgIN8xrQHE
-    short-id: bd0040df20a53b36
-  servername: www.logitech.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 04 - sanchun
+  type: hysteria2
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  sni: 152-69-231-175.liao.kdns.fr
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 09 - sanchun
   server: 47.80.62.71
   port: 443
   udp: true
@@ -55,55 +91,6 @@ proxies:
     short-id: 0b674631d5fc6b93
   servername: www.nvidia.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 05 - sanchun
-  server: 152.67.200.82
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: 152.67.200.82
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 06 - sanchun
-  server: 3.39.4.109
-  port: 13672
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 07 - sanchun
-  server: 47.80.14.8
-  port: 443
-  udp: true
-  type: vless
-  uuid: 581cb8c3-dadb-4e10-a18b-5e79bfe7bd93
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: OBIHAXdhfYJ0PWsZjy3QYPRjTfMQlvjmBsTf1CT671w
-    short-id: 71110d3f7ef57760
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 08 - sanchun
-  server: 211.178.105.134
-  port: 6123
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇰🇷 韩国 (South Korea) 09 - sanchun
-  server: 152.69.231.175
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152-69-231-175.liao.kdns.fr
-  skip-cert-verify: false
 - name: 🇰🇷 韩国 (South Korea) 10 - sanchun
   server: 151.245.106.49
   port: 2053
@@ -117,6 +104,33 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 11 - sanchun
+  server: 3.39.4.109
+  port: 13672
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 12 - sanchun
+  server: 141.164.45.187
+  port: 5001
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇰🇷 韩国 (South Korea) 13 - sanchun
+  server: 141.164.45.187
+  port: 6679
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+- name: 🇰🇷 韩国 (South Korea) 14 - sanchun
   server: 150-230-252-217.liao.kdns.fr
   port: 50160
   udp: true
@@ -124,6 +138,27 @@ proxies:
   password: 9cfc9458e48c028ec03ff86ebc71c744
   sni: 150-230-252-217.liao.kdns.fr
   skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 15 - sanchun
+  server: 141.164.45.187
+  port: 7002
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇰🇷 韩国 (South Korea) 16 - sanchun
+  server: 141.164.45.187
+  port: 8888
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇰🇷 韩国 (South Korea) 17 - sanchun
+  server: 141.164.45.187
+  port: 2376
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
 proxy-groups:
 - name: PROXIES
   type: select
@@ -140,6 +175,12 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 09 - sanchun
   - 🇰🇷 韩国 (South Korea) 10 - sanchun
   - 🇰🇷 韩国 (South Korea) 11 - sanchun
+  - 🇰🇷 韩国 (South Korea) 12 - sanchun
+  - 🇰🇷 韩国 (South Korea) 13 - sanchun
+  - 🇰🇷 韩国 (South Korea) 14 - sanchun
+  - 🇰🇷 韩国 (South Korea) 15 - sanchun
+  - 🇰🇷 韩国 (South Korea) 16 - sanchun
+  - 🇰🇷 韩国 (South Korea) 17 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -156,5 +197,11 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 09 - sanchun
   - 🇰🇷 韩国 (South Korea) 10 - sanchun
   - 🇰🇷 韩国 (South Korea) 11 - sanchun
+  - 🇰🇷 韩国 (South Korea) 12 - sanchun
+  - 🇰🇷 韩国 (South Korea) 13 - sanchun
+  - 🇰🇷 韩国 (South Korea) 14 - sanchun
+  - 🇰🇷 韩国 (South Korea) 15 - sanchun
+  - 🇰🇷 韩国 (South Korea) 16 - sanchun
+  - 🇰🇷 韩国 (South Korea) 17 - sanchun
 rules:
 - MATCH,PROXIES
