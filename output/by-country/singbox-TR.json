@@ -6,6 +6,35 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - sanchun",
+      "server": "172.67.192.84",
+      "server_port": 2095,
+      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "index.harmonica02.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - sanchun",
+      "server": "me17.msjia8844.site",
+      "server_port": 7443,
+      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
+      "tls": {
+        "enabled": true,
+        "server_name": "me17.msjia8844.site",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - sanchun",
       "server": "78.135.73.47",
       "server_port": 443,
       "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
@@ -26,7 +55,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - sanchun",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - sanchun",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -50,7 +79,9 @@
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - sanchun",
-        "🇹🇷 土耳其 (Turkey) 02 - sanchun"
+        "🇹🇷 土耳其 (Turkey) 02 - sanchun",
+        "🇹🇷 土耳其 (Turkey) 03 - sanchun",
+        "🇹🇷 土耳其 (Turkey) 04 - sanchun"
       ]
     },
     {
@@ -58,7 +89,9 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - sanchun",
-        "🇹🇷 土耳其 (Turkey) 02 - sanchun"
+        "🇹🇷 土耳其 (Turkey) 02 - sanchun",
+        "🇹🇷 土耳其 (Turkey) 03 - sanchun",
+        "🇹🇷 土耳其 (Turkey) 04 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

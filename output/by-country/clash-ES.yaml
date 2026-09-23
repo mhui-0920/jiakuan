@@ -5,19 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - sanchun
-  server: 108.181.121.226
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
-- name: 🇪🇸 西班牙 (Spain) 02 - sanchun
   server: 140.174.184.5
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: qItG8SueYQcP
+- name: 🇪🇸 西班牙 (Spain) 02 - sanchun
+  server: 108.181.121.226
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
 - name: 🇪🇸 西班牙 (Spain) 03 - sanchun
   server: 212.227.235.66
   port: 2053
@@ -42,7 +42,7 @@ proxies:
     public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
     short-id: 0dfc23fe80778c00
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 05 - sanchun
   server: 87.76.179.117
   port: 7443
@@ -57,18 +57,17 @@ proxies:
   servername: www.samsung.com
   client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 06 - sanchun
-  server: 92.118.127.16
-  port: 443
+  server: 196.245.52.147
+  port: 25535
   udp: true
   type: vless
-  uuid: 72f8e59f-7a0d-44f2-a8db-b4c3e1e36716
-  flow: xtls-rprx-vision
+  uuid: c379d8e4-c67d-42ec-a3ed-ca99d1ad0546
   tls: true
   reality-opts:
-    public-key: Rz8XjYinCcpE7NLktJzNFL7eVSUxaFGuV2Zz82p7IRg
-    short-id: 908563a721d9bdcd
-  servername: sp1.extremumnews.com
-  client-fingerprint: safari
+    public-key: Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4
+    short-id: 7642ce57308852e7
+  servername: www.microsoft.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

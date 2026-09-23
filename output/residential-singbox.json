@@ -5,8 +5,29 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun",
-      "server": "hinet1.2yly.com",
+      "tag": "🇬🇧 英国 (United Kingdom) 01 (家宽) - sanchun",
+      "server": "104.238.71.30",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "vms.lifetime51.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun",
+      "server": "36.224.141.124",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - sanchun",
+      "server": "118.167.206.152",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -14,7 +35,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -28,14 +49,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun"
+        "🇬🇧 英国 (United Kingdom) 01 (家宽) - sanchun",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun"
+        "🇬🇧 英国 (United Kingdom) 01 (家宽) - sanchun",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

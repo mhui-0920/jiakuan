@@ -5,13 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - sanchun
+  server: 103.149.182.79
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf
+  password: asd123456
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - sanchun
   server: sth.free-outline.giize.com
   port: 1081
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: uez5t2b4575tgkoi
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - sanchun
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - sanchun
+  server: 103.149.182.105
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf
+  password: asd123456
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - sanchun
   server: 152.32.254.68
   port: 5010
   udp: true
@@ -21,26 +35,6 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - sanchun
-  server: 207.57.133.53
-  port: 51135
-  udp: true
-  type: vless
-  uuid: 87f0cd64-02c8-49e7-b07a-349afed26693
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k41ba-Wiolay7UfP9gId9WXfOKcFkwS2Vwh5je7NWko
-  servername: www.ebay.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - sanchun
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
-  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - sanchun
   server: hk-1.gsafevpnapi.com
   port: 20270
@@ -55,58 +49,34 @@ proxies:
   servername: www.yahoo.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - sanchun
-  server: 31.58.181.88
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.174
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - sanchun
+  server: 207.57.133.53
+  port: 51135
+  udp: true
+  type: vless
+  uuid: 87f0cd64-02c8-49e7-b07a-349afed26693
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k41ba-Wiolay7UfP9gId9WXfOKcFkwS2Vwh5je7NWko
+  servername: www.ebay.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - sanchun
+  server: mz.hkychina.com
   port: 8443
   udp: true
-  type: vless
-  uuid: 4e32f662-01da-4dad-bf33-ee17f578d118
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - sanchun
-  server: 202.146.222.89
-  port: 443
-  udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - sanchun
-  server: champion.xn--kivt58h.lol
-  port: 80
-  udp: true
-  type: vless
-  uuid: ed2864f9-37b3-4222-8c54-014aedc400a2
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ak.mcdonaldshamburgergoodgoodgood.xyz
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
+  skip-cert-verify: false
 - name: 🇭🇰 中国香港 (Hong Kong) 09 - sanchun
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.29
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - sanchun
-  server: 47.239.6.251
-  port: 13779
-  udp: true
-  type: vless
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  servername: tesla.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - sanchun
   server: 2.27.109.179
   port: 45464
   udp: true
@@ -114,15 +84,7 @@ proxies:
   password: XuMweB2PWs
   sni: 2.27.109.179.sslip.io
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - sanchun
-  server: hk2.xiaoliyu.cyou
-  port: 4433
-  udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: hk2.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - sanchun
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - sanchun
   server: 104.21.8.201
   port: 2096
   udp: true
@@ -137,18 +99,19 @@ proxies:
     path: /f7i3lo6xbs
     headers:
       Host: cdn-hk.skyvora.app
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - sanchun
-  server: 47.238.210.5
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - sanchun
+  server: 47.239.6.251
   port: 13779
   udp: true
   type: vless
   uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
     short-id: af1bdd293097b664
   servername: tesla.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -165,9 +128,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 09 - sanchun
   - 🇭🇰 中国香港 (Hong Kong) 10 - sanchun
   - 🇭🇰 中国香港 (Hong Kong) 11 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 12 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 13 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 14 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -184,8 +144,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 09 - sanchun
   - 🇭🇰 中国香港 (Hong Kong) 10 - sanchun
   - 🇭🇰 中国香港 (Hong Kong) 11 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 12 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 13 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 14 - sanchun
 rules:
 - MATCH,PROXIES
