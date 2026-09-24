@@ -5,19 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - sanchun
-  server: odd-violet-5440.asdgrweeee13.workers.dev
+  server: 139.84.166.47
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: GEdoeeqLZtkJRgSa
+- name: 🇮🇳 印度 (India) 02 - sanchun
+  server: 35.244.28.130
   port: 443
   udp: true
-  type: vless
-  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
-  tls: true
-  servername: odd-violet-5440.asdgrweeee13.workers.dev
+  type: trojan
+  password: M7v%w11Se*
+  sni: tttyder.wsone.icu
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇮🇳 印度 (India) 02 - sanchun
+- name: 🇮🇳 印度 (India) 03 - sanchun
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -29,7 +31,7 @@ proxies:
     short-id: 9980e0609b0d3891
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 03 - sanchun
+- name: 🇮🇳 印度 (India) 04 - sanchun
   server: 34.131.228.210
   port: 443
   udp: true
@@ -37,7 +39,7 @@ proxies:
   password: M7v%w11Se*
   sni: hyfuuf6.wsone.icu
   skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 04 - sanchun
+- name: 🇮🇳 印度 (India) 05 - sanchun
   server: 148.113.5.44
   port: 443
   udp: true
@@ -59,6 +61,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - sanchun
   - 🇮🇳 印度 (India) 03 - sanchun
   - 🇮🇳 印度 (India) 04 - sanchun
+  - 🇮🇳 印度 (India) 05 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -68,5 +71,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - sanchun
   - 🇮🇳 印度 (India) 03 - sanchun
   - 🇮🇳 印度 (India) 04 - sanchun
+  - 🇮🇳 印度 (India) 05 - sanchun
 rules:
 - MATCH,PROXIES

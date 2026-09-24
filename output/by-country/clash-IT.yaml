@@ -5,13 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - sanchun
+  server: 185.164.175.81
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 02 - sanchun
   server: 57.131.48.45
   port: 8388
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: itzvpn@321
-- name: 🇮🇹 意大利 (Italy) 02 - sanchun
+- name: 🇮🇹 意大利 (Italy) 03 - sanchun
   server: 31.77.154.14
   port: 8443
   udp: true
@@ -25,58 +32,34 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: 🇮🇹 意大利 (Italy) 03 - sanchun
-  server: 57.131.38.163
-  port: 2053
-  udp: true
-  type: vless
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
-  tls: true
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-    short-id: 5b8a942318178e7b
-  servername: www.apple.com
-  client-fingerprint: firefox
 - name: 🇮🇹 意大利 (Italy) 04 - sanchun
-  server: 82.118.16.189
-  port: 443
-  udp: true
-  type: vless
-  uuid: d5e5f5a1-0f23-4c49-af9f-4be445bf9d8e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SjGkzJQ9I6ZZjC3V73atcPMczhMm0oiTrB8mUQXz1HY
-    short-id: 37fbf155c7a9f3ff
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 05 - sanchun
-  server: 31.76.113.212
-  port: 443
-  udp: true
-  type: vless
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw
-    short-id: 4fa44664f6a566d3
-  servername: italia.superbuba.top
-  client-fingerprint: firefox
-- name: 🇮🇹 意大利 (Italy) 06 - sanchun
   server: 91.201.65.122
-  port: 9097
+  port: 9053
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: Sn5B7jTqr76aCJT8
-- name: 🇮🇹 意大利 (Italy) 07 - sanchun
+  password: SBM7R883jBmnqe6C
+- name: 🇮🇹 意大利 (Italy) 05 - sanchun
   server: 91.201.65.122
   port: 9050
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: FG5ddLsMPbV5CutE
+- name: 🇮🇹 意大利 (Italy) 06 - sanchun
+  server: 91.201.65.122
+  port: 9070
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: bf7v334KKDV3YDhH
+- name: 🇮🇹 意大利 (Italy) 07 - sanchun
+  server: 91.201.65.122
+  port: 9074
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: p5wSkb2uM3pKSS3j
 - name: 🇮🇹 意大利 (Italy) 08 - sanchun
   server: 91.201.65.122
   port: 9059
@@ -86,18 +69,18 @@ proxies:
   password: 9XwYyZsK8SNzQDtY
 - name: 🇮🇹 意大利 (Italy) 09 - sanchun
   server: 91.201.65.122
-  port: 9074
+  port: 9092
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: p5wSkb2uM3pKSS3j
+  password: TyNkGmp9hs6eGpDK
 - name: 🇮🇹 意大利 (Italy) 10 - sanchun
   server: 91.201.65.122
-  port: 9053
+  port: 9039
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: SBM7R883jBmnqe6C
+  password: qYEN5HX4JKeVCdEC
 - name: 🇮🇹 意大利 (Italy) 11 - sanchun
   server: 82.118.16.187
   port: 443
@@ -112,7 +95,32 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 12 - sanchun
-  server: italia.superbuba.top
+  server: 57.131.38.163
+  port: 2053
+  udp: true
+  type: vless
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  tls: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+    short-id: 5b8a942318178e7b
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇮🇹 意大利 (Italy) 13 - sanchun
+  server: 31.76.113.231
+  port: 443
+  udp: true
+  type: vless
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw
+    short-id: 4fa44664f6a566d3
+  servername: italia.superbuba.top
+  client-fingerprint: firefox
+- name: 🇮🇹 意大利 (Italy) 14 - sanchun
+  server: 31.76.113.212
   port: 443
   udp: true
   type: vless
@@ -141,6 +149,8 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 10 - sanchun
   - 🇮🇹 意大利 (Italy) 11 - sanchun
   - 🇮🇹 意大利 (Italy) 12 - sanchun
+  - 🇮🇹 意大利 (Italy) 13 - sanchun
+  - 🇮🇹 意大利 (Italy) 14 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -158,5 +168,7 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 10 - sanchun
   - 🇮🇹 意大利 (Italy) 11 - sanchun
   - 🇮🇹 意大利 (Italy) 12 - sanchun
+  - 🇮🇹 意大利 (Italy) 13 - sanchun
+  - 🇮🇹 意大利 (Italy) 14 - sanchun
 rules:
 - MATCH,PROXIES

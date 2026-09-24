@@ -15,7 +15,7 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - sanchun
   server: 2.56.121.43
   port: 443
@@ -30,7 +30,7 @@ proxies:
   servername: www.ikea.com
   client-fingerprint: firefox
 - name: 🇨🇾 塞浦路斯 (Cyprus) 03 - sanchun
-  server: 5.253.28.240
+  server: 5.253.28.218
   port: 2443
   udp: true
   type: vless
