@@ -5,13 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - sanchun
-  server: 195.133.23.200
-  port: 10081
+  server: 91.196.32.163
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
+  type: hysteria2
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  sni: 91.196.32.163
+  skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - sanchun
+  server: 138.124.121.233
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8e826a69-63f6-0001-a67d-4a1958e8b2d2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: amd.com
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 03 - sanchun
   server: 130.49.218.208
   port: 5432
   udp: true
@@ -21,8 +35,16 @@ proxies:
   tls: true
   servername: 130.49.218.208
   skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 03 - sanchun
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 04 - sanchun
+  server: 91.240.86.70
+  port: 22443
+  udp: true
+  type: hysteria2
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: itsallproxy.quattro-tech.ru
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 05 - sanchun
   server: 138.124.121.231
   port: 443
   udp: true
@@ -35,14 +57,31 @@ proxies:
     short-id: a696de84963656de
   servername: amd.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 04 - sanchun
-  server: 91.240.86.70
-  port: 22443
+- name: 🇷🇺 俄罗斯 (Russia) 06 - sanchun
+  server: 45.12.75.242
+  port: 26424
   udp: true
-  type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
-  skip-cert-verify: false
+  type: vless
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 07 - sanchun
+  server: 91.196.32.216
+  port: 9543
+  udp: true
+  type: vless
+  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+  servername: storage.yandexcloud.net
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,6 +91,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 03 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 04 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 05 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 06 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 07 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,5 +103,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 03 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 04 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 05 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 06 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 07 - sanchun
 rules:
 - MATCH,PROXIES

@@ -33,8 +33,20 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇦🇹 奥地利 (Austria) 03 - sanchun",
+      "server": "67.159.17.181",
+      "server_port": 30443,
+      "password": "0e1506b1-22a4-4b4f-8082-9ddd2efcd28e",
+      "tls": {
+        "enabled": true,
+        "server_name": "filesconvert.org",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 04 - sanchun",
       "server": "45.86.245.107",
       "server_port": 5865,
       "uuid": "ce230b9c-0531-40da-bc3f-f27a8e059db1",
@@ -60,7 +72,8 @@
         "auto",
         "🇦🇹 奥地利 (Austria) 01 - sanchun",
         "🇦🇹 奥地利 (Austria) 02 - sanchun",
-        "🇦🇹 奥地利 (Austria) 03 - sanchun"
+        "🇦🇹 奥地利 (Austria) 03 - sanchun",
+        "🇦🇹 奥地利 (Austria) 04 - sanchun"
       ]
     },
     {
@@ -69,7 +82,8 @@
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01 - sanchun",
         "🇦🇹 奥地利 (Austria) 02 - sanchun",
-        "🇦🇹 奥地利 (Austria) 03 - sanchun"
+        "🇦🇹 奥地利 (Austria) 03 - sanchun",
+        "🇦🇹 奥地利 (Austria) 04 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

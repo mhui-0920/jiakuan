@@ -1,0 +1,94 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇿 捷克 (Czech) 01 - sanchun
+  server: 153.76.185.145
+  port: 3090
+  udp: true
+  type: vless
+  uuid: 43202c3e-466c-4dce-b834-c6f4378ba217
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 02 - sanchun
+  server: 194.87.59.98
+  port: 2085
+  udp: true
+  type: vless
+  uuid: 79e66d72-d0e1-4a73-ad10-9f687852d0b4
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 03 - sanchun
+  server: 194.87.59.16
+  port: 2085
+  udp: true
+  type: vless
+  uuid: f477a134-fa2c-4573-8599-cd897ac89d98
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 04 - sanchun
+  server: 153.76.185.83
+  port: 3090
+  udp: true
+  type: vless
+  uuid: 8e757d59-a8d2-4e59-8ba8-bd02e7a46d57
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 05 - sanchun
+  server: 194.87.59.13
+  port: 2085
+  udp: true
+  type: vless
+  uuid: 79e66d72-d0e1-4a73-ad10-9f687852d0b4
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 06 - sanchun
+  server: 194.87.59.97
+  port: 2085
+  udp: true
+  type: vless
+  uuid: 5afea0a3-cd66-43fd-b431-5203ce3e14c5
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 07 - sanchun
+  server: 153.76.190.41
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 3a92b39a-5f02-415e-a908-783ec320e83f
+  sni: speedtestmark.com
+  skip-cert-verify: false
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇿 捷克 (Czech) 01 - sanchun
+  - 🇨🇿 捷克 (Czech) 02 - sanchun
+  - 🇨🇿 捷克 (Czech) 03 - sanchun
+  - 🇨🇿 捷克 (Czech) 04 - sanchun
+  - 🇨🇿 捷克 (Czech) 05 - sanchun
+  - 🇨🇿 捷克 (Czech) 06 - sanchun
+  - 🇨🇿 捷克 (Czech) 07 - sanchun
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇿 捷克 (Czech) 01 - sanchun
+  - 🇨🇿 捷克 (Czech) 02 - sanchun
+  - 🇨🇿 捷克 (Czech) 03 - sanchun
+  - 🇨🇿 捷克 (Czech) 04 - sanchun
+  - 🇨🇿 捷克 (Czech) 05 - sanchun
+  - 🇨🇿 捷克 (Czech) 06 - sanchun
+  - 🇨🇿 捷克 (Czech) 07 - sanchun
+rules:
+- MATCH,PROXIES

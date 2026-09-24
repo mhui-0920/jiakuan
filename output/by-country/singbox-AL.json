@@ -5,21 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 01 - sanchun",
-      "server": "35.199.90.53",
+      "tag": "🇦🇱 AL 01 - sanchun",
+      "server": "194.93.61.86",
       "server_port": 443,
-      "uuid": "e9c2ed7f-79ab-40a8-8910-24468f5da712",
+      "uuid": "41e71ba7-d389-47aa-94f7-ed1f55fdbcdf",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "cdnjs.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "0WXz3PJQnr-KprrwiO5BlKVRdqA4ZS6U5jGHc_aeJnw",
-          "short_id": "4b414f69a06e1e81"
+          "public_key": "E1te_g9q6EWQVOCgjwI4PF-cml9qqW7OEAf33tYkUxQ",
+          "short_id": "17d334ad29b2ff40"
         }
       }
     },
@@ -28,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - sanchun"
+        "🇦🇱 AL 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - sanchun"
+        "🇦🇱 AL 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

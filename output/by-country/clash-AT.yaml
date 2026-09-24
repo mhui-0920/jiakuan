@@ -25,6 +25,14 @@ proxies:
   servername: at.quattro-tech.ru
   client-fingerprint: chrome
 - name: 🇦🇹 奥地利 (Austria) 03 - sanchun
+  server: 67.159.17.181
+  port: 30443
+  udp: true
+  type: hysteria2
+  password: 0e1506b1-22a4-4b4f-8082-9ddd2efcd28e
+  sni: filesconvert.org
+  skip-cert-verify: false
+- name: 🇦🇹 奥地利 (Austria) 04 - sanchun
   server: 45.86.245.107
   port: 5865
   udp: true
@@ -45,6 +53,7 @@ proxy-groups:
   - 🇦🇹 奥地利 (Austria) 01 - sanchun
   - 🇦🇹 奥地利 (Austria) 02 - sanchun
   - 🇦🇹 奥地利 (Austria) 03 - sanchun
+  - 🇦🇹 奥地利 (Austria) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,5 +62,6 @@ proxy-groups:
   - 🇦🇹 奥地利 (Austria) 01 - sanchun
   - 🇦🇹 奥地利 (Austria) 02 - sanchun
   - 🇦🇹 奥地利 (Austria) 03 - sanchun
+  - 🇦🇹 奥地利 (Austria) 04 - sanchun
 rules:
 - MATCH,PROXIES
