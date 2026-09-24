@@ -4,56 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 01 - sanchun",
-      "server": "82.38.64.229",
-      "server_port": 8443,
-      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
-      "tls": {
-        "enabled": true,
-        "server_name": "hopp-swizland-new.mysynology.net",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02 - sanchun",
-      "server": "104.165.205.67",
-      "server_port": 8443,
-      "password": "3a92b39a-5f02-415e-a908-783ec320e83f",
-      "tls": {
-        "enabled": true,
-        "server_name": "speedtestmark.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 - sanchun",
-      "server": "104.165.205.41",
-      "server_port": 8443,
-      "password": "3a92b39a-5f02-415e-a908-783ec320e83f",
-      "tls": {
-        "enabled": true,
-        "server_name": "speedtestmark.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04 - sanchun",
-      "server": "77.110.104.238",
-      "server_port": 443,
-      "password": "5413edfb-08d6-4fba-b51c-809c04feb127",
-      "tls": {
-        "enabled": true,
-        "server_name": "ch2-hy2.veilvpn.life",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 05 - sanchun",
+      "tag": "🇨🇭 瑞士 (Switzerland) 01 - sanchun",
       "server": "45.90.59.15",
       "server_port": 443,
       "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
@@ -73,12 +25,28 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 (Switzerland) 06 - sanchun",
-      "server": "132.243.175.144",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 02 - sanchun",
+      "server": "82.38.64.237",
+      "server_port": 8443,
+      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
+      "tls": {
+        "enabled": true,
+        "server_name": "hopp-swizland-new.mysynology.net",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - sanchun",
+      "server": "77.110.104.238",
+      "server_port": 443,
+      "password": "5413edfb-08d6-4fba-b51c-809c04feb127",
+      "tls": {
+        "enabled": true,
+        "server_name": "ch2-hy2.veilvpn.life",
+        "insecure": false
+      }
     },
     {
       "type": "selector",
@@ -87,10 +55,7 @@
         "auto",
         "🇨🇭 瑞士 (Switzerland) 01 - sanchun",
         "🇨🇭 瑞士 (Switzerland) 02 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 03 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 04 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 05 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 06 - sanchun"
+        "🇨🇭 瑞士 (Switzerland) 03 - sanchun"
       ]
     },
     {
@@ -99,10 +64,7 @@
       "outbounds": [
         "🇨🇭 瑞士 (Switzerland) 01 - sanchun",
         "🇨🇭 瑞士 (Switzerland) 02 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 03 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 04 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 05 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 06 - sanchun"
+        "🇨🇭 瑞士 (Switzerland) 03 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
