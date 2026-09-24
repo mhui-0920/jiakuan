@@ -12,6 +12,30 @@ proxies:
   cipher: aes-256-gcm
   password: 81a20429165df87e
 - name: 🇷🇺 俄罗斯 (Russia) 02 - sanchun
+  server: 130.49.218.208
+  port: 5432
+  udp: true
+  type: vless
+  uuid: cc01f435-d561-4525-bf1f-7a9876d33207
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 130.49.218.208
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 03 - sanchun
+  server: 138.124.121.231
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8e826a69-63f6-0001-a67d-4a1958e8b2d2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: amd.com
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 04 - sanchun
   server: 91.240.86.70
   port: 22443
   udp: true
@@ -26,6 +50,8 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 02 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 03 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -33,5 +59,7 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 02 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 03 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 04 - sanchun
 rules:
 - MATCH,PROXIES

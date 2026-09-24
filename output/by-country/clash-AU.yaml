@@ -5,6 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - sanchun
+  server: 34.87.229.148
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
+  tls: true
+  reality-opts:
+    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
+    short-id: 8a7d5e0248cdb1b1
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇦🇺 澳大利亚 (Australia) 02 - sanchun
   server: 51.161.204.244
   port: 443
   udp: true
@@ -17,7 +29,7 @@ proxies:
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇦🇺 澳大利亚 (Australia) 02 - sanchun
+- name: 🇦🇺 澳大利亚 (Australia) 03 - sanchun
   server: 34.87.244.111
   port: 443
   udp: true
@@ -29,24 +41,12 @@ proxies:
     short-id: d725f0dd8cce210f
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 03 - sanchun
-  server: 34.87.229.148
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
-  tls: true
-  reality-opts:
-    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
-    short-id: 8a7d5e0248cdb1b1
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 04 - sanchun
   server: au1.gsafevpnapi.com
   port: 20270
   udp: true
   type: vless
-  uuid: 38b8e2fb-b9a0-40a6-b42c-335def2765cf
+  uuid: 6eef3a79-22bc-4086-b5e6-95e07db73016
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -54,6 +54,21 @@ proxies:
     short-id: e6a5a4a9115456de
   servername: www.yahoo.com
   client-fingerprint: chrome
+- name: 🇦🇺 澳大利亚 (Australia) 05 - sanchun
+  server: nova.freshnet.ir
+  port: 2082
+  udp: true
+  type: vless
+  uuid: ce2bd817-7fb1-4b94-8125-d6161de31962
+  tls: true
+  servername: nova.freshnet.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /cats/FslNz
+    headers:
+      Host: nova.freshnet.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,6 +78,7 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02 - sanchun
   - 🇦🇺 澳大利亚 (Australia) 03 - sanchun
   - 🇦🇺 澳大利亚 (Australia) 04 - sanchun
+  - 🇦🇺 澳大利亚 (Australia) 05 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,5 +88,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02 - sanchun
   - 🇦🇺 澳大利亚 (Australia) 03 - sanchun
   - 🇦🇺 澳大利亚 (Australia) 04 - sanchun
+  - 🇦🇺 澳大利亚 (Australia) 05 - sanchun
 rules:
 - MATCH,PROXIES
