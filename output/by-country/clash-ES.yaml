@@ -5,19 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - sanchun
-  server: 140.174.184.5
-  port: 8388
+  server: 5.188.181.201
+  port: 9029
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
+  cipher: aes-256-cfb
+  password: dU3DSNS8wYPXzEKw
 - name: 🇪🇸 西班牙 (Spain) 02 - sanchun
-  server: 108.181.121.226
-  port: 8388
+  server: 5.188.181.201
+  port: 9001
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
+  cipher: aes-256-cfb
+  password: UkXRsXvR6buDMG2Y
 - name: 🇪🇸 西班牙 (Spain) 03 - sanchun
   server: 212.227.235.66
   port: 2053
@@ -31,6 +31,20 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 04 - sanchun
+  server: 140.174.184.5
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
+- name: 🇪🇸 西班牙 (Spain) 05 - sanchun
+  server: 108.181.121.226
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
+- name: 🇪🇸 西班牙 (Spain) 06 - sanchun
   server: 46.28.71.247
   port: 443
   udp: true
@@ -43,7 +57,7 @@ proxies:
     short-id: 0dfc23fe80778c00
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 05 - sanchun
+- name: 🇪🇸 西班牙 (Spain) 07 - sanchun
   server: 87.76.179.117
   port: 7443
   udp: true
@@ -55,7 +69,7 @@ proxies:
     public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
     short-id: d2061bb1
   servername: www.samsung.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,6 +80,8 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 03 - sanchun
   - 🇪🇸 西班牙 (Spain) 04 - sanchun
   - 🇪🇸 西班牙 (Spain) 05 - sanchun
+  - 🇪🇸 西班牙 (Spain) 06 - sanchun
+  - 🇪🇸 西班牙 (Spain) 07 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,5 +92,7 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 03 - sanchun
   - 🇪🇸 西班牙 (Spain) 04 - sanchun
   - 🇪🇸 西班牙 (Spain) 05 - sanchun
+  - 🇪🇸 西班牙 (Spain) 06 - sanchun
+  - 🇪🇸 西班牙 (Spain) 07 - sanchun
 rules:
 - MATCH,PROXIES

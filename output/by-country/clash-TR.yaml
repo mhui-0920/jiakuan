@@ -5,6 +5,59 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - sanchun
+  server: 93.190.8.26
+  port: 3090
+  udp: true
+  type: vless
+  uuid: 637b3435-8458-4358-b5f7-139f6db33006
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇹🇷 土耳其 (Turkey) 02 - sanchun
+  server: 93.190.9.17
+  port: 3090
+  udp: true
+  type: vless
+  uuid: e2b20d7c-8e3e-4122-a997-523f3d6af119
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇹🇷 土耳其 (Turkey) 03 - sanchun
+  server: 93.190.9.158
+  port: 3090
+  udp: true
+  type: vless
+  uuid: 82d81f5d-51be-4132-afaf-46f6218f4127
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇹🇷 土耳其 (Turkey) 04 - sanchun
+  server: 93.190.9.53
+  port: 3090
+  udp: true
+  type: vless
+  uuid: ea925d7b-8f99-4874-9597-13a224c3664c
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇹🇷 土耳其 (Turkey) 05 - sanchun
+  server: 93.190.8.163
+  port: 3090
+  udp: true
+  type: vless
+  uuid: ea925d7b-8f99-4874-9597-13a224c3664c
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇹🇷 土耳其 (Turkey) 06 - sanchun
+  server: 162.249.126.13
+  port: 8081
+  udp: true
+  type: hysteria2
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: hop-germany-september.dynuddns.com
+  skip-cert-verify: false
+- name: 🇹🇷 土耳其 (Turkey) 07 - sanchun
   server: 78.135.73.47
   port: 443
   udp: true
@@ -17,7 +70,17 @@ proxies:
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 02 - sanchun
+- name: 🇹🇷 土耳其 (Turkey) 08 - sanchun
+  server: me17.msjia8844.site
+  port: 7443
+  udp: true
+  type: hysteria2
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
+- name: 🇹🇷 土耳其 (Turkey) 09 - sanchun
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -36,6 +99,13 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - sanchun
   - 🇹🇷 土耳其 (Turkey) 02 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 03 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 04 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 05 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 06 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 07 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 08 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 09 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +113,12 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - sanchun
   - 🇹🇷 土耳其 (Turkey) 02 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 03 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 04 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 05 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 06 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 07 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 08 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 09 - sanchun
 rules:
 - MATCH,PROXIES

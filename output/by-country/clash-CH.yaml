@@ -33,6 +33,13 @@ proxies:
   password: 5413edfb-08d6-4fba-b51c-809c04feb127
   sni: ch2-hy2.veilvpn.life
   skip-cert-verify: false
+- name: 🇨🇭 瑞士 (Switzerland) 04 - sanchun
+  server: 132.243.175.144
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +48,7 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 01 - sanchun
   - 🇨🇭 瑞士 (Switzerland) 02 - sanchun
   - 🇨🇭 瑞士 (Switzerland) 03 - sanchun
+  - 🇨🇭 瑞士 (Switzerland) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,5 +57,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 01 - sanchun
   - 🇨🇭 瑞士 (Switzerland) 02 - sanchun
   - 🇨🇭 瑞士 (Switzerland) 03 - sanchun
+  - 🇨🇭 瑞士 (Switzerland) 04 - sanchun
 rules:
 - MATCH,PROXIES
