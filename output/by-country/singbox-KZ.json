@@ -6,48 +6,6 @@
     {
       "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - sanchun",
-      "server": "zodiacgrapedefiant.berylcord.net",
-      "server_port": 443,
-      "uuid": "3db8407b-1f96-4b82-bfeb-55258c1e57b4",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "zodiacgrapedefiant.berylcord.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "QPfM5knVgOkIykx2AC8S1MvkO_x-T9xMRYJdkF9aEng",
-          "short_id": "fda83f2787e6016d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - sanchun",
-      "server": "kazartip.thewalkingded.life",
-      "server_port": 443,
-      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "kazartip.thewalkingded.life",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "5JhqvTTHIhhA_2Jjc3_y6pwLmKfe4wtwq3vSt43P00I",
-          "short_id": "7cf408996c82639f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - sanchun",
       "server": "176.109.104.195",
       "server_port": 9882,
       "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
@@ -56,12 +14,12 @@
         "server_name": "dl.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
           "public_key": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU",
-          "short_id": "aa"
+          "short_id": "aabb"
         }
       },
       "transport": {
@@ -71,10 +29,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - sanchun",
-      "server": "77.73.232.61",
-      "server_port": 19747,
-      "uuid": "2a9ed01e-5455-44b4-a66a-76ee8165f0ac",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - sanchun",
+      "server": "109.248.170.119",
+      "server_port": 13447,
+      "uuid": "b573cefb-7bc7-4a42-b407-b8b534e66773",
       "tls": {
         "enabled": true,
         "server_name": "yahoo.com",
@@ -84,14 +42,14 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM",
-          "short_id": "2001"
+          "public_key": "_0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE",
+          "short_id": "83"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - sanchun",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - sanchun",
       "server": "83.222.23.81",
       "server_port": 38065,
       "uuid": "4b9063e0-3288-44e9-9aac-80fbfce323a0",
@@ -111,10 +69,30 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - sanchun",
-      "server": "109.248.170.119",
-      "server_port": 13447,
-      "uuid": "b573cefb-7bc7-4a42-b407-b8b534e66773",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - sanchun",
+      "server": "77.73.232.61",
+      "server_port": 19747,
+      "uuid": "2a9ed01e-5455-44b4-a66a-76ee8165f0ac",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM",
+          "short_id": "2001"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - sanchun",
+      "server": "178.236.16.98",
+      "server_port": 35728,
+      "uuid": "a00d89f6-ab7e-4e30-a5e5-54c701d62c93",
       "tls": {
         "enabled": true,
         "server_name": "yahoo.com",
@@ -124,8 +102,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "_0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE",
-          "short_id": "83"
+          "public_key": "vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng",
+          "short_id": "69a2"
         }
       }
     },
@@ -138,8 +116,7 @@
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - sanchun",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - sanchun",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - sanchun",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - sanchun",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - sanchun"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - sanchun"
       ]
     },
     {
@@ -150,8 +127,7 @@
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - sanchun",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - sanchun",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - sanchun",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - sanchun",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - sanchun"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

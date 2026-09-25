@@ -4,33 +4,15 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun
-  server: 36.224.141.124
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun
-  server: hinet1.2yly.com
-  port: 24215
-  udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - sanchun
-  server: hk01.kfc-520.com
-  port: 60001
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun
+  server: 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
+  port: 443
   udp: true
   type: hysteria2
-  password: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
-  sni: hk01.kfc-520.com
+  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
+  sni: 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
   skip-cert-verify: false
-- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - sanchun
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - sanchun
   server: test.keoplentuio.xyz
   port: 2053
   udp: true
@@ -41,18 +23,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - sanchun
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - sanchun
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - sanchun
 rules:
 - MATCH,PROXIES

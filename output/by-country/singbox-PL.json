@@ -7,9 +7,9 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 - sanchun",
       "server": "217.30.10.44",
-      "server_port": 9006,
+      "server_port": 9099,
       "method": "aes-256-cfb",
-      "password": "FAdUvMJUq5vDgKEq"
+      "password": "7heRqkPG3hg4UnRm"
     },
     {
       "type": "shadowsocks",
@@ -23,21 +23,29 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 03 - sanchun",
       "server": "217.30.10.44",
-      "server_port": 9076,
+      "server_port": 9063,
       "method": "aes-256-cfb",
-      "password": "S2zDyyPcmZN2h8EC"
+      "password": "aQqJbtwFGcCCaeL3"
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 04 - sanchun",
       "server": "217.30.10.44",
-      "server_port": 9099,
+      "server_port": 9071,
       "method": "aes-256-cfb",
-      "password": "7heRqkPG3hg4UnRm"
+      "password": "mENfxTFQpRKKh4As"
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 05 - sanchun",
+      "server": "217.30.10.44",
+      "server_port": 9042,
+      "method": "aes-256-cfb",
+      "password": "S7KwUu7yBy58S3Ga"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 06 - sanchun",
       "server": "217.30.10.44",
       "server_port": 9052,
       "method": "aes-256-cfb",
@@ -45,87 +53,23 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 06 - sanchun",
+      "tag": "🇵🇱 波兰 (Poland) 07 - sanchun",
       "server": "217.30.10.44",
-      "server_port": 9062,
+      "server_port": 9006,
       "method": "aes-256-cfb",
-      "password": "tkhHVxxfM2QErBWe"
+      "password": "FAdUvMJUq5vDgKEq"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 07 - sanchun",
+      "tag": "🇵🇱 波兰 (Poland) 08 - sanchun",
       "server": "217.30.10.44",
       "server_port": 9041,
       "method": "aes-256-cfb",
       "password": "U6qnYRhfyDmn8sgn"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 08 - sanchun",
-      "server": "217.30.10.44",
-      "server_port": 9063,
-      "method": "aes-256-cfb",
-      "password": "aQqJbtwFGcCCaeL3"
-    },
-    {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 09 - sanchun",
-      "server": "62.132.117.17",
-      "server_port": 43439,
-      "uuid": "45bb5f5c-8e39-4a4b-8c10-11109965469c",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.24cloudplay.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4",
-          "short_id": "ae99c61853e8a6ae"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "streaming"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 10 - sanchun",
-      "server": "217.30.10.44",
-      "server_port": 9071,
-      "method": "aes-256-cfb",
-      "password": "mENfxTFQpRKKh4As"
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 11 - sanchun",
-      "server": "62.132.117.11",
-      "server_port": 43439,
-      "uuid": "94a5294d-1125-4139-8934-380c5de5552f",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.24cloudplay.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4",
-          "short_id": "ae99c61853e8a6ae"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "streaming"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 12 - sanchun",
       "server": "185.223.57.16",
       "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
@@ -148,32 +92,39 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 13 - sanchun",
-      "server": "144.31.5.64",
+      "type": "hysteria2",
+      "tag": "🇵🇱 波兰 (Poland) 10 - sanchun",
+      "server": "streambox.wwwinternetvideo.click",
       "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
+      "password": "865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01",
       "tls": {
         "enabled": true,
-        "server_name": "pl6.moritech.net",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "server_name": "streambox.wwwinternetvideo.click",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇵🇱 波兰 (Poland) 11 - sanchun",
+      "server": "45.192.12.93",
+      "server_port": 443,
+      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
+      "tls": {
+        "enabled": true,
+        "server_name": "admin.wwwinternetvideo.click",
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 14 - sanchun",
-      "server": "144.31.131.38",
+      "tag": "🇵🇱 波兰 (Poland) 12 - sanchun",
+      "server": "2.59.253.251",
       "server_port": 443,
       "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "prod.pl-node-01.security-sbrf.ru",
+        "server_name": "nvidia.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -186,95 +137,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 15 - sanchun",
-      "server": "217.60.33.215",
-      "server_port": 443,
-      "password": "865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01",
-      "tls": {
-        "enabled": true,
-        "server_name": "streambox.wwwinternetvideo.click",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 16 - sanchun",
-      "server": "admin.wwwinternetvideo.click",
-      "server_port": 443,
-      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
-      "tls": {
-        "enabled": true,
-        "server_name": "admin.wwwinternetvideo.click",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 17 - sanchun",
-      "server": "144.31.171.108",
-      "server_port": 8444,
-      "uuid": "02bd8b5a-170b-4a79-8e68-9cec710272c7",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl1.chromevpn.cc",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ltHl15Wq549qC2JdAtesy-POs6Hwm_BbrlzuwDkWoUk",
-          "short_id": "93f5b0d1a8ce6247"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 18 - sanchun",
-      "server": "146.59.116.19",
-      "server_port": 17000,
-      "method": "aes-256-gcm",
-      "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 19 - sanchun",
-      "server": "pl3.moritech.net",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl3.moritech.net",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 20 - sanchun",
-      "server": "pl4.moritech.net",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl4.moritech.net",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 21 - sanchun",
+      "tag": "🇵🇱 波兰 (Poland) 13 - sanchun",
       "server": "82.118.22.161",
       "server_port": 443,
       "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
@@ -284,12 +148,58 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
           "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
           "short_id": "fa3ea655619a3e78"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 14 - sanchun",
+      "server": "83.168.95.145",
+      "server_port": 443,
+      "uuid": "f28e0ce1-ed75-4e90-b069-5215a80dfb4a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg",
+          "short_id": "d345ad4657adeef9"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 15 - sanchun",
+      "server": "146.59.116.19",
+      "server_port": 17000,
+      "method": "aes-256-gcm",
+      "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 16 - sanchun",
+      "server": "144.31.5.64",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl6.moritech.net",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
         }
       }
     },
@@ -313,12 +223,7 @@
         "🇵🇱 波兰 (Poland) 13 - sanchun",
         "🇵🇱 波兰 (Poland) 14 - sanchun",
         "🇵🇱 波兰 (Poland) 15 - sanchun",
-        "🇵🇱 波兰 (Poland) 16 - sanchun",
-        "🇵🇱 波兰 (Poland) 17 - sanchun",
-        "🇵🇱 波兰 (Poland) 18 - sanchun",
-        "🇵🇱 波兰 (Poland) 19 - sanchun",
-        "🇵🇱 波兰 (Poland) 20 - sanchun",
-        "🇵🇱 波兰 (Poland) 21 - sanchun"
+        "🇵🇱 波兰 (Poland) 16 - sanchun"
       ]
     },
     {
@@ -340,12 +245,7 @@
         "🇵🇱 波兰 (Poland) 13 - sanchun",
         "🇵🇱 波兰 (Poland) 14 - sanchun",
         "🇵🇱 波兰 (Poland) 15 - sanchun",
-        "🇵🇱 波兰 (Poland) 16 - sanchun",
-        "🇵🇱 波兰 (Poland) 17 - sanchun",
-        "🇵🇱 波兰 (Poland) 18 - sanchun",
-        "🇵🇱 波兰 (Poland) 19 - sanchun",
-        "🇵🇱 波兰 (Poland) 20 - sanchun",
-        "🇵🇱 波兰 (Poland) 21 - sanchun"
+        "🇵🇱 波兰 (Poland) 16 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
