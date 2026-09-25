@@ -13,20 +13,20 @@ proxies:
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: false
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - sanchun
-  server: 154.46.31.106
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - sanchun
-  server: 85.204.107.187
+  server: 85.204.107.174
   port: 8443
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: false
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - sanchun
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - sanchun
   server: 146.70.124.85
   port: 443
@@ -39,18 +39,8 @@ proxies:
     public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
     short-id: fe24f8a0a560056e
   servername: www.datadoghq.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - sanchun
-  server: hy2.aspidnet.xyz
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇷🇴 罗马尼亚 (Romania) 06 - sanchun
   server: 46.28.67.55
   port: 443
   udp: true
@@ -62,7 +52,17 @@ proxies:
     public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - sanchun
+  server: hy2.aspidnet.xyz
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇷🇴 罗马尼亚 (Romania) 07 - sanchun
   server: 193.163.203.253
   port: 443
@@ -76,14 +76,6 @@ proxies:
     short-id: 5ee019e02e6ed99a
   servername: yandex.ru
   client-fingerprint: firefox
-- name: 🇷🇴 罗马尼亚 (Romania) 08 - sanchun
-  server: 162.249.126.13
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  sni: hop-germany-september.dynuddns.com
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -96,7 +88,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 05 - sanchun
   - 🇷🇴 罗马尼亚 (Romania) 06 - sanchun
   - 🇷🇴 罗马尼亚 (Romania) 07 - sanchun
-  - 🇷🇴 罗马尼亚 (Romania) 08 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -109,6 +100,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 05 - sanchun
   - 🇷🇴 罗马尼亚 (Romania) 06 - sanchun
   - 🇷🇴 罗马尼亚 (Romania) 07 - sanchun
-  - 🇷🇴 罗马尼亚 (Romania) 08 - sanchun
 rules:
 - MATCH,PROXIES
