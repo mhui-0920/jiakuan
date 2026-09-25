@@ -6,22 +6,12 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - sanchun",
-      "server": "gerwai1488.vvzzkontaktezzvv.garden",
-      "server_port": 443,
-      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "gerwai1488.vvzzkontaktezzvv.garden",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0",
-          "short_id": "0c13e8822e7f58aa"
-        }
+      "server": "153.76.185.102",
+      "server_port": 3090,
+      "uuid": "89e7af8e-3d93-4307-be22-3aa8d4a3fcfa",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {

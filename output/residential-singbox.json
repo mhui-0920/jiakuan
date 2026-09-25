@@ -6,7 +6,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun",
-      "server": "r3mrcg001286ek2.cybervena.com",
+      "server": "36.224.141.124",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
       "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
@@ -32,27 +32,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - sanchun",
-      "server": "test.keoplentuio.xyz",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - sanchun",
-      "server": "e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com",
-      "server_port": 443,
-      "password": "4eedcde6-d16a-11ef-973a-f23c913c8d2b",
-      "tls": {
-        "enabled": true,
-        "server_name": "e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - sanchun",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - sanchun",
       "server": "193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com",
       "server_port": 443,
       "password": "c12f73f6-e8c7-11ed-9246-f23c9164ca5d",
@@ -69,9 +50,7 @@
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun",
-        "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - sanchun",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - sanchun",
-        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - sanchun"
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - sanchun"
       ]
     },
     {
@@ -80,9 +59,7 @@
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun",
-        "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - sanchun",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - sanchun",
-        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - sanchun"
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -30,6 +30,16 @@ proxies:
     short-id: eba1498e012ef580
   servername: amazon.de
   client-fingerprint: chrome
+- name: 🇮🇷 IR 03 - sanchun
+  server: 185.233.131.236
+  port: 443
+  udp: true
+  type: vless
+  uuid: b9f5a731-ad7c-4185-9d86-89a4a043961d
+  tls: true
+  servername: v3p.sabermusic.ir
+  skip-cert-verify: true
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +47,7 @@ proxy-groups:
   - AUTO
   - 🇮🇷 IR 01 - sanchun
   - 🇮🇷 IR 02 - sanchun
+  - 🇮🇷 IR 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +55,6 @@ proxy-groups:
   proxies:
   - 🇮🇷 IR 01 - sanchun
   - 🇮🇷 IR 02 - sanchun
+  - 🇮🇷 IR 03 - sanchun
 rules:
 - MATCH,PROXIES

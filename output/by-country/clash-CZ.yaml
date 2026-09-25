@@ -5,18 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - sanchun
-  server: gerwai1488.vvzzkontaktezzvv.garden
-  port: 443
+  server: 153.76.185.102
+  port: 3090
   udp: true
   type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0
-    short-id: 0c13e8822e7f58aa
-  servername: gerwai1488.vvzzkontaktezzvv.garden
-  client-fingerprint: firefox
+  uuid: 89e7af8e-3d93-4307-be22-3aa8d4a3fcfa
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 proxy-groups:
 - name: PROXIES
   type: select
