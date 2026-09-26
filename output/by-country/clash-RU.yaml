@@ -5,19 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - sanchun
-  server: 194.87.196.13
-  port: 30210
+  server: 94.249.187.46
+  port: 1080
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: 4938e975724d0ed1
+  cipher: chacha20-ietf-poly1305
+  password: IXa3ylzS_jBOAsQy071tIQ
 - name: 🇷🇺 俄罗斯 (Russia) 02 - sanchun
-  server: 195.58.48.137
-  port: 30210
+  server: 91.240.86.70
+  port: 22443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 8ad9d72a5571df86
+  type: hysteria2
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: 91.240.86.70
+  skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 03 - sanchun
   server: 91.196.32.216
   port: 9543
@@ -32,47 +33,29 @@ proxies:
   servername: storage.yandexcloud.net
   client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 04 - sanchun
-  server: 195.133.23.200
-  port: 30210
+  server: 45.12.75.242
+  port: 26424
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
+  type: vless
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 05 - sanchun
-  server: 91.240.86.70
-  port: 22443
-  udp: true
-  type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: 91.240.86.70
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - sanchun
-  server: 13.143.141.78
+  server: 31.129.97.137
   port: 443
   udp: true
   type: vless
-  uuid: cfed68c4-fc10-4638-b3ca-140e1e873797
+  uuid: 28ff173d-b7ad-42d1-84a3-bb2e233c9996
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: uC78OW2K0vnJ5dJUh9YucAp2YbzBS2PrIZlbwgmdrGQ
-    short-id: a9883bcbf4ccc58f
-  servername: cloudflare.com
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 07 - sanchun
-  server: 176.123.161.222
-  port: 9892
-  udp: true
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-  servername: dl.google.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
+    public-key: x9yfMdHRe9ZAJJUF9kZnDnO3Y7otoyFBCS9RoaIG3Es
+  servername: api-maps.yandex.ru
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -83,8 +66,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 04 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 05 - sanchun
-  - 🇷🇺 俄罗斯 (Russia) 06 - sanchun
-  - 🇷🇺 俄罗斯 (Russia) 07 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -95,7 +76,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 04 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 05 - sanchun
-  - 🇷🇺 俄罗斯 (Russia) 06 - sanchun
-  - 🇷🇺 俄罗斯 (Russia) 07 - sanchun
 rules:
 - MATCH,PROXIES
