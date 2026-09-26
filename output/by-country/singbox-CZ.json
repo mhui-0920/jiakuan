@@ -6,9 +6,9 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - sanchun",
-      "server": "153.76.185.147",
+      "server": "153.76.185.179",
       "server_port": 3090,
-      "uuid": "656b7976-99b0-4438-844b-6ed8409d699a",
+      "uuid": "71e27437-b48e-44e7-a3ef-9922cf483cad",
       "transport": {
         "type": "grpc",
         "service_name": "vless"

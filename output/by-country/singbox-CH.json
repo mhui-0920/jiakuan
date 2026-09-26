@@ -4,8 +4,77 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 01 - sanchun",
+      "server": "45.140.205.5",
+      "server_port": 1935,
+      "password": "2_hysteria2_fastlane_zvhhnoxlg:YcOq4K8c8aFfytIzxG7bbUv7mCeIf7rD",
+      "tls": {
+        "enabled": true,
+        "server_name": "ch2.h.fastlanehosting.ru",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 02 - sanchun",
+      "server": "87.120.222.134",
+      "server_port": 1935,
+      "password": "switzerland_hysteria2_fastlane_dn16pzs3c:SLEknMm31cCTfMlcJPDxBBtL2x4xDkhO",
+      "tls": {
+        "enabled": true,
+        "server_name": "ch3.h.fastlanehosting.ru",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - sanchun",
+      "server": "78.159.131.146",
+      "server_port": 1935,
+      "password": "2_hysteria2_fastlane_sbdpoar2f:kza99BybQ659OWLw7tbuW20Zi9U1fQNg",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl3.h.fastlanehosting.ru",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 - sanchun",
+      "server": "82.38.64.239",
+      "server_port": 8443,
+      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
+      "tls": {
+        "enabled": true,
+        "server_name": "hopp-swizland-new.mysynology.net",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 05 - sanchun",
+      "server": "157.22.187.17",
+      "server_port": 443,
+      "uuid": "c260fba0-9609-4190-b0ba-1538c08c0d22",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jcA9IJbcnbrkU-4hIZII-58SP0Z6c0BsjfD0l5Ns9ys",
+          "short_id": "7bfbb024"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 06 - sanchun",
       "server": "45.90.59.15",
       "server_port": 443,
       "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
@@ -26,19 +95,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02 - sanchun",
-      "server": "82.38.64.239",
-      "server_port": 8443,
-      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
-      "tls": {
-        "enabled": true,
-        "server_name": "hopp-swizland-new.mysynology.net",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 - sanchun",
+      "tag": "🇨🇭 瑞士 (Switzerland) 07 - sanchun",
       "server": "77.110.104.238",
       "server_port": 443,
       "password": "5413edfb-08d6-4fba-b51c-809c04feb127",
@@ -49,13 +106,30 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 08 - sanchun",
+      "server": "140.238.213.114",
+      "server_port": 50160,
+      "password": "84a506ca5aca505696a454d828420b3f",
+      "tls": {
+        "enabled": true,
+        "server_name": "140.238.213.114",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇭 瑞士 (Switzerland) 01 - sanchun",
         "🇨🇭 瑞士 (Switzerland) 02 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 03 - sanchun"
+        "🇨🇭 瑞士 (Switzerland) 03 - sanchun",
+        "🇨🇭 瑞士 (Switzerland) 04 - sanchun",
+        "🇨🇭 瑞士 (Switzerland) 05 - sanchun",
+        "🇨🇭 瑞士 (Switzerland) 06 - sanchun",
+        "🇨🇭 瑞士 (Switzerland) 07 - sanchun",
+        "🇨🇭 瑞士 (Switzerland) 08 - sanchun"
       ]
     },
     {
@@ -64,7 +138,12 @@
       "outbounds": [
         "🇨🇭 瑞士 (Switzerland) 01 - sanchun",
         "🇨🇭 瑞士 (Switzerland) 02 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 03 - sanchun"
+        "🇨🇭 瑞士 (Switzerland) 03 - sanchun",
+        "🇨🇭 瑞士 (Switzerland) 04 - sanchun",
+        "🇨🇭 瑞士 (Switzerland) 05 - sanchun",
+        "🇨🇭 瑞士 (Switzerland) 06 - sanchun",
+        "🇨🇭 瑞士 (Switzerland) 07 - sanchun",
+        "🇨🇭 瑞士 (Switzerland) 08 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

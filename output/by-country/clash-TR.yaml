@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - sanchun
+  server: 2.27.28.105
+  port: 1935
+  udp: true
+  type: hysteria2
+  password: hysteria2_fastlane_44q2v07t5:3dBm8NYIPX4pUwAEyKGjClHY51iDJCOo
+  sni: de7.h.fastlanehosting.ru
+  skip-cert-verify: false
+- name: 🇹🇷 土耳其 (Turkey) 02 - sanchun
   server: 78.135.73.47
   port: 443
   udp: true
@@ -17,7 +25,7 @@ proxies:
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 02 - sanchun
+- name: 🇹🇷 土耳其 (Turkey) 03 - sanchun
   server: 162.249.127.130
   port: 8081
   udp: true
@@ -25,7 +33,7 @@ proxies:
   password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
   sni: hop-germany-september.dynuddns.com
   skip-cert-verify: false
-- name: 🇹🇷 土耳其 (Turkey) 03 - sanchun
+- name: 🇹🇷 土耳其 (Turkey) 04 - sanchun
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -36,7 +44,7 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,6 +53,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - sanchun
   - 🇹🇷 土耳其 (Turkey) 02 - sanchun
   - 🇹🇷 土耳其 (Turkey) 03 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,5 +62,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - sanchun
   - 🇹🇷 土耳其 (Turkey) 02 - sanchun
   - 🇹🇷 土耳其 (Turkey) 03 - sanchun
+  - 🇹🇷 土耳其 (Turkey) 04 - sanchun
 rules:
 - MATCH,PROXIES

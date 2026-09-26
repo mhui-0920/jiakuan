@@ -67,13 +67,57 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 04 - sanchun",
+      "server": "45.140.204.199",
+      "server_port": 8443,
+      "uuid": "482514e8-2979-4628-acf3-d04f607c4f12",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FS94iBvy7Vx93IMVFkMmFgyHRD8YZ7hmj1yv7vpWwBQ",
+          "short_id": "c8b62f04"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 05 - sanchun",
+      "server": "185.249.153.108",
+      "server_port": 443,
+      "uuid": "4cf9c712-11c4-47d8-aa31-a1693a1aa4e5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nordivablog.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xOJ3INBNzRKOKYGQZmSYczgTjTKwdYQ4BFfc75wVazw",
+          "short_id": "73c9e31ccafda20e"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇱 以色列 (Israel) 01 - sanchun",
         "🇮🇱 以色列 (Israel) 02 - sanchun",
-        "🇮🇱 以色列 (Israel) 03 - sanchun"
+        "🇮🇱 以色列 (Israel) 03 - sanchun",
+        "🇮🇱 以色列 (Israel) 04 - sanchun",
+        "🇮🇱 以色列 (Israel) 05 - sanchun"
       ]
     },
     {
@@ -82,7 +126,9 @@
       "outbounds": [
         "🇮🇱 以色列 (Israel) 01 - sanchun",
         "🇮🇱 以色列 (Israel) 02 - sanchun",
-        "🇮🇱 以色列 (Israel) 03 - sanchun"
+        "🇮🇱 以色列 (Israel) 03 - sanchun",
+        "🇮🇱 以色列 (Israel) 04 - sanchun",
+        "🇮🇱 以色列 (Israel) 05 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
