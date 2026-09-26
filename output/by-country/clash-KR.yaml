@@ -12,6 +12,13 @@ proxies:
   cipher: aes-256-cfb
   password: qwerREWQ@@
 - name: 🇰🇷 韩国 (South Korea) 02 - sanchun
+  server: 49.254.204.133
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇰🇷 韩国 (South Korea) 03 - sanchun
   server: 3.39.4.109
   port: 18967
   udp: true
@@ -23,8 +30,8 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 03 - sanchun
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 04 - sanchun
   server: 3.39.4.109
   port: 13672
   udp: true
@@ -36,8 +43,16 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 04 - sanchun
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 05 - sanchun
+  server: 158.247.222.240
+  port: 443
+  udp: true
+  type: trojan
+  password: 600421cf-11d7-429f-a65b-c30397f1bc03
+  sni: kr.freeguard.org
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 06 - sanchun
   server: kr2-r.link-t7.com
   port: 10047
   udp: true
@@ -52,7 +67,15 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: update
-- name: 🇰🇷 韩国 (South Korea) 05 - sanchun
+- name: 🇰🇷 韩国 (South Korea) 07 - sanchun
+  server: 152.69.231.175
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  sni: 152-69-231-175.liao.kdns.fr
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 08 - sanchun
   server: 152.67.200.82
   port: 50160
   udp: true
@@ -60,15 +83,20 @@ proxies:
   password: 3d7634af8cb2c6cb4bac1c0efad8b43d
   sni: 152.67.200.82
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 06 - sanchun
-  server: 150-230-252-217.liao.kdns.fr
-  port: 50160
+- name: 🇰🇷 韩国 (South Korea) 09 - sanchun
+  server: 43.108.18.193
+  port: 443
   udp: true
-  type: hysteria2
-  password: 9cfc9458e48c028ec03ff86ebc71c744
-  sni: 150-230-252-217.liao.kdns.fr
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 07 - sanchun
+  type: vless
+  uuid: 809f043c-86cd-466d-9340-3769bc949e66
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: VfrYrzfyQqgaVeMozagueBL7lvbbU1JB6RHfGJk4enU
+    short-id: 281c396bb44c48da
+  servername: learn.microsoft.com
+  client-fingerprint: random
+- name: 🇰🇷 韩国 (South Korea) 10 - sanchun
   server: 151.245.106.49
   port: 2053
   udp: true
@@ -80,21 +108,27 @@ proxies:
     short-id: 429499c03d4cc8a0
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 08 - sanchun
-  server: 152.69.231.175
+- name: 🇰🇷 韩国 (South Korea) 11 - sanchun
+  server: 150-230-252-217.liao.kdns.fr
   port: 50160
   udp: true
   type: hysteria2
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152-69-231-175.liao.kdns.fr
+  password: 9cfc9458e48c028ec03ff86ebc71c744
+  sni: 150-230-252-217.liao.kdns.fr
   skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 09 - sanchun
-  server: 141.164.45.187
-  port: 7001
+- name: 🇰🇷 韩国 (South Korea) 12 - sanchun
+  server: 185.227.154.226
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+  type: vless
+  uuid: b0e3d7fe-0ff5-470d-9c69-4f624a35d683
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: qxcpzDbypXaxsvsvzvebnyHxc0BTQdz7LvIkBXZ0TUc
+    short-id: 3246e72c
+  servername: www.samsung.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -109,6 +143,9 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 07 - sanchun
   - 🇰🇷 韩国 (South Korea) 08 - sanchun
   - 🇰🇷 韩国 (South Korea) 09 - sanchun
+  - 🇰🇷 韩国 (South Korea) 10 - sanchun
+  - 🇰🇷 韩国 (South Korea) 11 - sanchun
+  - 🇰🇷 韩国 (South Korea) 12 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -123,5 +160,8 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 07 - sanchun
   - 🇰🇷 韩国 (South Korea) 08 - sanchun
   - 🇰🇷 韩国 (South Korea) 09 - sanchun
+  - 🇰🇷 韩国 (South Korea) 10 - sanchun
+  - 🇰🇷 韩国 (South Korea) 11 - sanchun
+  - 🇰🇷 韩国 (South Korea) 12 - sanchun
 rules:
 - MATCH,PROXIES

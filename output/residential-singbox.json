@@ -6,10 +6,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun",
-      "server": "36.224.141.124",
+      "server": "namrcg001640lrm.cybervena.com",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
-      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+      "password": "a9a0d092-6f0e-4701-81ee-454643d6d506"
     },
     {
       "type": "vless",
@@ -32,16 +32,30 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - sanchun",
-      "server": "193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com",
-      "server_port": 443,
-      "password": "c12f73f6-e8c7-11ed-9246-f23c9164ca5d",
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 03 (移动家宽) - sanchun",
+      "server": "aged-silence-8d7d.tahaggs.workers.dev",
+      "server_port": 2096,
+      "uuid": "b0c94dd5-0c4c-6e1e-7ecf-84c386f7c748",
       "tls": {
         "enabled": true,
-        "server_name": "193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com",
-        "insecure": false
+        "server_name": "aged-silence-8d7d.tahaggs.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws"
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 (移动家宽) - sanchun",
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
       "type": "selector",
@@ -50,7 +64,8 @@
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - sanchun"
+        "🇺🇸 美国 (United States) 03 (移动家宽) - sanchun",
+        "🇹🇷 土耳其 (Turkey) 04 (移动家宽) - sanchun"
       ]
     },
     {
@@ -59,7 +74,8 @@
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - sanchun"
+        "🇺🇸 美国 (United States) 03 (移动家宽) - sanchun",
+        "🇹🇷 土耳其 (Turkey) 04 (移动家宽) - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
