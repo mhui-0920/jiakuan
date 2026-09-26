@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - sanchun
-  server: 94.183.170.135
-  port: 443
-  udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: estproxy4.lockdwn.com
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - sanchun
   server: 94.183.170.147
   port: 8443
   udp: true
@@ -30,19 +19,30 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 9d30d49278
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun
-  server: netlivpn5002.whwbbb.workers.dev
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - sanchun
+  server: 94.183.170.135
   port: 443
   udp: true
   type: vless
-  uuid: a88e61a0-2b38-f6df-c5c7-d20600000000
-  tls: true
-  servername: netlivpn5002.whwbbb.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: qq
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: estproxy4.lockdwn.com
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun
+  server: 5.181.201.43
+  port: 443
+  udp: true
+  type: vless
+  uuid: f495298f-2bdb-4fd8-9ac9-5dd33d1b482a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 98MNvJC4t0ZjK_xHlQjOx2WfLfAPluNDb71MzS9sPT8
+    short-id: 38018dde3e27335e
+  servername: est1.loozerp.wiki
+  client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - sanchun
   server: 94.183.170.135
   port: 8443
@@ -62,54 +62,18 @@ proxies:
   sni: cabinet.wwwinternetvideo.click
   skip-cert-verify: false
 - name: 🇪🇪 爱沙尼亚 (Estonia) 06 - sanchun
-  server: mg-42.whit3.net
+  server: netlivpn5002.whwbbb.workers.dev
   port: 443
   udp: true
-  type: hysteria2
-  password: 1e1c72f4-325b-4db0-b2d4-dc9c7cddc46a
-  sni: mg-42.whit3.net
+  type: vless
+  uuid: a88e61a0-2b38-f6df-c5c7-d20600000000
+  tls: true
+  servername: netlivpn5002.whwbbb.workers.dev
   skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - sanchun
-  server: 176.112.152.147
-  port: 443
-  udp: true
-  type: vless
-  uuid: d2e00857-9581-4030-96e2-9d1ed0b95049
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 805vJbnw_12vyuxa9pW46ObJ1cOub-75pGJYTfMJYHM
-    short-id: 74e50da3c1769379
-  servername: www.coop.ee
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - sanchun
-  server: 5.181.201.43
-  port: 443
-  udp: true
-  type: vless
-  uuid: f495298f-2bdb-4fd8-9ac9-5dd33d1b482a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 98MNvJC4t0ZjK_xHlQjOx2WfLfAPluNDb71MzS9sPT8
-    short-id: 38018dde3e27335e
-  servername: est1.loozerp.wiki
-  client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 09 - sanchun
-  server: 178.176.128.128
-  port: 443
-  udp: true
-  type: vless
-  uuid: d2e00857-9581-4030-96e2-9d1ed0b95049
-  tls: true
-  servername: edge3.statiqedge.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: httpupgrade
-  httpupgrade-opts:
-    path: /assets/v1
-    headers:
-      Host: edge3.statiqedge.com
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -121,9 +85,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - sanchun
-  - 🇪🇪 爱沙尼亚 (Estonia) 07 - sanchun
-  - 🇪🇪 爱沙尼亚 (Estonia) 08 - sanchun
-  - 🇪🇪 爱沙尼亚 (Estonia) 09 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -135,8 +96,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - sanchun
-  - 🇪🇪 爱沙尼亚 (Estonia) 07 - sanchun
-  - 🇪🇪 爱沙尼亚 (Estonia) 08 - sanchun
-  - 🇪🇪 爱沙尼亚 (Estonia) 09 - sanchun
 rules:
 - MATCH,PROXIES
