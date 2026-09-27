@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇱 以色列 (Israel) 01 - sanchun
+  server: 185.95.231.156
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
+    short-id: a3a578ab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇱 以色列 (Israel) 02 - sanchun
   server: 185.95.231.233
   port: 443
   udp: true
@@ -17,20 +30,14 @@ proxies:
     short-id: a1b2c3d4
   servername: store.steampowered.com
   client-fingerprint: chrome
-- name: 🇮🇱 以色列 (Israel) 02 - sanchun
-  server: 185.95.231.156
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
-    short-id: a3a578ab
-  servername: www.apple.com
-  client-fingerprint: firefox
 - name: 🇮🇱 以色列 (Israel) 03 - sanchun
+  server: 31.57.185.82
+  port: 41770
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: upFH0BmL9pV55mch4LvbPLe+Mf7vgG0YHGaTOT9gMG0=:t1hZF7WQEYGf0ycfk4son7eeAaVkfOxscBpbk5H/Zyo=
+- name: 🇮🇱 以色列 (Israel) 04 - sanchun
   server: de2.dzvn.space
   port: 2291
   udp: true
@@ -43,7 +50,7 @@ proxies:
     short-id: 50ace5ab34f6df9b
   servername: de2.dzvn.space
   client-fingerprint: firefox
-- name: 🇮🇱 以色列 (Israel) 04 - sanchun
+- name: 🇮🇱 以色列 (Israel) 05 - sanchun
   server: 45.140.204.199
   port: 8443
   udp: true
@@ -56,19 +63,19 @@ proxies:
     short-id: c8b62f04
   servername: ads.x5.ru
   client-fingerprint: firefox
-- name: 🇮🇱 以色列 (Israel) 05 - sanchun
-  server: 185.249.153.108
+- name: 🇮🇱 以色列 (Israel) 06 - sanchun
+  server: assets-de2.pleiades.codes
   port: 443
   udp: true
   type: vless
-  uuid: 4cf9c712-11c4-47d8-aa31-a1693a1aa4e5
-  flow: xtls-rprx-vision
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
   tls: true
-  reality-opts:
-    public-key: xOJ3INBNzRKOKYGQZmSYczgTjTKwdYQ4BFfc75wVazw
-    short-id: 73c9e31ccafda20e
-  servername: www.nordivablog.ru
-  client-fingerprint: chrome
+  servername: assets-de2.pleiades.codes
+  skip-cert-verify: false
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
 proxy-groups:
 - name: PROXIES
   type: select
@@ -79,6 +86,7 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 03 - sanchun
   - 🇮🇱 以色列 (Israel) 04 - sanchun
   - 🇮🇱 以色列 (Israel) 05 - sanchun
+  - 🇮🇱 以色列 (Israel) 06 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -89,5 +97,6 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 03 - sanchun
   - 🇮🇱 以色列 (Israel) 04 - sanchun
   - 🇮🇱 以色列 (Israel) 05 - sanchun
+  - 🇮🇱 以色列 (Israel) 06 - sanchun
 rules:
 - MATCH,PROXIES
