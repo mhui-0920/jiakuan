@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: 5edbcb44-8d04-4fa7-a587-bc5d60c24ca1
+  uuid: 66ac188b-bd8d-4218-b9ba-0bad0e152cd0
   tls: true
   reality-opts:
     public-key: s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg
@@ -21,6 +21,16 @@ proxies:
     grpc-service-name: 9d30d49278
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - sanchun
   server: 94.183.170.135
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  tls: true
+  servername: estproxy4.lockdwn.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun
+  server: 94.183.170.135
   port: 443
   udp: true
   type: vless
@@ -28,14 +38,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun
-  server: 94.183.170.65
-  port: 443
-  udp: true
-  type: hysteria2
-  password: e60bc99b-6630-4799-af84-f90ebdc643b6
-  sni: hys2.arkonsoft.top
-  skip-cert-verify: false
+    headers:
+      Host: estproxy4.lockdwn.com
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - sanchun
   server: 93.89.220.7
   port: 8443
@@ -49,15 +53,13 @@ proxies:
   servername: eh.vk.com
   client-fingerprint: ios
 - name: 🇪🇪 爱沙尼亚 (Estonia) 05 - sanchun
-  server: 94.183.170.135
-  port: 8443
+  server: 94.183.170.65
+  port: 443
   udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  tls: true
-  servername: estproxy4.lockdwn.com
+  type: hysteria2
+  password: e60bc99b-6630-4799-af84-f90ebdc643b6
+  sni: hys2.arkonsoft.top
   skip-cert-verify: false
-  client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 06 - sanchun
   server: 5.181.201.43
   port: 443
@@ -70,7 +72,14 @@ proxies:
     public-key: 98MNvJC4t0ZjK_xHlQjOx2WfLfAPluNDb71MzS9sPT8
     short-id: 38018dde3e27335e
   servername: est1.loozerp.wiki
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - sanchun
+  server: 80.97.27.106
+  port: 114
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 9binmVT58Wnr6vNzxu_JmpzEW6i-FgAj
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,6 +91,7 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - sanchun
+  - 🇪🇪 爱沙尼亚 (Estonia) 07 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -93,5 +103,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - sanchun
+  - 🇪🇪 爱沙尼亚 (Estonia) 07 - sanchun
 rules:
 - MATCH,PROXIES
