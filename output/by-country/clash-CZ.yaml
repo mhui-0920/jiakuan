@@ -5,20 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - sanchun
-  server: 153.76.185.87
+  server: 153.76.185.86
   port: 3090
   udp: true
   type: vless
-  uuid: 7e24f2b1-04a0-4ab0-af87-3bef7eb78e25
+  uuid: e50550c5-6920-4e17-b4de-645d23bcde29
   network: grpc
   grpc-opts:
     grpc-service-name: vless
 - name: 🇨🇿 捷克 (Czech) 02 - sanchun
-  server: 153.76.185.156
+  server: 153.76.185.159
   port: 3090
   udp: true
   type: vless
-  uuid: 7e24f2b1-04a0-4ab0-af87-3bef7eb78e25
+  uuid: f7d1081a-f3d4-4bec-9545-f5461c8e23a0
   network: grpc
   grpc-opts:
     grpc-service-name: vless

@@ -5,6 +5,60 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - sanchun
+  server: 94.249.187.46
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: IXa3ylzS_jBOAsQy071tIQ
+- name: 🇷🇺 俄罗斯 (Russia) 02 - sanchun
+  server: 72.4.65.116
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  tls: true
+  servername: assets-de2.pleiades.codes
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
+- name: 🇷🇺 俄罗斯 (Russia) 03 - sanchun
+  server: 91.240.86.70
+  port: 22443
+  udp: true
+  type: hysteria2
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: itsallproxy.quattro-tech.ru
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 04 - sanchun
+  server: 130.49.190.43
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 25284368-40d5-4abe-9f56-54a07e88a7af
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: wJgBZNx487TIQivnqGuyDyyN6iKcFTy64khGSOFbeyo
+    short-id: 4d123bebfae16562
+  servername: yandex.ru
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 05 - sanchun
+  server: fbsv6.guardora.pro
+  port: 443
+  udp: true
+  type: vless
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  tls: true
+  servername: fbsv6.guardora.pro
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+- name: 🇷🇺 俄罗斯 (Russia) 06 - sanchun
   server: 45.130.254.10
   port: 443
   udp: true
@@ -16,20 +70,18 @@ proxies:
     public-key: G8SING6Ibc_igZ5vI5578fXCT_mBMRuq_o8_Ymnj2SQ
     short-id: eba1498e012ef580
   servername: amazon.de
-  client-fingerprint: qq
-- name: 🇷🇺 俄罗斯 (Russia) 02 - sanchun
-  server: fbsv6.guardora.pro
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 07 - sanchun
+  server: 201.51.4.39
   port: 443
   udp: true
   type: vless
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  uuid: 6f73611a-bfd9-4712-9f33-fda2da70332a
+  flow: xtls-rprx-vision
   tls: true
-  servername: fbsv6.guardora.pro
+  servername: freevk.cryposikel.ru
   skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /ws
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +89,11 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 02 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 03 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 04 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 05 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 06 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 07 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +101,10 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 02 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 03 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 04 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 05 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 06 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 07 - sanchun
 rules:
 - MATCH,PROXIES
