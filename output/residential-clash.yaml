@@ -22,20 +22,6 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - sanchun
-  server: 89ff7d04-tm3mo0-tlvsde-1rnrp.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 989aa406-ea9b-11ef-97da-f23c91cfbbc9
-  sni: 89ff7d04-tm3mo0-tlvsde-1rnrp.nw4.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - sanchun
-  server: 82.47.63.156
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,8 +29,6 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - sanchun
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,7 +36,5 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - sanchun
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - sanchun
 rules:
 - MATCH,PROXIES

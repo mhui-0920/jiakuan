@@ -4,38 +4,33 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 01 - sanchun",
-      "server": "176.124.223.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "vms.lifetime38.workers.dev"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 02 - sanchun",
-      "server": "149.22.87.240",
+      "tag": "🇯🇵 日本 (Japan) 01 - sanchun",
+      "server": "149.22.87.241",
       "server_port": 443,
       "method": "aes-128-gcm",
       "password": "shadowsocks"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 03 - sanchun",
-      "server": "3.112.209.209",
+      "tag": "🇯🇵 日本 (Japan) 02 - sanchun",
+      "server": "18.181.145.202",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
     },
     {
       "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 03 - sanchun",
+      "server": "149.22.87.204",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 04 - sanchun",
-      "server": "3.112.197.237",
+      "server": "54.199.248.166",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -43,15 +38,15 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 05 - sanchun",
-      "server": "18.179.111.96",
+      "server": "149.22.87.240",
       "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
     },
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 06 - sanchun",
-      "server": "18.179.37.17",
+      "server": "3.112.197.237",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -59,7 +54,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 07 - sanchun",
-      "server": "18.179.39.119",
+      "server": "18.181.165.254",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -75,7 +70,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 09 - sanchun",
-      "server": "13.230.153.249",
+      "server": "13.230.223.121",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -83,45 +78,29 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 10 - sanchun",
-      "server": "149.22.87.204",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 11 - sanchun",
-      "server": "18.181.145.202",
+      "server": "18.179.39.119",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 12 - sanchun",
+      "tag": "🇯🇵 日本 (Japan) 11 - sanchun",
       "server": "137.220.221.179",
       "server_port": 443,
       "uuid": "a16a3336-c9ab-489f-9b85-c973f5e2cfa4"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 13 - sanchun",
-      "server": "149.22.87.241",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 14 - sanchun",
-      "server": "18.181.165.254",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
+      "tag": "🇯🇵 日本 (Japan) 12 - sanchun",
+      "server": "84.247.155.196",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 15 - sanchun",
+      "tag": "🇯🇵 日本 (Japan) 13 - sanchun",
       "server": "154.31.114.248",
       "server_port": 50159,
       "uuid": "d56624b2-35bb-468c-9b2a-e0b0df7230c1",
@@ -131,7 +110,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -142,61 +121,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 16 - sanchun",
-      "server": "103.137.215.122",
-      "server_port": 443,
-      "uuid": "ea1c1e20-7263-4b08-a01b-690b29af66b3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "T587xqua0Nrs0YreQRWJAP9Wto94NcbbhKPK4DkSi0c",
-          "short_id": "2223411c2ad9c55f"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 17 - sanchun",
-      "server": "138.3.208.26",
-      "server_port": 50160,
-      "password": "184cdec28da5a09450803c8debcd2cc9",
-      "tls": {
-        "enabled": true,
-        "server_name": "138.3.208.26",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 18 - sanchun",
-      "server": "103.75.118.228",
-      "server_port": 12683,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 19 - sanchun",
+      "tag": "🇯🇵 日本 (Japan) 14 - sanchun",
       "server": "18.183.215.124",
       "server_port": 28573,
       "uuid": "871bfce7-8440-4394-8d82-56b51f20fdad",
@@ -216,16 +141,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 20 - sanchun",
-      "server": "84.247.155.196",
-      "server_port": 80,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
-    },
-    {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 21 - sanchun",
+      "tag": "🇯🇵 日本 (Japan) 15 - sanchun",
       "server": "38.207.130.15",
       "server_port": 443,
       "uuid": "e4cd263b-c5c7-4410-bf61-8893179ec429",
@@ -235,7 +152,7 @@
         "server_name": "amazon.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -246,7 +163,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 22 - sanchun",
+      "tag": "🇯🇵 日本 (Japan) 16 - sanchun",
       "server": "108.160.128.46",
       "server_port": 443,
       "uuid": "de241e4e-226e-46d5-aa79-602e11ef94d8",
@@ -267,7 +184,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 23 - sanchun",
+      "tag": "🇯🇵 日本 (Japan) 17 - sanchun",
       "server": "43.133.11.187",
       "server_port": 443,
       "uuid": "4192524f-09f0-414f-88fd-7a14378491c7",
@@ -287,23 +204,41 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 24 - sanchun",
-      "server": "152.69.195.67",
-      "server_port": 47878,
-      "uuid": "eb8613e3-8393-4cff-a3ad-6501fd4adc63"
+      "type": "hysteria2",
+      "tag": "🇯🇵 日本 (Japan) 18 - sanchun",
+      "server": "138.3.208.26",
+      "server_port": 50160,
+      "password": "184cdec28da5a09450803c8debcd2cc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "138.3.208.26",
+        "insecure": true
+      }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 25 - sanchun",
-      "server": "13.115.71.198",
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 19 - sanchun",
+      "server": "tk1.high-speed-test-56424.me",
       "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
+      "uuid": "37615d66-5467-44a3-bc23-f2c3bef7f761",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "aws.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "p8VhFzvFOBAhWAEAeWmwDxT3xBSRsGYixqi0qnLFnBM",
+          "short_id": "21270a66"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 26 - sanchun",
+      "tag": "🇯🇵 日本 (Japan) 20 - sanchun",
       "server": "103.75.118.228",
       "server_port": 11452,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -323,103 +258,66 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 21 - sanchun",
+      "server": "84.247.155.196",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
+    },
+    {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 27 - sanchun",
-      "server": "167.179.110.68",
-      "server_port": 8443,
-      "uuid": "1d16c6e0-1bbe-435b-b661-90043fee999c",
+      "tag": "🇯🇵 日本 (Japan) 22 - sanchun",
+      "server": "103.137.215.122",
+      "server_port": 443,
+      "uuid": "ea1c1e20-7263-4b08-a01b-690b29af66b3",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "notls.lukongtou.eu.org",
-        "insecure": false,
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "notls.lukongtou.eu.org"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "T587xqua0Nrs0YreQRWJAP9Wto94NcbbhKPK4DkSi0c",
+          "short_id": "2223411c2ad9c55f"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 28 - sanchun",
-      "server": "13.231.19.51",
-      "server_port": 11690,
-      "uuid": "e2b8b217-cffb-4d66-9b8b-eca6e4334032",
+      "tag": "🇯🇵 日本 (Japan) 23 - sanchun",
+      "server": "3.114.220.22",
+      "server_port": 10583,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.tesla.com",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg",
-          "short_id": "034885e346fd30"
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
         }
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 29 - sanchun",
-      "server": "13.113.166.191",
+      "tag": "🇯🇵 日本 (Japan) 24 - sanchun",
+      "server": "18.179.37.17",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 30 - sanchun",
-      "server": "140.238.33.0",
-      "server_port": 33940,
-      "uuid": "1d16c6e0-1bbe-435b-b661-90043fee999c",
-      "tls": {
-        "enabled": true,
-        "server_name": "notls.lukongtou.eu.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "notls.lukongtou.eu.org"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 31 - sanchun",
-      "server": "172.237.12.208",
-      "server_port": 18836,
-      "uuid": "1d16c6e0-1bbe-435b-b661-90043fee999c",
-      "tls": {
-        "enabled": true,
-        "server_name": "notls.lukongtou.eu.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "notls.lukongtou.eu.org"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 32 - sanchun",
+      "tag": "🇯🇵 日本 (Japan) 25 - sanchun",
       "server": "3.114.220.22",
       "server_port": 19645,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -440,7 +338,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 33 - sanchun",
+      "tag": "🇯🇵 日本 (Japan) 26 - sanchun",
       "server": "3.114.220.22",
       "server_port": 18007,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -461,40 +359,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 34 - sanchun",
-      "server": "open.w2m.ink",
-      "server_port": 5443,
-      "password": "my_super_password_123",
-      "tls": {
-        "enabled": true,
-        "server_name": "open.w2m.ink",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 35 - sanchun",
-      "server": "3.114.220.22",
-      "server_port": 10583,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 36 - sanchun",
+      "tag": "🇯🇵 日本 (Japan) 27 - sanchun",
       "server": "open.w2m.ink",
       "server_port": 443,
       "password": "my_super_password_123",
@@ -505,61 +370,81 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 28 - sanchun",
+      "server": "172.111.146.64",
+      "server_port": 80,
+      "uuid": "05b8c783-7f59-47f9-9923-06a465679f6a",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/",
+        "headers": {
+          "Host": "172.111.146.64"
+        }
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 37 - sanchun",
-      "server": "open.2ml.bid",
+      "tag": "🇯🇵 日本 (Japan) 29 - sanchun",
+      "server": "open.w2m.ink",
       "server_port": 5443,
       "password": "my_super_password_123",
       "tls": {
         "enabled": true,
-        "server_name": "open.2ml.bid",
+        "server_name": "open.w2m.ink",
         "insecure": false
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 38 - sanchun",
-      "server": "84.247.155.196",
-      "server_port": 443,
+      "tag": "🇯🇵 日本 (Japan) 30 - sanchun",
+      "server": "bgp-1313122-228.834928.xyz",
+      "server_port": 20511,
       "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
+      "password": "6rcBjQuF0jM6if5e"
     },
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 39 - sanchun",
-      "server": "high-speed-test-01.linkpc.net",
+      "type": "trojan",
+      "tag": "🇯🇵 日本 (Japan) 31 - sanchun",
+      "server": "jp3.998998.best",
       "server_port": 443,
-      "uuid": "37615d66-5467-44a3-bc23-f2c3bef7f761",
-      "flow": "xtls-rprx-vision",
+      "password": "3c6d1933-b22a-484b-ac8a-63e24f5fba75",
       "tls": {
         "enabled": true,
-        "server_name": "aws.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "p8VhFzvFOBAhWAEAeWmwDxT3xBSRsGYixqi0qnLFnBM",
-          "short_id": "21270a66"
+        "server_name": "nat11.outsidemyheart.space",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/w4e5yh0p945y3",
+        "headers": {
+          "Host": "nat11.outsidemyheart.space"
         }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 40 - sanchun",
-      "server": "open.2ml.cc.cd",
+      "tag": "🇯🇵 日本 (Japan) 32 - sanchun",
+      "server": "open.2ml.bid",
       "server_port": 5443,
       "password": "my_super_password_123",
       "tls": {
         "enabled": true,
-        "server_name": "open.2ml.cc.cd",
+        "server_name": "open.2ml.bid",
         "insecure": false
       }
     },
     {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 33 - sanchun",
+      "server": "152.69.195.67",
+      "server_port": 47878,
+      "uuid": "eb8613e3-8393-4cff-a3ad-6501fd4adc63"
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 41 - sanchun",
+      "tag": "🇯🇵 日本 (Japan) 34 - sanchun",
       "server": "open.2ml.bid",
       "server_port": 443,
       "password": "my_super_password_123",
@@ -568,6 +453,14 @@
         "server_name": "open.2ml.bid",
         "insecure": false
       }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 35 - sanchun",
+      "server": "36.133.78.37",
+      "server_port": 50015,
+      "uuid": "1b30f413-2865-4d40-9146-4207778718cd",
+      "security": "auto"
     },
     {
       "type": "selector",
@@ -608,13 +501,7 @@
         "🇯🇵 日本 (Japan) 32 - sanchun",
         "🇯🇵 日本 (Japan) 33 - sanchun",
         "🇯🇵 日本 (Japan) 34 - sanchun",
-        "🇯🇵 日本 (Japan) 35 - sanchun",
-        "🇯🇵 日本 (Japan) 36 - sanchun",
-        "🇯🇵 日本 (Japan) 37 - sanchun",
-        "🇯🇵 日本 (Japan) 38 - sanchun",
-        "🇯🇵 日本 (Japan) 39 - sanchun",
-        "🇯🇵 日本 (Japan) 40 - sanchun",
-        "🇯🇵 日本 (Japan) 41 - sanchun"
+        "🇯🇵 日本 (Japan) 35 - sanchun"
       ]
     },
     {
@@ -655,13 +542,7 @@
         "🇯🇵 日本 (Japan) 32 - sanchun",
         "🇯🇵 日本 (Japan) 33 - sanchun",
         "🇯🇵 日本 (Japan) 34 - sanchun",
-        "🇯🇵 日本 (Japan) 35 - sanchun",
-        "🇯🇵 日本 (Japan) 36 - sanchun",
-        "🇯🇵 日本 (Japan) 37 - sanchun",
-        "🇯🇵 日本 (Japan) 38 - sanchun",
-        "🇯🇵 日本 (Japan) 39 - sanchun",
-        "🇯🇵 日本 (Japan) 40 - sanchun",
-        "🇯🇵 日本 (Japan) 41 - sanchun"
+        "🇯🇵 日本 (Japan) 35 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

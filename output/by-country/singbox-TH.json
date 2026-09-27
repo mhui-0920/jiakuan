@@ -4,25 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun",
-      "server": "82.47.63.156",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+      "type": "vmess",
+      "tag": "🇹🇭 泰国 (Thailand) 01 - sanchun",
+      "server": "36.133.78.37",
+      "server_port": 50017,
+      "uuid": "1b30f413-2865-4d40-9146-4207778718cd",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun"
+        "🇹🇭 泰国 (Thailand) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun"
+        "🇹🇭 泰国 (Thailand) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
