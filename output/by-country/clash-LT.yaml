@@ -5,61 +5,61 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - sanchun
-  server: 195.238.126.84
-  port: 9039
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qYEN5HX4JKeVCdEC
-- name: 🇱🇹 立陶宛 (Lithuania) 02 - sanchun
-  server: 195.238.126.20
-  port: 9011
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - sanchun
-  server: 195.238.126.20
-  port: 9001
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: UkXRsXvR6buDMG2Y
-- name: 🇱🇹 立陶宛 (Lithuania) 04 - sanchun
-  server: 195.238.126.20
-  port: 9012
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
-- name: 🇱🇹 立陶宛 (Lithuania) 05 - sanchun
-  server: 195.238.126.20
-  port: 9068
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇹 立陶宛 (Lithuania) 06 - sanchun
-  server: 195.238.126.20
-  port: 9086
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇹 立陶宛 (Lithuania) 07 - sanchun
   server: 195.238.126.20
   port: 9002
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: b8KkNDjEd5QqFyRm
-- name: 🇱🇹 立陶宛 (Lithuania) 08 - sanchun
+- name: 🇱🇹 立陶宛 (Lithuania) 02 - sanchun
   server: 195.238.126.20
-  port: 9078
+  port: 9068
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: JCJpbRbQZNw9XFZG
+  password: mwgRg9hRq3b4Qnwb
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - sanchun
+  server: 195.238.126.20
+  port: 9011
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: M3t2ZEQcMGRWBjRa
+- name: 🇱🇹 立陶宛 (Lithuania) 04 - sanchun
+  server: 195.238.126.20
+  port: 9001
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: UkXRsXvR6buDMG2Y
+- name: 🇱🇹 立陶宛 (Lithuania) 05 - sanchun
+  server: 195.238.126.20
+  port: 9045
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: Lp27rqyJq72bZsqX
+- name: 🇱🇹 立陶宛 (Lithuania) 06 - sanchun
+  server: 195.238.126.20
+  port: 9012
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: xaupMUvhptwxdDUg
+- name: 🇱🇹 立陶宛 (Lithuania) 07 - sanchun
+  server: 195.238.126.20
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇹 立陶宛 (Lithuania) 08 - sanchun
+  server: 195.238.126.84
+  port: 9039
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qYEN5HX4JKeVCdEC
 - name: 🇱🇹 立陶宛 (Lithuania) 09 - sanchun
   server: 195.238.126.20
   port: 9008
@@ -68,13 +68,45 @@ proxies:
   cipher: aes-256-cfb
   password: y9VURyNzJWNRYEGQ
 - name: 🇱🇹 立陶宛 (Lithuania) 10 - sanchun
-  server: 195.238.126.20
-  port: 9045
+  server: 84.32.97.14
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Lp27rqyJq72bZsqX
+  type: vless
+  uuid: 8d2341a3-13b8-4e5e-84e1-da1c4923149a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4
+    short-id: 9c2378562188c3cb
+  servername: lt.denditop.site
+  client-fingerprint: firefox
 - name: 🇱🇹 立陶宛 (Lithuania) 11 - sanchun
+  server: westcostlt.responsiblecare.uk
+  port: 443
+  udp: true
+  type: vless
+  uuid: ae0d0211-b7dc-461d-9d41-1eb224876f30
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg
+    short-id: 9dbdad98826e0fe8
+  servername: westcostlt.responsiblecare.uk
+  client-fingerprint: firefox
+- name: 🇱🇹 立陶宛 (Lithuania) 12 - sanchun
+  server: 88.216.127.237
+  port: 443
+  udp: true
+  type: vless
+  uuid: ae0d0211-b7dc-461d-9d41-1eb224876f30
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg
+    short-id: 9dbdad98826e0fe8
+  servername: westcostlt.responsiblecare.uk
+  client-fingerprint: firefox
+- name: 🇱🇹 立陶宛 (Lithuania) 13 - sanchun
   server: 94.176.234.161
   port: 443
   udp: true
@@ -86,22 +118,7 @@ proxies:
     public-key: UpI0XKNUsMJ24XawPQ8g7br1faEsO7BOvmIIGg9Wrm8
     short-id: dbb2ef1c7c
   servername: www.intel.com
-  client-fingerprint: firefox
-- name: 🇱🇹 立陶宛 (Lithuania) 12 - sanchun
-  server: 176.123.165.180
-  port: 9881
-  udp: true
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-    short-id: aabbccdd
-  servername: dl.google.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -119,6 +136,7 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 10 - sanchun
   - 🇱🇹 立陶宛 (Lithuania) 11 - sanchun
   - 🇱🇹 立陶宛 (Lithuania) 12 - sanchun
+  - 🇱🇹 立陶宛 (Lithuania) 13 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -136,5 +154,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 10 - sanchun
   - 🇱🇹 立陶宛 (Lithuania) 11 - sanchun
   - 🇱🇹 立陶宛 (Lithuania) 12 - sanchun
+  - 🇱🇹 立陶宛 (Lithuania) 13 - sanchun
 rules:
 - MATCH,PROXIES

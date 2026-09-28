@@ -33,25 +33,12 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇹 奥地利 (Austria) 03 - sanchun",
-      "server": "5.129.255.2",
-      "server_port": 8229,
-      "password": "ODM2MzExOTcyMCwxNzkwNTMyNzE0ksak7YOGMD",
-      "tls": {
-        "enabled": true,
-        "server_name": "au1.lumenvpn.tech",
-        "insecure": false
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇹 奥地利 (Austria) 01 - sanchun",
-        "🇦🇹 奥地利 (Austria) 02 - sanchun",
-        "🇦🇹 奥地利 (Austria) 03 - sanchun"
+        "🇦🇹 奥地利 (Austria) 02 - sanchun"
       ]
     },
     {
@@ -59,8 +46,7 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01 - sanchun",
-        "🇦🇹 奥地利 (Austria) 02 - sanchun",
-        "🇦🇹 奥地利 (Austria) 03 - sanchun"
+        "🇦🇹 奥地利 (Austria) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

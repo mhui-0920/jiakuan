@@ -12,35 +12,62 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 02 - sanchun
-  server: 51.20.96.231
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 03 - sanchun
-  server: 51.20.143.248
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 04 - sanchun
-  server: 172.238.244.13
-  port: 17000
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
-- name: 🇸🇪 瑞典 (Sweden) 05 - sanchun
   server: 70.34.212.124
   port: 8388
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: AxIYWtskJWIIaefW
+- name: 🇸🇪 瑞典 (Sweden) 03 - sanchun
+  server: 13.60.213.145
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 04 - sanchun
+  server: 13.48.104.64
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 05 - sanchun
+  server: 172.238.244.13
+  port: 17000
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
 - name: 🇸🇪 瑞典 (Sweden) 06 - sanchun
-  server: surstreming.vvzzkontaktezzvv.garden
+  server: 13.49.76.55
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 07 - sanchun
+  server: 13.62.228.76
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 08 - sanchun
+  server: 88.216.130.226
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8d2341a3-13b8-4e5e-84e1-da1c4923149a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: tjRl0kf5jtYdBrQc3vMUPGx-ro_I2EwyoeiixvWiLXM
+    short-id: 3f6347b7
+  servername: dte3ma8o.denditop.site
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 09 - sanchun
+  server: 5.157.10.148
   port: 443
   udp: true
   type: vless
@@ -52,7 +79,20 @@ proxies:
     short-id: fb442438e2223836
   servername: surstreming.vvzzkontaktezzvv.garden
   client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 07 - sanchun
+- name: 🇸🇪 瑞典 (Sweden) 10 - sanchun
+  server: secas.astrafic.ru
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3d9daa27-6283-406d-a2d4-c6f22c635a14
+  tls: true
+  servername: secas.astrafic.ru
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless-grpc
+- name: 🇸🇪 瑞典 (Sweden) 11 - sanchun
   server: 79.141.174.147
   port: 33743
   udp: true
@@ -66,14 +106,14 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇸🇪 瑞典 (Sweden) 08 - sanchun
-  server: 13.48.104.64
+- name: 🇸🇪 瑞典 (Sweden) 12 - sanchun
+  server: 51.20.96.231
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 09 - sanchun
+- name: 🇸🇪 瑞典 (Sweden) 13 - sanchun
   server: 91.193.17.156
   port: 9458
   udp: true
@@ -87,14 +127,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇸🇪 瑞典 (Sweden) 10 - sanchun
-  server: 84.252.100.204
-  port: 8227
-  udp: true
-  type: hysteria2
-  password: ODM2MzExOTcyMCwxNzkwNTMyNzE0ksak7YOGMD
-  sni: sw.lumenvpn.tech
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -110,6 +142,9 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 08 - sanchun
   - 🇸🇪 瑞典 (Sweden) 09 - sanchun
   - 🇸🇪 瑞典 (Sweden) 10 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 11 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 12 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 13 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -125,5 +160,8 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 08 - sanchun
   - 🇸🇪 瑞典 (Sweden) 09 - sanchun
   - 🇸🇪 瑞典 (Sweden) 10 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 11 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 12 - sanchun
+  - 🇸🇪 瑞典 (Sweden) 13 - sanchun
 rules:
 - MATCH,PROXIES

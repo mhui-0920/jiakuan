@@ -4,24 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 01 - sanchun",
-      "server": "35.244.28.130",
-      "server_port": 443,
-      "password": "M7v%w11Se*",
-      "tls": {
-        "enabled": true,
-        "server_name": "tttyder.wsone.icu",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02 - sanchun",
+      "tag": "🇮🇳 印度 (India) 01 - sanchun",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -30,7 +14,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -41,7 +25,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 - sanchun",
+      "tag": "🇮🇳 印度 (India) 02 - sanchun",
       "server": "148.113.5.44",
       "server_port": 443,
       "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
@@ -66,8 +50,7 @@
       "outbounds": [
         "auto",
         "🇮🇳 印度 (India) 01 - sanchun",
-        "🇮🇳 印度 (India) 02 - sanchun",
-        "🇮🇳 印度 (India) 03 - sanchun"
+        "🇮🇳 印度 (India) 02 - sanchun"
       ]
     },
     {
@@ -75,8 +58,7 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇳 印度 (India) 01 - sanchun",
-        "🇮🇳 印度 (India) 02 - sanchun",
-        "🇮🇳 印度 (India) 03 - sanchun"
+        "🇮🇳 印度 (India) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

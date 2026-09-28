@@ -24,14 +24,6 @@ proxies:
     short-id: 43dcff53849b81e6
   servername: at.quattro-tech.ru
   client-fingerprint: firefox
-- name: 🇦🇹 奥地利 (Austria) 03 - sanchun
-  server: 5.129.255.2
-  port: 8229
-  udp: true
-  type: hysteria2
-  password: ODM2MzExOTcyMCwxNzkwNTMyNzE0ksak7YOGMD
-  sni: au1.lumenvpn.tech
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇦🇹 奥地利 (Austria) 01 - sanchun
   - 🇦🇹 奥地利 (Austria) 02 - sanchun
-  - 🇦🇹 奥地利 (Austria) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -47,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇦🇹 奥地利 (Austria) 01 - sanchun
   - 🇦🇹 奥地利 (Austria) 02 - sanchun
-  - 🇦🇹 奥地利 (Austria) 03 - sanchun
 rules:
 - MATCH,PROXIES

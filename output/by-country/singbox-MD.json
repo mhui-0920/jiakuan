@@ -1,0 +1,52 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇲🇩 摩尔多瓦 (Moldova) 01 - sanchun",
+      "server": "217.156.64.204",
+      "server_port": 443,
+      "uuid": "8d2341a3-13b8-4e5e-84e1-da1c4923149a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "md.dendiboss.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PQm4_ELMk_t2_-78lisq7Pt3aal3IVaC519prE_-Fh8",
+          "short_id": "9c2378562188c3cb"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇲🇩 摩尔多瓦 (Moldova) 01 - sanchun"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇲🇩 摩尔多瓦 (Moldova) 01 - sanchun"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

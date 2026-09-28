@@ -6,18 +6,18 @@
     {
       "type": "shadowsocks",
       "tag": "🇩🇪 德国 (Germany) 01 - sanchun",
-      "server": "130.61.85.241",
-      "server_port": 59924,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "vxAQDuju4saWX0wdawcE10nQ00PXMgJrQwgI0xdf0So="
+      "server": "185.226.172.8",
+      "server_port": 8008,
+      "method": "aes-256-gcm",
+      "password": "XKFKl2rULjIp74"
     },
     {
       "type": "shadowsocks",
       "tag": "🇩🇪 德国 (Germany) 02 - sanchun",
-      "server": "130.61.43.139",
-      "server_port": 59924,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "foHuoXlfaX4nHHz/zioppturXfvYRcBoJ6GU8GoLj1E="
+      "server": "213.202.208.199",
+      "server_port": 7001,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
     },
     {
       "type": "shadowsocks",
@@ -36,298 +36,36 @@
       "password": "PWpjPo3tqhPN4yRZ"
     },
     {
-      "type": "shadowsocks",
+      "type": "trojan",
       "tag": "🇩🇪 德国 (Germany) 05 - sanchun",
+      "server": "35.246.185.109",
+      "server_port": 443,
+      "password": "M7v%w11Se*",
+      "tls": {
+        "enabled": true,
+        "server_name": "dggg.wsone.icu",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 06 - sanchun",
+      "server": "2.58.81.221",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "kKEd0rBrd56Furjz"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 07 - sanchun",
       "server": "209.46.102.22",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
       "password": "1hhrqrokj3ag"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 06 - sanchun",
-      "server": "51.195.126.38",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "2YdE4lFOid5a"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 07 - sanchun",
-      "server": "130.61.227.119",
-      "server_port": 59924,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "QQyhsWE4kraFnuIyxSx/tfdFnd1+IUu3YrQM92BGVrQ="
-    },
-    {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 08 - sanchun",
-      "server": "185.226.172.8",
-      "server_port": 8008,
-      "method": "aes-256-gcm",
-      "password": "XKFKl2rULjIp74"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 09 - sanchun",
-      "server": "192.248.179.81",
-      "server_port": 80,
-      "uuid": "2787849c-1a49-4457-9db7-efcdb2578268",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "192.248.179.81"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 10 - sanchun",
-      "server": "45.77.143.204",
-      "server_port": 80,
-      "uuid": "8ccc4581-eba9-4226-abbc-64e7d8fb415e",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 11 - sanchun",
-      "server": "213.202.208.199",
-      "server_port": 7001,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 12 - sanchun",
-      "server": "169.150.210.233",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 13 - sanchun",
-      "server": "159.195.197.211",
-      "server_port": 443,
-      "uuid": "06d05a0a-f298-4be9-8fab-3de32e3fb770",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "acde3.astro-wall.online",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "RMjWKm3Jj09ytfHD-90J0c3qdpQtjqJ4muUSAuF2eXQ",
-          "short_id": "fbbda5"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 14 - sanchun",
-      "server": "136.244.85.41",
-      "server_port": 80,
-      "uuid": "9be7fcec-5b90-4cf7-828c-ccbd889fd03c",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 15 - sanchun",
-      "server": "185.255.114.91",
-      "server_port": 8443,
-      "uuid": "7faa65a6-b43b-413e-9480-a81fae3d0c49",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nl2.reddotcorp.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "VDZdbh_RzDDZsHpYF58yUuuvXh93XnmkvpSqb50qG2U",
-          "short_id": "1be482b8e08aa0ef"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 16 - sanchun",
-      "server": "199.247.7.55",
-      "server_port": 80,
-      "uuid": "4c250d79-700a-4968-b50d-bae96983e1d7",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 17 - sanchun",
-      "server": "162.55.242.208",
-      "server_port": 2053,
-      "uuid": "659ffdfa-47d2-47d7-af40-5afe0907eead",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY",
-          "short_id": "4d14da19b19cfc8c"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 18 - sanchun",
-      "server": "82.118.19.153",
-      "server_port": 443,
-      "uuid": "adcaa148-7c66-4282-a81a-99ec8afa029d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE",
-          "short_id": "670ed9f350bd8ee0"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 19 - sanchun",
-      "server": "dggg.wsone.icu",
-      "server_port": 443,
-      "password": "M7v%w11Se*",
-      "tls": {
-        "enabled": true,
-        "server_name": "dggg.wsone.icu",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 20 - sanchun",
-      "server": "57.129.96.67",
-      "server_port": 443,
-      "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nasnet-571299667-direct.mbghalibaf.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 21 - sanchun",
-      "server": "2.26.51.75",
-      "server_port": 443,
-      "uuid": "57e2a48b-0cc2-4b60-aacd-b36358fcba96",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "4pda.to",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8q_xD5tfjZGDPsnq-3VqXWVV7-D03crExMBuL4xQNBM",
-          "short_id": "d4f6a8c1b2e3f9aa"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 22 - sanchun",
-      "server": "de5.bexait.ir",
-      "server_port": 2434,
-      "uuid": "e7361574-73ce-434a-87f8-65f5c1abec76",
-      "tls": {
-        "enabled": true,
-        "server_name": "icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "yzCvRpbQ-cRePaJAuQkw42_xEf-R860gFsQwoPki2E0",
-          "short_id": "9de041877612a718"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 23 - sanchun",
-      "server": "104.194.159.237",
-      "server_port": 8443,
-      "uuid": "8afeb33c-b686-43e9-a629-0d98f991ec28",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "github.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "L5cKU_oSpJsGd3ffemej3Wy7V6KzqjIUC2T5jaCyPys",
-          "short_id": "1aec480577a542ee"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 24 - sanchun",
-      "server": "89.169.53.176",
-      "server_port": 4443,
-      "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "gateway.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw",
-          "short_id": "df3aff719526dc5a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 25 - sanchun",
       "server": "172.104.237.173",
       "server_port": 20855,
       "uuid": "d00d9d18-20cf-4191-be76-6f73d43a27ec",
@@ -348,7 +86,127 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 26 - sanchun",
+      "tag": "🇩🇪 德国 (Germany) 09 - sanchun",
+      "server": "104.194.159.237",
+      "server_port": 8443,
+      "uuid": "8afeb33c-b686-43e9-a629-0d98f991ec28",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "L5cKU_oSpJsGd3ffemej3Wy7V6KzqjIUC2T5jaCyPys",
+          "short_id": "1aec480577a542ee"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 10 - sanchun",
+      "server": "169.150.210.233",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 11 - sanchun",
+      "server": "217.60.12.1",
+      "server_port": 443,
+      "uuid": "8d2341a3-13b8-4e5e-84e1-da1c4923149a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yw0ein72.denditop.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "UpOOm5-gcSp3fLuCzWl2HJnnqtUHpnbyOWU2yUCcsRI",
+          "short_id": "0492eabdb9"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 12 - sanchun",
+      "server": "51.195.126.38",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "2YdE4lFOid5a"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 13 - sanchun",
+      "server": "89.169.53.176",
+      "server_port": 4443,
+      "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw",
+          "short_id": "df3aff719526dc5a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 14 - sanchun",
+      "server": "162.55.242.208",
+      "server_port": 2053,
+      "uuid": "659ffdfa-47d2-47d7-af40-5afe0907eead",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY",
+          "short_id": "4d14da19b19cfc8c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 15 - sanchun",
+      "server": "82.118.19.153",
+      "server_port": 443,
+      "uuid": "adcaa148-7c66-4282-a81a-99ec8afa029d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE",
+          "short_id": "670ed9f350bd8ee0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 16 - sanchun",
       "server": "31.76.100.41",
       "server_port": 443,
       "uuid": "d72f05b0-b182-4783-a6f2-21cecc7d841a",
@@ -368,40 +226,16 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 27 - sanchun",
-      "server": "176.108.246.110",
-      "server_port": 9830,
-      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
-      "tls": {
-        "enabled": true,
-        "server_name": "dl.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-tunnel"
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 28 - sanchun",
+      "tag": "🇩🇪 德国 (Germany) 17 - sanchun",
       "server": "2.58.81.221",
-      "server_port": 80,
+      "server_port": 443,
       "method": "aes-256-gcm",
       "password": "kKEd0rBrd56Furjz"
     },
     {
       "type": "hysteria2",
-      "tag": "🇩🇪 德国 (Germany) 29 - sanchun",
+      "tag": "🇩🇪 德国 (Germany) 18 - sanchun",
       "server": "de1.xiaoliyu.cyou",
       "server_port": 4433,
       "password": "19f72087-4591-4d72-930b-2697078ec2be",
@@ -413,7 +247,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 30 - sanchun",
+      "tag": "🇩🇪 德国 (Germany) 19 - sanchun",
+      "server": "103.27.157.120",
+      "server_port": 443,
+      "uuid": "2412bd96-925b-43f2-81d1-0ed4f0793699",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "download.amd.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k0883nIGfstbzb8hES-dQ1yPcBwbUbnsyg4w-UA5gkA",
+          "short_id": "68aaa5222092bbea"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 20 - sanchun",
       "server": "64.118.158.56",
       "server_port": 443,
       "uuid": "8af93649-403b-46d8-9966-923d4c58402c",
@@ -423,7 +278,7 @@
         "server_name": "buckeye-retail-website.amazon.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -434,8 +289,66 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 31 - sanchun",
-      "server": "dl2.musicworldtg.com",
+      "tag": "🇩🇪 德国 (Germany) 21 - sanchun",
+      "server": "13.143.186.29",
+      "server_port": 443,
+      "uuid": "3e2591b2-4739-4c59-b540-344f0b6505ac",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "st2.megabitvpn.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "YTO2eLUPj_pLJijheLCvxg3d53o5BTNSjRSpJKCAa3k",
+          "short_id": "f54ec8b46381247f"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 22 - sanchun",
+      "server": "130.61.178.43",
+      "server_port": 59924,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "SgyJkGCcYNgfF87vVJTcRI9Vd9Xa/GISuFw17bdtB6c="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 23 - sanchun",
+      "server": "130.61.85.241",
+      "server_port": 59924,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "vxAQDuju4saWX0wdawcE10nQ00PXMgJrQwgI0xdf0So="
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 24 - sanchun",
+      "server": "91.132.160.209",
+      "server_port": 443,
+      "uuid": "2412bd96-925b-43f2-81d1-0ed4f0793699",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "dlcdn.apache.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "9XSdNkmBhBszLYoODqMrm7r_JRur2PRbzF9T1Uf2AV0",
+          "short_id": "f1004027e382c2fa"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 25 - sanchun",
+      "server": "85.115.209.170",
       "server_port": 2018,
       "uuid": "834e5553-d80e-4078-8d7e-482fafe9bbaf",
       "tls": {
@@ -443,7 +356,7 @@
         "server_name": "gemini.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -454,123 +367,19 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 32 - sanchun",
-      "server": "130.61.237.178",
+      "tag": "🇩🇪 德国 (Germany) 26 - sanchun",
+      "server": "94.249.187.46",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "IXa3ylzS_jBOAsQy071tIQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 27 - sanchun",
+      "server": "130.61.179.238",
       "server_port": 59924,
       "method": "2022-blake3-chacha20-poly1305",
-      "password": "+Md6uvx0q4r8xi+D4f0ohkfMPiaCVx5nHy7ScOhNlLM="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 33 - sanchun",
-      "server": "2.58.81.221",
-      "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "kKEd0rBrd56Furjz"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 34 - sanchun",
-      "server": "130.61.115.220",
-      "server_port": 59924,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "UaV3sT+/9oXDk6nX3czZggBqrMDpCbRoY4HdwqFH1qs="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 35 - sanchun",
-      "server": "109.248.161.207",
-      "server_port": 1468,
-      "method": "aes-128-gcm",
-      "password": "_j2fKtUJpe_fwdFPt_Ilpg"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 36 - sanchun",
-      "server": "130.61.178.43",
-      "server_port": 59924,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "SgyJkGCcYNgfF87vVJTcRI9Vd9Xa/GISuFw17bdtB6c="
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 37 - sanchun",
-      "server": "176.108.247.104",
-      "server_port": 9881,
-      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
-      "tls": {
-        "enabled": true,
-        "server_name": "dl.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0",
-          "short_id": "aabb"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-tunnel"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 38 - sanchun",
-      "server": "130.61.146.229",
-      "server_port": 59924,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "MKHwqx5R2L0MzLTo/BQ7xr5Ve6nfPBPfo0HERkDcG9s="
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 39 - sanchun",
-      "server": "176.108.241.137",
-      "server_port": 9891,
-      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
-      "tls": {
-        "enabled": true,
-        "server_name": "dl.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0",
-          "short_id": "aabb"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-tunnel"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 40 - sanchun",
-      "server": "176.123.162.100",
-      "server_port": 9880,
-      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
-      "tls": {
-        "enabled": true,
-        "server_name": "dl.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU",
-          "short_id": "aabb"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-tunnel"
-      }
+      "password": "GTwsqiixAcHe5gpz1xMI0plgyuxyPSb40Ty0tEzmbv0="
     },
     {
       "type": "selector",
@@ -603,20 +412,7 @@
         "🇩🇪 德国 (Germany) 24 - sanchun",
         "🇩🇪 德国 (Germany) 25 - sanchun",
         "🇩🇪 德国 (Germany) 26 - sanchun",
-        "🇩🇪 德国 (Germany) 27 - sanchun",
-        "🇩🇪 德国 (Germany) 28 - sanchun",
-        "🇩🇪 德国 (Germany) 29 - sanchun",
-        "🇩🇪 德国 (Germany) 30 - sanchun",
-        "🇩🇪 德国 (Germany) 31 - sanchun",
-        "🇩🇪 德国 (Germany) 32 - sanchun",
-        "🇩🇪 德国 (Germany) 33 - sanchun",
-        "🇩🇪 德国 (Germany) 34 - sanchun",
-        "🇩🇪 德国 (Germany) 35 - sanchun",
-        "🇩🇪 德国 (Germany) 36 - sanchun",
-        "🇩🇪 德国 (Germany) 37 - sanchun",
-        "🇩🇪 德国 (Germany) 38 - sanchun",
-        "🇩🇪 德国 (Germany) 39 - sanchun",
-        "🇩🇪 德国 (Germany) 40 - sanchun"
+        "🇩🇪 德国 (Germany) 27 - sanchun"
       ]
     },
     {
@@ -649,20 +445,7 @@
         "🇩🇪 德国 (Germany) 24 - sanchun",
         "🇩🇪 德国 (Germany) 25 - sanchun",
         "🇩🇪 德国 (Germany) 26 - sanchun",
-        "🇩🇪 德国 (Germany) 27 - sanchun",
-        "🇩🇪 德国 (Germany) 28 - sanchun",
-        "🇩🇪 德国 (Germany) 29 - sanchun",
-        "🇩🇪 德国 (Germany) 30 - sanchun",
-        "🇩🇪 德国 (Germany) 31 - sanchun",
-        "🇩🇪 德国 (Germany) 32 - sanchun",
-        "🇩🇪 德国 (Germany) 33 - sanchun",
-        "🇩🇪 德国 (Germany) 34 - sanchun",
-        "🇩🇪 德国 (Germany) 35 - sanchun",
-        "🇩🇪 德国 (Germany) 36 - sanchun",
-        "🇩🇪 德国 (Germany) 37 - sanchun",
-        "🇩🇪 德国 (Germany) 38 - sanchun",
-        "🇩🇪 德国 (Germany) 39 - sanchun",
-        "🇩🇪 德国 (Germany) 40 - sanchun"
+        "🇩🇪 德国 (Germany) 27 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
