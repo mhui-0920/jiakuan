@@ -23,7 +23,7 @@
         "server_name": "at.quattro-tech.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -33,23 +33,15 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇦🇹 奥地利 (Austria) 03 - sanchun",
-      "server": "g4.haxat.bestvbest.ir",
-      "server_port": 56126,
-      "uuid": "c5cfb08f-e42d-4a08-94e1-4f591a2f7a6f",
+      "server": "5.129.255.2",
+      "server_port": 8229,
+      "password": "ODM2MzExOTcyMCwxNzkwNTMyNzE0ksak7YOGMD",
       "tls": {
         "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "oNv1vk-DHPrbFy__k2B7Am2lTtKfW4dXM7shzi7VFyk",
-          "short_id": "228b68f87a662053"
-        }
+        "server_name": "au1.lumenvpn.tech",
+        "insecure": false
       }
     },
     {

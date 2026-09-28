@@ -6,27 +6,6 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - sanchun",
-      "server": "2.56.124.133",
-      "server_port": 443,
-      "uuid": "ce64591a-fe2d-48cd-b738-e5f591eea784",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "us1.farenheits.pro",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Aa6Gdyw_jlMQUfNWm2BjxZK4zUIQTGfXqC988K25qjU",
-          "short_id": "6213e5e42d668d12"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - sanchun",
       "server": "31.76.111.79",
       "server_port": 443,
       "uuid": "ac9a573b-67ff-4953-9e13-4cf43576f8f0",
@@ -43,6 +22,30 @@
           "public_key": "8w1MyEJV4l9QeNWbYMXny5tTLNTw_9nsQ7jOuiQhix4",
           "short_id": "0123456789abcdef"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - sanchun",
+      "server": "31.76.111.79",
+      "server_port": 2087,
+      "uuid": "ac9a573b-67ff-4953-9e13-4cf43576f8f0",
+      "tls": {
+        "enabled": true,
+        "server_name": "hh.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8w1MyEJV4l9QeNWbYMXny5tTLNTw_9nsQ7jOuiQhix4",
+          "short_id": "0123456789abcdef"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "game-grpc"
       }
     },
     {
@@ -66,85 +69,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 04 - sanchun",
-      "server": "5.253.28.218",
-      "server_port": 40443,
-      "uuid": "405b964e-a2d2-454f-aaaa-711cc218897c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
-          "short_id": "88b6"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 05 - sanchun",
-      "server": "5.253.28.218",
-      "server_port": 2443,
-      "uuid": "5e679ccd-1586-4d5f-b87b-48251046cad8",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg",
-          "short_id": "92c32de179e5d908"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "rex-eb0bf76b710ce763"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 06 - sanchun",
-      "server": "31.76.111.79",
-      "server_port": 2087,
-      "uuid": "ac9a573b-67ff-4953-9e13-4cf43576f8f0",
-      "tls": {
-        "enabled": true,
-        "server_name": "hh.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8w1MyEJV4l9QeNWbYMXny5tTLNTw_9nsQ7jOuiQhix4",
-          "short_id": "0123456789abcdef"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "game-grpc"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇾 塞浦路斯 (Cyprus) 01 - sanchun",
         "🇨🇾 塞浦路斯 (Cyprus) 02 - sanchun",
-        "🇨🇾 塞浦路斯 (Cyprus) 03 - sanchun",
-        "🇨🇾 塞浦路斯 (Cyprus) 04 - sanchun",
-        "🇨🇾 塞浦路斯 (Cyprus) 05 - sanchun",
-        "🇨🇾 塞浦路斯 (Cyprus) 06 - sanchun"
+        "🇨🇾 塞浦路斯 (Cyprus) 03 - sanchun"
       ]
     },
     {
@@ -153,10 +84,7 @@
       "outbounds": [
         "🇨🇾 塞浦路斯 (Cyprus) 01 - sanchun",
         "🇨🇾 塞浦路斯 (Cyprus) 02 - sanchun",
-        "🇨🇾 塞浦路斯 (Cyprus) 03 - sanchun",
-        "🇨🇾 塞浦路斯 (Cyprus) 04 - sanchun",
-        "🇨🇾 塞浦路斯 (Cyprus) 05 - sanchun",
-        "🇨🇾 塞浦路斯 (Cyprus) 06 - sanchun"
+        "🇨🇾 塞浦路斯 (Cyprus) 03 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -6,10 +6,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - sanchun",
-      "server": "70.34.212.124",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "AxIYWtskJWIIaefW"
+      "server": "51.20.86.152",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
       "type": "shadowsocks",
@@ -22,7 +22,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - sanchun",
-      "server": "51.20.122.188",
+      "server": "51.20.143.248",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -38,68 +38,15 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 05 - sanchun",
-      "server": "13.49.76.55",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
+      "server": "70.34.212.124",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "AxIYWtskJWIIaefW"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 06 - sanchun",
-      "server": "51.20.86.152",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 - sanchun",
-      "server": "13.60.213.145",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 08 - sanchun",
-      "server": "13.62.228.76",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 09 - sanchun",
-      "server": "2.26.101.148",
-      "server_port": 443,
-      "uuid": "68d89911-b92d-46fe-9007-3645c3b285f0",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "se.chick-chirik.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "RjRxUMkBaWZPU2GlovSFYV4UdIFhc2LETtVUJVgoVj8",
-          "short_id": "e9eb910e5af883e3"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 10 - sanchun",
-      "server": "13.48.104.64",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 11 - sanchun",
-      "server": "5.157.10.148",
+      "server": "surstreming.vvzzkontaktezzvv.garden",
       "server_port": 443,
       "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
       "flow": "xtls-rprx-vision",
@@ -119,36 +66,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 12 - sanchun",
-      "server": "app.goonars.com",
-      "server_port": 443,
-      "uuid": "94877739-3af6-4fbb-85b6-ca6fe86c7696",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "app.goonars.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Ze0irTcmNdt0iOioHey8zxm76PwVK9lIzVcTU5kIyx0",
-          "short_id": "95e51c18"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 13 - sanchun",
-      "server": "51.20.143.248",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 14 - sanchun",
+      "tag": "🇸🇪 瑞典 (Sweden) 07 - sanchun",
       "server": "79.141.174.147",
       "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
@@ -172,19 +90,47 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 15 - sanchun",
-      "server": "51.20.72.15",
+      "tag": "🇸🇪 瑞典 (Sweden) 08 - sanchun",
+      "server": "13.48.104.64",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 16 - sanchun",
-      "server": "188.225.78.31",
-      "server_port": 2053,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "g4h/AcJh1+jg9+yonlMK4Wq7fhbFY3NkcOzUVlZ9GjU="
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 09 - sanchun",
+      "server": "91.193.17.156",
+      "server_port": 9458,
+      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 10 - sanchun",
+      "server": "84.252.100.204",
+      "server_port": 8227,
+      "password": "ODM2MzExOTcyMCwxNzkwNTMyNzE0ksak7YOGMD",
+      "tls": {
+        "enabled": true,
+        "server_name": "sw.lumenvpn.tech",
+        "insecure": false
+      }
     },
     {
       "type": "selector",
@@ -200,13 +146,7 @@
         "🇸🇪 瑞典 (Sweden) 07 - sanchun",
         "🇸🇪 瑞典 (Sweden) 08 - sanchun",
         "🇸🇪 瑞典 (Sweden) 09 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 10 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 11 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 12 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 13 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 14 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 15 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 16 - sanchun"
+        "🇸🇪 瑞典 (Sweden) 10 - sanchun"
       ]
     },
     {
@@ -222,13 +162,7 @@
         "🇸🇪 瑞典 (Sweden) 07 - sanchun",
         "🇸🇪 瑞典 (Sweden) 08 - sanchun",
         "🇸🇪 瑞典 (Sweden) 09 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 10 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 11 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 12 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 13 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 14 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 15 - sanchun",
-        "🇸🇪 瑞典 (Sweden) 16 - sanchun"
+        "🇸🇪 瑞典 (Sweden) 10 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
