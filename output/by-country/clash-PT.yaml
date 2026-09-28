@@ -1,0 +1,33 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇵🇹 葡萄牙 (Portugal) 01 - sanchun
+  server: 185.231.233.129
+  port: 443
+  udp: true
+  type: vless
+  uuid: c7fc009a-026b-46e5-a0c5-82e32bcabd69
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo
+    short-id: 1a72f72b8e04c3b7
+  servername: pt.monkeyvillage.pro
+  client-fingerprint: random
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇵🇹 葡萄牙 (Portugal) 01 - sanchun
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇵🇹 葡萄牙 (Portugal) 01 - sanchun
+rules:
+- MATCH,PROXIES

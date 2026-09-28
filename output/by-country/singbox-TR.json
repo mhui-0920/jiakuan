@@ -6,9 +6,9 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - sanchun",
-      "server": "93.190.9.131",
+      "server": "93.190.8.160",
       "server_port": 3090,
-      "uuid": "8ac4b519-287e-4ac0-8c95-4c1721c1ab76",
+      "uuid": "52e8bce3-b255-486d-beb2-aa1b549c44b1",
       "transport": {
         "type": "grpc",
         "service_name": "vless"
@@ -17,9 +17,9 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - sanchun",
-      "server": "93.190.9.59",
+      "server": "93.190.8.86",
       "server_port": 3090,
-      "uuid": "8ac4b519-287e-4ac0-8c95-4c1721c1ab76",
+      "uuid": "73649cdf-0f29-4d1c-8a4d-95163688f93f",
       "transport": {
         "type": "grpc",
         "service_name": "vless"
@@ -28,9 +28,9 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 03 - sanchun",
-      "server": "93.190.9.15",
+      "server": "93.190.9.52",
       "server_port": 3090,
-      "uuid": "5e3ae3d6-2c4d-4b47-a7b0-420d1605f3fa",
+      "uuid": "52e8bce3-b255-486d-beb2-aa1b549c44b1",
       "transport": {
         "type": "grpc",
         "service_name": "vless"
@@ -39,50 +39,29 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 04 - sanchun",
-      "server": "93.190.8.83",
+      "server": "93.190.8.81",
       "server_port": 3090,
-      "uuid": "8ac4b519-287e-4ac0-8c95-4c1721c1ab76",
+      "uuid": "df95425f-b822-4279-bd97-3699361293dd",
       "transport": {
         "type": "grpc",
         "service_name": "vless"
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇹🇷 土耳其 (Turkey) 05 - sanchun",
-      "server": "93.190.9.52",
-      "server_port": 3090,
-      "uuid": "5e3ae3d6-2c4d-4b47-a7b0-420d1605f3fa",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
+      "server": "162.249.127.130",
+      "server_port": 8081,
+      "password": "9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z",
+      "tls": {
+        "enabled": true,
+        "server_name": "hop-germany-september.dynuddns.com",
+        "insecure": false
       }
     },
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 06 - sanchun",
-      "server": "93.190.8.86",
-      "server_port": 3090,
-      "uuid": "5e3ae3d6-2c4d-4b47-a7b0-420d1605f3fa",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 07 - sanchun",
-      "server": "93.190.9.35",
-      "server_port": 3090,
-      "uuid": "b55a33d7-83ee-416a-971e-eaaa0c928043",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 08 - sanchun",
       "server": "78.135.73.47",
       "server_port": 443,
       "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
@@ -103,7 +82,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 09 - sanchun",
+      "tag": "🇹🇷 土耳其 (Turkey) 07 - sanchun",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -123,7 +102,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇹🇷 土耳其 (Turkey) 10 - sanchun",
+      "tag": "🇹🇷 土耳其 (Turkey) 08 - sanchun",
       "server": "me17.msjia8844.site",
       "server_port": 7443,
       "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
@@ -138,18 +117,6 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇹🇷 土耳其 (Turkey) 11 - sanchun",
-      "server": "162.249.127.130",
-      "server_port": 8081,
-      "password": "9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z",
-      "tls": {
-        "enabled": true,
-        "server_name": "hop-germany-september.dynuddns.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -161,10 +128,7 @@
         "🇹🇷 土耳其 (Turkey) 05 - sanchun",
         "🇹🇷 土耳其 (Turkey) 06 - sanchun",
         "🇹🇷 土耳其 (Turkey) 07 - sanchun",
-        "🇹🇷 土耳其 (Turkey) 08 - sanchun",
-        "🇹🇷 土耳其 (Turkey) 09 - sanchun",
-        "🇹🇷 土耳其 (Turkey) 10 - sanchun",
-        "🇹🇷 土耳其 (Turkey) 11 - sanchun"
+        "🇹🇷 土耳其 (Turkey) 08 - sanchun"
       ]
     },
     {
@@ -178,10 +142,7 @@
         "🇹🇷 土耳其 (Turkey) 05 - sanchun",
         "🇹🇷 土耳其 (Turkey) 06 - sanchun",
         "🇹🇷 土耳其 (Turkey) 07 - sanchun",
-        "🇹🇷 土耳其 (Turkey) 08 - sanchun",
-        "🇹🇷 土耳其 (Turkey) 09 - sanchun",
-        "🇹🇷 土耳其 (Turkey) 10 - sanchun",
-        "🇹🇷 土耳其 (Turkey) 11 - sanchun"
+        "🇹🇷 土耳其 (Turkey) 08 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

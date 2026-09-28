@@ -19,16 +19,23 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: aduB9HGxQHjA2SBMRjkHX6
 - name: 🇿🇦 南非 (South Africa) 03 - sanchun
-  server: platform107.golnamakcert.top
+  server: 102.133.165.160
+  port: 16233
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
+- name: 🇿🇦 南非 (South Africa) 04 - sanchun
+  server: platform103.golnamakcert.top
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform107
+    path: /platform103
     headers:
-      Host: platform107.halalkhor.info
+      Host: platform103.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +44,7 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 01 - sanchun
   - 🇿🇦 南非 (South Africa) 02 - sanchun
   - 🇿🇦 南非 (South Africa) 03 - sanchun
+  - 🇿🇦 南非 (South Africa) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -45,5 +53,6 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 01 - sanchun
   - 🇿🇦 南非 (South Africa) 02 - sanchun
   - 🇿🇦 南非 (South Africa) 03 - sanchun
+  - 🇿🇦 南非 (South Africa) 04 - sanchun
 rules:
 - MATCH,PROXIES
