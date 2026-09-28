@@ -10,22 +10,21 @@ proxies:
   udp: true
   type: ss
   cipher: aes-128-gcm
-  password: 8834277c-6a57-4419-a807-968a99fc58b2
+  password: 8f69fd5f-92b8-4a96-8471-4e925a4d7698
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - sanchun
-  server: sth.free-outline.giize.com
-  port: 1081
+  server: 45.207.157.8
+  port: 9443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: v7qnj9jvxtnpmj4l
+  type: vless
+  uuid: 966990b5-5868-4af1-add6-011c72b4a443
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  servername: www.amazon.com
+  client-fingerprint: random
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - sanchun
-  server: 103.149.182.79
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf
-  password: asd123456
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - sanchun
   server: 202.146.222.174
   port: 443
   udp: true
@@ -33,7 +32,7 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: 202.146.222.174
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - sanchun
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - sanchun
   server: 202.146.222.89
   port: 443
   udp: true
@@ -41,7 +40,7 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: 202.146.222.89
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - sanchun
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - sanchun
   server: 202.146.222.29
   port: 443
   udp: true
@@ -49,25 +48,7 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: 202.146.222.29
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - sanchun
-  server: nas.aizhzo.com
-  port: 5010
-  udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - sanchun
-  server: mz.hkychina.com
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - sanchun
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - sanchun
   server: champion.xn--kivt58h.lol
   port: 80
   udp: true
@@ -78,7 +59,14 @@ proxies:
     path: /
     headers:
       Host: ak.mcdonaldshamburgergoodgoodgood.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - sanchun
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - sanchun
+  server: sth.free-outline.giize.com
+  port: 1081
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ac2jdpwv1zl10jim
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - sanchun
   server: 47.239.6.251
   port: 13779
   udp: true
@@ -91,7 +79,15 @@ proxies:
     short-id: af1bdd293097b664
   servername: tesla.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - sanchun
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - sanchun
+  server: mz.hkychina.com
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - sanchun
   server: 2.27.109.179
   port: 45464
   udp: true
@@ -99,26 +95,24 @@ proxies:
   password: XuMweB2PWs
   sni: 2.27.109.179.sslip.io
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - sanchun
-  server: 47.238.210.5
-  port: 13779
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - sanchun
+  server: hk2.xiaoliyu.cyou
+  port: 4433
   udp: true
-  type: vless
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  tls: true
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  servername: tesla.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - sanchun
-  server: 47.240.80.220
-  port: 2052
-  udp: true
-  type: trojan
-  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
-  sni: vpn.12169.top
+  type: hysteria2
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: hk2.xiaoliyu.cyou
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - sanchun
+  server: nas.aizhzo.com
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 proxy-groups:
 - name: PROXIES
   type: select
@@ -136,7 +130,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 10 - sanchun
   - 🇭🇰 中国香港 (Hong Kong) 11 - sanchun
   - 🇭🇰 中国香港 (Hong Kong) 12 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 13 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -154,6 +147,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 10 - sanchun
   - 🇭🇰 中国香港 (Hong Kong) 11 - sanchun
   - 🇭🇰 中国香港 (Hong Kong) 12 - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 13 - sanchun
 rules:
 - MATCH,PROXIES
