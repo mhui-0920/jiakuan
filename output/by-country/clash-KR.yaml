@@ -5,16 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - sanchun
-  server: 3.39.4.109
-  port: 13672
+  server: 13.124.217.252
+  port: 8686
   udp: true
   type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   tls: true
   reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
+    public-key: A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw
+    short-id: 628b3c90c98ead4f
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 02 - sanchun
@@ -31,17 +30,13 @@ proxies:
   servername: www.samsung.com
   client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 03 - sanchun
-  server: 151.245.106.49
-  port: 2053
+  server: 152.67.200.82
+  port: 50160
   udp: true
-  type: vless
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  tls: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-    short-id: 429499c03d4cc8a0
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  type: hysteria2
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: 152.67.200.82
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 04 - sanchun
   server: 3.39.4.109
   port: 18967
@@ -56,14 +51,31 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 05 - sanchun
-  server: 152.67.200.82
-  port: 50160
+  server: 151.245.106.49
+  port: 2053
   udp: true
-  type: hysteria2
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: 152-67-200-82.liao.kdns.fr
-  skip-cert-verify: false
+  type: vless
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  tls: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+    short-id: 429499c03d4cc8a0
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 06 - sanchun
+  server: 3.39.4.109
+  port: 13672
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 07 - sanchun
   server: 211.178.105.134
   port: 6123
   udp: true
@@ -81,6 +93,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 04 - sanchun
   - 🇰🇷 韩国 (South Korea) 05 - sanchun
   - 🇰🇷 韩国 (South Korea) 06 - sanchun
+  - 🇰🇷 韩国 (South Korea) 07 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -92,5 +105,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 04 - sanchun
   - 🇰🇷 韩国 (South Korea) 05 - sanchun
   - 🇰🇷 韩国 (South Korea) 06 - sanchun
+  - 🇰🇷 韩国 (South Korea) 07 - sanchun
 rules:
 - MATCH,PROXIES
