@@ -5,35 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - sanchun
-  server: 194.87.59.24
-  port: 2085
+  server: 95.85.241.239
+  port: 443
   udp: true
   type: vless
-  uuid: 3e65efd4-d3fe-4076-8b69-060053b4784c
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇨🇿 捷克 (Czech) 02 - sanchun
-  server: 153.76.185.91
-  port: 3090
-  udp: true
-  type: vless
-  uuid: 5d8b92ca-e91f-4906-b385-658d284cffc0
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇨🇿 捷克 (Czech) 03 - sanchun
-  server: 138.124.36.78
-  port: 9443
-  udp: true
-  type: vless
-  uuid: 8d2341a3-13b8-4e5e-84e1-da1c4923149a
+  uuid: 78571e63-1236-4c60-862a-70b7624dfa36
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 0kemMVJtXt0c2HhvxjqEWLLJQvvJALYyzjB-ftii0UA
-    short-id: '3944'
-  servername: j638lm50.denditop.site
+    public-key: nf9hAhB_OqveSsgdqqx7EW0FSoT4XNN_EzfD8lXVDVo
+    short-id: a1b2c3d4e5f6
+  servername: originsw239.aktanow.shop
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -41,15 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - sanchun
-  - 🇨🇿 捷克 (Czech) 02 - sanchun
-  - 🇨🇿 捷克 (Czech) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - sanchun
-  - 🇨🇿 捷克 (Czech) 02 - sanchun
-  - 🇨🇿 捷克 (Czech) 03 - sanchun
 rules:
 - MATCH,PROXIES

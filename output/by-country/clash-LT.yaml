@@ -6,53 +6,53 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - sanchun
   server: 195.238.126.20
+  port: 9012
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: xaupMUvhptwxdDUg
+- name: 🇱🇹 立陶宛 (Lithuania) 02 - sanchun
+  server: 195.238.126.20
   port: 9002
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: b8KkNDjEd5QqFyRm
-- name: 🇱🇹 立陶宛 (Lithuania) 02 - sanchun
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - sanchun
   server: 195.238.126.20
   port: 9068
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - sanchun
-  server: 195.238.126.20
-  port: 9011
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
 - name: 🇱🇹 立陶宛 (Lithuania) 04 - sanchun
-  server: 195.238.126.20
-  port: 9001
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: UkXRsXvR6buDMG2Y
-- name: 🇱🇹 立陶宛 (Lithuania) 05 - sanchun
-  server: 195.238.126.20
-  port: 9045
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Lp27rqyJq72bZsqX
-- name: 🇱🇹 立陶宛 (Lithuania) 06 - sanchun
-  server: 195.238.126.20
-  port: 9012
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
-- name: 🇱🇹 立陶宛 (Lithuania) 07 - sanchun
   server: 195.238.126.20
   port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇹 立陶宛 (Lithuania) 05 - sanchun
+  server: 195.238.126.20
+  port: 9008
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: y9VURyNzJWNRYEGQ
+- name: 🇱🇹 立陶宛 (Lithuania) 06 - sanchun
+  server: 195.238.126.20
+  port: 9045
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: Lp27rqyJq72bZsqX
+- name: 🇱🇹 立陶宛 (Lithuania) 07 - sanchun
+  server: 195.238.126.20
+  port: 9001
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: UkXRsXvR6buDMG2Y
 - name: 🇱🇹 立陶宛 (Lithuania) 08 - sanchun
   server: 195.238.126.84
   port: 9039
@@ -61,50 +61,54 @@ proxies:
   cipher: aes-256-cfb
   password: qYEN5HX4JKeVCdEC
 - name: 🇱🇹 立陶宛 (Lithuania) 09 - sanchun
+  server: 84.32.151.226
+  port: 443
+  udp: true
+  type: vless
+  uuid: 10394279-283c-4ab8-8529-f1e0a4c61bc8
+  tls: true
+  reality-opts:
+    public-key: C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4
+    short-id: 7c4b9a2e8d5f3c1b
+  servername: preview-instance.cloudnativecontrol.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: moktana.net.v1.StreamService
+- name: 🇱🇹 立陶宛 (Lithuania) 10 - sanchun
   server: 195.238.126.20
-  port: 9008
+  port: 9078
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: y9VURyNzJWNRYEGQ
-- name: 🇱🇹 立陶宛 (Lithuania) 10 - sanchun
-  server: 84.32.97.14
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8d2341a3-13b8-4e5e-84e1-da1c4923149a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4
-    short-id: 9c2378562188c3cb
-  servername: lt.denditop.site
-  client-fingerprint: firefox
+  password: JCJpbRbQZNw9XFZG
 - name: 🇱🇹 立陶宛 (Lithuania) 11 - sanchun
-  server: westcostlt.responsiblecare.uk
+  server: 46.166.167.4
   port: 443
   udp: true
   type: vless
-  uuid: ae0d0211-b7dc-461d-9d41-1eb224876f30
-  flow: xtls-rprx-vision
+  uuid: 8c40bb2c-157a-4830-a2c3-0b35ef50c660
   tls: true
   reality-opts:
-    public-key: nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg
-    short-id: 9dbdad98826e0fe8
-  servername: westcostlt.responsiblecare.uk
+    public-key: C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4
+    short-id: 8b6f2e4d7c1a5b9f
+  servername: webmetrics.cloudnativecontrol.com
   client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: moktana.net.v1.StreamService
 - name: 🇱🇹 立陶宛 (Lithuania) 12 - sanchun
-  server: 88.216.127.237
+  server: 62.77.158.1
   port: 443
   udp: true
   type: vless
-  uuid: ae0d0211-b7dc-461d-9d41-1eb224876f30
+  uuid: 2eceaf2b-a775-5a9c-9990-dad2b3660fb6
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg
-    short-id: 9dbdad98826e0fe8
-  servername: westcostlt.responsiblecare.uk
+    public-key: sVhkyiMXvpofflCdSszxQmsqOXV1kg1Ldxq1a9mOPjs
+    short-id: 6a
+  servername: online.1c.ru
   client-fingerprint: firefox
 - name: 🇱🇹 立陶宛 (Lithuania) 13 - sanchun
   server: 94.176.234.161
@@ -118,7 +122,7 @@ proxies:
     public-key: UpI0XKNUsMJ24XawPQ8g7br1faEsO7BOvmIIGg9Wrm8
     short-id: dbb2ef1c7c
   servername: www.intel.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select

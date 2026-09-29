@@ -7,27 +7,6 @@
       "type": "vless",
       "tag": "🇰🇷 韩国 (South Korea) 01 - sanchun",
       "server": "3.39.4.109",
-      "server_port": 18967,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 02 - sanchun",
-      "server": "3.39.4.109",
       "server_port": 13672,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
       "flow": "xtls-rprx-vision",
@@ -47,31 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 03 - sanchun",
-      "server": "kr2-r.link-t7.com",
-      "server_port": 10047,
-      "uuid": "58C828CD-3EBA-46F9-B297-16003D7A6E68",
-      "tls": {
-        "enabled": true,
-        "server_name": "s0.awsstatic.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
-          "short_id": "686c0ef0"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "update"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 04 - sanchun",
+      "tag": "🇰🇷 韩国 (South Korea) 02 - sanchun",
       "server": "47.80.14.8",
       "server_port": 443,
       "uuid": "581cb8c3-dadb-4e10-a18b-5e79bfe7bd93",
@@ -91,37 +46,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 05 - sanchun",
-      "server": "211.178.105.134",
-      "server_port": 6123,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 06 - sanchun",
-      "server": "43.108.9.116",
-      "server_port": 443,
-      "uuid": "5c9884a1-b641-4299-82ac-fc62da2327a7",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "vHl4olGSvL-LqhD2-yclHQWTupy6w02lSp3q8WVUUAU",
-          "short_id": "cd6caa470bec865e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 07 - sanchun",
+      "tag": "🇰🇷 韩国 (South Korea) 03 - sanchun",
       "server": "151.245.106.49",
       "server_port": 2053,
       "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
@@ -140,8 +66,29 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 04 - sanchun",
+      "server": "3.39.4.109",
+      "server_port": 18967,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 08 - sanchun",
+      "tag": "🇰🇷 韩国 (South Korea) 05 - sanchun",
       "server": "152.67.200.82",
       "server_port": 50160,
       "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
@@ -152,25 +99,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 09 - sanchun",
-      "server": "61.111.247.177",
-      "server_port": 443,
-      "uuid": "82c94e17-b27e-4356-82c1-2f9c79b0cf6d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "gateway.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "upzGwN_6mF1HLEIWveelchmljBlEL1fTNNJryHP1h0Q",
-          "short_id": "57a9322ca488758c"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 06 - sanchun",
+      "server": "211.178.105.134",
+      "server_port": 6123,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
     },
     {
       "type": "selector",
@@ -182,10 +116,7 @@
         "🇰🇷 韩国 (South Korea) 03 - sanchun",
         "🇰🇷 韩国 (South Korea) 04 - sanchun",
         "🇰🇷 韩国 (South Korea) 05 - sanchun",
-        "🇰🇷 韩国 (South Korea) 06 - sanchun",
-        "🇰🇷 韩国 (South Korea) 07 - sanchun",
-        "🇰🇷 韩国 (South Korea) 08 - sanchun",
-        "🇰🇷 韩国 (South Korea) 09 - sanchun"
+        "🇰🇷 韩国 (South Korea) 06 - sanchun"
       ]
     },
     {
@@ -197,10 +128,7 @@
         "🇰🇷 韩国 (South Korea) 03 - sanchun",
         "🇰🇷 韩国 (South Korea) 04 - sanchun",
         "🇰🇷 韩国 (South Korea) 05 - sanchun",
-        "🇰🇷 韩国 (South Korea) 06 - sanchun",
-        "🇰🇷 韩国 (South Korea) 07 - sanchun",
-        "🇰🇷 韩国 (South Korea) 08 - sanchun",
-        "🇰🇷 韩国 (South Korea) 09 - sanchun"
+        "🇰🇷 韩国 (South Korea) 06 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

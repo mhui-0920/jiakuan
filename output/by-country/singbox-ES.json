@@ -15,7 +15,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -47,6 +47,55 @@
     {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 04 - sanchun",
+      "server": "92.118.127.16",
+      "server_port": 443,
+      "uuid": "2412bd96-925b-43f2-81d1-0ed4f0793699",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sp1.extremumnews.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Rz8XjYinCcpE7NLktJzNFL7eVSUxaFGuV2Zz82p7IRg",
+          "short_id": "908563a721d9bdcd"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 05 - sanchun",
+      "server": "108.181.121.226",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "WSyL4XTwNsdv"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 06 - sanchun",
+      "server": "193.238.154.5",
+      "server_port": 443,
+      "uuid": "e0b9fb0f-1bbd-478b-9580-c2294778338b",
+      "tls": {
+        "enabled": true,
+        "server_name": "assets-es.pleiades.codes",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "cdn.v1.AssetService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 07 - sanchun",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -66,35 +115,49 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 05 - sanchun",
-      "server": "193.238.154.5",
+      "tag": "🇪🇸 西班牙 (Spain) 08 - sanchun",
+      "server": "es.monkeyvillage.pro",
       "server_port": 443,
-      "uuid": "e0b9fb0f-1bbd-478b-9580-c2294778338b",
+      "uuid": "c7fc009a-026b-46e5-a0c5-82e32bcabd69",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "assets-es.pleiades.codes",
-        "insecure": false,
+        "server_name": "es.monkeyvillage.pro",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
+          "short_id": "60e5a7ae170cc159"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "cdn.v1.AssetService"
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 06 - sanchun",
-      "server": "108.181.121.226",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "WSyL4XTwNsdv"
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 09 - sanchun",
+      "server": "45.150.195.35",
+      "server_port": 443,
+      "uuid": "5dff1842-c02f-4dd4-b1ad-2e597b99dc31",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sp35.mech-pro.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "azv9I1WcbDAga3vWg62KSaRi1eRwZsDU4tg3T63al1o",
+          "short_id": "3ea0e22c"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 07 - sanchun",
+      "tag": "🇪🇸 西班牙 (Spain) 10 - sanchun",
       "server": "46.28.71.247",
       "server_port": 443,
       "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
@@ -104,7 +167,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -115,7 +178,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 08 - sanchun",
+      "tag": "🇪🇸 西班牙 (Spain) 11 - sanchun",
       "server": "196.245.52.148",
       "server_port": 25155,
       "uuid": "441a29b2-d9aa-47d5-9209-0a9191479f9f",
@@ -125,7 +188,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -136,8 +199,41 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 09 - sanchun",
-      "server": "138.124.255.165",
+      "tag": "🇪🇸 西班牙 (Spain) 12 - sanchun",
+      "server": "sp66.mech-pro.online",
+      "server_port": 443,
+      "uuid": "5dff1842-c02f-4dd4-b1ad-2e597b99dc31",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sp66.mech-pro.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI",
+          "short_id": "16e0f049"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇪🇸 西班牙 (Spain) 13 - sanchun",
+      "server": "xby.mangshe.xyz",
+      "server_port": 2060,
+      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
+      "tls": {
+        "enabled": true,
+        "server_name": "xby.mangshe.xyz",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 14 - sanchun",
+      "server": "es2.h1cloud.net",
       "server_port": 25535,
       "uuid": "c379d8e4-c67d-42ec-a3ed-ca99d1ad0546",
       "tls": {
@@ -167,7 +263,12 @@
         "🇪🇸 西班牙 (Spain) 06 - sanchun",
         "🇪🇸 西班牙 (Spain) 07 - sanchun",
         "🇪🇸 西班牙 (Spain) 08 - sanchun",
-        "🇪🇸 西班牙 (Spain) 09 - sanchun"
+        "🇪🇸 西班牙 (Spain) 09 - sanchun",
+        "🇪🇸 西班牙 (Spain) 10 - sanchun",
+        "🇪🇸 西班牙 (Spain) 11 - sanchun",
+        "🇪🇸 西班牙 (Spain) 12 - sanchun",
+        "🇪🇸 西班牙 (Spain) 13 - sanchun",
+        "🇪🇸 西班牙 (Spain) 14 - sanchun"
       ]
     },
     {
@@ -182,7 +283,12 @@
         "🇪🇸 西班牙 (Spain) 06 - sanchun",
         "🇪🇸 西班牙 (Spain) 07 - sanchun",
         "🇪🇸 西班牙 (Spain) 08 - sanchun",
-        "🇪🇸 西班牙 (Spain) 09 - sanchun"
+        "🇪🇸 西班牙 (Spain) 09 - sanchun",
+        "🇪🇸 西班牙 (Spain) 10 - sanchun",
+        "🇪🇸 西班牙 (Spain) 11 - sanchun",
+        "🇪🇸 西班牙 (Spain) 12 - sanchun",
+        "🇪🇸 西班牙 (Spain) 13 - sanchun",
+        "🇪🇸 西班牙 (Spain) 14 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

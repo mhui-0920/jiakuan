@@ -15,7 +15,7 @@
         "server_name": "www.universityofcalifornia.edu",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -27,27 +27,6 @@
     {
       "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - sanchun",
-      "server": "45.95.98.130",
-      "server_port": 443,
-      "uuid": "8d2341a3-13b8-4e5e-84e1-da1c4923149a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "l72brnp.denditop.site",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "VJw5gKAj1oRwz7T1o1_nRzpxWnTH-7mjV3mMvgsrt1M",
-          "short_id": "89d5fe"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 03 - sanchun",
       "server": "144.31.50.236",
       "server_port": 443,
       "uuid": "1c332eae-7e02-4acd-996d-4eb3e652401c",
@@ -72,8 +51,7 @@
       "outbounds": [
         "auto",
         "🇸🇨 塞舌尔 (Seychelles) 01 - sanchun",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - sanchun",
-        "🇸🇨 塞舌尔 (Seychelles) 03 - sanchun"
+        "🇸🇨 塞舌尔 (Seychelles) 02 - sanchun"
       ]
     },
     {
@@ -81,8 +59,7 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇨 塞舌尔 (Seychelles) 01 - sanchun",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - sanchun",
-        "🇸🇨 塞舌尔 (Seychelles) 03 - sanchun"
+        "🇸🇨 塞舌尔 (Seychelles) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

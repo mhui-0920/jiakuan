@@ -5,51 +5,44 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - sanchun
-  server: 93.190.8.163
+  server: 93.190.8.89
   port: 3090
   udp: true
   type: vless
-  uuid: 3e65efd4-d3fe-4076-8b69-060053b4784c
+  uuid: 7809f866-9f42-43ae-ae11-34729db23236
   network: grpc
   grpc-opts:
     grpc-service-name: vless
 - name: 🇹🇷 土耳其 (Turkey) 02 - sanchun
-  server: 93.190.8.91
-  port: 3090
+  server: 162.249.127.130
+  port: 8081
   udp: true
-  type: vless
-  uuid: 5d8b92ca-e91f-4906-b385-658d284cffc0
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  type: hysteria2
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: hop-germany-september.dynuddns.com
+  skip-cert-verify: false
 - name: 🇹🇷 土耳其 (Turkey) 03 - sanchun
-  server: 93.190.9.131
-  port: 3090
+  server: 202.133.90.105
+  port: 57680
   udp: true
   type: vless
-  uuid: 5d8b92ca-e91f-4906-b385-658d284cffc0
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  uuid: 9807575f-5b45-4c68-a39d-95fa381e05e1
 - name: 🇹🇷 土耳其 (Turkey) 04 - sanchun
-  server: 93.190.9.53
-  port: 3090
+  server: panel.vortexservice.ir
+  port: 2082
   udp: true
   type: vless
-  uuid: 3e65efd4-d3fe-4076-8b69-060053b4784c
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  uuid: b2a508ff-99d6-4286-9e9e-e1a895cb4c6d
+  tls: true
+  servername: panel.vortexservice.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: panel.vortexservice.ir
 - name: 🇹🇷 土耳其 (Turkey) 05 - sanchun
-  server: 93.190.9.36
-  port: 3090
-  udp: true
-  type: vless
-  uuid: 5d8b92ca-e91f-4906-b385-658d284cffc0
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇹🇷 土耳其 (Turkey) 06 - sanchun
   server: 78.135.73.47
   port: 443
   udp: true
@@ -62,7 +55,7 @@ proxies:
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 07 - sanchun
+- name: 🇹🇷 土耳其 (Turkey) 06 - sanchun
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -74,38 +67,21 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 08 - sanchun
-  server: istan17.zavqeron.ir
-  port: 8389
+- name: 🇹🇷 土耳其 (Turkey) 07 - sanchun
+  server: 194.5.207.247
+  port: 2083
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Gc9jTDnPAeTz4Z8jDbqI2A
-- name: 🇹🇷 土耳其 (Turkey) 09 - sanchun
-  server: tur17.velqixa.ir
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Gc9jTDnPAeTz4Z8jDbqI2A
-- name: 🇹🇷 土耳其 (Turkey) 10 - sanchun
-  server: me17.msjia8844.site
-  port: 7443
-  udp: true
-  type: hysteria2
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
+  type: vless
+  uuid: b2a508ff-99d6-4286-9e9e-e1a895cb4c6d
+  tls: true
+  servername: panel.vortexservice.ir
   skip-cert-verify: false
-  obfs: salamander
-  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
-- name: 🇹🇷 土耳其 (Turkey) 11 - sanchun
-  server: 162.249.127.130
-  port: 8081
-  udp: true
-  type: hysteria2
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  sni: hop-germany-september.dynuddns.com
-  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: panel.vortexservice.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -118,10 +94,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 05 - sanchun
   - 🇹🇷 土耳其 (Turkey) 06 - sanchun
   - 🇹🇷 土耳其 (Turkey) 07 - sanchun
-  - 🇹🇷 土耳其 (Turkey) 08 - sanchun
-  - 🇹🇷 土耳其 (Turkey) 09 - sanchun
-  - 🇹🇷 土耳其 (Turkey) 10 - sanchun
-  - 🇹🇷 土耳其 (Turkey) 11 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -134,9 +106,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 05 - sanchun
   - 🇹🇷 土耳其 (Turkey) 06 - sanchun
   - 🇹🇷 土耳其 (Turkey) 07 - sanchun
-  - 🇹🇷 土耳其 (Turkey) 08 - sanchun
-  - 🇹🇷 土耳其 (Turkey) 09 - sanchun
-  - 🇹🇷 土耳其 (Turkey) 10 - sanchun
-  - 🇹🇷 土耳其 (Turkey) 11 - sanchun
 rules:
 - MATCH,PROXIES
