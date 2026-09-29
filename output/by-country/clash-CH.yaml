@@ -5,37 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - sanchun
-  server: 132.243.175.144
-  port: 8388
+  server: 82.38.64.229
+  port: 8443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  type: hysteria2
+  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
+  sni: hopp-swizland-new.mysynology.net
+  skip-cert-verify: false
 - name: 🇨🇭 瑞士 (Switzerland) 02 - sanchun
-  server: 45.90.59.15
-  port: 443
+  server: 104.165.205.23
+  port: 9443
   udp: true
-  type: vless
-  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
-    short-id: 19253fae84102271
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  type: hysteria2
+  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  sni: onecloudstream.com
+  skip-cert-verify: false
 - name: 🇨🇭 瑞士 (Switzerland) 03 - sanchun
-  server: 208.69.78.217
-  port: 2053
+  server: 104.165.205.191
+  port: 9443
   udp: true
-  type: vless
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  tls: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
-  servername: www.apple.com
-  client-fingerprint: firefox
+  type: hysteria2
+  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  sni: onecloudstream.com
+  skip-cert-verify: false
 - name: 🇨🇭 瑞士 (Switzerland) 04 - sanchun
   server: 104.165.205.81
   port: 9443
@@ -45,46 +37,6 @@ proxies:
   sni: onecloudstream.com
   skip-cert-verify: false
 - name: 🇨🇭 瑞士 (Switzerland) 05 - sanchun
-  server: 82.38.64.239
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
-  sni: hopp-swizland-new.mysynology.net
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 06 - sanchun
-  server: 140.238.213.114
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: 140.238.213.114
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 07 - sanchun
-  server: 104.165.205.23
-  port: 9443
-  udp: true
-  type: hysteria2
-  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
-  sni: onecloudstream.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 08 - sanchun
-  server: ch.xiaoliyu.cyou
-  port: 18333
-  udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: ch.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 09 - sanchun
-  server: 104.165.205.191
-  port: 9443
-  udp: true
-  type: hysteria2
-  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
-  sni: onecloudstream.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 10 - sanchun
   server: 104.165.205.142
   port: 9443
   udp: true
@@ -92,7 +44,7 @@ proxies:
   password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
   sni: onecloudstream.com
   skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 11 - sanchun
+- name: 🇨🇭 瑞士 (Switzerland) 06 - sanchun
   server: 176.108.241.137
   port: 9882
   udp: true
@@ -106,14 +58,19 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: 🇨🇭 瑞士 (Switzerland) 12 - sanchun
-  server: 77.110.104.238
+- name: 🇨🇭 瑞士 (Switzerland) 07 - sanchun
+  server: 45.90.59.15
   port: 443
   udp: true
-  type: hysteria2
-  password: 5413edfb-08d6-4fba-b51c-809c04feb127
-  sni: ch2-hy2.veilvpn.life
-  skip-cert-verify: false
+  type: vless
+  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+    short-id: 19253fae84102271
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -126,11 +83,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 05 - sanchun
   - 🇨🇭 瑞士 (Switzerland) 06 - sanchun
   - 🇨🇭 瑞士 (Switzerland) 07 - sanchun
-  - 🇨🇭 瑞士 (Switzerland) 08 - sanchun
-  - 🇨🇭 瑞士 (Switzerland) 09 - sanchun
-  - 🇨🇭 瑞士 (Switzerland) 10 - sanchun
-  - 🇨🇭 瑞士 (Switzerland) 11 - sanchun
-  - 🇨🇭 瑞士 (Switzerland) 12 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -143,10 +95,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 05 - sanchun
   - 🇨🇭 瑞士 (Switzerland) 06 - sanchun
   - 🇨🇭 瑞士 (Switzerland) 07 - sanchun
-  - 🇨🇭 瑞士 (Switzerland) 08 - sanchun
-  - 🇨🇭 瑞士 (Switzerland) 09 - sanchun
-  - 🇨🇭 瑞士 (Switzerland) 10 - sanchun
-  - 🇨🇭 瑞士 (Switzerland) 11 - sanchun
-  - 🇨🇭 瑞士 (Switzerland) 12 - sanchun
 rules:
 - MATCH,PROXIES

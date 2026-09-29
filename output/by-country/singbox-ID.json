@@ -5,43 +5,43 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 01 - sanchun",
-      "server": "185.95.231.233",
-      "server_port": 443,
-      "uuid": "1ffa8e68-3378-4cf4-b8f6-44bf3d46d106",
+      "tag": "🇮🇩 印尼 (Indonesia) 01 - sanchun",
+      "server": "103.172.197.3",
+      "server_port": 16006,
+      "uuid": "f8c9d2a1-da40-4f90-b671-11772a0b13d6",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "store.steampowered.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho",
-          "short_id": "a1b2c3d4"
+          "public_key": "ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU",
+          "short_id": ""
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 02 - sanchun",
-      "server": "185.95.231.156",
+      "tag": "🇮🇩 印尼 (Indonesia) 02 - sanchun",
+      "server": "172.235.246.215",
       "server_port": 443,
-      "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
+      "uuid": "d90087c3-54f5-4283-a13f-615260c8b0c7",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "googleapis.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
-          "short_id": "a3a578ab"
+          "public_key": "hTweFDvbSucrGERtiiwDfoqD3vo_Z9cuaqboff3FTXQ",
+          "short_id": ""
         }
       }
     },
@@ -50,16 +50,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇱 以色列 (Israel) 01 - sanchun",
-        "🇮🇱 以色列 (Israel) 02 - sanchun"
+        "🇮🇩 印尼 (Indonesia) 01 - sanchun",
+        "🇮🇩 印尼 (Indonesia) 02 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇱 以色列 (Israel) 01 - sanchun",
-        "🇮🇱 以色列 (Israel) 02 - sanchun"
+        "🇮🇩 印尼 (Indonesia) 01 - sanchun",
+        "🇮🇩 印尼 (Indonesia) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

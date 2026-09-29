@@ -16,15 +16,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - sanchun",
-      "server": "test.keoplentuio.xyz",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - sanchun",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - sanchun",
       "server": "fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com",
       "server_port": 443,
       "password": "40fb1315-191a-11ed-b0ca-f23c91cfbbc9",
@@ -40,8 +33,7 @@
       "outbounds": [
         "auto",
         "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun",
-        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - sanchun",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - sanchun"
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - sanchun"
       ]
     },
     {
@@ -49,8 +41,7 @@
       "tag": "auto",
       "outbounds": [
         "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun",
-        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - sanchun",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - sanchun"
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

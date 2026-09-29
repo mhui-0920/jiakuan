@@ -12,13 +12,7 @@ proxies:
   password: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
   sni: hk01.kfc-520.com
   skip-cert-verify: false
-- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - sanchun
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - sanchun
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - sanchun
   server: fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com
   port: 443
   udp: true
@@ -32,15 +26,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - sanchun
 rules:
 - MATCH,PROXIES
