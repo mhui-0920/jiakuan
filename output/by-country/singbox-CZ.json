@@ -1,0 +1,55 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 01 - sanchun",
+      "server": "194.87.59.21",
+      "server_port": 2085,
+      "uuid": "6cd07d44-0ac4-4505-8ba9-06574727e1be",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02 - sanchun",
+      "server": "153.76.185.100",
+      "server_port": 3090,
+      "uuid": "e8b3f952-cd1b-4881-872e-b8d03399a6df",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇨🇿 捷克 (Czech) 01 - sanchun",
+        "🇨🇿 捷克 (Czech) 02 - sanchun"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇨🇿 捷克 (Czech) 01 - sanchun",
+        "🇨🇿 捷克 (Czech) 02 - sanchun"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

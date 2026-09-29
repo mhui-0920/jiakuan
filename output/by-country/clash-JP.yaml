@@ -5,26 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - sanchun
-  server: 149.22.87.204
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 02 - sanchun
-  server: 137.220.221.179
-  port: 443
-  udp: true
-  type: vless
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- name: 🇯🇵 日本 (Japan) 03 - sanchun
   server: 149.22.87.240
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 02 - sanchun
+  server: 149.22.87.241
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 03 - sanchun
+  server: 137.220.221.179
+  port: 443
+  udp: true
+  type: vless
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
 - name: 🇯🇵 日本 (Japan) 04 - sanchun
+  server: 149.22.87.204
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 05 - sanchun
   server: 154.31.114.248
   port: 50159
   udp: true
@@ -37,20 +44,14 @@ proxies:
     short-id: 091e1c5db8451757
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 05 - sanchun
-  server: 103.75.118.228
-  port: 12683
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 06 - sanchun
+  server: 84.247.155.196
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 07 - sanchun
   server: 13.230.30.102
   port: 38830
   udp: true
@@ -61,19 +62,6 @@ proxies:
   reality-opts:
     public-key: 5E5p5boHrgCyBlt5qZPX1XozU9I90JoBgS4zmXngllI
     short-id: ac12ed79
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 07 - sanchun
-  server: 13.158.67.183
-  port: 33561
-  udp: true
-  type: vless
-  uuid: d00d9d18-20cf-4191-be76-6f73d43a27ec
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 158SMilJQo8T-Fi8-T1354xZsVFCYxA8dXQstKbIdVs
-    short-id: 6b9e61372a82002c
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 08 - sanchun
@@ -98,19 +86,6 @@ proxies:
   sni: open.w2m.ink
   skip-cert-verify: false
 - name: 🇯🇵 日本 (Japan) 10 - sanchun
-  server: 43.133.11.187
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
-    short-id: 913e9b95fbc71278
-  servername: cloudflare.com
-  client-fingerprint: edge
-- name: 🇯🇵 日本 (Japan) 11 - sanchun
   server: 18.183.215.124
   port: 28573
   udp: true
@@ -123,72 +98,7 @@ proxies:
     short-id: 03653bc03be10c97
   servername: www.sony.com
   client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 12 - sanchun
-  server: 103.75.118.228
-  port: 11452
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 13 - sanchun
-  server: 3.114.220.22
-  port: 10583
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 14 - sanchun
-  server: open.2ml.bid
-  port: 5443
-  udp: true
-  type: hysteria2
-  password: my_super_password_123
-  sni: open.2ml.bid
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 15 - sanchun
-  server: open.w2m.ink
-  port: 5443
-  udp: true
-  type: hysteria2
-  password: my_super_password_123
-  sni: open.w2m.ink
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 16 - sanchun
-  server: open.2ml.bid
-  port: 443
-  udp: true
-  type: hysteria2
-  password: my_super_password_123
-  sni: open.2ml.bid
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 17 - sanchun
-  server: 84.247.155.196
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 18 - sanchun
-  server: open.2ml.cc.cd
-  port: 5443
-  udp: true
-  type: hysteria2
-  password: my_super_password_123
-  sni: open.2ml.cc.cd
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 19 - sanchun
+- name: 🇯🇵 日本 (Japan) 11 - sanchun
   server: 3.114.220.22
   port: 19645
   udp: true
@@ -201,21 +111,51 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 20 - sanchun
+- name: 🇯🇵 日本 (Japan) 12 - sanchun
   server: 84.247.155.196
-  port: 80
+  port: 443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 21 - sanchun
-  server: 149.22.87.241
+- name: 🇯🇵 日本 (Japan) 13 - sanchun
+  server: open.w2m.ink
+  port: 5443
+  udp: true
+  type: hysteria2
+  password: my_super_password_123
+  sni: open.w2m.ink
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 14 - sanchun
+  server: vp3.yysyy.online
   port: 443
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 22 - sanchun
+  type: hysteria2
+  password: 96ab5cd282733fd4c312a61f972f330a
+  sni: vp3.yysyy.online
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 15 - sanchun
+  server: 43.133.11.187
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
+    short-id: 913e9b95fbc71278
+  servername: cloudflare.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 16 - sanchun
+  server: open.2ml.bid
+  port: 5443
+  udp: true
+  type: hysteria2
+  password: my_super_password_123
+  sni: open.2ml.bid
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 17 - sanchun
   server: 3.114.220.22
   port: 18007
   udp: true
@@ -227,47 +167,28 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 23 - sanchun
-  server: cdn.sfacg.uk
-  port: 2083
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 18 - sanchun
+  server: 45.76.215.91
+  port: 8443
   udp: true
-  type: vmess
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: or3.sfacg.uk
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or3.sfacg.uk
-- name: 🇯🇵 日本 (Japan) 24 - sanchun
-  server: 172.67.156.147
-  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: 9204e085-34fa-48ec-b100-ffebcab83629
+- name: 🇯🇵 日本 (Japan) 19 - sanchun
+  server: jpt.negai.de
+  port: 25874
   udp: true
   type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: bfac5c43-52f2-4b0a-9fee-3e2281483c81
+  flow: xtls-rprx-vision
   tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
+  reality-opts:
+    public-key: aBdmSZuchSwd7IKT4PPb8hgTFWZeb-4iGSyf8lIGUSE
+    short-id: 6ba85179e30d4fc2
+  servername: jpt.negai.de
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 25 - sanchun
-  server: 43.167.208.94
-  port: 443
-  udp: true
-  type: hysteria2
-  password: RQBXe4kpsRant_2u1PzdneBOPuCSwUSI
-  sni: 43.167.208.94
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 26 - sanchun
+- name: 🇯🇵 日本 (Japan) 20 - sanchun
   server: 45.202.255.24
   port: 8890
   udp: true
@@ -281,13 +202,55 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc
-- name: 🇯🇵 日本 (Japan) 27 - sanchun
-  server: vp3.yysyy.online
+- name: 🇯🇵 日本 (Japan) 21 - sanchun
+  server: 3.114.220.22
+  port: 10583
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 22 - sanchun
+  server: open.2ml.bid
   port: 443
   udp: true
   type: hysteria2
-  password: 96ab5cd282733fd4c312a61f972f330a
-  sni: vp3.yysyy.online
+  password: my_super_password_123
+  sni: open.2ml.bid
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 23 - sanchun
+  server: 123.253.227.238
+  port: 10202
+  udp: true
+  type: vless
+  uuid: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: E0R7f_nEkbcnc97Z82aDMo2bUVGgcIzChCVYwsQmXnc
+    short-id: 88bd7f
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 24 - sanchun
+  server: open.2ml.cc.cd
+  port: 5443
+  udp: true
+  type: hysteria2
+  password: my_super_password_123
+  sni: open.2ml.cc.cd
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 25 - sanchun
+  server: aa.ccmusic.jp
+  port: 443
+  udp: true
+  type: trojan
+  password: tsuchiya
+  sni: aa.ccmusic.jp
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
@@ -319,8 +282,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 23 - sanchun
   - 🇯🇵 日本 (Japan) 24 - sanchun
   - 🇯🇵 日本 (Japan) 25 - sanchun
-  - 🇯🇵 日本 (Japan) 26 - sanchun
-  - 🇯🇵 日本 (Japan) 27 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -351,7 +312,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 23 - sanchun
   - 🇯🇵 日本 (Japan) 24 - sanchun
   - 🇯🇵 日本 (Japan) 25 - sanchun
-  - 🇯🇵 日本 (Japan) 26 - sanchun
-  - 🇯🇵 日本 (Japan) 27 - sanchun
 rules:
 - MATCH,PROXIES

@@ -5,20 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - sanchun
-  server: 104.143.223.83
+  server: 104.143.223.57
   port: 2085
   udp: true
   type: vless
-  uuid: d0054d2b-3fea-486e-9592-ea6ce8d7b380
+  uuid: 00c93aef-517d-4a92-a990-75fc5502284a
   network: grpc
   grpc-opts:
     grpc-service-name: vless
 - name: 🇦🇪 阿联酋 (UAE) 02 - sanchun
-  server: 104.143.223.82
+  server: 104.143.223.60
   port: 2085
   udp: true
   type: vless
-  uuid: 86f50dfb-b153-4aef-a723-d77bc4cf8ee3
+  uuid: 6cd07d44-0ac4-4505-8ba9-06574727e1be
   network: grpc
   grpc-opts:
     grpc-service-name: vless
@@ -59,7 +59,7 @@ proxies:
   servername: dzen.ru
   client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 06 - sanchun
-  server: 85.204.107.174
+  server: 85.204.107.172
   port: 8080
   udp: true
   type: hysteria2
@@ -89,9 +89,9 @@ proxies:
     public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
     short-id: 002fb4ec7b3088cc
   servername: www.datadoghq.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 09 - sanchun
-  server: pl-2.omuvpn.tech
+  server: pl-3.omuvpn.tech
   port: 443
   udp: true
   type: vless
@@ -100,8 +100,8 @@ proxies:
   tls: true
   reality-opts:
     public-key: Jx7Z4PZ5DvGyEniIJhf6LwetaZ1_WDvPdpqtBDYOjyM
-    short-id: 76309429d55d
-  servername: www.nl.ozone.nl
+    short-id: c2798cd4032a02b8
+  servername: ozone.nl
   client-fingerprint: random
 - name: 🇦🇪 阿联酋 (UAE) 10 - sanchun
   server: 139.185.44.42

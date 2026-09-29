@@ -6,9 +6,9 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - sanchun",
-      "server": "104.143.223.83",
+      "server": "104.143.223.57",
       "server_port": 2085,
-      "uuid": "d0054d2b-3fea-486e-9592-ea6ce8d7b380",
+      "uuid": "00c93aef-517d-4a92-a990-75fc5502284a",
       "transport": {
         "type": "grpc",
         "service_name": "vless"
@@ -17,9 +17,9 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 02 - sanchun",
-      "server": "104.143.223.82",
+      "server": "104.143.223.60",
       "server_port": 2085,
-      "uuid": "86f50dfb-b153-4aef-a723-d77bc4cf8ee3",
+      "uuid": "6cd07d44-0ac4-4505-8ba9-06574727e1be",
       "transport": {
         "type": "grpc",
         "service_name": "vless"
@@ -86,7 +86,7 @@
     {
       "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 06 - sanchun",
-      "server": "85.204.107.174",
+      "server": "85.204.107.172",
       "server_port": 8080,
       "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
       "tls": {
@@ -120,7 +120,7 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -132,13 +132,13 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 09 - sanchun",
-      "server": "pl-2.omuvpn.tech",
+      "server": "pl-3.omuvpn.tech",
       "server_port": 443,
       "uuid": "6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.nl.ozone.nl",
+        "server_name": "ozone.nl",
         "utls": {
           "enabled": true,
           "fingerprint": "random"
@@ -146,7 +146,7 @@
         "reality": {
           "enabled": true,
           "public_key": "Jx7Z4PZ5DvGyEniIJhf6LwetaZ1_WDvPdpqtBDYOjyM",
-          "short_id": "76309429d55d"
+          "short_id": "c2798cd4032a02b8"
         }
       }
     },
