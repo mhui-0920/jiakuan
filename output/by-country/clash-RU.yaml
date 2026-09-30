@@ -5,51 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - sanchun
-  server: 104.18.46.46
-  port: 80
+  server: 94.249.187.46
+  port: 1080
   udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: IXa3ylzS_jBOAsQy071tIQ
 - name: 🇷🇺 俄罗斯 (Russia) 02 - sanchun
-  server: 109.120.181.153
-  port: 443
-  udp: true
-  type: vless
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: eh.vk.ru
-  client-fingerprint: random
-- name: 🇷🇺 俄罗斯 (Russia) 03 - sanchun
-  server: 91.240.86.70
-  port: 22443
-  udp: true
-  type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: itsallproxy.quattro-tech.ru
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 04 - sanchun
-  server: 139.28.168.201
-  port: 443
-  udp: true
-  type: vless
-  uuid: 914f3806-07a1-4158-9624-e183de065a38
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
-    short-id: 3b74d85e
-  servername: china.letsconnectpoint.com
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 05 - sanchun
   server: 113.30.154.60
   port: 443
   udp: true
@@ -61,20 +23,78 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: sellflow.org
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 06 - sanchun
-  server: 176.108.246.58
-  port: 9889
+- name: 🇷🇺 俄罗斯 (Russia) 03 - sanchun
+  server: 62.181.53.170
+  port: 2055
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 9qGcNiZj4uCi7DGSjxlg5Q
+- name: 🇷🇺 俄罗斯 (Russia) 04 - sanchun
+  server: 113.30.154.75
+  port: 443
   udp: true
   type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  uuid: ff2936d3-caa4-4b79-bb96-1475bd39ceda
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU
-  servername: dl.google.com
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: sellflow.org
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 05 - sanchun
+  server: 139.28.168.201
+  port: 443
+  udp: true
+  type: vless
+  uuid: a368752a-32fc-42f3-980a-6b049218b23f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
+    short-id: 3b74d85e
+  servername: china.letsconnectpoint.com
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 06 - sanchun
+  server: 45.93.201.119
+  port: 443
+  udp: true
+  type: vless
+  uuid: 10394279-283c-4ab8-8529-f1e0a4c61bc8
+  tls: true
+  reality-opts:
+    public-key: C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4
+    short-id: 6f3c1b8e5d2a4f7c
+  servername: vir2albridge.com
   client-fingerprint: firefox
   network: grpc
   grpc-opts:
-    grpc-service-name: grpc-tunnel
+    grpc-service-name: moktana.net.v1.StreamService
+- name: 🇷🇺 俄罗斯 (Russia) 07 - sanchun
+  server: 45.12.75.242
+  port: 26424
+  udp: true
+  type: vless
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 08 - sanchun
+  server: fbsv6.guardora.pro
+  port: 443
+  udp: true
+  type: vless
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  tls: true
+  servername: fbsv6.guardora.pro
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /ws
 proxy-groups:
 - name: PROXIES
   type: select
@@ -86,6 +106,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 05 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 06 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 07 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 08 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -97,5 +119,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 05 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 06 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 07 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 08 - sanchun
 rules:
 - MATCH,PROXIES

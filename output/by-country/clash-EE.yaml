@@ -5,25 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - sanchun
-  server: 94.183.170.135
+  server: netlivpn5002.whwbbb.workers.dev
   port: 443
   udp: true
   type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  uuid: a88e61a0-2b38-f6df-c5c7-d20600000000
+  tls: true
+  servername: netlivpn5002.whwbbb.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: qq
   network: ws
   ws-opts:
     path: /
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - sanchun
-  server: 94.183.170.135
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  tls: true
-  servername: estproxy4.lockdwn.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun
   server: 179.254.126.173
   port: 443
   udp: true
@@ -35,6 +29,27 @@ proxies:
     public-key: 9H_heZMEI3tShkb5pXRrlAzwGWIzGFCRX_HgyPdktnU
   servername: www.google.com
   client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun
+  server: 94.183.170.135
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  tls: true
+  servername: estproxy4.lockdwn.com
+  skip-cert-verify: true
+  client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - sanchun
+  server: 94.183.170.135
+  port: 443
+  udp: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: estproxy4.lockdwn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,6 +58,7 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,5 +67,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - sanchun
 rules:
 - MATCH,PROXIES
