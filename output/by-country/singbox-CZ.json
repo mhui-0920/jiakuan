@@ -1,0 +1,94 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 01 - sanchun",
+      "server": "153.76.185.179",
+      "server_port": 3090,
+      "uuid": "08f0b2a1-b213-4d03-8309-d7c766cfca84",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02 - sanchun",
+      "server": "194.87.59.21",
+      "server_port": 2085,
+      "uuid": "b538aad1-d748-42a9-b761-005ceb3dd643",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 03 - sanchun",
+      "server": "153.76.185.106",
+      "server_port": 3090,
+      "uuid": "08f0b2a1-b213-4d03-8309-d7c766cfca84",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 04 - sanchun",
+      "server": "195.133.66.229",
+      "server_port": 443,
+      "uuid": "4abdfe42-aec7-4b66-974d-3f891e2e8184",
+      "tls": {
+        "enabled": true,
+        "server_name": "nlll.gaz-service.shop",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Zl6Fe6WYQuaFe_QNUB4qU7nRkGujy7LqjoQ96GO3jUc",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇨🇿 捷克 (Czech) 01 - sanchun",
+        "🇨🇿 捷克 (Czech) 02 - sanchun",
+        "🇨🇿 捷克 (Czech) 03 - sanchun",
+        "🇨🇿 捷克 (Czech) 04 - sanchun"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇨🇿 捷克 (Czech) 01 - sanchun",
+        "🇨🇿 捷克 (Czech) 02 - sanchun",
+        "🇨🇿 捷克 (Czech) 03 - sanchun",
+        "🇨🇿 捷克 (Czech) 04 - sanchun"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

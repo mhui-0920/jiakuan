@@ -12,6 +12,13 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: IXa3ylzS_jBOAsQy071tIQ
 - name: 🇷🇺 俄罗斯 (Russia) 02 - sanchun
+  server: 62.181.53.170
+  port: 2055
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 9qGcNiZj4uCi7DGSjxlg5Q
+- name: 🇷🇺 俄罗斯 (Russia) 03 - sanchun
   server: 113.30.154.60
   port: 443
   udp: true
@@ -23,14 +30,14 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: sellflow.org
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 03 - sanchun
-  server: 62.181.53.170
-  port: 2055
+- name: 🇷🇺 俄罗斯 (Russia) 04 - sanchun
+  server: 130.49.189.158
+  port: 43558
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 9qGcNiZj4uCi7DGSjxlg5Q
-- name: 🇷🇺 俄罗斯 (Russia) 04 - sanchun
+  password: IcovoXEMyjfGjN9RenzKs0/iPaZ3vtk9fkxJ0s/R5vw=
+- name: 🇷🇺 俄罗斯 (Russia) 05 - sanchun
   server: 113.30.154.75
   port: 443
   udp: true
@@ -42,7 +49,48 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: sellflow.org
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 05 - sanchun
+- name: 🇷🇺 俄罗斯 (Russia) 06 - sanchun
+  server: 113.30.154.65
+  port: 443
+  udp: true
+  type: vless
+  uuid: 550a69ec-fec1-4eca-b939-4ee076875fa8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: sellflow.org
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 07 - sanchun
+  server: 138.124.254.232
+  port: 443
+  udp: true
+  type: hysteria2
+  password: fba73f98-777a-42a6-83c0-7d1f6f070e8d
+  sni: crt.dodopanel.biz
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 08 - sanchun
+  server: n98o5teg7.dendiboss.org
+  port: 443
+  udp: true
+  type: vless
+  uuid: 386d4342-768d-4ed0-9478-4dba23220aed
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Oq-xzuGJS90vXtDM5_WM73LESpRBoXB7drkaBdUPW1Y
+    short-id: '68721887'
+  servername: n98o5teg7.dendiboss.org
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 09 - sanchun
+  server: 91.240.86.70
+  port: 22443
+  udp: true
+  type: hysteria2
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: hy.quattro-tech.ru
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 10 - sanchun
   server: 139.28.168.201
   port: 443
   udp: true
@@ -55,34 +103,15 @@ proxies:
     short-id: 3b74d85e
   servername: china.letsconnectpoint.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 06 - sanchun
-  server: 45.93.201.119
-  port: 443
+- name: 🇷🇺 俄罗斯 (Russia) 11 - sanchun
+  server: ru1.xiaoliyu.cyou
+  port: 18333
   udp: true
-  type: vless
-  uuid: 10394279-283c-4ab8-8529-f1e0a4c61bc8
-  tls: true
-  reality-opts:
-    public-key: C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4
-    short-id: 6f3c1b8e5d2a4f7c
-  servername: vir2albridge.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: moktana.net.v1.StreamService
-- name: 🇷🇺 俄罗斯 (Russia) 07 - sanchun
-  server: 45.12.75.242
-  port: 26424
-  udp: true
-  type: vless
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  tls: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  servername: ya.ru
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 08 - sanchun
+  type: hysteria2
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: ru1.xiaoliyu.cyou
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 12 - sanchun
   server: fbsv6.guardora.pro
   port: 443
   udp: true
@@ -95,6 +124,13 @@ proxies:
   network: ws
   ws-opts:
     path: /ws
+- name: 🇷🇺 俄罗斯 (Russia) 13 - sanchun
+  server: 139.100.236.23
+  port: 140
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Yg2U9wKTPgVrZ1Jzo2MEa0RsXD_GrBR6
 proxy-groups:
 - name: PROXIES
   type: select
@@ -108,6 +144,11 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 07 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 08 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 09 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 10 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 11 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 12 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 13 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -121,5 +162,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 07 - sanchun
   - 🇷🇺 俄罗斯 (Russia) 08 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 09 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 10 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 11 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 12 - sanchun
+  - 🇷🇺 俄罗斯 (Russia) 13 - sanchun
 rules:
 - MATCH,PROXIES
