@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇩 印尼 (Indonesia) 01 - sanchun
-  server: 34.101.126.150
-  port: 443
-  udp: true
-  type: trojan
-  password: M7v%w11Se*
-  sni: qfdfsg.wsone.icu
-  skip-cert-verify: true
-- name: 🇮🇩 印尼 (Indonesia) 02 - sanchun
   server: 103.172.197.3
   port: 16006
   udp: true
@@ -23,8 +15,8 @@ proxies:
   reality-opts:
     public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇮🇩 印尼 (Indonesia) 03 - sanchun
+  client-fingerprint: firefox
+- name: 🇮🇩 印尼 (Indonesia) 02 - sanchun
   server: 103.172.197.2
   port: 29172
   udp: true
@@ -43,7 +35,6 @@ proxy-groups:
   - AUTO
   - 🇮🇩 印尼 (Indonesia) 01 - sanchun
   - 🇮🇩 印尼 (Indonesia) 02 - sanchun
-  - 🇮🇩 印尼 (Indonesia) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,6 +42,5 @@ proxy-groups:
   proxies:
   - 🇮🇩 印尼 (Indonesia) 01 - sanchun
   - 🇮🇩 印尼 (Indonesia) 02 - sanchun
-  - 🇮🇩 印尼 (Indonesia) 03 - sanchun
 rules:
 - MATCH,PROXIES
