@@ -19,58 +19,20 @@ proxies:
   cipher: aes-256-cfb
   password: a3GFYt36Sm82Vys9
 - name: 🇪🇸 西班牙 (Spain) 03 - sanchun
-  server: 34.175.107.233
-  port: 443
-  udp: true
-  type: vless
-  uuid: c55c9880-2f9c-4ad6-bfc2-5054516bf613
-  tls: true
-  reality-opts:
-    public-key: lM9EQ1rZH9inQjrZesuqgldsXYN_yfT5-tqhPfbyen4
-    short-id: 1c9e101e99bf86bb
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 04 - sanchun
-  server: 83.147.18.3
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
-    short-id: fd8cf7e1173f0edb
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 05 - sanchun
   server: 140.174.184.5
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: qItG8SueYQcP
-- name: 🇪🇸 西班牙 (Spain) 06 - sanchun
+- name: 🇪🇸 西班牙 (Spain) 04 - sanchun
   server: 108.181.121.226
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: WSyL4XTwNsdv
-- name: 🇪🇸 西班牙 (Spain) 07 - sanchun
-  server: 45.154.206.173
-  port: 443
-  udp: true
-  type: vless
-  uuid: c7fc009a-026b-46e5-a0c5-82e32bcabd69
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo
-    short-id: 60e5a7ae170cc159
-  servername: es.monkeyvillage.pro
-  client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 08 - sanchun
+- name: 🇪🇸 西班牙 (Spain) 05 - sanchun
   server: 212.227.235.66
   port: 2053
   udp: true
@@ -82,7 +44,27 @@ proxies:
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 09 - sanchun
+- name: 🇪🇸 西班牙 (Spain) 06 - sanchun
+  server: 185.174.137.172
+  port: 8446
+  udp: true
+  type: hysteria2
+  password: e9dc02d400b67c727aca1620
+  sni: 185.174.137.172
+  skip-cert-verify: true
+- name: 🇪🇸 西班牙 (Spain) 07 - sanchun
+  server: 34.175.107.233
+  port: 443
+  udp: true
+  type: vless
+  uuid: c55c9880-2f9c-4ad6-bfc2-5054516bf613
+  tls: true
+  reality-opts:
+    public-key: lM9EQ1rZH9inQjrZesuqgldsXYN_yfT5-tqhPfbyen4
+    short-id: 1c9e101e99bf86bb
+  servername: www.cloudflare.com
+  client-fingerprint: safari
+- name: 🇪🇸 西班牙 (Spain) 08 - sanchun
   server: 196.245.52.146
   port: 25535
   udp: true
@@ -94,7 +76,7 @@ proxies:
     short-id: 7642ce57308852e7
   servername: www.microsoft.com
   client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 10 - sanchun
+- name: 🇪🇸 西班牙 (Spain) 09 - sanchun
   server: 193.238.154.5
   port: 443
   udp: true
@@ -103,11 +85,11 @@ proxies:
   tls: true
   servername: assets-es.pleiades.codes
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
-- name: 🇪🇸 西班牙 (Spain) 11 - sanchun
+- name: 🇪🇸 西班牙 (Spain) 10 - sanchun
   server: 46.28.71.247
   port: 443
   udp: true
@@ -118,6 +100,19 @@ proxies:
   reality-opts:
     public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
     short-id: 0dfc23fe80778c00
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇪🇸 西班牙 (Spain) 11 - sanchun
+  server: 83.147.18.3
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
+    short-id: fd8cf7e1173f0edb
   servername: www.cloudflare.com
   client-fingerprint: firefox
 proxy-groups:

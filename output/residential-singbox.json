@@ -5,14 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun",
-      "server": "178.83.46.216",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun",
       "server": "118.167.207.194",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -32,23 +25,18 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - sanchun",
-      "server": "ali-hk.qrfly.top",
-      "server_port": 10102,
-      "uuid": "bcfbb19f-5b0e-4862-a77b-904fffd0b513",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - sanchun",
+      "server": "tcdnu.azad0namah.ir",
+      "server_port": 8443,
+      "uuid": "0da0a073-a5b0-4229-bf11-24592f6290b9",
       "tls": {
         "enabled": true,
-        "server_name": "tesla.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "kVpVhfT5_4__Sxj4i0S2DOQKKfK549rgy2HWP9QU4iw",
-          "short_id": "db6c60f1"
-        }
+        "server_name": "tcdnu.azad0namah.ir",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tuws/"
       }
     },
     {
@@ -56,18 +44,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - sanchun"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun",
+        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - sanchun"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun",
+        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

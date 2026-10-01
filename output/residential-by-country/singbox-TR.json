@@ -6,9 +6,18 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun",
-      "server": "178.83.46.216",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+      "server": "tcdnu.azad0namah.ir",
+      "server_port": 8443,
+      "uuid": "0da0a073-a5b0-4229-bf11-24592f6290b9",
+      "tls": {
+        "enabled": true,
+        "server_name": "tcdnu.azad0namah.ir",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tuws/"
+      }
     },
     {
       "type": "selector",

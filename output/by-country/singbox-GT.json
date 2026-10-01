@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇪 格鲁吉亚 (Georgia) 01 - sanchun",
-      "server": "185.143.179.179",
-      "server_port": 25026,
-      "uuid": "441a29b2-d9aa-47d5-9209-0a9191479f9f",
+      "tag": "🇬🇹 GT 01 - sanchun",
+      "server": "185.47.254.251",
+      "server_port": 443,
+      "uuid": "878fb7f7-fc65-465e-a352-17c7216c6f3d",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.google.com",
+        "server_name": "gateway.icloud.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "RVh0D446O5pKnOqlNkJNxSGGbmzl8swn4YBXYce1HSw",
-          "short_id": "34c465417d7ebca0"
+          "public_key": "6-_ZidygR8PRt4gtHlGCAW-PPmjEIm7Wn7MZqJU1z1Q",
+          "short_id": "6c059ecfddf9b179"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇪 格鲁吉亚 (Georgia) 01 - sanchun"
+        "🇬🇹 GT 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇪 格鲁吉亚 (Georgia) 01 - sanchun"
+        "🇬🇹 GT 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

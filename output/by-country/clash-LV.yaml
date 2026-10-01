@@ -16,14 +16,54 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - sanchun
+  server: 104.165.205.191
+  port: 9443
+  udp: true
+  type: hysteria2
+  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  sni: onecloudstream.com
+  skip-cert-verify: false
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - sanchun
+  server: 104.165.205.23
+  port: 9443
+  udp: true
+  type: hysteria2
+  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  sni: onecloudstream.com
+  skip-cert-verify: false
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - sanchun
+  server: 31.76.104.152
+  port: 9443
+  udp: true
+  type: hysteria2
+  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  sni: onecloudstream.com
+  skip-cert-verify: false
+- name: 🇱🇻 拉脱维亚 (Latvia) 05 - sanchun
+  server: 104.165.205.81
+  port: 9443
+  udp: true
+  type: hysteria2
+  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  sni: onecloudstream.com
+  skip-cert-verify: false
+- name: 🇱🇻 拉脱维亚 (Latvia) 06 - sanchun
   server: 91.240.86.70
   port: 24443
   udp: true
   type: hysteria2
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   sni: hy.quattro-tech.ru
+  skip-cert-verify: false
+- name: 🇱🇻 拉脱维亚 (Latvia) 07 - sanchun
+  server: 104.165.205.142
+  port: 9443
+  udp: true
+  type: hysteria2
+  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  sni: onecloudstream.com
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
@@ -32,6 +72,11 @@ proxy-groups:
   - AUTO
   - 🇱🇻 拉脱维亚 (Latvia) 01 - sanchun
   - 🇱🇻 拉脱维亚 (Latvia) 02 - sanchun
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - sanchun
+  - 🇱🇻 拉脱维亚 (Latvia) 04 - sanchun
+  - 🇱🇻 拉脱维亚 (Latvia) 05 - sanchun
+  - 🇱🇻 拉脱维亚 (Latvia) 06 - sanchun
+  - 🇱🇻 拉脱维亚 (Latvia) 07 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +84,10 @@ proxy-groups:
   proxies:
   - 🇱🇻 拉脱维亚 (Latvia) 01 - sanchun
   - 🇱🇻 拉脱维亚 (Latvia) 02 - sanchun
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - sanchun
+  - 🇱🇻 拉脱维亚 (Latvia) 04 - sanchun
+  - 🇱🇻 拉脱维亚 (Latvia) 05 - sanchun
+  - 🇱🇻 拉脱维亚 (Latvia) 06 - sanchun
+  - 🇱🇻 拉脱维亚 (Latvia) 07 - sanchun
 rules:
 - MATCH,PROXIES

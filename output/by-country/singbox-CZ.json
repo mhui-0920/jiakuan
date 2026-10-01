@@ -6,19 +6,6 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - sanchun",
-      "server": "188.114.98.112",
-      "server_port": 80,
-      "uuid": "0991a0c4-0ee5-4213-af89-7ad589f853f3",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "elenaaaaaaaaaa.cloudns.pro."
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02 - sanchun",
       "server": "194.87.59.20",
       "server_port": 2085,
       "uuid": "a641fd38-0ad7-40bf-9a56-6715c1787be3",
@@ -29,29 +16,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 03 - sanchun",
-      "server": "153.76.185.108",
-      "server_port": 3090,
-      "uuid": "14e227c3-5a83-4b4d-a41a-e5f499c79415",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 04 - sanchun",
-      "server": "194.87.59.5",
-      "server_port": 2085,
-      "uuid": "ea723504-e8df-4f23-b35f-c93961d5128a",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 05 - sanchun",
+      "tag": "🇨🇿 捷克 (Czech) 02 - sanchun",
       "server": "153.76.185.159",
       "server_port": 3090,
       "uuid": "ea723504-e8df-4f23-b35f-c93961d5128a",
@@ -62,10 +27,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 06 - sanchun",
-      "server": "153.76.185.163",
+      "tag": "🇨🇿 捷克 (Czech) 03 - sanchun",
+      "server": "153.76.185.101",
       "server_port": 3090,
-      "uuid": "ea723504-e8df-4f23-b35f-c93961d5128a",
+      "uuid": "74aed07d-280c-4e14-aa20-cbb815214af8",
       "transport": {
         "type": "grpc",
         "service_name": "vless"
@@ -73,7 +38,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 07 - sanchun",
+      "tag": "🇨🇿 捷克 (Czech) 04 - sanchun",
       "server": "153.76.185.162",
       "server_port": 3090,
       "uuid": "ea723504-e8df-4f23-b35f-c93961d5128a",
@@ -84,9 +49,42 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 08 - sanchun",
+      "tag": "🇨🇿 捷克 (Czech) 05 - sanchun",
+      "server": "153.76.185.108",
+      "server_port": 3090,
+      "uuid": "14e227c3-5a83-4b4d-a41a-e5f499c79415",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 06 - sanchun",
+      "server": "194.87.59.5",
+      "server_port": 2085,
+      "uuid": "ea723504-e8df-4f23-b35f-c93961d5128a",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 07 - sanchun",
       "server": "194.87.59.29",
       "server_port": 2085,
+      "uuid": "ea723504-e8df-4f23-b35f-c93961d5128a",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 08 - sanchun",
+      "server": "153.76.185.163",
+      "server_port": 3090,
       "uuid": "ea723504-e8df-4f23-b35f-c93961d5128a",
       "transport": {
         "type": "grpc",
@@ -129,7 +127,7 @@
         "server_name": "cz1.animeteka.info",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,

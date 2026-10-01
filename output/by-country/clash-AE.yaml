@@ -5,6 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - sanchun
+  server: 104.143.223.217
+  port: 2085
+  udp: true
+  type: vless
+  uuid: 74aed07d-280c-4e14-aa20-cbb815214af8
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇦🇪 阿联酋 (UAE) 02 - sanchun
+  server: 104.143.223.226
+  port: 2085
+  udp: true
+  type: vless
+  uuid: 74aed07d-280c-4e14-aa20-cbb815214af8
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇦🇪 阿联酋 (UAE) 03 - sanchun
   server: 104.143.223.231
   port: 2085
   udp: true
@@ -13,7 +31,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless
-- name: 🇦🇪 阿联酋 (UAE) 02 - sanchun
+- name: 🇦🇪 阿联酋 (UAE) 04 - sanchun
   server: 78.40.195.140
   port: 443
   udp: true
@@ -26,37 +44,20 @@ proxies:
     short-id: 98096455d963bdbb
   servername: www.booking.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 03 - sanchun
-  server: 130.49.161.70
+- name: 🇦🇪 阿联酋 (UAE) 05 - sanchun
+  server: 151.241.166.178
   port: 443
   udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 04 - sanchun
-  server: 45.130.125.201
-  port: 80
-  udp: true
   type: vless
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nahan-core.netizo09.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 05 - sanchun
-  server: 85.204.107.177
-  port: 8080
-  udp: true
-  type: hysteria2
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
-  skip-cert-verify: false
+  uuid: 4abdfe42-aec7-4b66-974d-3f891e2e8184
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SoMfQzFhE5QfKWMZA7ZNkYP63P5hiyWEbE9fsPIP4Go
+  servername: pl.gaz-service.shop
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 06 - sanchun
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless

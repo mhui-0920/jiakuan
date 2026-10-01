@@ -4,13 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun
-  server: 178.83.46.216
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun
   server: 118.167.207.194
   port: 24215
   udp: true
@@ -21,34 +15,31 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - sanchun
-  server: ali-hk.qrfly.top
-  port: 10102
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - sanchun
+  server: tcdnu.azad0namah.ir
+  port: 8443
   udp: true
   type: vless
-  uuid: bcfbb19f-5b0e-4862-a77b-904fffd0b513
-  flow: xtls-rprx-vision
+  uuid: 0da0a073-a5b0-4229-bf11-24592f6290b9
   tls: true
-  reality-opts:
-    public-key: kVpVhfT5_4__Sxj4i0S2DOQKKfK549rgy2HWP9QU4iw
-    short-id: db6c60f1
-  servername: tesla.com
-  client-fingerprint: random
+  servername: tcdnu.azad0namah.ir
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tuws/
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - sanchun
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - sanchun
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - sanchun
 rules:
 - MATCH,PROXIES

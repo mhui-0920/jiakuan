@@ -15,7 +15,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -27,6 +27,54 @@
     {
       "type": "hysteria2",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - sanchun",
+      "server": "104.165.205.191",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tls": {
+        "enabled": true,
+        "server_name": "onecloudstream.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - sanchun",
+      "server": "104.165.205.23",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tls": {
+        "enabled": true,
+        "server_name": "onecloudstream.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - sanchun",
+      "server": "31.76.104.152",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tls": {
+        "enabled": true,
+        "server_name": "onecloudstream.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - sanchun",
+      "server": "104.165.205.81",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tls": {
+        "enabled": true,
+        "server_name": "onecloudstream.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - sanchun",
       "server": "91.240.86.70",
       "server_port": 24443,
       "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
@@ -37,12 +85,29 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - sanchun",
+      "server": "104.165.205.142",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tls": {
+        "enabled": true,
+        "server_name": "onecloudstream.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇱🇻 拉脱维亚 (Latvia) 01 - sanchun",
-        "🇱🇻 拉脱维亚 (Latvia) 02 - sanchun"
+        "🇱🇻 拉脱维亚 (Latvia) 02 - sanchun",
+        "🇱🇻 拉脱维亚 (Latvia) 03 - sanchun",
+        "🇱🇻 拉脱维亚 (Latvia) 04 - sanchun",
+        "🇱🇻 拉脱维亚 (Latvia) 05 - sanchun",
+        "🇱🇻 拉脱维亚 (Latvia) 06 - sanchun",
+        "🇱🇻 拉脱维亚 (Latvia) 07 - sanchun"
       ]
     },
     {
@@ -50,7 +115,12 @@
       "tag": "auto",
       "outbounds": [
         "🇱🇻 拉脱维亚 (Latvia) 01 - sanchun",
-        "🇱🇻 拉脱维亚 (Latvia) 02 - sanchun"
+        "🇱🇻 拉脱维亚 (Latvia) 02 - sanchun",
+        "🇱🇻 拉脱维亚 (Latvia) 03 - sanchun",
+        "🇱🇻 拉脱维亚 (Latvia) 04 - sanchun",
+        "🇱🇻 拉脱维亚 (Latvia) 05 - sanchun",
+        "🇱🇻 拉脱维亚 (Latvia) 06 - sanchun",
+        "🇱🇻 拉脱维亚 (Latvia) 07 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

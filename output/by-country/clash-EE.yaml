@@ -24,20 +24,22 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun
-  server: netlivpn5002.whwbbb.workers.dev
-  port: 443
+  server: nl.gruztrack.online
+  port: 2053
   udp: true
   type: vless
-  uuid: a88e61a0-2b38-f6df-c5c7-d20600000000
+  uuid: b1e4bfe2-2b12-11f1-92cb-12ba70109d32
   tls: true
-  servername: netlivpn5002.whwbbb.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: /
+  reality-opts:
+    public-key: 75W-x6PKwwG6fJJbrIkGcsBgMKP7pQnw2HlM8oevDjM
+    short-id: b328618afa4a944e
+  servername: nl.gruztrack.online
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-direct
 proxy-groups:
 - name: PROXIES
   type: select

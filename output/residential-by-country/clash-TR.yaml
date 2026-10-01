@@ -5,11 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun
-  server: 178.83.46.216
-  port: 2053
+  server: tcdnu.azad0namah.ir
+  port: 8443
   udp: true
   type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  uuid: 0da0a073-a5b0-4229-bf11-24592f6290b9
+  tls: true
+  servername: tcdnu.azad0namah.ir
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tuws/
 proxy-groups:
 - name: PROXIES
   type: select
