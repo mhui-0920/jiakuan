@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - sanchun
-  server: 128.199.172.224
-  port: 8080
+  server: 188.253.125.109
+  port: 2083
   udp: true
   type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
+  cipher: 2022-blake3-aes-128-gcm
+  password: MTQ3Y2FlZDZkZTMwODgyMQ==:OTI0OTIxYTktNjlhNi00Nw==
 - name: 🇸🇬 新加坡 (Singapore) 02 - sanchun
   server: 168.107.73.109
   port: 56927
@@ -19,28 +19,42 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: f1gzyT3H7Eu6g+j4WAD5IdouUwyt6vEmyjaYQSi8N+w=
 - name: 🇸🇬 新加坡 (Singapore) 03 - sanchun
-  server: 68.183.227.45
-  port: 8080
+  server: 168.107.77.7
+  port: 56927
   udp: true
   type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
+  cipher: 2022-blake3-chacha20-poly1305
+  password: blx2KcSxsvosK2DSiBqOj/Qotc/YsdMOs0wTF9uSX7I=
 - name: 🇸🇬 新加坡 (Singapore) 04 - sanchun
-  server: 68.183.227.236
+  server: 68.183.227.4
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
 - name: 🇸🇬 新加坡 (Singapore) 05 - sanchun
-  server: 129.150.57.198
-  port: 56927
+  server: 139.180.220.175
+  port: 8388
   udp: true
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 3vkiRCxBVuoIaNr1JDwI2U5J8NdF0xUQG9aCerKc6jM=
+  cipher: aes-256-gcm
+  password: qpSevKaUXYQKvSjp
 - name: 🇸🇬 新加坡 (Singapore) 06 - sanchun
-  server: sg2-8sb.6121999.dpdns.org
+  server: 128.199.172.224
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 07 - sanchun
+  server: 68.183.227.45
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 08 - sanchun
+  server: 146.235.16.130
   port: 33738
   udp: true
   type: tuic
@@ -48,61 +62,18 @@ proxies:
   password: 2d1ad594-80a4-4bfb-87a6-038e39701f51
   sni: sg2-8sb.6121999.dpdns.org
   skip-cert-verify: false
-  congestion-controller: cubic
-  udp-relay-mode: native
+  congestion-controller: bbr
+  udp-relay-mode: quic
   alpn:
   - h3
-- name: 🇸🇬 新加坡 (Singapore) 07 - sanchun
-  server: 68.183.235.122
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 08 - sanchun
-  server: 5.223.41.188
-  port: 80
-  udp: true
-  type: vless
-  uuid: 8afe27ac-aac9-4ff3-933f-7a12682adb70
-  network: ws
-  ws-opts:
-    path: /
 - name: 🇸🇬 新加坡 (Singapore) 09 - sanchun
-  server: 5.223.41.51
-  port: 80
-  udp: true
-  type: vless
-  uuid: 80c38933-9747-443d-9d87-15c80f8663ea
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇸🇬 新加坡 (Singapore) 10 - sanchun
-  server: 5.223.41.119
-  port: 80
-  udp: true
-  type: vless
-  uuid: 31ae842f-a16e-4d94-8d72-776a5b78bc11
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇸🇬 新加坡 (Singapore) 11 - sanchun
-  server: 5.223.41.179
-  port: 80
-  udp: true
-  type: vless
-  uuid: ff642d7a-9a24-4078-a031-f8c656f4554e
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇸🇬 新加坡 (Singapore) 12 - sanchun
-  server: 68.183.227.4
+  server: 68.183.227.236
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 13 - sanchun
+- name: 🇸🇬 新加坡 (Singapore) 10 - sanchun
   server: 5.223.41.47
   port: 80
   udp: true
@@ -111,52 +82,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇸🇬 新加坡 (Singapore) 14 - sanchun
-  server: 5.223.41.125
-  port: 80
-  udp: true
-  type: vless
-  uuid: 3b821031-d7d4-4368-918b-15f2312dba2b
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇸🇬 新加坡 (Singapore) 15 - sanchun
-  server: 5.223.41.164
-  port: 80
-  udp: true
-  type: vless
-  uuid: ef24e9b9-e7b2-4e01-b335-f289612d2d7a
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇸🇬 新加坡 (Singapore) 16 - sanchun
-  server: 5.223.41.93
-  port: 80
-  udp: true
-  type: vless
-  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇸🇬 新加坡 (Singapore) 17 - sanchun
-  server: 5.223.41.76
-  port: 80
-  udp: true
-  type: vless
-  uuid: c567daa6-1538-4db7-9b77-7bd5b2beece2
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇸🇬 新加坡 (Singapore) 18 - sanchun
-  server: 5.223.41.121
-  port: 80
-  udp: true
-  type: vless
-  uuid: 0f7996b1-3ef7-4274-b612-0310270d2a41
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇸🇬 新加坡 (Singapore) 19 - sanchun
+- name: 🇸🇬 新加坡 (Singapore) 11 - sanchun
   server: 5.223.41.5
   port: 80
   udp: true
@@ -165,7 +91,117 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: 🇸🇬 新加坡 (Singapore) 12 - sanchun
+  server: 5.223.41.76
+  port: 80
+  udp: true
+  type: vless
+  uuid: c567daa6-1538-4db7-9b77-7bd5b2beece2
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇸🇬 新加坡 (Singapore) 13 - sanchun
+  server: 5.223.41.51
+  port: 80
+  udp: true
+  type: vless
+  uuid: 80c38933-9747-443d-9d87-15c80f8663ea
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇸🇬 新加坡 (Singapore) 14 - sanchun
+  server: 5.223.41.179
+  port: 80
+  udp: true
+  type: vless
+  uuid: ff642d7a-9a24-4078-a031-f8c656f4554e
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇸🇬 新加坡 (Singapore) 15 - sanchun
+  server: 5.223.41.188
+  port: 80
+  udp: true
+  type: vless
+  uuid: 8afe27ac-aac9-4ff3-933f-7a12682adb70
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇸🇬 新加坡 (Singapore) 16 - sanchun
+  server: 5.223.41.138
+  port: 80
+  udp: true
+  type: vless
+  uuid: ac8e1bf3-775a-44ee-b018-d553cce0201a
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇸🇬 新加坡 (Singapore) 17 - sanchun
+  server: 5.223.41.121
+  port: 80
+  udp: true
+  type: vless
+  uuid: 0f7996b1-3ef7-4274-b612-0310270d2a41
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇸🇬 新加坡 (Singapore) 18 - sanchun
+  server: 5.223.41.164
+  port: 80
+  udp: true
+  type: vless
+  uuid: ef24e9b9-e7b2-4e01-b335-f289612d2d7a
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇸🇬 新加坡 (Singapore) 19 - sanchun
+  server: 5.223.41.125
+  port: 80
+  udp: true
+  type: vless
+  uuid: 3b821031-d7d4-4368-918b-15f2312dba2b
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇸🇬 新加坡 (Singapore) 20 - sanchun
+  server: 136.85.2.50
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
+  tls: true
+  reality-opts:
+    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
+    short-id: eb97ce837da2f6ad
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 21 - sanchun
+  server: 54.169.200.246
+  port: 41688
+  udp: true
+  type: vless
+  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
+    short-id: 7f342137c20387
+  servername: www.intel.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 22 - sanchun
+  server: 216.195.196.86
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 7c973569-71da-4d18-8c80-aa4c8ee2f257
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 5wGgDloyck_L25Y5rkWorpV3IK00pK0Lki7LR0VY0io
+    short-id: 4fba6fd2c74fd18f
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 23 - sanchun
   server: 206.206.78.36
   port: 443
   udp: true
@@ -178,41 +214,24 @@ proxies:
     short-id: 133a3f10a1581047
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 21 - sanchun
-  server: 216.195.196.86
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 7c973569-71da-4d18-8c80-aa4c8ee2f257
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 5wGgDloyck_L25Y5rkWorpV3IK00pK0Lki7LR0VY0io
-    short-id: 4fba6fd2c74fd18f
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 22 - sanchun
-  server: 5.223.41.32
+- name: 🇸🇬 新加坡 (Singapore) 24 - sanchun
+  server: 5.223.41.95
   port: 80
   udp: true
   type: vless
-  uuid: 230c7bf3-f069-470a-a4e8-cd526c39f6b4
+  uuid: f29e9fce-1f37-4a83-9e6c-05a997123dfb
   network: ws
   ws-opts:
     path: /
-- name: 🇸🇬 新加坡 (Singapore) 23 - sanchun
-  server: 217.217.254.126
-  port: 2053
+- name: 🇸🇬 新加坡 (Singapore) 25 - sanchun
+  server: fc911410-tm96o0-tne5x4-1rfon.sg7.hyhuawei.com
+  port: 443
   udp: true
-  type: vless
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  tls: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: 87829de0e2bb82cb
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 24 - sanchun
+  type: hysteria2
+  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
+  sni: fc911410-tm96o0-tne5x4-1rfon.sg7.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 26 - sanchun
   server: 146.235.16.130
   port: 19825
   udp: true
@@ -222,26 +241,41 @@ proxies:
   tls: true
   reality-opts:
     public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
   servername: sg2-8sb.6121999.dpdns.org
   client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 25 - sanchun
-  server: 5.223.41.83
+- name: 🇸🇬 新加坡 (Singapore) 27 - sanchun
+  server: 5.223.41.119
   port: 80
   udp: true
   type: vless
-  uuid: 790b8505-6f06-432a-8c63-f6c5b9343496
+  uuid: 31ae842f-a16e-4d94-8d72-776a5b78bc11
   network: ws
   ws-opts:
     path: /
-- name: 🇸🇬 新加坡 (Singapore) 26 - sanchun
-  server: 28b6922c-tm96o0-0-1imi4.sg7.hyhuawei.com
+- name: 🇸🇬 新加坡 (Singapore) 28 - sanchun
+  server: 68.183.235.122
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 29 - sanchun
+  server: 103.213.4.57
   port: 443
   udp: true
-  type: hysteria2
-  password: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
-  sni: 28b6922c-tm96o0-0-1imi4.sg7.hyhuawei.com
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: ju88t.ce8d.q6g.hh.ov0.kdns.fr
   skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 27 - sanchun
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ju88t.ce8d.q6g.hh.ov0.kdns.fr
+- name: 🇸🇬 新加坡 (Singapore) 30 - sanchun
   server: 140.245.120.16
   port: 443
   udp: true
@@ -256,16 +290,7 @@ proxies:
     path: /
     headers:
       Host: trackydev.site
-- name: 🇸🇬 新加坡 (Singapore) 28 - sanchun
-  server: 5.223.41.218
-  port: 80
-  udp: true
-  type: vless
-  uuid: 02bfdbab-06ce-41ae-ba7b-bd9c4f5f156e
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇸🇬 新加坡 (Singapore) 29 - sanchun
+- name: 🇸🇬 新加坡 (Singapore) 31 - sanchun
   server: 3.0.111.82
   port: 17623
   udp: true
@@ -278,7 +303,32 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 30 - sanchun
+- name: 🇸🇬 新加坡 (Singapore) 32 - sanchun
+  server: 217.217.254.126
+  port: 2053
+  udp: true
+  type: vless
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  tls: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: 87829de0e2bb82cb
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 33 - sanchun
+  server: 173.234.14.105
+  port: 59615
+  udp: true
+  type: vless
+  uuid: e2632874-614e-4261-af62-52aca3358e4e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 7PB-58vYXFLNhK6kY8bJJO3-fPOXTPQJ0UqDlhSOH3M
+    short-id: 6b
+  servername: biosmod.partners.nvidia.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 34 - sanchun
   server: 3.0.111.82
   port: 12972
   udp: true
@@ -291,20 +341,7 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 31 - sanchun
-  server: 173.234.14.105
-  port: 59615
-  udp: true
-  type: vless
-  uuid: e2632874-614e-4261-af62-52aca3358e4e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 7PB-58vYXFLNhK6kY8bJJO3-fPOXTPQJ0UqDlhSOH3M
-    short-id: 6b
-  servername: biosmod.partners.nvidia.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 32 - sanchun
+- name: 🇸🇬 新加坡 (Singapore) 35 - sanchun
   server: 3.0.111.82
   port: 10574
   udp: true
@@ -316,20 +353,15 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 33 - sanchun
-  server: 144.31.129.174
-  port: 443
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 36 - sanchun
+  server: 138.2.73.238
+  port: 50160
   udp: true
-  type: vless
-  uuid: 7b69c549-93f7-0438-88bc-f1a8c3c881e5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GDlgvx8exl9BJ5dD2HSVqE2oUbZyZZOFX5EdnCn5j2M
-    short-id: c019a6ccd9134668
-  servername: s3-fi-1.rucdn777.com
-  client-fingerprint: random
+  type: hysteria2
+  password: f87376e17da040ed04c9665ce8972930
+  sni: 138.2.73.238
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -368,6 +400,9 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 31 - sanchun
   - 🇸🇬 新加坡 (Singapore) 32 - sanchun
   - 🇸🇬 新加坡 (Singapore) 33 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 34 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 35 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 36 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -406,5 +441,8 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 31 - sanchun
   - 🇸🇬 新加坡 (Singapore) 32 - sanchun
   - 🇸🇬 新加坡 (Singapore) 33 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 34 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 35 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 36 - sanchun
 rules:
 - MATCH,PROXIES

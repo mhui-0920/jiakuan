@@ -12,31 +12,8 @@
       "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
     },
     {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02 - sanchun",
-      "server": "83.228.246.83",
-      "server_port": 443,
-      "uuid": "0b21158e-00f5-4a2f-b242-e3e5574f68a0",
-      "tls": {
-        "enabled": true,
-        "server_name": "bunny.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "B-q_vYkpKjiiaHyUfr7NutnusdvsmoWEeyr0QJfTfmw",
-          "short_id": "447abeb4fb111a9c"
-        }
-      },
-      "transport": {
-        "type": "grpc"
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 - sanchun",
+      "tag": "🇨🇭 瑞士 (Switzerland) 02 - sanchun",
       "server": "140.238.213.114",
       "server_port": 50160,
       "password": "84a506ca5aca505696a454d828420b3f",
@@ -47,26 +24,36 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04 - sanchun",
-      "server": "83.228.222.203",
-      "server_port": 443,
-      "uuid": "0b21158e-00f5-4a2f-b242-e3e5574f68a0",
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - sanchun",
+      "server": "82.38.64.239",
+      "server_port": 8443,
+      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
       "tls": {
         "enabled": true,
-        "server_name": "bunny.net",
+        "server_name": "hopp-swizland-new.mysynology.net",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 - sanchun",
+      "server": "179.237.103.152",
+      "server_port": 443,
+      "uuid": "e0bd9dfa-0cf9-47c0-92ac-7dba08ebcff8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "B-q_vYkpKjiiaHyUfr7NutnusdvsmoWEeyr0QJfTfmw",
-          "short_id": "447abeb4fb111a9c"
+          "public_key": "8PZTYkhNhSgagVdaI-iqSCPXJwDhHU23IUwZIu08zH4",
+          "short_id": "9de8ae53dabf1dc2"
         }
-      },
-      "transport": {
-        "type": "grpc"
       }
     },
     {
@@ -91,81 +78,23 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 06 - sanchun",
-      "server": "82.38.64.237",
-      "server_port": 8443,
-      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
+      "server": "208.69.78.217",
+      "server_port": 2053,
+      "uuid": "c0dd6d59-1573-43af-8b70-1470b2632a6d",
       "tls": {
         "enabled": true,
-        "server_name": "hopp-swizland-new.mysynology.net",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 07 - sanchun",
-      "server": "fi.gaz-service.shop",
-      "server_port": 9446,
-      "uuid": "4abdfe42-aec7-4b66-974d-3f891e2e8184",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fi.gaz-service.shop",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "j97RCvxVfMu5XWcXuAc4s8TnBTdl8PQrNFrZDQpAkng",
-          "short_id": "f5781bd8af7dbaf6"
+          "public_key": "A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0",
+          "short_id": "ad86e2d52ff40ebd"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 08 - sanchun",
-      "server": "179.237.103.152",
-      "server_port": 443,
-      "uuid": "e0bd9dfa-0cf9-47c0-92ac-7dba08ebcff8",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8PZTYkhNhSgagVdaI-iqSCPXJwDhHU23IUwZIu08zH4",
-          "short_id": "9de8ae53dabf1dc2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 09 - sanchun",
-      "server": "176.108.241.226",
-      "server_port": 9882,
-      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
-      "tls": {
-        "enabled": true,
-        "server_name": "dl.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-tunnel"
       }
     },
     {
@@ -178,10 +107,7 @@
         "🇨🇭 瑞士 (Switzerland) 03 - sanchun",
         "🇨🇭 瑞士 (Switzerland) 04 - sanchun",
         "🇨🇭 瑞士 (Switzerland) 05 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 06 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 07 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 08 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 09 - sanchun"
+        "🇨🇭 瑞士 (Switzerland) 06 - sanchun"
       ]
     },
     {
@@ -193,10 +119,7 @@
         "🇨🇭 瑞士 (Switzerland) 03 - sanchun",
         "🇨🇭 瑞士 (Switzerland) 04 - sanchun",
         "🇨🇭 瑞士 (Switzerland) 05 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 06 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 07 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 08 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 09 - sanchun"
+        "🇨🇭 瑞士 (Switzerland) 06 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

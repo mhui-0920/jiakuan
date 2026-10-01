@@ -4,8 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "anytls",
       "tag": "🇮🇪 爱尔兰 (Ireland) 01 - sanchun",
+      "server": "185.108.129.126",
+      "server_port": 1443,
+      "password": "b652305a-0c63-4527-8cb3-0ea582076124",
+      "tls": {
+        "enabled": true,
+        "server_name": "dmw.freeguard.org",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇪 爱尔兰 (Ireland) 02 - sanchun",
       "server": "3.9.135.156",
       "server_port": 51847,
       "uuid": "391a01e9-b664-407b-9158-610fab3f5920",
@@ -15,7 +27,7 @@
         "server_name": "www.tesla.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -29,14 +41,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 爱尔兰 (Ireland) 01 - sanchun"
+        "🇮🇪 爱尔兰 (Ireland) 01 - sanchun",
+        "🇮🇪 爱尔兰 (Ireland) 02 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 爱尔兰 (Ireland) 01 - sanchun"
+        "🇮🇪 爱尔兰 (Ireland) 01 - sanchun",
+        "🇮🇪 爱尔兰 (Ireland) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

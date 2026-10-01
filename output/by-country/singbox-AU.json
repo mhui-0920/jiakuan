@@ -4,21 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 01 - sanchun",
-      "server": "103.116.7.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "vms.lifetime35.workers.dev"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - sanchun",
+      "tag": "🇦🇺 澳大利亚 (Australia) 01 - sanchun",
       "server": "137.23.3.238",
       "server_port": 20000,
       "password": "b42d90fa667942aebc734d60",
@@ -30,6 +17,27 @@
       "obfs": {
         "type": "salamander",
         "password": "b42d90fa667942aebc734d60"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - sanchun",
+      "server": "au1.gsafevpnapi.com",
+      "server_port": 20270,
+      "uuid": "d6fc32ed-05de-430b-99ca-3edc9185e79b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE",
+          "short_id": "e6a5a4a9115456de"
+        }
       }
     },
     {

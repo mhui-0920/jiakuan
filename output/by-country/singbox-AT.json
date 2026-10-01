@@ -23,7 +23,7 @@
         "server_name": "at.quattro-tech.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -35,6 +35,23 @@
     {
       "type": "vless",
       "tag": "🇦🇹 奥地利 (Austria) 03 - sanchun",
+      "server": "31.77.227.6",
+      "server_port": 52006,
+      "uuid": "bc659d88-a1e0-076c-a49a-7b51b26a7a7f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "bigdick.gamegrow.ru",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 04 - sanchun",
       "server": "g4.haxat.bestvbest.ir",
       "server_port": 56126,
       "uuid": "ce4b2104-f1fe-4216-ad67-8c21869b9118",
@@ -59,7 +76,8 @@
         "auto",
         "🇦🇹 奥地利 (Austria) 01 - sanchun",
         "🇦🇹 奥地利 (Austria) 02 - sanchun",
-        "🇦🇹 奥地利 (Austria) 03 - sanchun"
+        "🇦🇹 奥地利 (Austria) 03 - sanchun",
+        "🇦🇹 奥地利 (Austria) 04 - sanchun"
       ]
     },
     {
@@ -68,7 +86,8 @@
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01 - sanchun",
         "🇦🇹 奥地利 (Austria) 02 - sanchun",
-        "🇦🇹 奥地利 (Austria) 03 - sanchun"
+        "🇦🇹 奥地利 (Austria) 03 - sanchun",
+        "🇦🇹 奥地利 (Austria) 04 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
