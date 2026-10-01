@@ -6,128 +6,25 @@
     {
       "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 01 - sanchun",
-      "server": "140.174.184.5",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "qItG8SueYQcP"
+      "server": "5.188.181.201",
+      "server_port": 9011,
+      "method": "aes-256-cfb",
+      "password": "M3t2ZEQcMGRWBjRa"
     },
     {
       "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 02 - sanchun",
-      "server": "108.181.121.226",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "WSyL4XTwNsdv"
+      "server": "5.188.181.201",
+      "server_port": 9000,
+      "method": "aes-256-cfb",
+      "password": "a3GFYt36Sm82Vys9"
     },
     {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 03 - sanchun",
-      "server": "212.227.235.66",
-      "server_port": 2053,
-      "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk",
-          "short_id": "29e8dcd2b37aaa7f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 04 - sanchun",
-      "server": "92.118.127.16",
+      "server": "34.175.107.233",
       "server_port": 443,
-      "uuid": "2412bd96-925b-43f2-81d1-0ed4f0793699",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "repo1.maven.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Rz8XjYinCcpE7NLktJzNFL7eVSUxaFGuV2Zz82p7IRg",
-          "short_id": "908563a721d9bdcd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 05 - sanchun",
-      "server": "193.238.154.5",
-      "server_port": 443,
-      "uuid": "e0b9fb0f-1bbd-478b-9580-c2294778338b",
-      "tls": {
-        "enabled": true,
-        "server_name": "assets-es.pleiades.codes",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "cdn.v1.AssetService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 06 - sanchun",
-      "server": "196.245.52.146",
-      "server_port": 25535,
-      "uuid": "c379d8e4-c67d-42ec-a3ed-ca99d1ad0546",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4",
-          "short_id": "7642ce57308852e7"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 07 - sanchun",
-      "server": "196.245.52.146",
-      "server_port": 25185,
-      "uuid": "ab0d6441-912b-4ddd-b769-2199e1d4be7d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mOn332qJ19UmQnNbIb7x8fljpahQLrKYSJOj2Ox9p24",
-          "short_id": "4af6a8bd159ccb50"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 08 - sanchun",
-      "server": "46.28.71.247",
-      "server_port": 443,
-      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
-      "flow": "xtls-rprx-vision",
+      "uuid": "c55c9880-2f9c-4ad6-bfc2-5054516bf613",
       "tls": {
         "enabled": true,
         "server_name": "www.cloudflare.com",
@@ -137,14 +34,14 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
-          "short_id": "0dfc23fe80778c00"
+          "public_key": "lM9EQ1rZH9inQjrZesuqgldsXYN_yfT5-tqhPfbyen4",
+          "short_id": "1c9e101e99bf86bb"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 09 - sanchun",
+      "tag": "🇪🇸 西班牙 (Spain) 04 - sanchun",
       "server": "83.147.18.3",
       "server_port": 443,
       "uuid": "9f61cdf4-810d-4052-bbc7-2da0c8e20104",
@@ -164,6 +61,124 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 05 - sanchun",
+      "server": "140.174.184.5",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "qItG8SueYQcP"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 06 - sanchun",
+      "server": "108.181.121.226",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "WSyL4XTwNsdv"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 07 - sanchun",
+      "server": "45.154.206.173",
+      "server_port": 443,
+      "uuid": "c7fc009a-026b-46e5-a0c5-82e32bcabd69",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "es.monkeyvillage.pro",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
+          "short_id": "60e5a7ae170cc159"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 08 - sanchun",
+      "server": "212.227.235.66",
+      "server_port": 2053,
+      "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk",
+          "short_id": "29e8dcd2b37aaa7f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 09 - sanchun",
+      "server": "196.245.52.146",
+      "server_port": 25535,
+      "uuid": "c379d8e4-c67d-42ec-a3ed-ca99d1ad0546",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4",
+          "short_id": "7642ce57308852e7"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 10 - sanchun",
+      "server": "193.238.154.5",
+      "server_port": 443,
+      "uuid": "e0b9fb0f-1bbd-478b-9580-c2294778338b",
+      "tls": {
+        "enabled": true,
+        "server_name": "assets-es.pleiades.codes",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "cdn.v1.AssetService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 11 - sanchun",
+      "server": "46.28.71.247",
+      "server_port": 443,
+      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
+          "short_id": "0dfc23fe80778c00"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -176,7 +191,9 @@
         "🇪🇸 西班牙 (Spain) 06 - sanchun",
         "🇪🇸 西班牙 (Spain) 07 - sanchun",
         "🇪🇸 西班牙 (Spain) 08 - sanchun",
-        "🇪🇸 西班牙 (Spain) 09 - sanchun"
+        "🇪🇸 西班牙 (Spain) 09 - sanchun",
+        "🇪🇸 西班牙 (Spain) 10 - sanchun",
+        "🇪🇸 西班牙 (Spain) 11 - sanchun"
       ]
     },
     {
@@ -191,7 +208,9 @@
         "🇪🇸 西班牙 (Spain) 06 - sanchun",
         "🇪🇸 西班牙 (Spain) 07 - sanchun",
         "🇪🇸 西班牙 (Spain) 08 - sanchun",
-        "🇪🇸 西班牙 (Spain) 09 - sanchun"
+        "🇪🇸 西班牙 (Spain) 09 - sanchun",
+        "🇪🇸 西班牙 (Spain) 10 - sanchun",
+        "🇪🇸 西班牙 (Spain) 11 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

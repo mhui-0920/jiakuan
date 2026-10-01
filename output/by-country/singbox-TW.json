@@ -6,6 +6,18 @@
     {
       "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - sanchun",
+      "server": "85.237.207.49",
+      "server_port": 50160,
+      "password": "a56619e2bed91121eabb97d20be207c3",
+      "tls": {
+        "enabled": true,
+        "server_name": "85-237-207-49.liao.kdns.fr",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - sanchun",
       "server": "vpn-tw-002.fastervpn.world",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -20,14 +32,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 - sanchun"
+        "🇹🇼 中国台湾 (Taiwan) 01 - sanchun",
+        "🇹🇼 中国台湾 (Taiwan) 02 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 - sanchun"
+        "🇹🇼 中国台湾 (Taiwan) 01 - sanchun",
+        "🇹🇼 中国台湾 (Taiwan) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

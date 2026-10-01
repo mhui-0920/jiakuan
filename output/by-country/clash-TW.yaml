@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - sanchun
+  server: 85.237.207.49
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: a56619e2bed91121eabb97d20be207c3
+  sni: 85-237-207-49.liao.kdns.fr
+  skip-cert-verify: false
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - sanchun
   server: vpn-tw-002.fastervpn.world
   port: 443
   udp: true
@@ -18,11 +26,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - sanchun
+  - 🇹🇼 中国台湾 (Taiwan) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - sanchun
+  - 🇹🇼 中国台湾 (Taiwan) 02 - sanchun
 rules:
 - MATCH,PROXIES

@@ -5,15 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - sanchun
-  server: 130.49.161.70
-  port: 443
+  server: 104.143.223.231
+  port: 2085
   udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+  type: vless
+  uuid: a641fd38-0ad7-40bf-9a56-6715c1787be3
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 - name: 🇦🇪 阿联酋 (UAE) 02 - sanchun
   server: 78.40.195.140
   port: 443
@@ -28,15 +27,36 @@ proxies:
   servername: www.booking.com
   client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 03 - sanchun
-  server: 85.204.107.173
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 04 - sanchun
+  server: 45.130.125.201
+  port: 80
+  udp: true
+  type: vless
+  uuid: dc8a9493-c54a-459e-d060-81a700000001
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nahan-core.netizo09.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 05 - sanchun
+  server: 85.204.107.177
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: false
-- name: 🇦🇪 阿联酋 (UAE) 04 - sanchun
-  server: 84.235.244.108
+- name: 🇦🇪 阿联酋 (UAE) 06 - sanchun
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -46,7 +66,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - sanchun
+- name: 🇦🇪 阿联酋 (UAE) 07 - sanchun
   server: 146.70.102.82
   port: 443
   udp: true
@@ -69,6 +89,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - sanchun
   - 🇦🇪 阿联酋 (UAE) 04 - sanchun
   - 🇦🇪 阿联酋 (UAE) 05 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 06 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 07 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,5 +101,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - sanchun
   - 🇦🇪 阿联酋 (UAE) 04 - sanchun
   - 🇦🇪 阿联酋 (UAE) 05 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 06 - sanchun
+  - 🇦🇪 阿联酋 (UAE) 07 - sanchun
 rules:
 - MATCH,PROXIES

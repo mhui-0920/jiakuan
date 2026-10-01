@@ -12,23 +12,15 @@
       "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 02 - sanchun",
-      "server": "208.69.78.217",
-      "server_port": 2053,
-      "uuid": "c0dd6d59-1573-43af-8b70-1470b2632a6d",
+      "server": "82.38.64.235",
+      "server_port": 8443,
+      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0",
-          "short_id": "ad86e2d52ff40ebd"
-        }
+        "server_name": "hopp-swizland-new.mysynology.net",
+        "insecure": false
       }
     },
     {
@@ -53,48 +45,129 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 04 - sanchun",
-      "server": "140.238.213.114",
-      "server_port": 50160,
-      "password": "84a506ca5aca505696a454d828420b3f",
+      "server": "179.237.103.152",
+      "server_port": 443,
+      "uuid": "e0bd9dfa-0cf9-47c0-92ac-7dba08ebcff8",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "140.238.213.114",
-        "insecure": true
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8PZTYkhNhSgagVdaI-iqSCPXJwDhHU23IUwZIu08zH4",
+          "short_id": "9de8ae53dabf1dc2"
+        }
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 05 - sanchun",
-      "server": "82.38.64.239",
-      "server_port": 8443,
-      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
+      "server": "areal5.greewebservices.ir",
+      "server_port": 5455,
+      "uuid": "da803bc9-ec45-4c72-b81f-15ad8dd02eaa",
       "tls": {
         "enabled": true,
-        "server_name": "hopp-swizland-new.mysynology.net",
-        "insecure": false
+        "server_name": "amp-api-edge.apps.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8",
+          "short_id": "e3085d4fc679ba12"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 06 - sanchun",
-      "server": "ch3.aimodelhub.top",
-      "server_port": 443,
-      "uuid": "13ef8e97-815a-4469-8688-0154d85d26bf",
-      "flow": "xtls-rprx-vision",
+      "server": "208.69.78.217",
+      "server_port": 2053,
+      "uuid": "c0dd6d59-1573-43af-8b70-1470b2632a6d",
       "tls": {
         "enabled": true,
-        "server_name": "ch3.aimodelhub.top",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "XefKBMe64tsL6evDzPvn85YfLqePXZtwQxL7xpqA5RY",
-          "short_id": "79fa57c512a3"
+          "public_key": "A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0",
+          "short_id": "ad86e2d52ff40ebd"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 07 - sanchun",
+      "server": "p2real5.greewebservices.ir",
+      "server_port": 1350,
+      "uuid": "da803bc9-ec45-4c72-b81f-15ad8dd02eaa",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.googleapis.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8",
+          "short_id": "9b60d3"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 08 - sanchun",
+      "server": "193.233.18.57",
+      "server_port": 9444,
+      "uuid": "4abdfe42-aec7-4b66-974d-3f891e2e8184",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi.gaz-service.shop",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "j97RCvxVfMu5XWcXuAc4s8TnBTdl8PQrNFrZDQpAkng",
+          "short_id": "f5781bd8af7dbaf6"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 09 - sanchun",
+      "server": "45.132.176.161",
+      "server_port": 9882,
+      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+      "tls": {
+        "enabled": true,
+        "server_name": "dl.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU",
+          "short_id": "aa"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-tunnel"
       }
     },
     {
@@ -107,7 +180,10 @@
         "🇨🇭 瑞士 (Switzerland) 03 - sanchun",
         "🇨🇭 瑞士 (Switzerland) 04 - sanchun",
         "🇨🇭 瑞士 (Switzerland) 05 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 06 - sanchun"
+        "🇨🇭 瑞士 (Switzerland) 06 - sanchun",
+        "🇨🇭 瑞士 (Switzerland) 07 - sanchun",
+        "🇨🇭 瑞士 (Switzerland) 08 - sanchun",
+        "🇨🇭 瑞士 (Switzerland) 09 - sanchun"
       ]
     },
     {
@@ -119,7 +195,10 @@
         "🇨🇭 瑞士 (Switzerland) 03 - sanchun",
         "🇨🇭 瑞士 (Switzerland) 04 - sanchun",
         "🇨🇭 瑞士 (Switzerland) 05 - sanchun",
-        "🇨🇭 瑞士 (Switzerland) 06 - sanchun"
+        "🇨🇭 瑞士 (Switzerland) 06 - sanchun",
+        "🇨🇭 瑞士 (Switzerland) 07 - sanchun",
+        "🇨🇭 瑞士 (Switzerland) 08 - sanchun",
+        "🇨🇭 瑞士 (Switzerland) 09 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

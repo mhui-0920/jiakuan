@@ -12,18 +12,41 @@
       "password": "ca438054771821250089399a2f33275e"
     },
     {
+      "type": "vless",
+      "tag": "🇵🇹 葡萄牙 (Portugal) 02 - sanchun",
+      "server": "185.231.233.129",
+      "server_port": 443,
+      "uuid": "c7fc009a-026b-46e5-a0c5-82e32bcabd69",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pt.monkeyvillage.pro",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
+          "short_id": "1a72f72b8e04c3b7"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇹 葡萄牙 (Portugal) 01 - sanchun"
+        "🇵🇹 葡萄牙 (Portugal) 01 - sanchun",
+        "🇵🇹 葡萄牙 (Portugal) 02 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇹 葡萄牙 (Portugal) 01 - sanchun"
+        "🇵🇹 葡萄牙 (Portugal) 01 - sanchun",
+        "🇵🇹 葡萄牙 (Portugal) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
