@@ -4,8 +4,52 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - sanchun",
+      "server": "46.17.40.25",
+      "server_port": 20998,
+      "method": "aes-256-gcm",
+      "password": "6b39ae3234dfd68b"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - sanchun",
+      "server": "202.146.222.89",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "202.146.222.89",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - sanchun",
+      "server": "202.146.222.174",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "202.146.222.174",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - sanchun",
+      "server": "202.146.222.29",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "202.146.222.29",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - sanchun",
       "server": "195.58.144.56",
       "server_port": 11907,
       "uuid": "07cb07b9-0c4d-46c1-a15a-b147511b6b07",
@@ -13,10 +57,6 @@
         "enabled": true,
         "server_name": "195.58.144.56",
         "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -24,8 +64,104 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - sanchun",
+      "server": "152.32.254.68",
+      "server_port": 5010,
+      "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
+      "tls": {
+        "enabled": true,
+        "server_name": "152.32.254.68",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - sanchun",
+      "server": "mz.hkychina.com",
+      "server_port": 8443,
+      "password": "HysTeria2026!Proxy",
+      "tls": {
+        "enabled": true,
+        "server_name": "mz.hkychina.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - sanchun",
+      "server": "hk.152568.xyz",
+      "server_port": 443,
+      "uuid": "0250424c-ae75-4b6b-890f-3fe26fae36c3",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk.152568.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/cdn/packages/runtime-core.tar.gz",
+        "headers": {
+          "Host": "hk.152568.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - sanchun",
+      "server": "175.29.23.114",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "ju88t.ce8d.q6g.hh.ov0.kdns.fr",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "ju88t.ce8d.q6g.hh.ov0.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - sanchun",
+      "server": "hk.152568.xyz",
+      "server_port": 8443,
+      "uuid": "0250424c-ae75-4b6b-890f-3fe26fae36c3",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk.152568.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/cdn/packages/runtime-core.tar.gz",
+        "headers": {
+          "Host": "hk.152568.xyz"
+        }
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - sanchun",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 11 - sanchun",
       "server": "yg1.ygkkk.dpdns.org",
       "server_port": 443,
       "uuid": "b2ba4a73-3123-479e-aa96-5973a9ecd0c0",
@@ -44,12 +180,34 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 12 - sanchun",
+      "server": "meowkong.nethcloud.top",
+      "server_port": 443,
+      "password": "4cbefb4d-328c-411d-bf76-780df1082df8",
+      "tls": {
+        "enabled": true,
+        "server_name": "meowkong.nethcloud.top",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇭🇰 中国香港 (Hong Kong) 01 - sanchun",
-        "🇭🇰 中国香港 (Hong Kong) 02 - sanchun"
+        "🇭🇰 中国香港 (Hong Kong) 02 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 03 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 04 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 05 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 06 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 07 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 08 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 09 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 10 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 11 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 12 - sanchun"
       ]
     },
     {
@@ -57,7 +215,17 @@
       "tag": "auto",
       "outbounds": [
         "🇭🇰 中国香港 (Hong Kong) 01 - sanchun",
-        "🇭🇰 中国香港 (Hong Kong) 02 - sanchun"
+        "🇭🇰 中国香港 (Hong Kong) 02 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 03 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 04 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 05 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 06 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 07 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 08 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 09 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 10 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 11 - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 12 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
