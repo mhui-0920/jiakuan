@@ -6,7 +6,7 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 01 - sanchun",
-      "server": "162.249.127.135",
+      "server": "162.249.127.142",
       "server_port": 8443,
       "password": "9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z",
       "tls": {
@@ -28,32 +28,8 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 03 - sanchun",
-      "server": "bogging-eyeteeth-fly.freesocks.work",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QFWzCw2uX9B9i6qAYeFBIE"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - sanchun",
-      "server": "hy2-new.aspidnet.xyz",
-      "server_port": 443,
-      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2-new.aspidnet.xyz",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "c1b4086fea89914496c7e10967a419216566"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - sanchun",
       "server": "162.249.125.133",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
@@ -69,7 +45,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - sanchun",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - sanchun",
       "server": "46.28.67.55",
       "server_port": 443,
       "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
@@ -79,70 +55,12 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
           "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
           "short_id": "d06d78e974491b6e"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 07 - sanchun",
-      "server": "38.180.35.145",
-      "server_port": 443,
-      "password": "600421cf-11d7-429f-a65b-c30397f1bc03",
-      "tls": {
-        "enabled": true,
-        "server_name": "bu2.freeguard.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 08 - sanchun",
-      "server": "146.70.124.85",
-      "server_port": 443,
-      "uuid": "40abbe13-f02e-4da2-9b19-966c2c3eb4ee",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.datadoghq.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE",
-          "short_id": "fe24f8a0a560056e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 09 - sanchun",
-      "server": "193.163.203.253",
-      "server_port": 443,
-      "uuid": "441afe11-a180-4516-bb80-80a8a6b38705",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk",
-          "short_id": "5ee019e02e6ed99a"
         }
       }
     },
@@ -154,12 +72,7 @@
         "🇷🇴 罗马尼亚 (Romania) 01 - sanchun",
         "🇷🇴 罗马尼亚 (Romania) 02 - sanchun",
         "🇷🇴 罗马尼亚 (Romania) 03 - sanchun",
-        "🇷🇴 罗马尼亚 (Romania) 04 - sanchun",
-        "🇷🇴 罗马尼亚 (Romania) 05 - sanchun",
-        "🇷🇴 罗马尼亚 (Romania) 06 - sanchun",
-        "🇷🇴 罗马尼亚 (Romania) 07 - sanchun",
-        "🇷🇴 罗马尼亚 (Romania) 08 - sanchun",
-        "🇷🇴 罗马尼亚 (Romania) 09 - sanchun"
+        "🇷🇴 罗马尼亚 (Romania) 04 - sanchun"
       ]
     },
     {
@@ -169,12 +82,7 @@
         "🇷🇴 罗马尼亚 (Romania) 01 - sanchun",
         "🇷🇴 罗马尼亚 (Romania) 02 - sanchun",
         "🇷🇴 罗马尼亚 (Romania) 03 - sanchun",
-        "🇷🇴 罗马尼亚 (Romania) 04 - sanchun",
-        "🇷🇴 罗马尼亚 (Romania) 05 - sanchun",
-        "🇷🇴 罗马尼亚 (Romania) 06 - sanchun",
-        "🇷🇴 罗马尼亚 (Romania) 07 - sanchun",
-        "🇷🇴 罗马尼亚 (Romania) 08 - sanchun",
-        "🇷🇴 罗马尼亚 (Romania) 09 - sanchun"
+        "🇷🇴 罗马尼亚 (Romania) 04 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

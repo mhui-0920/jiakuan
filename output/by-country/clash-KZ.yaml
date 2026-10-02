@@ -5,57 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - sanchun
-  server: 185.218.194.69
-  port: 443
-  udp: true
-  type: vless
-  uuid: f5a3bf49-07ca-0021-a96b-9606781e3600
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
-    short-id: 6e3f0a5b
-  servername: www.amd.com
-  client-fingerprint: firefox
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - sanchun
-  server: 185.218.194.73
-  port: 443
-  udp: true
-  type: vless
-  uuid: b97e287f-a24e-0021-a103-7e7ecef83139
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
-    short-id: e1f8a3b6
-  servername: www.amd.com
-  client-fingerprint: qq
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - sanchun
-  server: 185.218.194.71
-  port: 443
-  udp: true
-  type: vless
-  uuid: 31216f81-3139-0021-bac4-646680314264
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
-    short-id: e1f8a3b6
-  servername: www.amd.com
-  client-fingerprint: firefox
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - sanchun
-  server: 178.236.16.98
-  port: 35728
-  udp: true
-  type: vless
-  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
-  tls: true
-  reality-opts:
-    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
-    short-id: 69a2
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - sanchun
   server: 109.248.170.119
   port: 13447
   udp: true
@@ -67,7 +16,7 @@ proxies:
     short-id: '83'
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - sanchun
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - sanchun
   server: 83.222.23.81
   port: 38065
   udp: true
@@ -86,10 +35,6 @@ proxy-groups:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - sanchun
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - sanchun
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - sanchun
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - sanchun
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - sanchun
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -97,9 +42,5 @@ proxy-groups:
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - sanchun
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - sanchun
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - sanchun
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - sanchun
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - sanchun
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - sanchun
 rules:
 - MATCH,PROXIES

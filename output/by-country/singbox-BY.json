@@ -5,22 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 01 - sanchun",
-      "server": "3.9.135.156",
-      "server_port": 51847,
-      "uuid": "391a01e9-b664-407b-9158-610fab3f5920",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇧🇾 白俄罗斯 (Belarus) 01 - sanchun",
+      "server": "89.125.96.76",
+      "server_port": 2053,
+      "uuid": "6c713691-3ca2-0008-ad25-113d1bed6b03",
       "tls": {
         "enabled": true,
-        "server_name": "www.tesla.com",
+        "server_name": "wss.zazazuza.ru",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc",
-          "short_id": "0eec442e7b34d2f2"
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vpn-wss/fluxor/59011/",
+        "headers": {
+          "Host": "wss.zazazuza.ru"
         }
       }
     },
@@ -29,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 爱尔兰 (Ireland) 01 - sanchun"
+        "🇧🇾 白俄罗斯 (Belarus) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 爱尔兰 (Ireland) 01 - sanchun"
+        "🇧🇾 白俄罗斯 (Belarus) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

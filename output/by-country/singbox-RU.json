@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - sanchun",
+      "server": "94.249.187.46",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "IXa3ylzS_jBOAsQy071tIQ"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - sanchun",
       "server": "45.131.212.231",
       "server_port": 443,
       "uuid": "19513b1b-d29a-4f3e-ba9a-888261e4e048",
@@ -25,8 +33,49 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - sanchun",
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "IcovoXEMyjfGjN9RenzKs0/iPaZ3vtk9fkxJ0s/R5vw="
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - sanchun",
+      "server": "srv-17e124.21freedom.net",
+      "server_port": 11592,
+      "password": "41edb44c8e",
+      "tls": {
+        "enabled": true,
+        "server_name": "srv-17e124.21freedom.net",
+        "insecure": false
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - sanchun",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - sanchun",
+      "server": "139.28.168.201",
+      "server_port": 443,
+      "uuid": "a368752a-32fc-42f3-980a-6b049218b23f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "china.letsconnectpoint.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI",
+          "short_id": "3b74d85e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - sanchun",
       "server": "194.113.235.66",
       "server_port": 443,
       "uuid": "1c5ed2e1-56da-41ab-9a78-159d9892ec17",
@@ -46,54 +95,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - sanchun",
-      "server": "195.133.23.200",
-      "server_port": 20998,
-      "method": "aes-256-gcm",
-      "password": "81a20429165df87e"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - sanchun",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "IcovoXEMyjfGjN9RenzKs0/iPaZ3vtk9fkxJ0s/R5vw="
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - sanchun",
-      "server": "45.93.201.119",
-      "server_port": 443,
-      "uuid": "10394279-283c-4ab8-8529-f1e0a4c61bc8",
-      "tls": {
-        "enabled": true,
-        "server_name": "vir2albridge.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "short_id": "6f3c1b8e5d2a4f7c"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "moktana.net.v1.StreamService"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - sanchun",
-      "server": "46.17.41.166",
-      "server_port": 20998,
-      "method": "aes-256-gcm",
-      "password": "895b4b796a357570"
-    },
-    {
       "type": "hysteria2",
       "tag": "🇷🇺 俄罗斯 (Russia) 07 - sanchun",
       "server": "91.240.86.70",
@@ -101,101 +102,14 @@
       "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
       "tls": {
         "enabled": true,
-        "server_name": "hy.quattro-tech.ru",
+        "server_name": "itsallproxy.quattro-tech.ru",
         "insecure": false
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 08 - sanchun",
-      "server": "srv-17e124.21freedom.net",
-      "server_port": 11592,
-      "password": "41edb44c8e",
-      "tls": {
-        "enabled": true,
-        "server_name": "srv-17e124.21freedom.net",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 09 - sanchun",
-      "server": "45.151.182.152",
-      "server_port": 25490,
-      "uuid": "8b1698fb-0de5-4739-84b2-53c49b81e695",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GFZK0Y1egpL7c8v0XmsL6irXwaq8ieoJRmL2l--MMkk",
-          "short_id": "5e955541ba3f52f6"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 10 - sanchun",
-      "server": "139.28.168.201",
-      "server_port": 443,
-      "uuid": "a368752a-32fc-42f3-980a-6b049218b23f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "china.letsconnectpoint.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI",
-          "short_id": "3b74d85e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 11 - sanchun",
-      "server": "fbsv6.guardora.pro",
-      "server_port": 443,
-      "uuid": "bc5ec86c-3e65-4272-994c-59a924c72a68",
-      "tls": {
-        "enabled": true,
-        "server_name": "fbsv6.guardora.pro",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "fbsv6.guardora.pro"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 12 - sanchun",
-      "server": "94.249.187.46",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "IXa3ylzS_jBOAsQy071tIQ"
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 13 - sanchun",
-      "server": "x4.megabitvpn.org",
+      "server": "155.212.141.4",
       "server_port": 443,
       "uuid": "3ec45835-1201-4f94-b1d6-2e1f909ec718",
       "tls": {
@@ -203,7 +117,7 @@
         "server_name": "x4.megabitvpn.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -214,6 +128,27 @@
       "transport": {
         "type": "grpc",
         "service_name": "MSKUSAGRPC"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 09 - sanchun",
+      "server": "109.120.181.153",
+      "server_port": 443,
+      "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "eh.vk.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+          "short_id": "db04ce8bdb8900f1"
+        }
       }
     },
     {
@@ -229,11 +164,7 @@
         "🇷🇺 俄罗斯 (Russia) 06 - sanchun",
         "🇷🇺 俄罗斯 (Russia) 07 - sanchun",
         "🇷🇺 俄罗斯 (Russia) 08 - sanchun",
-        "🇷🇺 俄罗斯 (Russia) 09 - sanchun",
-        "🇷🇺 俄罗斯 (Russia) 10 - sanchun",
-        "🇷🇺 俄罗斯 (Russia) 11 - sanchun",
-        "🇷🇺 俄罗斯 (Russia) 12 - sanchun",
-        "🇷🇺 俄罗斯 (Russia) 13 - sanchun"
+        "🇷🇺 俄罗斯 (Russia) 09 - sanchun"
       ]
     },
     {
@@ -248,11 +179,7 @@
         "🇷🇺 俄罗斯 (Russia) 06 - sanchun",
         "🇷🇺 俄罗斯 (Russia) 07 - sanchun",
         "🇷🇺 俄罗斯 (Russia) 08 - sanchun",
-        "🇷🇺 俄罗斯 (Russia) 09 - sanchun",
-        "🇷🇺 俄罗斯 (Russia) 10 - sanchun",
-        "🇷🇺 俄罗斯 (Russia) 11 - sanchun",
-        "🇷🇺 俄罗斯 (Russia) 12 - sanchun",
-        "🇷🇺 俄罗斯 (Russia) 13 - sanchun"
+        "🇷🇺 俄罗斯 (Russia) 09 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -14,7 +14,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -92,9 +92,9 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 05 - sanchun",
-      "server": "5.253.28.224",
+      "server": "5.253.42.164",
       "server_port": 40443,
-      "uuid": "af5eac96-e478-488a-bc8c-45269d7e8847",
+      "uuid": "e99ba96d-dec8-42eb-be53-19e71eef7cab",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -113,7 +113,7 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 06 - sanchun",
-      "server": "hydra.yokkastars.com",
+      "server": "5.253.28.240",
       "server_port": 40443,
       "uuid": "405b964e-a2d2-454f-aaaa-711cc218897c",
       "flow": "xtls-rprx-vision",
@@ -122,7 +122,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,

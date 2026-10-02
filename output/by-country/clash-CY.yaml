@@ -15,7 +15,7 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - sanchun
   server: cdn.bulkavpn.top
   port: 443
@@ -58,11 +58,11 @@ proxies:
   servername: india.letsconnectpoint.com
   client-fingerprint: firefox
 - name: 🇨🇾 塞浦路斯 (Cyprus) 05 - sanchun
-  server: 5.253.28.224
+  server: 5.253.42.164
   port: 40443
   udp: true
   type: vless
-  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
+  uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -71,7 +71,7 @@ proxies:
   servername: deepl.com
   client-fingerprint: firefox
 - name: 🇨🇾 塞浦路斯 (Cyprus) 06 - sanchun
-  server: hydra.yokkastars.com
+  server: 5.253.28.240
   port: 40443
   udp: true
   type: vless
@@ -82,7 +82,7 @@ proxies:
     public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
     short-id: 88b6
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

@@ -6,36 +6,20 @@
     {
       "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun",
-      "server": "ali-hk.qrfly.top",
-      "server_port": 10102,
-      "uuid": "bcfbb19f-5b0e-4862-a77b-904fffd0b513",
-      "flow": "xtls-rprx-vision",
+      "server": "hinet1.2yly.com",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
         "enabled": true,
-        "server_name": "tesla.com",
+        "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "kVpVhfT5_4__Sxj4i0S2DOQKKfK549rgy2HWP9QU4iw",
-          "short_id": "db6c60f1"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun",
-      "server": "hi.northcluster.info",
-      "server_port": 52300,
-      "uuid": "6e571484-4166-4699-8f58-b34a1823691f",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/video",
-        "headers": {
-          "Host": "hi.northcluster.info"
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
         }
       }
     },
@@ -44,16 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
