@@ -16,6 +16,19 @@ proxies:
     public-key: PmdZ2ETkHc0zjYcs22xT_wyZk5fEpX7mg7RP396HBBc
     short-id: 232b1b09e45325a4
   servername: cz1.animeteka.info
+  client-fingerprint: random
+- name: 🇨🇿 捷克 (Czech) 02 - sanchun
+  server: 45.151.180.165
+  port: 43000
+  udp: true
+  type: vless
+  uuid: a80212c8-a909-4837-beb2-7960b59ee5ca
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: lGf40xP_E5TZz9KkrQoeUKCfRq8WBatc7OYnRgBEuXI
+    short-id: e4a3b0e4
+  servername: 45.151.180.165
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -23,11 +36,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - sanchun
+  - 🇨🇿 捷克 (Czech) 02 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - sanchun
+  - 🇨🇿 捷克 (Czech) 02 - sanchun
 rules:
 - MATCH,PROXIES

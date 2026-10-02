@@ -5,6 +5,40 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - sanchun
+  server: 212.87.190.36
+  port: 443
+  udp: true
+  type: vless
+  uuid: a15d1b88-e3f4-4f4d-9c04-462a2965a60a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI
+    short-id: 16e0f049
+  servername: ee174.mech-pro.online
+  client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - sanchun
+  server: 94.183.170.135
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  tls: true
+  servername: estproxy4.lockdwn.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun
+  server: 94.183.170.135
+  port: 443
+  udp: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: estproxy4.lockdwn.com
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - sanchun
   server: 93.89.220.37
   port: 443
   udp: true
@@ -17,25 +51,6 @@ proxies:
     short-id: e88cb983f3c97528
   servername: ibm.com
   client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - sanchun
-  server: 94.183.170.135
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  tls: true
-  servername: estproxy4.lockdwn.com
-  skip-cert-verify: true
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun
-  server: 94.183.170.135
-  port: 443
-  udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,6 +59,7 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,5 +68,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - sanchun
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - sanchun
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - sanchun
 rules:
 - MATCH,PROXIES

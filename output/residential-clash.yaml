@@ -4,7 +4,18 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun
+- name: 🇺🇸 美国 (United States) 01 (移动家宽) - sanchun
+  server: 188.114.97.6
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - sanchun
   server: 218.250.216.236
   port: 443
   udp: true
@@ -15,8 +26,27 @@ proxies:
     public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
   servername: download.windowsupdate.com
   client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun
-  server: hinet1.2yly.com
+- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - sanchun
+  server: 178.83.46.216
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇳🇱 荷兰 (Netherlands) 04 (移动家宽) - sanchun
+  server: aken.nightfall.best
+  port: 443
+  udp: true
+  type: vless
+  uuid: af2bf319-ba88-4fec-8317-2b6a8cee96d1
+  tls: true
+  servername: aken.nightfall.best
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: rdamrwhuacfl
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - sanchun
+  server: 118.167.235.241
   port: 24215
   udp: true
   type: vless
@@ -25,20 +55,26 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - sanchun
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 04 (移动家宽) - sanchun
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - sanchun
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 04 (移动家宽) - sanchun
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - sanchun
 rules:
 - MATCH,PROXIES
