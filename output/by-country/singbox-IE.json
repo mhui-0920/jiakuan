@@ -4,53 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇮🇪 爱尔兰 (Ireland) 01 - sanchun",
-      "server": "3.9.135.156",
-      "server_port": 51847,
-      "uuid": "391a01e9-b664-407b-9158-610fab3f5920",
-      "flow": "xtls-rprx-vision",
+      "server": "loved-shark.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "www.tesla.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc",
-          "short_id": "0eec442e7b34d2f2"
-        }
+        "server_name": "loved-shark.rooster465.autos",
+        "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇮🇪 爱尔兰 (Ireland) 02 - sanchun",
-      "server": "86.54.83.75",
-      "server_port": 443,
-      "uuid": "454431fc-71e2-42b1-b375-5b55dd06666a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.asus.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "gojmfVDE3y9OZmqSZqkJBTNGPyD5-sjkDYmcD8tsxCQ",
-          "short_id": "cfa818cb27f59905"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "shop.api.v1.CatalogService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 03 - sanchun",
       "server": "198.55.102.59",
       "server_port": 4443,
       "uuid": "7f86f371-5a85-48be-babc-7af1ae7ffb75",
@@ -60,7 +27,7 @@
         "server_name": "vk.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -75,8 +42,7 @@
       "outbounds": [
         "auto",
         "🇮🇪 爱尔兰 (Ireland) 01 - sanchun",
-        "🇮🇪 爱尔兰 (Ireland) 02 - sanchun",
-        "🇮🇪 爱尔兰 (Ireland) 03 - sanchun"
+        "🇮🇪 爱尔兰 (Ireland) 02 - sanchun"
       ]
     },
     {
@@ -84,8 +50,7 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇪 爱尔兰 (Ireland) 01 - sanchun",
-        "🇮🇪 爱尔兰 (Ireland) 02 - sanchun",
-        "🇮🇪 爱尔兰 (Ireland) 03 - sanchun"
+        "🇮🇪 爱尔兰 (Ireland) 02 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,14 +5,14 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun",
-      "server": "e4e38271-tly2o0-tqbai3-1hpo0.nw4.hyhuawei.com",
-      "server_port": 443,
-      "password": "c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9",
+      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - sanchun",
+      "server": "us3.xiaoliyu.cyou",
+      "server_port": 18333,
+      "password": "19f72087-4591-4d72-930b-2697078ec2be",
       "tls": {
         "enabled": true,
-        "server_name": "e4e38271-tly2o0-tqbai3-1hpo0.nw4.hyhuawei.com",
-        "insecure": false
+        "server_name": "us3.xiaoliyu.cyou",
+        "insecure": true
       }
     },
     {
@@ -20,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,40 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun",
-      "server": "e4e38271-tly2o0-tqbai3-1hpo0.nw4.hyhuawei.com",
-      "server_port": 443,
-      "password": "c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9",
-      "tls": {
-        "enabled": true,
-        "server_name": "e4e38271-tly2o0-tqbai3-1hpo0.nw4.hyhuawei.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun",
-      "server": "hinet1.2yly.com",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - sanchun",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun",
       "server": "178.83.46.216",
       "server_port": 2053,
       "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
@@ -47,18 +15,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun",
-        "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - sanchun"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun",
-        "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - sanchun"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

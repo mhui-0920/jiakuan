@@ -16,181 +16,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - sanchun",
-      "server": "77.42.28.120",
-      "server_port": 1280,
-      "uuid": "c0e8fb58-a60f-4c15-9444-4e7c109797a8",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - sanchun",
-      "server": "65.108.3.59",
-      "server_port": 443,
-      "uuid": "8df2e661-6f46-471b-9133-7fc13a0daa35",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "web.eitaa.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no",
-          "short_id": "90ec9bba2019"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - sanchun",
-      "server": "95.216.27.15",
-      "server_port": 2053,
-      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-          "short_id": "d368b94e275ab080"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - sanchun",
-      "server": "2.27.207.30",
-      "server_port": 443,
-      "uuid": "a5dd2dd9-0995-449e-be67-4a409890dc42",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "jdbdb.huinaduok.fans",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "nG28Y1q-Ul2oBH-FegAkzGtvY6IRCIwras1k8CLwdGo",
-          "short_id": "da4d87fa"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - sanchun",
-      "server": "37.27.45.143",
-      "server_port": 8443,
-      "uuid": "6414b234-957e-4777-b39f-9a30080ace9b",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.aparat.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "uYtexW4wx3Ql_q73x3PM2Vbc3xyKxBgEh5FUL0CmogM",
-          "short_id": "45d28a6346d04a99"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 07 - sanchun",
-      "server": "13.143.173.170",
-      "server_port": 443,
-      "uuid": "f811a2e8-08ed-4b30-b44c-449a7cab54d8",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "finnnewfenix.best",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 08 - sanchun",
-      "server": "144.31.212.253",
-      "server_port": 443,
-      "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
-      "tls": {
-        "enabled": true,
-        "server_name": "vps155-edge.kermemehori.ru",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 09 - sanchun",
-      "server": "144.31.27.215",
-      "server_port": 43000,
-      "uuid": "47f79fc1-0646-40e8-8a58-73e85d183d5a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "144.31.27.215",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg",
-          "short_id": "568d87a47271344e"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 芬兰 (Finland) 01 - sanchun",
-        "🇫🇮 芬兰 (Finland) 02 - sanchun",
-        "🇫🇮 芬兰 (Finland) 03 - sanchun",
-        "🇫🇮 芬兰 (Finland) 04 - sanchun",
-        "🇫🇮 芬兰 (Finland) 05 - sanchun",
-        "🇫🇮 芬兰 (Finland) 06 - sanchun",
-        "🇫🇮 芬兰 (Finland) 07 - sanchun",
-        "🇫🇮 芬兰 (Finland) 08 - sanchun",
-        "🇫🇮 芬兰 (Finland) 09 - sanchun"
+        "🇫🇮 芬兰 (Finland) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 芬兰 (Finland) 01 - sanchun",
-        "🇫🇮 芬兰 (Finland) 02 - sanchun",
-        "🇫🇮 芬兰 (Finland) 03 - sanchun",
-        "🇫🇮 芬兰 (Finland) 04 - sanchun",
-        "🇫🇮 芬兰 (Finland) 05 - sanchun",
-        "🇫🇮 芬兰 (Finland) 06 - sanchun",
-        "🇫🇮 芬兰 (Finland) 07 - sanchun",
-        "🇫🇮 芬兰 (Finland) 08 - sanchun",
-        "🇫🇮 芬兰 (Finland) 09 - sanchun"
+        "🇫🇮 芬兰 (Finland) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
