@@ -5,24 +5,52 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - sanchun
+  server: 104.17.148.22
+  port: 80
+  udp: true
+  type: vless
+  uuid: 63f1ef69-92fd-427a-b3e4-98ffddf81ac6
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: young-rice-749e.heliy78750.workers.dev
+- name: 🇨🇿 捷克 (Czech) 02 - sanchun
+  server: 85.117.235.50
+  port: 443
+  udp: true
+  type: vless
+  uuid: f4d71fd6-1c25-4748-836b-1dbda9268039
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: PmdZ2ETkHc0zjYcs22xT_wyZk5fEpX7mg7RP396HBBc
+    short-id: 232b1b09e45325a4
+  servername: cz1.animeteka.info
+  client-fingerprint: firefox
+- name: 🇨🇿 捷克 (Czech) 03 - sanchun
   server: 153.76.190.41
   port: 8443
   udp: true
   type: hysteria2
   password: 3a92b39a-5f02-415e-a908-783ec320e83f
   sni: speedtestmark.com
-  skip-cert-verify: true
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - sanchun
+  - 🇨🇿 捷克 (Czech) 02 - sanchun
+  - 🇨🇿 捷克 (Czech) 03 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - sanchun
+  - 🇨🇿 捷克 (Czech) 02 - sanchun
+  - 🇨🇿 捷克 (Czech) 03 - sanchun
 rules:
 - MATCH,PROXIES

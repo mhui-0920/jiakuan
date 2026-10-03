@@ -1,0 +1,138 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun",
+      "server": "178.83.46.216",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+    },
+    {
+      "type": "tuic",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - sanchun",
+      "server": "46b61821-tki800-tlwmty-1gevg.pccw3.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "f02ee2b4-d760-11ec-bd7c-f23c913c8d2b",
+      "password": "f02ee2b4-d760-11ec-bd7c-f23c913c8d2b",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "tls": {
+        "enabled": true,
+        "server_name": "46b61821-tki800-tlwmty-1gevg.pccw3.hyhuawei.com",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - sanchun",
+      "server": "118.167.235.241",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - sanchun",
+      "server": "251c04d2-tm96o0-0-1rnrp.nw4.hyhuawei.com",
+      "server_port": 443,
+      "password": "989aa406-ea9b-11ef-97da-f23c91cfbbc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "251c04d2-tm96o0-0-1rnrp.nw4.hyhuawei.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - sanchun",
+      "server": "ttww11.bpca2026.top",
+      "server_port": 443,
+      "password": "9efd3f19-c7cb-4fa9-8d66-0598043597dc",
+      "tls": {
+        "enabled": true,
+        "server_name": "ttww11.bpca2026.top",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/images",
+        "headers": {
+          "Host": "ttww11.bpca2026.top"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - sanchun",
+      "server": "ali-hk.qrfly.top",
+      "server_port": 10102,
+      "uuid": "bcfbb19f-5b0e-4862-a77b-904fffd0b513",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "tesla.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "kVpVhfT5_4__Sxj4i0S2DOQKKfK549rgy2HWP9QU4iw",
+          "short_id": "db6c60f1"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - sanchun",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - sanchun",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - sanchun",
+        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - sanchun"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - sanchun",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - sanchun",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - sanchun",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - sanchun",
+        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - sanchun"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

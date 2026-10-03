@@ -1,0 +1,116 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - sanchun
+  server: 185.218.194.71
+  port: 443
+  udp: true
+  type: vless
+  uuid: 31216f81-3139-0021-bac4-646680314264
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: e1f8a3b6
+  servername: www.amd.com
+  client-fingerprint: firefox
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - sanchun
+  server: 185.218.194.73
+  port: 443
+  udp: true
+  type: vless
+  uuid: b97e287f-a24e-0021-a103-7e7ecef83139
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: e1f8a3b6
+  servername: www.amd.com
+  client-fingerprint: qq
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - sanchun
+  server: 185.218.194.69
+  port: 443
+  udp: true
+  type: vless
+  uuid: f5a3bf49-07ca-0021-a96b-9606781e3600
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: 6e3f0a5b
+  servername: www.amd.com
+  client-fingerprint: firefox
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - sanchun
+  server: kz.monkeyisland.xyz
+  port: 443
+  udp: true
+  type: vless
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 2AKBmK0PMf2zUMhRo1Ad-WNf_XoRk3AN-SGo6ZdhxA4
+    short-id: ecca56e9a9963ed7
+  servername: example.com
+  client-fingerprint: firefox
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - sanchun
+  server: 194.58.42.100
+  port: 8444
+  udp: true
+  type: hysteria2
+  password: 7599d30f-5507-43b1-ba9d-35f1cf483ba6
+  sni: kz.th3web.com
+  skip-cert-verify: false
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - sanchun
+  server: 83.222.23.81
+  port: 38065
+  udp: true
+  type: vless
+  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
+  tls: true
+  reality-opts:
+    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
+    short-id: fa
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - sanchun
+  server: 109.248.170.119
+  port: 13447
+  udp: true
+  type: vless
+  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
+  tls: true
+  reality-opts:
+    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
+    short-id: '83'
+  servername: yahoo.com
+  client-fingerprint: chrome
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - sanchun
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - sanchun
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - sanchun
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - sanchun
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - sanchun
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - sanchun
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - sanchun
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - sanchun
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - sanchun
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - sanchun
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - sanchun
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - sanchun
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - sanchun
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - sanchun
+rules:
+- MATCH,PROXIES
