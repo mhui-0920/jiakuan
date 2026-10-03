@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - sanchun",
-      "server": "bale.xv98.ir",
-      "server_port": 5051,
-      "method": "chacha20-ietf-poly1305",
-      "password": "68mL2QkZEBlxWa3hcslGDw"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - sanchun",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - sanchun",
       "server": "162.249.127.130",
       "server_port": 8081,
       "password": "9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z",
@@ -25,7 +17,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - sanchun",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - sanchun",
       "server": "78.135.73.47",
       "server_port": 443,
       "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
@@ -45,38 +37,53 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - sanchun",
-      "server": "206.1.103.221",
-      "server_port": 17721,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "YdXo5FtbFp8lnDRbIvewaOaXbDtf5eR1Bk/O594+x40=:iZdLC0QQ5kSj7Y1QqwR/t23h1gp/jHyiWkf2MJFjq5s="
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - sanchun",
-      "server": "me17.msjia8844.site",
-      "server_port": 7443,
-      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - sanchun",
+      "server": "151.241.226.201",
+      "server_port": 2053,
+      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
       "tls": {
         "enabled": true,
-        "server_name": "me17.msjia8844.site",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
+          "short_id": "9e419c0759b54d6f"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 - sanchun",
-      "server": "176.96.131.251",
-      "server_port": 1280,
-      "uuid": "c0e8fb58-a60f-4c15-9444-4e7c109797a8",
-      "transport": {
-        "type": "ws"
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - sanchun",
+      "server": "194.135.34.223",
+      "server_port": 443,
+      "uuid": "4deb9957-e037-4ae2-8892-da357cc6f99f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "baltic.cendora.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik",
+          "short_id": "4a46213c935e2ee4"
+        }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - sanchun",
+      "server": "bale.xv98.ir",
+      "server_port": 5051,
+      "method": "chacha20-ietf-poly1305",
+      "password": "68mL2QkZEBlxWa3hcslGDw"
     },
     {
       "type": "selector",
@@ -87,8 +94,7 @@
         "🇹🇷 土耳其 (Turkey) 02 - sanchun",
         "🇹🇷 土耳其 (Turkey) 03 - sanchun",
         "🇹🇷 土耳其 (Turkey) 04 - sanchun",
-        "🇹🇷 土耳其 (Turkey) 05 - sanchun",
-        "🇹🇷 土耳其 (Turkey) 06 - sanchun"
+        "🇹🇷 土耳其 (Turkey) 05 - sanchun"
       ]
     },
     {
@@ -99,8 +105,7 @@
         "🇹🇷 土耳其 (Turkey) 02 - sanchun",
         "🇹🇷 土耳其 (Turkey) 03 - sanchun",
         "🇹🇷 土耳其 (Turkey) 04 - sanchun",
-        "🇹🇷 土耳其 (Turkey) 05 - sanchun",
-        "🇹🇷 土耳其 (Turkey) 06 - sanchun"
+        "🇹🇷 土耳其 (Turkey) 05 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

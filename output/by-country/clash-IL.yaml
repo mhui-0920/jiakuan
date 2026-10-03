@@ -30,6 +30,31 @@ proxies:
     short-id: a1b2c3d4
   servername: store.steampowered.com
   client-fingerprint: chrome
+- name: 🇮🇱 以色列 (Israel) 03 - sanchun
+  server: 34.165.56.30
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0c40bce9-8710-4820-8f22-0742b61df999
+  tls: true
+  reality-opts:
+    public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
+    short-id: fffff8acddadcac3
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇮🇱 以色列 (Israel) 04 - sanchun
+  server: 144.31.129.174
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7b69c549-93f7-0294-88bc-f1a8c3c881e5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GDlgvx8exl9BJ5dD2HSVqE2oUbZyZZOFX5EdnCn5j2M
+    short-id: 20ed7ee26095771b
+  servername: s3-fi-1.rucdn777.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +62,8 @@ proxy-groups:
   - AUTO
   - 🇮🇱 以色列 (Israel) 01 - sanchun
   - 🇮🇱 以色列 (Israel) 02 - sanchun
+  - 🇮🇱 以色列 (Israel) 03 - sanchun
+  - 🇮🇱 以色列 (Israel) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +71,7 @@ proxy-groups:
   proxies:
   - 🇮🇱 以色列 (Israel) 01 - sanchun
   - 🇮🇱 以色列 (Israel) 02 - sanchun
+  - 🇮🇱 以色列 (Israel) 03 - sanchun
+  - 🇮🇱 以色列 (Israel) 04 - sanchun
 rules:
 - MATCH,PROXIES

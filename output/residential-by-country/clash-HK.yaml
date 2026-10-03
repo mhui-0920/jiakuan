@@ -5,25 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun
-  server: 46b61821-tki800-tlwmty-1gevg.pccw3.hyhuawei.com
-  port: 443
-  udp: true
-  type: tuic
-  uuid: f02ee2b4-d760-11ec-bd7c-f23c913c8d2b
-  password: f02ee2b4-d760-11ec-bd7c-f23c913c8d2b
-  sni: 46b61821-tki800-tlwmty-1gevg.pccw3.hyhuawei.com
-  skip-cert-verify: true
-  congestion-controller: bbr
-  udp-relay-mode: native
-  alpn:
-  - h3
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - sanchun
-  server: 251c04d2-tm96o0-0-1rnrp.nw4.hyhuawei.com
+  server: e4e38271-tly2o0-tqbai3-1hpo0.nw4.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 989aa406-ea9b-11ef-97da-f23c91cfbbc9
-  sni: 251c04d2-tm96o0-0-1rnrp.nw4.hyhuawei.com
+  password: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
+  sni: e4e38271-tly2o0-tqbai3-1hpo0.nw4.hyhuawei.com
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
@@ -31,13 +18,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - sanchun
 rules:
 - MATCH,PROXIES

@@ -46,12 +46,55 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 03 - sanchun",
+      "server": "34.165.56.30",
+      "server_port": 443,
+      "uuid": "0c40bce9-8710-4820-8f22-0742b61df999",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc",
+          "short_id": "fffff8acddadcac3"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 04 - sanchun",
+      "server": "144.31.129.174",
+      "server_port": 443,
+      "uuid": "7b69c549-93f7-0294-88bc-f1a8c3c881e5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "s3-fi-1.rucdn777.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GDlgvx8exl9BJ5dD2HSVqE2oUbZyZZOFX5EdnCn5j2M",
+          "short_id": "20ed7ee26095771b"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇱 以色列 (Israel) 01 - sanchun",
-        "🇮🇱 以色列 (Israel) 02 - sanchun"
+        "🇮🇱 以色列 (Israel) 02 - sanchun",
+        "🇮🇱 以色列 (Israel) 03 - sanchun",
+        "🇮🇱 以色列 (Israel) 04 - sanchun"
       ]
     },
     {
@@ -59,7 +102,9 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇱 以色列 (Israel) 01 - sanchun",
-        "🇮🇱 以色列 (Israel) 02 - sanchun"
+        "🇮🇱 以色列 (Israel) 02 - sanchun",
+        "🇮🇱 以色列 (Israel) 03 - sanchun",
+        "🇮🇱 以色列 (Israel) 04 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,16 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - sanchun
-  server: 104.17.148.22
-  port: 80
+  server: 86.54.82.184
+  port: 443
   udp: true
   type: vless
-  uuid: 63f1ef69-92fd-427a-b3e4-98ffddf81ac6
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: young-rice-749e.heliy78750.workers.dev
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  tls: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: firefox
 - name: 🇨🇿 捷克 (Czech) 02 - sanchun
   server: 85.117.235.50
   port: 443

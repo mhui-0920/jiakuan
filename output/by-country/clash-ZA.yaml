@@ -12,13 +12,20 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: tfAcRikawhNoZAhu
 - name: 🇿🇦 南非 (South Africa) 02 - sanchun
+  server: 102.133.165.160
+  port: 16233
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
+- name: 🇿🇦 南非 (South Africa) 03 - sanchun
   server: 102.37.156.224
   port: 443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: aduB9HGxQHjA2SBMRjkHX6
-- name: 🇿🇦 南非 (South Africa) 03 - sanchun
+- name: 🇿🇦 南非 (South Africa) 04 - sanchun
   server: 34.35.58.153
   port: 443
   udp: true
@@ -29,39 +36,7 @@ proxies:
     public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
     short-id: 89b3a20484eb43ec
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇿🇦 南非 (South Africa) 04 - sanchun
-  server: 102.208.217.201
-  port: 443
-  udp: true
-  type: vless
-  uuid: a15d1b88-e3f4-4f4d-9c04-462a2965a60a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI
-    short-id: 16e0f049
-  servername: sa201.mech-pro.online
   client-fingerprint: firefox
-- name: 🇿🇦 南非 (South Africa) 05 - sanchun
-  server: 34.35.174.143
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4758aee6-6d1a-4306-b460-2398b5af4e35
-  tls: true
-  reality-opts:
-    public-key: dcox8XXfkOCmKn3kgrloj6wY5o1_0brJOi2mczYmAT4
-    short-id: 5ced03e42cc31aab
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇿🇦 南非 (South Africa) 06 - sanchun
-  server: 102.133.165.160
-  port: 16233
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
 proxy-groups:
 - name: PROXIES
   type: select
@@ -71,8 +46,6 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 02 - sanchun
   - 🇿🇦 南非 (South Africa) 03 - sanchun
   - 🇿🇦 南非 (South Africa) 04 - sanchun
-  - 🇿🇦 南非 (South Africa) 05 - sanchun
-  - 🇿🇦 南非 (South Africa) 06 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -82,7 +55,5 @@ proxy-groups:
   - 🇿🇦 南非 (South Africa) 02 - sanchun
   - 🇿🇦 南非 (South Africa) 03 - sanchun
   - 🇿🇦 南非 (South Africa) 04 - sanchun
-  - 🇿🇦 南非 (South Africa) 05 - sanchun
-  - 🇿🇦 南非 (South Africa) 06 - sanchun
 rules:
 - MATCH,PROXIES

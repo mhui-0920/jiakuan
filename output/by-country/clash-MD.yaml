@@ -1,0 +1,33 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇲🇩 摩尔多瓦 (Moldova) 01 - sanchun
+  server: 144.31.129.174
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7b69c549-93f7-033e-88bc-f1a8c3c881e5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GDlgvx8exl9BJ5dD2HSVqE2oUbZyZZOFX5EdnCn5j2M
+    short-id: c019a6ccd9134668
+  servername: s3-fi-1.rucdn777.com
+  client-fingerprint: random
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇲🇩 摩尔多瓦 (Moldova) 01 - sanchun
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇲🇩 摩尔多瓦 (Moldova) 01 - sanchun
+rules:
+- MATCH,PROXIES

@@ -4,27 +4,16 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun
-  server: 178.83.46.216
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - sanchun
-  server: 46b61821-tki800-tlwmty-1gevg.pccw3.hyhuawei.com
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun
+  server: e4e38271-tly2o0-tqbai3-1hpo0.nw4.hyhuawei.com
   port: 443
   udp: true
-  type: tuic
-  uuid: f02ee2b4-d760-11ec-bd7c-f23c913c8d2b
-  password: f02ee2b4-d760-11ec-bd7c-f23c913c8d2b
-  sni: 46b61821-tki800-tlwmty-1gevg.pccw3.hyhuawei.com
-  skip-cert-verify: true
-  congestion-controller: bbr
-  udp-relay-mode: native
-  alpn:
-  - h3
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - sanchun
-  server: 118.167.235.241
+  type: hysteria2
+  password: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
+  sni: e4e38271-tly2o0-tqbai3-1hpo0.nw4.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun
+  server: hinet1.2yly.com
   port: 24215
   udp: true
   type: vless
@@ -33,60 +22,28 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - sanchun
-  server: 251c04d2-tm96o0-0-1rnrp.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 989aa406-ea9b-11ef-97da-f23c91cfbbc9
-  sni: 251c04d2-tm96o0-0-1rnrp.nw4.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - sanchun
-  server: ttww11.bpca2026.top
-  port: 443
-  udp: true
-  type: trojan
-  password: 9efd3f19-c7cb-4fa9-8d66-0598043597dc
-  sni: ttww11.bpca2026.top
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /images
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - sanchun
-  server: ali-hk.qrfly.top
-  port: 10102
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - sanchun
+  server: 178.83.46.216
+  port: 2053
   udp: true
   type: vless
-  uuid: bcfbb19f-5b0e-4862-a77b-904fffd0b513
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: kVpVhfT5_4__Sxj4i0S2DOQKKfK549rgy2HWP9QU4iw
-    short-id: db6c60f1
-  servername: tesla.com
-  client-fingerprint: random
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - sanchun
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - sanchun
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - sanchun
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - sanchun
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - sanchun
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - sanchun
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - sanchun
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - sanchun
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - sanchun
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - sanchun
 rules:
 - MATCH,PROXIES

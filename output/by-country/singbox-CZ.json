@@ -6,13 +6,20 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - sanchun",
-      "server": "104.17.148.22",
-      "server_port": 80,
-      "uuid": "63f1ef69-92fd-427a-b3e4-98ffddf81ac6",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "young-rice-749e.heliy78750.workers.dev"
+      "server": "86.54.82.184",
+      "server_port": 443,
+      "uuid": "454431fc-71e2-42b1-b375-5b55dd06666a",
+      "tls": {
+        "enabled": true,
+        "server_name": "example.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU",
+          "short_id": ""
         }
       }
     },

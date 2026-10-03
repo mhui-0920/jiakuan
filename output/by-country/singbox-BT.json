@@ -5,21 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇳🇴 挪威 (Norway) 01 - sanchun",
-      "server": "46.29.238.88",
-      "server_port": 40443,
-      "uuid": "db320947-adfb-400d-b60b-383b8324bffe",
+      "tag": "🇧🇹 BT 01 - sanchun",
+      "server": "144.31.129.174",
+      "server_port": 443,
+      "uuid": "7b69c549-93f7-015e-88bc-f1a8c3c881e5",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "deepl.com",
+        "server_name": "s3-fi-1.rucdn777.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc",
-          "short_id": "f7b2"
+          "public_key": "GDlgvx8exl9BJ5dD2HSVqE2oUbZyZZOFX5EdnCn5j2M",
+          "short_id": "9748e0984bc655c9"
         }
       }
     },
@@ -28,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 挪威 (Norway) 01 - sanchun"
+        "🇧🇹 BT 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 挪威 (Norway) 01 - sanchun"
+        "🇧🇹 BT 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

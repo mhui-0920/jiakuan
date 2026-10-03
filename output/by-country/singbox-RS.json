@@ -5,23 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇵🇹 葡萄牙 (Portugal) 01 - sanchun",
-      "server": "185.231.233.129",
-      "server_port": 443,
-      "uuid": "c7fc009a-026b-46e5-a0c5-82e32bcabd69",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇷🇸 塞尔维亚 (Serbia) 01 - sanchun",
+      "server": "45.132.177.96",
+      "server_port": 9889,
+      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
       "tls": {
         "enabled": true,
-        "server_name": "pt.monkeyvillage.pro",
+        "server_name": "dl.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo",
-          "short_id": "1a72f72b8e04c3b7"
+          "public_key": "ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU",
+          "short_id": ""
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-tunnel"
       }
     },
     {
@@ -29,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇹 葡萄牙 (Portugal) 01 - sanchun"
+        "🇷🇸 塞尔维亚 (Serbia) 01 - sanchun"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇹 葡萄牙 (Portugal) 01 - sanchun"
+        "🇷🇸 塞尔维亚 (Serbia) 01 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
