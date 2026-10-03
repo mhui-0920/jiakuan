@@ -5,19 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - sanchun
-  server: 149.22.87.204
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 02 - sanchun
-  server: integral-rodent.rooster465.autos
+  server: winning-marten.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: integral-rodent.rooster465.autos
+  sni: winning-marten.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 02 - sanchun
+  server: obliging-louse.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: obliging-louse.rooster465.autos
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 03 - sanchun
   server: brief-glider.rooster465.autos
@@ -28,6 +29,14 @@ proxies:
   sni: brief-glider.rooster465.autos
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 04 - sanchun
+  server: concrete-aardvark.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: concrete-aardvark.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 05 - sanchun
   server: assuring-skink.rooster465.autos
   port: 443
   udp: true
@@ -35,31 +44,7 @@ proxies:
   password: UX82473651
   sni: assuring-skink.rooster465.autos
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 05 - sanchun
-  server: fancy-javelin.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: fancy-javelin.rooster465.autos
-  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 06 - sanchun
-  server: comic-poodle.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: comic-poodle.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 07 - sanchun
-  server: promoted-rattler.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: promoted-rattler.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 08 - sanchun
   server: evolving-platypus.rooster465.autos
   port: 443
   udp: true
@@ -67,7 +52,7 @@ proxies:
   password: UX82473651
   sni: evolving-platypus.rooster465.autos
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 09 - sanchun
+- name: 🇯🇵 日本 (Japan) 07 - sanchun
   server: intense-sole.rooster465.autos
   port: 443
   udp: true
@@ -75,13 +60,46 @@ proxies:
   password: UX82473651
   sni: intense-sole.rooster465.autos
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 10 - sanchun
-  server: 84.247.155.196
-  port: 80
+- name: 🇯🇵 日本 (Japan) 08 - sanchun
+  server: comic-poodle.rooster465.autos
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
+  type: trojan
+  password: UX82473651
+  sni: comic-poodle.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 09 - sanchun
+  server: organic-caribou.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: organic-caribou.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 10 - sanchun
+  server: integral-rodent.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: integral-rodent.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 11 - sanchun
+  server: fancy-javelin.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: fancy-javelin.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 12 - sanchun
+  server: promoted-rattler.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: promoted-rattler.rooster465.autos
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -97,6 +115,8 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 08 - sanchun
   - 🇯🇵 日本 (Japan) 09 - sanchun
   - 🇯🇵 日本 (Japan) 10 - sanchun
+  - 🇯🇵 日本 (Japan) 11 - sanchun
+  - 🇯🇵 日本 (Japan) 12 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -112,5 +132,7 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 08 - sanchun
   - 🇯🇵 日本 (Japan) 09 - sanchun
   - 🇯🇵 日本 (Japan) 10 - sanchun
+  - 🇯🇵 日本 (Japan) 11 - sanchun
+  - 🇯🇵 日本 (Japan) 12 - sanchun
 rules:
 - MATCH,PROXIES

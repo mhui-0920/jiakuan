@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - sanchun
+  server: 138.2.73.238
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: f87376e17da040ed04c9665ce8972930
+  sni: 138.2.73.238
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 02 - sanchun
   server: 5.223.41.93
   port: 80
   udp: true
@@ -13,7 +21,34 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇸🇬 新加坡 (Singapore) 02 - sanchun
+- name: 🇸🇬 新加坡 (Singapore) 03 - sanchun
+  server: real-cardinal.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: real-cardinal.rooster465.autos
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 04 - sanchun
+  server: desired-boxer.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: desired-boxer.rooster465.autos
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 05 - sanchun
+  server: support.zoom.us
+  port: 80
+  udp: true
+  type: vless
+  uuid: 9b0025a3-3a36-4915-b4e1-89c5cd65c9cb
+  network: ws
+  ws-opts:
+    path: /shalana
+    headers:
+      Host: onhit.shalana.shop
+- name: 🇸🇬 新加坡 (Singapore) 06 - sanchun
   server: glowing-marmoset.rooster465.autos
   port: 443
   udp: true
@@ -21,6 +56,18 @@ proxies:
   password: UX82473651
   sni: glowing-marmoset.rooster465.autos
   skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 07 - sanchun
+  server: 35.185.179.62
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
+  tls: true
+  reality-opts:
+    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
+    short-id: eb97ce837da2f6ad
+  servername: www.cloudflare.com
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -28,6 +75,11 @@ proxy-groups:
   - AUTO
   - 🇸🇬 新加坡 (Singapore) 01 - sanchun
   - 🇸🇬 新加坡 (Singapore) 02 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 03 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 04 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 05 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 06 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 07 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -35,5 +87,10 @@ proxy-groups:
   proxies:
   - 🇸🇬 新加坡 (Singapore) 01 - sanchun
   - 🇸🇬 新加坡 (Singapore) 02 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 03 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 04 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 05 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 06 - sanchun
+  - 🇸🇬 新加坡 (Singapore) 07 - sanchun
 rules:
 - MATCH,PROXIES

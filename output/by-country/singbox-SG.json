@@ -4,8 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇸🇬 新加坡 (Singapore) 01 - sanchun",
+      "server": "138.2.73.238",
+      "server_port": 50160,
+      "password": "f87376e17da040ed04c9665ce8972930",
+      "tls": {
+        "enabled": true,
+        "server_name": "138.2.73.238",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 02 - sanchun",
       "server": "5.223.41.93",
       "server_port": 80,
       "uuid": "f2eada1b-fdec-48c6-8638-18ade32993d4",
@@ -16,7 +28,45 @@
     },
     {
       "type": "trojan",
-      "tag": "🇸🇬 新加坡 (Singapore) 02 - sanchun",
+      "tag": "🇸🇬 新加坡 (Singapore) 03 - sanchun",
+      "server": "real-cardinal.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "real-cardinal.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇬 新加坡 (Singapore) 04 - sanchun",
+      "server": "desired-boxer.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "desired-boxer.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 05 - sanchun",
+      "server": "support.zoom.us",
+      "server_port": 80,
+      "uuid": "9b0025a3-3a36-4915-b4e1-89c5cd65c9cb",
+      "transport": {
+        "type": "ws",
+        "path": "/shalana",
+        "headers": {
+          "Host": "onhit.shalana.shop"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇬 新加坡 (Singapore) 06 - sanchun",
       "server": "glowing-marmoset.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -27,12 +77,37 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 07 - sanchun",
+      "server": "35.185.179.62",
+      "server_port": 443,
+      "uuid": "5567cac6-2a32-4318-83cd-7df3a9eebbd7",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4",
+          "short_id": "eb97ce837da2f6ad"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇬 新加坡 (Singapore) 01 - sanchun",
-        "🇸🇬 新加坡 (Singapore) 02 - sanchun"
+        "🇸🇬 新加坡 (Singapore) 02 - sanchun",
+        "🇸🇬 新加坡 (Singapore) 03 - sanchun",
+        "🇸🇬 新加坡 (Singapore) 04 - sanchun",
+        "🇸🇬 新加坡 (Singapore) 05 - sanchun",
+        "🇸🇬 新加坡 (Singapore) 06 - sanchun",
+        "🇸🇬 新加坡 (Singapore) 07 - sanchun"
       ]
     },
     {
@@ -40,7 +115,12 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇬 新加坡 (Singapore) 01 - sanchun",
-        "🇸🇬 新加坡 (Singapore) 02 - sanchun"
+        "🇸🇬 新加坡 (Singapore) 02 - sanchun",
+        "🇸🇬 新加坡 (Singapore) 03 - sanchun",
+        "🇸🇬 新加坡 (Singapore) 04 - sanchun",
+        "🇸🇬 新加坡 (Singapore) 05 - sanchun",
+        "🇸🇬 新加坡 (Singapore) 06 - sanchun",
+        "🇸🇬 新加坡 (Singapore) 07 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

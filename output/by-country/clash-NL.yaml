@@ -5,6 +5,42 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇱 荷兰 (Netherlands) 01 - sanchun
+  server: 87.58.201.211
+  port: 443
+  udp: true
+  type: vless
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  tls: true
+  servername: d3-nl1.cloud-cdn.xyz
+  skip-cert-verify: false
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vlgrpc
+- name: 🇳🇱 荷兰 (Netherlands) 02 - sanchun
+  server: 217.60.35.228
+  port: 8443
+  udp: true
+  type: vless
+  uuid: e19b5aa3-16c9-435a-8bc9-76f2f6ddff43
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 4jeCe2efqOkTQ-r99RHuACTH8_BuNNP1Rx6cuBXS4hg
+    short-id: a4f8c92d
+  servername: kaneki.cfd
+  client-fingerprint: firefox
+- name: 🇳🇱 荷兰 (Netherlands) 03 - sanchun
+  server: 107.189.18.145
+  port: 443
+  udp: true
+  type: vless
+  uuid: 67a171fb-a31d-49f3-a9d6-98de350763e8
+  tls: true
+  servername: restnet.duckdns.org
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇳🇱 荷兰 (Netherlands) 04 - sanchun
   server: 188.42.145.180
   port: 443
   udp: true
@@ -21,11 +57,17 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇳🇱 荷兰 (Netherlands) 01 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 02 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 03 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 04 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇳🇱 荷兰 (Netherlands) 01 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 02 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 03 - sanchun
+  - 🇳🇱 荷兰 (Netherlands) 04 - sanchun
 rules:
 - MATCH,PROXIES

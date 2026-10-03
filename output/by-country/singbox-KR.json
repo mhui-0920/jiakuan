@@ -6,30 +6,6 @@
     {
       "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 01 - sanchun",
-      "server": "balanced-stag.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "balanced-stag.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 02 - sanchun",
-      "server": "main-fawn.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "main-fawn.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 03 - sanchun",
       "server": "engaging-toucan.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -41,7 +17,19 @@
     },
     {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 04 - sanchun",
+      "tag": "🇰🇷 韩国 (South Korea) 02 - sanchun",
+      "server": "optimum-snapper.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "optimum-snapper.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 03 - sanchun",
       "server": "pretty-rat.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -52,12 +40,84 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 04 - sanchun",
+      "server": "main-fawn.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "main-fawn.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 05 - sanchun",
+      "server": "noted-cougar.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "noted-cougar.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 06 - sanchun",
+      "server": "liked-eft.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "liked-eft.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 07 - sanchun",
+      "server": "evolving-ewe.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "evolving-ewe.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 08 - sanchun",
+      "server": "kind-stork.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "kind-stork.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 09 - sanchun",
+      "server": "balanced-stag.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "balanced-stag.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 10 - sanchun",
       "server": "141.164.45.187",
-      "server_port": 5498,
+      "server_port": 6697,
       "method": "aes-256-gcm",
-      "password": "lGqs95QkFHo2NV"
+      "password": "TEzjfAYq2IjtuoS"
     },
     {
       "type": "selector",
@@ -68,7 +128,12 @@
         "🇰🇷 韩国 (South Korea) 02 - sanchun",
         "🇰🇷 韩国 (South Korea) 03 - sanchun",
         "🇰🇷 韩国 (South Korea) 04 - sanchun",
-        "🇰🇷 韩国 (South Korea) 05 - sanchun"
+        "🇰🇷 韩国 (South Korea) 05 - sanchun",
+        "🇰🇷 韩国 (South Korea) 06 - sanchun",
+        "🇰🇷 韩国 (South Korea) 07 - sanchun",
+        "🇰🇷 韩国 (South Korea) 08 - sanchun",
+        "🇰🇷 韩国 (South Korea) 09 - sanchun",
+        "🇰🇷 韩国 (South Korea) 10 - sanchun"
       ]
     },
     {
@@ -79,7 +144,12 @@
         "🇰🇷 韩国 (South Korea) 02 - sanchun",
         "🇰🇷 韩国 (South Korea) 03 - sanchun",
         "🇰🇷 韩国 (South Korea) 04 - sanchun",
-        "🇰🇷 韩国 (South Korea) 05 - sanchun"
+        "🇰🇷 韩国 (South Korea) 05 - sanchun",
+        "🇰🇷 韩国 (South Korea) 06 - sanchun",
+        "🇰🇷 韩国 (South Korea) 07 - sanchun",
+        "🇰🇷 韩国 (South Korea) 08 - sanchun",
+        "🇰🇷 韩国 (South Korea) 09 - sanchun",
+        "🇰🇷 韩国 (South Korea) 10 - sanchun"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
