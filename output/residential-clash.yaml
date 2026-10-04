@@ -5,22 +5,79 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun
+  server: tutaim.azad0namah.ir
+  port: 5566
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-128-gcm
+  password: 8NwabdWBXK1q1QaBhF69rw==:d8C1FciKoaFD6xRFbCYyFQ==
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - sanchun
+  server: 3f86f2b4-tmm5c0-tpaqgu-1smhu.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 62f2374c-891b-11ef-a3f6-f23c9164ca5d
+  sni: 3f86f2b4-tmm5c0-tpaqgu-1smhu.hk3.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - sanchun
   server: test.keoplentuio.xyz
   port: 2053
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - sanchun
+  server: db1b2f3b-tly2o0-tn3jhp-1qthu.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 8fa4bea0-8703-11ef-83cc-f23c913c8d2b
+  sni: db1b2f3b-tly2o0-tn3jhp-1qthu.nw4.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - sanchun
+  server: hinet1.2yly.com
+  port: 24215
+  udp: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - sanchun
+  server: ali-hk.qrfly.top
+  port: 10102
+  udp: true
+  type: vless
+  uuid: bcfbb19f-5b0e-4862-a77b-904fffd0b513
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: kVpVhfT5_4__Sxj4i0S2DOQKKfK549rgy2HWP9QU4iw
+    short-id: db6c60f1
+  servername: tesla.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - sanchun
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - sanchun
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - sanchun
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - sanchun
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - sanchun
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - sanchun
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - sanchun
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - sanchun
 rules:
 - MATCH,PROXIES

@@ -5,24 +5,127 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - sanchun
-  server: 144.31.232.216
+  server: 65.109.208.97
+  port: 47851
+  udp: true
+  type: vless
+  uuid: 1240607b-86ed-4ef1-9123-8061144cbdbf
+  network: h2
+  h2-opts:
+    host: []
+    path: /
+- name: 🇫🇮 芬兰 (Finland) 02 - sanchun
+  server: 151.241.137.132
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5786d86f-7731-4174-b1a3-84297e54b015
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: finland.ali-bard.online
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 03 - sanchun
+  server: 65.108.3.59
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  servername: web.eitaa.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 04 - sanchun
+  server: 95.216.27.15
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  tls: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 05 - sanchun
+  server: foodal.color-shop.ir
+  port: 5566
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: olF2/aNyAxEBf0CHoFlkGlAXUdw+ap1CzFd3AL4WuuM=:d8C1FciKoaFD6xRFbCYyFYlT44MV3zYlXvD6DfhsSqo=
+- name: 🇫🇮 芬兰 (Finland) 06 - sanchun
+  server: 177.3.214.52
+  port: 443
+  udp: true
+  type: vless
+  uuid: 27407f1d-fe61-469b-a5a9-0aef7ee7476d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 6bQ-L8tEd3guits_RHgfkXXArmnkB2GxFx23BgWC63c
+    short-id: da4d87fa
+  servername: uehr.pashalloh.org
+  client-fingerprint: ios
+- name: 🇫🇮 芬兰 (Finland) 07 - sanchun
+  server: 144.31.212.253
   port: 443
   udp: true
   type: hysteria2
-  password: 06e88dd6-e264-4981-8c26-d7ab17348ab2
-  sni: fi01.clgate.network
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  sni: vps155-edge.kermemehori.ru
   skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 08 - sanchun
+  server: 2.27.207.30
+  port: 443
+  udp: true
+  type: vless
+  uuid: a5dd2dd9-0995-449e-be67-4a409890dc42
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: nG28Y1q-Ul2oBH-FegAkzGtvY6IRCIwras1k8CLwdGo
+    short-id: da4d87fa
+  servername: jdbdb.huinaduok.fans
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 09 - sanchun
+  server: 45.149.114.171
+  port: 777
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - sanchun
+  - 🇫🇮 芬兰 (Finland) 02 - sanchun
+  - 🇫🇮 芬兰 (Finland) 03 - sanchun
+  - 🇫🇮 芬兰 (Finland) 04 - sanchun
+  - 🇫🇮 芬兰 (Finland) 05 - sanchun
+  - 🇫🇮 芬兰 (Finland) 06 - sanchun
+  - 🇫🇮 芬兰 (Finland) 07 - sanchun
+  - 🇫🇮 芬兰 (Finland) 08 - sanchun
+  - 🇫🇮 芬兰 (Finland) 09 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - sanchun
+  - 🇫🇮 芬兰 (Finland) 02 - sanchun
+  - 🇫🇮 芬兰 (Finland) 03 - sanchun
+  - 🇫🇮 芬兰 (Finland) 04 - sanchun
+  - 🇫🇮 芬兰 (Finland) 05 - sanchun
+  - 🇫🇮 芬兰 (Finland) 06 - sanchun
+  - 🇫🇮 芬兰 (Finland) 07 - sanchun
+  - 🇫🇮 芬兰 (Finland) 08 - sanchun
+  - 🇫🇮 芬兰 (Finland) 09 - sanchun
 rules:
 - MATCH,PROXIES

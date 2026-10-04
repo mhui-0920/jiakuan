@@ -5,16 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇱 智利 (Chile) 01 - sanchun
-  server: platform103.golnamakcert.top
+  server: platform115.golnamakcert.top
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform103
+    path: /platform115
     headers:
-      Host: platform103.halalkhor.info
+      Host: platform115.halalkhor.info
 - name: 🇨🇱 智利 (Chile) 02 - sanchun
   server: platform101.golnamakcert.top
   port: 80
@@ -37,72 +37,6 @@ proxies:
     path: /platform102
     headers:
       Host: platform102.halalkhor.info
-- name: 🇨🇱 智利 (Chile) 04 - sanchun
-  server: platform106.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform106
-    headers:
-      Host: platform106.halalkhor.info
-- name: 🇨🇱 智利 (Chile) 05 - sanchun
-  server: platform117.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.halalkhor.info
-- name: 🇨🇱 智利 (Chile) 06 - sanchun
-  server: platform118.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform118
-    headers:
-      Host: platform118.halalkhor.info
-- name: 🇨🇱 智利 (Chile) 07 - sanchun
-  server: platform109.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform109
-    headers:
-      Host: platform109.halalkhor.info
-- name: 🇨🇱 智利 (Chile) 08 - sanchun
-  server: platform107.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform107
-    headers:
-      Host: platform107.halalkhor.info
-- name: 🇨🇱 智利 (Chile) 09 - sanchun
-  server: platform115.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: platform115.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -111,12 +45,6 @@ proxy-groups:
   - 🇨🇱 智利 (Chile) 01 - sanchun
   - 🇨🇱 智利 (Chile) 02 - sanchun
   - 🇨🇱 智利 (Chile) 03 - sanchun
-  - 🇨🇱 智利 (Chile) 04 - sanchun
-  - 🇨🇱 智利 (Chile) 05 - sanchun
-  - 🇨🇱 智利 (Chile) 06 - sanchun
-  - 🇨🇱 智利 (Chile) 07 - sanchun
-  - 🇨🇱 智利 (Chile) 08 - sanchun
-  - 🇨🇱 智利 (Chile) 09 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -125,11 +53,5 @@ proxy-groups:
   - 🇨🇱 智利 (Chile) 01 - sanchun
   - 🇨🇱 智利 (Chile) 02 - sanchun
   - 🇨🇱 智利 (Chile) 03 - sanchun
-  - 🇨🇱 智利 (Chile) 04 - sanchun
-  - 🇨🇱 智利 (Chile) 05 - sanchun
-  - 🇨🇱 智利 (Chile) 06 - sanchun
-  - 🇨🇱 智利 (Chile) 07 - sanchun
-  - 🇨🇱 智利 (Chile) 08 - sanchun
-  - 🇨🇱 智利 (Chile) 09 - sanchun
 rules:
 - MATCH,PROXIES

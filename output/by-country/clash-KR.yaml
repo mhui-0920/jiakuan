@@ -5,30 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - sanchun
-  server: engaging-toucan.rooster465.autos
-  port: 443
+  server: 141.164.45.187
+  port: 8008
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: engaging-toucan.rooster465.autos
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
 - name: 🇰🇷 韩国 (South Korea) 02 - sanchun
-  server: optimum-snapper.rooster465.autos
-  port: 443
+  server: 141.164.45.187
+  port: 5001
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: optimum-snapper.rooster465.autos
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
 - name: 🇰🇷 韩国 (South Korea) 03 - sanchun
-  server: pretty-rat.rooster465.autos
-  port: 443
+  server: 141.164.45.187
+  port: 8119
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: pretty-rat.rooster465.autos
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
 - name: 🇰🇷 韩国 (South Korea) 04 - sanchun
+  server: 141.164.45.187
+  port: 5498
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
+- name: 🇰🇷 韩国 (South Korea) 05 - sanchun
   server: main-fawn.rooster465.autos
   port: 443
   udp: true
@@ -36,7 +40,47 @@ proxies:
   password: UX82473651
   sni: main-fawn.rooster465.autos
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 05 - sanchun
+- name: 🇰🇷 韩国 (South Korea) 06 - sanchun
+  server: 3.39.4.109
+  port: 18967
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 07 - sanchun
+  server: 34.158.210.177
+  port: 443
+  udp: true
+  type: vless
+  uuid: 700a7a0e-3f27-406c-81d1-aa1abe411af8
+  tls: true
+  reality-opts:
+    public-key: kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8
+    short-id: 3fd0a8ddef3ae5c6
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 08 - sanchun
+  server: 141.164.45.187
+  port: 2376
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+- name: 🇰🇷 韩国 (South Korea) 09 - sanchun
+  server: engaging-toucan.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: engaging-toucan.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 10 - sanchun
   server: noted-cougar.rooster465.autos
   port: 443
   udp: true
@@ -44,31 +88,15 @@ proxies:
   password: UX82473651
   sni: noted-cougar.rooster465.autos
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 06 - sanchun
-  server: liked-eft.rooster465.autos
+- name: 🇰🇷 韩国 (South Korea) 11 - sanchun
+  server: pretty-rat.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: liked-eft.rooster465.autos
+  sni: pretty-rat.rooster465.autos
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 07 - sanchun
-  server: evolving-ewe.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: evolving-ewe.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 08 - sanchun
-  server: kind-stork.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: kind-stork.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 09 - sanchun
+- name: 🇰🇷 韩国 (South Korea) 12 - sanchun
   server: balanced-stag.rooster465.autos
   port: 443
   udp: true
@@ -76,13 +104,149 @@ proxies:
   password: UX82473651
   sni: balanced-stag.rooster465.autos
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 10 - sanchun
+- name: 🇰🇷 韩国 (South Korea) 13 - sanchun
+  server: 141.164.45.187
+  port: 8888
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇰🇷 韩国 (South Korea) 14 - sanchun
+  server: evolving-ewe.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: evolving-ewe.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 15 - sanchun
+  server: 141.164.45.187
+  port: 7002
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇰🇷 韩国 (South Korea) 16 - sanchun
+  server: 3.39.4.109
+  port: 13672
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 17 - sanchun
+  server: kr2-r.link-t7.com
+  port: 10047
+  udp: true
+  type: vless
+  uuid: 745A6079-6A61-423D-BDD9-B344C1D26E62
+  tls: true
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: update
+- name: 🇰🇷 韩国 (South Korea) 18 - sanchun
+  server: kind-stork.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: kind-stork.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 19 - sanchun
+  server: 141.164.45.187
+  port: 9101
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+- name: 🇰🇷 韩国 (South Korea) 20 - sanchun
+  server: 47.80.14.8
+  port: 443
+  udp: true
+  type: vless
+  uuid: 581cb8c3-dadb-4e10-a18b-5e79bfe7bd93
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: OBIHAXdhfYJ0PWsZjy3QYPRjTfMQlvjmBsTf1CT671w
+    short-id: 71110d3f7ef57760
+  servername: www.samsung.com
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 21 - sanchun
+  server: optimum-snapper.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: optimum-snapper.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 22 - sanchun
+  server: 141.164.45.187
+  port: 8091
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+- name: 🇰🇷 韩国 (South Korea) 23 - sanchun
+  server: 152.67.200.82
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: 152-67-200-82.liao.kdns.fr
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 24 - sanchun
+  server: 151.245.106.49
+  port: 2053
+  udp: true
+  type: vless
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  tls: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+    short-id: 429499c03d4cc8a0
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 25 - sanchun
+  server: ikr100b.zxom.eu.org
+  port: 20007
+  udp: true
+  type: trojan
+  password: 178c178666bb4ae5
+  sni: ikr100b.zxom.eu.org
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 26 - sanchun
+  server: liked-eft.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: liked-eft.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 27 - sanchun
   server: 141.164.45.187
   port: 6697
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: TEzjfAYq2IjtuoS
+- name: 🇰🇷 韩国 (South Korea) 28 - sanchun
+  server: 141.164.45.187
+  port: 8000
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
 proxy-groups:
 - name: PROXIES
   type: select
@@ -98,6 +262,24 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 08 - sanchun
   - 🇰🇷 韩国 (South Korea) 09 - sanchun
   - 🇰🇷 韩国 (South Korea) 10 - sanchun
+  - 🇰🇷 韩国 (South Korea) 11 - sanchun
+  - 🇰🇷 韩国 (South Korea) 12 - sanchun
+  - 🇰🇷 韩国 (South Korea) 13 - sanchun
+  - 🇰🇷 韩国 (South Korea) 14 - sanchun
+  - 🇰🇷 韩国 (South Korea) 15 - sanchun
+  - 🇰🇷 韩国 (South Korea) 16 - sanchun
+  - 🇰🇷 韩国 (South Korea) 17 - sanchun
+  - 🇰🇷 韩国 (South Korea) 18 - sanchun
+  - 🇰🇷 韩国 (South Korea) 19 - sanchun
+  - 🇰🇷 韩国 (South Korea) 20 - sanchun
+  - 🇰🇷 韩国 (South Korea) 21 - sanchun
+  - 🇰🇷 韩国 (South Korea) 22 - sanchun
+  - 🇰🇷 韩国 (South Korea) 23 - sanchun
+  - 🇰🇷 韩国 (South Korea) 24 - sanchun
+  - 🇰🇷 韩国 (South Korea) 25 - sanchun
+  - 🇰🇷 韩国 (South Korea) 26 - sanchun
+  - 🇰🇷 韩国 (South Korea) 27 - sanchun
+  - 🇰🇷 韩国 (South Korea) 28 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -113,5 +295,23 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 08 - sanchun
   - 🇰🇷 韩国 (South Korea) 09 - sanchun
   - 🇰🇷 韩国 (South Korea) 10 - sanchun
+  - 🇰🇷 韩国 (South Korea) 11 - sanchun
+  - 🇰🇷 韩国 (South Korea) 12 - sanchun
+  - 🇰🇷 韩国 (South Korea) 13 - sanchun
+  - 🇰🇷 韩国 (South Korea) 14 - sanchun
+  - 🇰🇷 韩国 (South Korea) 15 - sanchun
+  - 🇰🇷 韩国 (South Korea) 16 - sanchun
+  - 🇰🇷 韩国 (South Korea) 17 - sanchun
+  - 🇰🇷 韩国 (South Korea) 18 - sanchun
+  - 🇰🇷 韩国 (South Korea) 19 - sanchun
+  - 🇰🇷 韩国 (South Korea) 20 - sanchun
+  - 🇰🇷 韩国 (South Korea) 21 - sanchun
+  - 🇰🇷 韩国 (South Korea) 22 - sanchun
+  - 🇰🇷 韩国 (South Korea) 23 - sanchun
+  - 🇰🇷 韩国 (South Korea) 24 - sanchun
+  - 🇰🇷 韩国 (South Korea) 25 - sanchun
+  - 🇰🇷 韩国 (South Korea) 26 - sanchun
+  - 🇰🇷 韩国 (South Korea) 27 - sanchun
+  - 🇰🇷 韩国 (South Korea) 28 - sanchun
 rules:
 - MATCH,PROXIES

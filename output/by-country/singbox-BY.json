@@ -1,0 +1,50 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇧🇾 白俄罗斯 (Belarus) 01 - sanchun",
+      "server": "gfgfdgdfg.apruxdomain.online",
+      "server_port": 443,
+      "uuid": "0c4e0fa4-d16e-47a2-8325-39a1a8fb04d8",
+      "tls": {
+        "enabled": true,
+        "server_name": "gfgfdgdfg.apruxdomain.online",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "httpupgrade"
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇧🇾 白俄罗斯 (Belarus) 01 - sanchun"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇧🇾 白俄罗斯 (Belarus) 01 - sanchun"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

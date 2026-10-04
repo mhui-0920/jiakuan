@@ -5,21 +5,212 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - sanchun
-  server: 62.210.7.139
-  port: 60111
+  server: 15.236.38.55
+  port: 443
   udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: 62.210.7.139
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇫🇷 法国 (France) 02 - sanchun
+  server: 13.38.84.99
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇫🇷 法国 (France) 03 - sanchun
+  server: 15.237.126.250
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇫🇷 法国 (France) 04 - sanchun
+  server: 52.47.133.105
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇫🇷 法国 (France) 05 - sanchun
+  server: 15.224.203.210
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇫🇷 法国 (France) 06 - sanchun
+  server: 143.246.208.113
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  tls: true
+  servername: assets-fr4.pleiades.codes
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
+- name: 🇫🇷 法国 (France) 07 - sanchun
+  server: 35.180.48.226
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇫🇷 法国 (France) 08 - sanchun
+  server: 15.237.215.103
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇫🇷 法国 (France) 09 - sanchun
+  server: 15.237.255.137
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇫🇷 法国 (France) 10 - sanchun
+  server: 162.19.10.99
+  port: 443
+  udp: true
+  type: vless
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+  flow: xtls-rprx-vision
+  tls: true
+  servername: nasnet-162191099-direct.mbghalibaf.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 11 - sanchun
+  server: 145.223.68.58
+  port: 443
+  udp: true
+  type: vless
+  uuid: edb50d20-2d3e-4c1e-8a75-a17168a89aa5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: qc2DcqT9zPPZr6ePZ7ukxACWrYhRNIBjDIjCK7veyQg
+    short-id: a44ff7d2e80213c2
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 12 - sanchun
   server: 51.255.13.232
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: BqnqToih0PbU
-- name: 🇫🇷 法国 (France) 03 - sanchun
+- name: 🇫🇷 法国 (France) 13 - sanchun
+  server: 62.210.91.10
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 14 - sanchun
+  server: 104.19.229.21
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 15 - sanchun
+  server: 152.228.139.33
+  port: 51671
+  udp: true
+  type: vless
+  uuid: 75cc7568-abb0-46a8-88be-8137d3c647d4
+  tls: true
+  reality-opts:
+    public-key: -5PowNUY37Pi01YKO9fjRTrum1m_9n6XauaPDpmOJzU
+    short-id: 2fed44d8c59f7e71
+  servername: www.sony.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc_common3
+- name: 🇫🇷 法国 (France) 16 - sanchun
+  server: 137.74.16.237
+  port: 443
+  udp: true
+  type: vless
+  uuid: aaec4e42-a095-44b6-a239-f16d234a0798
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I
+    short-id: b390e0a721d242b0
+  servername: www.icloud.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 17 - sanchun
+  server: 95.179.208.12
+  port: 443
+  udp: true
+  type: vless
+  uuid: d90087c3-54f5-4283-a13f-615260c8b0c7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: hTweFDvbSucrGERtiiwDfoqD3vo_Z9cuaqboff3FTXQ
+  servername: googleapis.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 18 - sanchun
+  server: 152.228.139.33
+  port: 35108
+  udp: true
+  type: vless
+  uuid: 81dc0b61-f9fe-4ad6-8b4e-b8c067b73712
+  tls: true
+  reality-opts:
+    public-key: X_lOw5Zz4SJBa1cRHV4dAq5msYE-ClY5-WNcBmBWRxg
+    short-id: 52add08b86a5ccea
+  servername: www.nvidia.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-common3
+- name: 🇫🇷 法国 (France) 19 - sanchun
+  server: 62.210.91.2
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 20 - sanchun
+  server: bulbul.color-panel.ir
+  port: 8080
+  udp: true
+  type: vless
+  uuid: fdc1206a-9d2e-42b7-b615-9ccea8cf70ee
+- name: 🇫🇷 法国 (France) 21 - sanchun
+  server: vpn-fr-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-fr-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 22 - sanchun
   server: 185.114.72.31
   port: 2053
   udp: true
@@ -30,8 +221,15 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 04 - sanchun
-  server: 45.87.41.18
+- name: 🇫🇷 法国 (France) 23 - sanchun
+  server: Bulbul.color-panel.ir
+  port: 1080
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-128-gcm
+  password: 5KZH6WIsE0lygfKRLtstGQ==:d8C1FciKoaFD6xRFbCYyFQ==
+- name: 🇫🇷 法国 (France) 24 - sanchun
+  server: 185.255.179.166
   port: 443
   udp: true
   type: trojan
@@ -41,8 +239,8 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 05 - sanchun
-  server: 45.130.125.160
+- name: 🇫🇷 法国 (France) 25 - sanchun
+  server: 185.220.100.168
   port: 443
   udp: true
   type: trojan
@@ -52,29 +250,33 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 06 - sanchun
-  server: 212.227.144.37
-  port: 8443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 07 - sanchun
-  server: 143.246.208.113
+- name: 🇫🇷 法国 (France) 26 - sanchun
+  server: 35.181.55.52
   port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇫🇷 法国 (France) 27 - sanchun
+  server: 54.37.136.194
+  port: 2053
   udp: true
   type: vless
-  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
   tls: true
-  servername: assets-fr4.pleiades.codes
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: cdn.v1.AssetService
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+    short-id: 50ba05992b05c1c3
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 28 - sanchun
+  server: 62.210.7.139
+  port: 60111
+  udp: true
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: 62.210.7.139
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -87,6 +289,27 @@ proxy-groups:
   - 🇫🇷 法国 (France) 05 - sanchun
   - 🇫🇷 法国 (France) 06 - sanchun
   - 🇫🇷 法国 (France) 07 - sanchun
+  - 🇫🇷 法国 (France) 08 - sanchun
+  - 🇫🇷 法国 (France) 09 - sanchun
+  - 🇫🇷 法国 (France) 10 - sanchun
+  - 🇫🇷 法国 (France) 11 - sanchun
+  - 🇫🇷 法国 (France) 12 - sanchun
+  - 🇫🇷 法国 (France) 13 - sanchun
+  - 🇫🇷 法国 (France) 14 - sanchun
+  - 🇫🇷 法国 (France) 15 - sanchun
+  - 🇫🇷 法国 (France) 16 - sanchun
+  - 🇫🇷 法国 (France) 17 - sanchun
+  - 🇫🇷 法国 (France) 18 - sanchun
+  - 🇫🇷 法国 (France) 19 - sanchun
+  - 🇫🇷 法国 (France) 20 - sanchun
+  - 🇫🇷 法国 (France) 21 - sanchun
+  - 🇫🇷 法国 (France) 22 - sanchun
+  - 🇫🇷 法国 (France) 23 - sanchun
+  - 🇫🇷 法国 (France) 24 - sanchun
+  - 🇫🇷 法国 (France) 25 - sanchun
+  - 🇫🇷 法国 (France) 26 - sanchun
+  - 🇫🇷 法国 (France) 27 - sanchun
+  - 🇫🇷 法国 (France) 28 - sanchun
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -99,5 +322,26 @@ proxy-groups:
   - 🇫🇷 法国 (France) 05 - sanchun
   - 🇫🇷 法国 (France) 06 - sanchun
   - 🇫🇷 法国 (France) 07 - sanchun
+  - 🇫🇷 法国 (France) 08 - sanchun
+  - 🇫🇷 法国 (France) 09 - sanchun
+  - 🇫🇷 法国 (France) 10 - sanchun
+  - 🇫🇷 法国 (France) 11 - sanchun
+  - 🇫🇷 法国 (France) 12 - sanchun
+  - 🇫🇷 法国 (France) 13 - sanchun
+  - 🇫🇷 法国 (France) 14 - sanchun
+  - 🇫🇷 法国 (France) 15 - sanchun
+  - 🇫🇷 法国 (France) 16 - sanchun
+  - 🇫🇷 法国 (France) 17 - sanchun
+  - 🇫🇷 法国 (France) 18 - sanchun
+  - 🇫🇷 法国 (France) 19 - sanchun
+  - 🇫🇷 法国 (France) 20 - sanchun
+  - 🇫🇷 法国 (France) 21 - sanchun
+  - 🇫🇷 法国 (France) 22 - sanchun
+  - 🇫🇷 法国 (France) 23 - sanchun
+  - 🇫🇷 法国 (France) 24 - sanchun
+  - 🇫🇷 法国 (France) 25 - sanchun
+  - 🇫🇷 法国 (France) 26 - sanchun
+  - 🇫🇷 法国 (France) 27 - sanchun
+  - 🇫🇷 法国 (France) 28 - sanchun
 rules:
 - MATCH,PROXIES
